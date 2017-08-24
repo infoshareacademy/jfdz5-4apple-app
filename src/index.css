@@ -26,6 +26,27 @@ body {
     margin-top: 15px;
 }
 
+.search-button {
+    background-image: linear-gradient(to bottom, #4683B2 0%, #04365C 100%);
+}
+
+.search-button:hover {
+    background-image: linear-gradient(to bottom, #0A5894 0%, #0a5994 100%);
+    background-color: #0a5994;
+}
+
+.search-button:focus {
+    background-color: #04365C;
+}
+
+.search-button:active {
+    background-color: #04365C;
+}
+
+.search-button:active:focus, .search-button:active:hover, .search-button:focus:hover {
+    background-color: #0a5994;
+}
+
 @media (min-width: 768px) {
     .navbar-form {
         display: block;
@@ -35,7 +56,7 @@ body {
         width: 385px;
     }
 
-    .navbar-contaiter1 {
+    .navbar--contaiter {
         display: flex;
         justify-content: center;
     }
