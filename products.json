@@ -10,6 +10,7 @@
         "female": true,
         "male": true,
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "size": [
           {
             "size": 36,
@@ -70,6 +71,7 @@
         "price": 2399,
         "color": "silver",
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "description": "Risus pretium quam vulputate dignissim suspendisse in est. Eu feugiat pretium nibh. Id ornare arcu odio ut sem nulla pharetra diam. Vestibulum lectus mauris ultrices eros in cursus. Urna duis convallis. Dolor morbi non arcu risus quis varius quam quisque."
       },
       {
@@ -78,6 +80,7 @@
         "price": 2899,
         "color": "silver",
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "description": "Et magnis dis parturient montes nascetur ridiculus mus. Sed nisi lacus sed viverra tellus. Ut consequat semper viverra nam libero justo. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non."
       },
       {
@@ -86,6 +89,7 @@
         "price": 2949,
         "color": "black",
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "description": "Adipiscing commodo elit. Bibendum at varius vel. Risus feugiat in ante metus."
       },
       {
@@ -94,6 +98,7 @@
         "price": "3599",
         "color": "black",
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "description": "Ullamcorper dignissim cras. Vel pharetra vel turpis nunc eget lorem. Vestibulum rhoncus est pellentesque elit ullamcorper."
       },
       {
@@ -102,6 +107,7 @@
         "price": 5499,
         "color": "black",
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "description": "Id consectetur purus. Gravida in fermentum et sollicitudin ac orci. Posuere ac ut consequat semper viverra nam libero justo. Cras sed felis eget velit aliquet sagittis id. Ligula ullamcorper malesuada proin libero nunc consequat. Cum sociis natoque penatibus et magnis dis parturient montes nascetur."
       },
       {
@@ -110,6 +116,7 @@
         "price": 3499,
         "color": "srebrny",
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "description": "Quam elementum pulvinar. Urna molestie at elementum eu facilisis. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Non quam lacus suspendisse faucibus. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit."
       },
       {
@@ -118,6 +125,7 @@
         "price": 3999,
         "color": "white",
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "description": "Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Quisque egestas diam in arcu cursus euismod quis. Tristique nulla aliquet enim tortor at."
       },
       {
@@ -126,6 +134,7 @@
         "price": 9999,
         "color": "silver",
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "description": "Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Duis at consectetur lorem donec massa. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Lectus nulla at volutpat diam ut venenatis."
       },
       {
@@ -134,6 +143,7 @@
         "price": 2999,
         "color": "silver",
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "description": "Quis varius quam quisque id diam vel quam elementum pulvinar. Tristique senectus et netus et malesuada fames ac turpis. Nec ullamcorper sit amet risus nullam eget felis eget nunc. Ac felis donec et odio pellentesque diam."
       }
     ]
@@ -147,6 +157,7 @@
         "price": 150,
         "gender": "meski",
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "description": "Nunc sed blandit libero volutpat. Aliquet risus feugiat. Et malesuada fames ac turpis egestas. Ut faucibus pulvinar elementum integer enim. Ullamcorper sit amet risus nullam eget felis eget. Volutpat diam ut."
       },
       {
@@ -155,6 +166,7 @@
         "price": 227,
         "gender": "meski",
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "description": "Tellus orci ac. Aliquam sem et tortor consequat id porta. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Mi tempus imperdiet. Congue quisque egestas diam in."
       },
       {
@@ -171,11 +183,11 @@
         "price": 294,
         "gender": "meski",
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "description": "Ultricies leo integer malesuada nunc. Integer enim neque volutpat ac tincidunt vitae. Risus nullam eget felis eget nunc."
       }
     ]
   },
-
   {
     "category": "Ksiazki",
     "items": [
@@ -185,6 +197,7 @@
         "price": 38.50,
         "pages": 200,
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "description": "Nunc sed blandit libero volutpat. Aliquet risus feugiat. Et malesuada fames ac turpis egestas. Ut faucibus pulvinar elementum integer enim. Ullamcorper sit amet risus nullam eget felis eget. Volutpat diam ut."
       },
       {
@@ -193,6 +206,7 @@
         "price": 27.00,
         "pages": 150,
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "description": "Tellus orci ac. Aliquam sem et tortor consequat id porta. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Mi tempus imperdiet. Congue quisque egestas diam in."
       },
       {
@@ -201,6 +215,7 @@
         "price": 31.00,
         "pages": 300,
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "description": "Mauris cursus mattis molestie a iaculis. Libero id faucibus nisl tincidunt eget. Diam maecenas sed enim ut. Faucibus turpis in eu mi bibendum. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra."
       },
       {
@@ -209,7 +224,9 @@
         "price": 25.00,
         "pages": 500,
         "available": true,
+        "image": "http://via.placeholder.com/242x200",
         "description": "Ultricies leo integer malesuada nunc. Integer enim neque volutpat ac tincidunt vitae. Risus nullam eget felis eget nunc."
       }
     ]
-  }]
+  }
+]
