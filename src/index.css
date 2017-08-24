@@ -5,5 +5,38 @@ body {
 }
 
 .logo {
-    padding: 5px 5px;
+    padding: 10px 10px;
+}
+
+.form-control {
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+}
+
+.navbar {
+    min-height: 70px;
+}
+
+.navbar-form {
+    display: flex;
+}
+
+.navbar-toggle {
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) {
+    .navbar-form {
+        display: block;
+    }
+
+    .navbar-form .form-control {
+        width: 385px;
+    }
+
+    .navbar-contaiter1 {
+        display: flex;
+        justify-content: center;
+    }
 }
