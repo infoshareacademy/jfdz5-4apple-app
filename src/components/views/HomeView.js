@@ -17,7 +17,7 @@ const HomeView = () => (
                 <Navbar.Collapse>
                     <Navbar.Form pullLeft>
                         <FormGroup>
-                            <FormControl className="search-input" type="text" placeholder="Znajdź produkt"/>
+                            <FormControl type="text" placeholder="Znajdź produkt"/>
                         </FormGroup>
                         {' '}
                         <Button className="search-button" type="submit"><img src={magnifier} alt="search" height="35"/></Button>
