@@ -9,10 +9,7 @@ products.map(function (product) {
     return product.items
 }).map(function (productList) {
     productList.map(function (product) {
-        product.brand === searchingName ? searchResults.push(product) : null
-        product.model === searchingName ? searchResults.push(product) : null
-        product.title === searchingName ? searchResults.push(product) : null
-        product.author === searchingName ? searchResults.push(product) : null
+        (product.brand || product.model || product.title || product.author) === searchingName ? searchResults.push(product) : null
     })
 });
 
