@@ -4,6 +4,12 @@ import {Navbar, FormGroup, FormControl, Button} from 'react-bootstrap'
 import logo from "../../img/logo.svg"
 import magnifier from "../../img/magnifier.png"
 
+// import searchProducts from '../_utils/searchingProducts'
+
+
+// searchProducts = (event) => searchProducts(event.target.value)
+// onSubmit="searchProducts"  dodać do dom
+
 const HomeView = () => (
     <div>
         <Navbar>
