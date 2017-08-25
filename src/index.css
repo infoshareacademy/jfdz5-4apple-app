@@ -63,8 +63,45 @@ body {
 /*                                SEARCH RESULTS LIST                          */
 /*                                                                             */
 /*******************************************************************************/
-.list-group-item{
+.products--container{
+    max-width: 900px;
+}
+
+.list-group-item {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-success {
+    height: 50px;
+    width: 70px;
+}
+
+.product--img {
+    height: 200px;
+    width: 242px;
+}
+
+.product--name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.product--details {
+}
+
+.product--description {
+    flex: 0.5
+}
+
+.product--info {
+    flex: 0.4
+}
+
+.product--price {
+    flex: 0.1
 }
 
 @media (min-width: 768px) {

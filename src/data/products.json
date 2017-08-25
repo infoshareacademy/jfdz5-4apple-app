@@ -95,7 +95,7 @@
       {
         "brand": "Panasonic",
         "model": "TX-55EX633E",
-        "price": "3599",
+        "price": 3599,
         "color": "black",
         "available": true,
         "image": "http://via.placeholder.com/242x200",
