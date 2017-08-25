@@ -2,7 +2,7 @@ import React from 'react'
 
 import products from '../../data/products.json'
 
-const searchingName = "Nike"
+const searchingName = "Nike";
 let searchResults = [];
 
 products.map(function (product) {
@@ -12,4 +12,5 @@ products.map(function (product) {
         (product.brand || product.model || product.title || product.author) === searchingName ? searchResults.push(product) : null
     })
 });
+export default searchResults
 

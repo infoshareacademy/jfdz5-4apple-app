@@ -3,6 +3,11 @@ import React from 'react'
 import {Navbar, FormGroup, FormControl, Button} from 'react-bootstrap'
 import logo from "../../img/logo.svg"
 import magnifier from "../../img/magnifier.png"
+import ProductsList from "../SearchResultsList";
+import searchResults from '../_utils/searchingProducts'
+import {ListGroupItem, ListGroup} from "react-bootstrap";
+
+
 
 const HomeView = () => (
     <div>
@@ -25,6 +30,17 @@ const HomeView = () => (
                 </Navbar.Collapse>
             </div>
         </Navbar>
+        <ListGroup>{
+            searchResults.map(function (product) {
+                return <ListGroupItem>
+                    <img src={product.image}/>
+                    <h1>{product.brand}</h1>
+                    <h2>{product.model}</h2>
+                    <h3>{product.price}</h3>
+                </ListGroupItem>
+            })
+        }
+        </ListGroup>
     </div>
 )
 
