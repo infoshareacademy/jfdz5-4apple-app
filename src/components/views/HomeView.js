@@ -8,7 +8,6 @@ import searchResults from '../_utils/searchingProducts'
 import {ListGroupItem, ListGroup} from "react-bootstrap";
 
 
-
 const HomeView = () => (
     <div>
         <Navbar>
@@ -32,12 +31,23 @@ const HomeView = () => (
         </Navbar>
         <ListGroup>{
             searchResults.map(function (product) {
-                return <ListGroupItem>
+                return <ListGroupItem >
                     <img src={product.image}/>
-                    <h1>{product.brand}</h1>
-                    <h2>{product.model}</h2>
+                    <div>
+                        <div>
+                            <h1>{product.brand}</h1>
+                            <h2>{product.model}</h2>
+                        </div>
+                        <div>
+                            <h4>{product.color}</h4>
+                            <h4>{product.size}</h4>
+                        </div>
+                    </div>
+                    {product.description}
                     <h3>{product.price}</h3>
-                </ListGroupItem>
+                    <Button bsStyle="success">Kup</Button>
+
+                </ListGroupItem >
             })
         }
         </ListGroup>

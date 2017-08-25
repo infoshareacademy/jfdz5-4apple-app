@@ -2,7 +2,7 @@ import React from 'react'
 
 import products from '../../data/products.json'
 
-const searchingName = "Nike";
+const searchingName = "Apple";
 let searchResults = [];
 
 products.map(function (product) {
