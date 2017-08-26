@@ -42,7 +42,7 @@ body {
 }
 
 .search-button:focus {
-    background-color: #04365C;
+    background-color: #04365c;
 }
 
 .search-button:active {
@@ -82,7 +82,8 @@ body {
 }
 
 .price {
-    margin: 10px;
+    font-weight: 600;
+    color: #0A5894;
 }
 
 .product--img {
@@ -91,12 +92,7 @@ body {
 }
 
 .product--name {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.product--details {
+    text-align: center;
 }
 
 .product--description {
@@ -120,7 +116,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    text-align: center;
 }
 
 @media (min-width: 768px) {

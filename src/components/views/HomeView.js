@@ -49,10 +49,11 @@ const HomeView = () => (
                                     </div>
                                 </div>
                                 <div className="product--price">
-                                    <h4>ceny od:</h4>
-                                    <h2 className="price">{(product.price).toFixed(2)} zł</h2>
+                                    <h3>od: <span
+                                        className="price">{(product.price).toFixed(2)}</span> zł</h3>
                                     <Button bsSize="large" bsStyle="primary"
                                             className="button--continue">Porównaj</Button>
+                                    <h6>w {"*quantity*"} sklepach</h6>
                                 </div>
                             </div>
                         </div>
