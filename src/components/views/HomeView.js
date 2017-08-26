@@ -49,8 +49,8 @@ const HomeView = () => (
                                     </div>
                                 </div>
                                 <div className="product--price">
-                                    <h3>od: <span
-                                        className="price">{(product.price).toFixed(2)}</span> zł</h3>
+                                    <h3 className="price">od: <span className="price--currency"><span
+                                        className="price">{(product.price).toFixed(2)}</span> zł</span></h3>
                                     <Button bsSize="large" bsStyle="primary"
                                             className="button--continue">Porównaj</Button>
                                     <h6>w {"*quantity*"} sklepach</h6>

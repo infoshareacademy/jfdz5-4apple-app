@@ -63,9 +63,6 @@ body {
 /*                                SEARCH RESULTS LIST                          */
 /*                                                                             */
 /*******************************************************************************/
-.products--container {
-    max-width: 60%;
-}
 
 .product--container {
     display: flex;
