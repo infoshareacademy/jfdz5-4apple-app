@@ -63,8 +63,12 @@ body {
 /*                                SEARCH RESULTS LIST                          */
 /*                                                                             */
 /*******************************************************************************/
-.products--container{
-    max-width: 900px;
+.products--container {
+    max-width: 60%;
+}
+
+.product--container {
+    display: flex;
 }
 
 .list-group-item {
@@ -73,9 +77,12 @@ body {
     justify-content: space-between;
 }
 
-.btn-success {
-    height: 50px;
-    width: 70px;
+.button--continue {
+    margin-top: 10px;
+}
+
+.price {
+    margin: 10px;
 }
 
 .product--img {
@@ -93,15 +100,27 @@ body {
 }
 
 .product--description {
-    flex: 0.5
+    display: flex;
+    flex: 0.8;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 0 2%;
 }
 
 .product--info {
-    flex: 0.4
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
 }
 
 .product--price {
-    flex: 0.1
+    flex: 0.2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
 @media (min-width: 768px) {

@@ -33,23 +33,28 @@ const HomeView = () => (
             <ListGroup>{
                 searchResults.map(function (product) {
                     return <ListGroupItem >
-
-                        <div className="product--info">
-                            <div className="product--name">
-                                <h2>{product.brand + " " + product.model}</h2>
-                            </div>
+                        <div className="product--container">
                             <img className="product--img" src={product.image}/>
-                        </div>
-                        <div className="product--description">
-                            {product.description}
-                            <div className="product--details">
-                                <h4>Kolor: {product.color}</h4>
-                                <h4>Rozmiar: {product.size}</h4>
+                            <div className="product--info">
+                                <div className="product--description">
+                                    <div className="product--name">
+                                        <h2>{product.brand + " " + product.model}</h2>
+                                    </div>
+                                    <div className="product--details">
+                                        {product.description}
+                                        <div>
+                                            <h4>Kolor: {product.color}</h4>
+                                            <h4>Rozmiar: {product.size}</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="product--price">
+                                    <h4>ceny od:</h4>
+                                    <h2 className="price">{(product.price).toFixed(2)} zł</h2>
+                                    <Button bsSize="large" bsStyle="primary"
+                                            className="button--continue">Porównaj</Button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="product--price">
-                            <h3>{(product.price).toFixed(2)} zł</h3>
-                            <Button bsStyle="success">Kup</Button>
                         </div>
                     </ListGroupItem >
                 })
