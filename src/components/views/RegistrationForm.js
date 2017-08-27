@@ -69,6 +69,7 @@ export default connect(
         //     password: this.state.password
         // }
         addNewUser: (userName, password) => dispatch({
+            type: 'addNewUser',
             userName, password
         })
     })
