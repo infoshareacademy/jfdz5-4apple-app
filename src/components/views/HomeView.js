@@ -1,10 +1,8 @@
 import React from 'react'
 
-import SearchResultsList from "../SearchResultsList";
-
 const HomeView = () => (
   <div>
-    <SearchResultsList/>
+    <h1>Home Page</h1>
   </div>
 )
 

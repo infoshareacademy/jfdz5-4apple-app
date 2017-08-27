@@ -1,13 +1,13 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 import './App.css';
-import HomeView from "./components/views/HomeView";
+import SearchResultsListView from '../src/components/views/SearchResultsListView'
 
 class App extends Component {
   render() {
     return (
       <div>
-          <HomeView/>
+        <SearchResultsListView/>
       </div>
 
     );
