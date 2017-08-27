@@ -4,10 +4,9 @@ import SearchBar from '../SearchBar'
 import RegistrationForm from "./RegistrationForm";
 
 const HomeView = () => (
-  <div>
-    <SearchBar/>
-      <RegistrationForm/>
-  </div>
+    <div>
+        <RegistrationForm/>
+    </div>
 )
 
 
