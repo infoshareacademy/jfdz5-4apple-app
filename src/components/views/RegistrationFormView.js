@@ -1,5 +1,5 @@
 import React from 'react'
-import { connect } from 'react-redux'
+import {connect} from 'react-redux'
 import {Button, Col, ControlLabel, Form, FormControl, FormGroup} from "react-bootstrap";
 
 class RegistrationForm extends React.Component {
@@ -7,7 +7,7 @@ class RegistrationForm extends React.Component {
     state = {
         userName: '',
         password: ''
-        }
+    }
 
     render() {
         return (
@@ -22,13 +22,13 @@ class RegistrationForm extends React.Component {
 
                         this.setState({
                             userName: event.target.value
-                    })
+                        })
                     }}>
                         <Col componentClass={ControlLabel} sm={2}>
                             User name
                         </Col>
                         <Col sm={10}>
-                            <FormControl type="email" placeholder="Email" />
+                            <FormControl type="email" placeholder="Email"/>
                         </Col>
                     </FormGroup>
 
@@ -38,12 +38,12 @@ class RegistrationForm extends React.Component {
                                    this.setState({
                                        password: event.target.value
                                    })
-                               }}>>
+                               }}>
                         <Col componentClass={ControlLabel} sm={2}>
                             Password
                         </Col>
                         <Col sm={10}>
-                            <FormControl type="password" placeholder="Password" />
+                            <FormControl type="password" placeholder="Password"/>
                         </Col>
                     </FormGroup>
 

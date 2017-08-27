@@ -1,11 +1,10 @@
 import React from 'react'
 
-import SearchBar from '../SearchBar'
-import RegistrationForm from "./RegistrationForm";
+import RegistrationFormView from "./RegistrationFormView";
 
 const HomeView = () => (
     <div>
-        <RegistrationForm/>
+        <RegistrationFormView/>
     </div>
 )
 
