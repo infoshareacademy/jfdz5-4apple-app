@@ -1,7 +1,8 @@
 import React from 'react'
 
 import {ListGroupItem, ListGroup, Button} from "react-bootstrap";
-import searchResults from '../components/_utils/searchingProducts'
+import searchResults from './SearchingProducts'
+import '../components/SearchResultsList.css'
 
 const SearchResultsList = () => (
   <div className="container products--container">
@@ -9,7 +10,7 @@ const SearchResultsList = () => (
       searchResults.map(function (product) {
         return <ListGroupItem >
           <div className="product--container">
-            <img className="product--img" src={product.image}/>
+            <img className="product--img" alt="product" src={product.image}/>
             <div className="product--info">
               <div className="product--description">
                 <div className="product--name">
