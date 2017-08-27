@@ -1,8 +1,10 @@
 import React from 'react'
 
-import {Navbar, Header, Brand, FomrGroup, FormGroup, FormControl, Button} from 'react-bootstrap'
+import {Navbar, FormGroup, FormControl, Button} from 'react-bootstrap'
+import logo from "../img/logo.svg"
+import magnifier from "../img/magnifier.png"
 
-const SearchBar = (
+const SearchBar =()=> (
     <div>
         <Navbar>
             <div className="navbar--contaiter">
@@ -15,9 +17,9 @@ const SearchBar = (
                 <Navbar.Collapse>
                     <Navbar.Form pullLeft>
                         <FormGroup>
-                            <FormControl className="search-input" type="text" placeholder="Znajdź produkt"/>
+                            <FormControl type="text" placeholder="Znajdź produkt"/>
                         </FormGroup>
-                        {' '}
+                      {' '}
                         <Button className="search-button" type="submit"><img src={magnifier} alt="search" height="35"/></Button>
                     </Navbar.Form>
                 </Navbar.Collapse>
