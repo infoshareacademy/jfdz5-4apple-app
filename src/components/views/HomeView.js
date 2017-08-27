@@ -1,11 +1,13 @@
 import React from 'react'
 
 import SearchBar from '../SearchBar'
+import Categories from '../categories'
 
 const HomeView = () => (
-  <div>
-    <SearchBar/>
-  </div>
+    <div>
+        <SearchBar/>
+        <Categories/>
+    </div>
 )
 
 
