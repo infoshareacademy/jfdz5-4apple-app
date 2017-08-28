@@ -8,23 +8,25 @@ class RegistrationForm extends React.Component {
         userName: '',
         userEmail: '',
         password: ''
-    }
+    };
+
+    handleChange = (event) => {
+        this.setState({
+            userName: event.target.value
+        })
+    };
+
+    handleSubmit = (event) => {
+        event.preventDefault();
+        this.props.addNewUser(this.state.userName, this.state.userEmail, this.state.password)
+    };
 
     render() {
         return (
             <div>
                 <h1>RegistationForm</h1>
-                <Form horizontal onSubmit={(event) => {
-                    event.preventDefault()
-
-                    this.props.addNewUser(this.state.userName, this.state.userEmail, this.state.password)
-                }}>
-                    <FormGroup controlId="formHorizontalName" onChange={(event) => {
-
-                        this.setState({
-                            userName: event.target.value
-                        })
-                    }}>
+                <Form horizontal onSubmit={this.handleSubmit}>
+                    <FormGroup controlId="formHorizontalName" onChange={this.handleChange}>
                         <Col componentClass={ControlLabel} sm={2}>
                             User name
                         </Col>
@@ -33,12 +35,7 @@ class RegistrationForm extends React.Component {
                         </Col>
                     </FormGroup>
 
-                    <FormGroup controlId="formHorizontalEmail" onChange={(event) => {
-
-                        this.setState({
-                            userEmail: event.target.value
-                        })
-                    }}>
+                    <FormGroup controlId="formHorizontalEmail" onChange={this.handleChange}>
                         <Col componentClass={ControlLabel} sm={2}>
                             Email
                         </Col>
@@ -48,11 +45,7 @@ class RegistrationForm extends React.Component {
                     </FormGroup>
 
                     <FormGroup controlId="formHorizontalPassword"
-                               onChange={(event) => {
-                                   this.setState({
-                                       password: event.target.value
-                                   })
-                               }}>
+                               onChange={this.handleChange}>
                         <Col componentClass={ControlLabel} sm={2}>
                             Password
                         </Col>
@@ -78,10 +71,7 @@ class RegistrationForm extends React.Component {
 export default connect(
     null,
     dispatch => ({
-        // addNewUser: {
-        //     userName: this.state.userName,
-        //     password: this.state.password
-        // }
+
         addNewUser: (userName, userEmail, password) => dispatch({
             type: 'addNewUser',
             userName, userEmail, password
