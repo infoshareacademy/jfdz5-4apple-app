@@ -8,7 +8,8 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 user: {
-                    userName: action.userName
+                    userName: action.userName,
+                    userEmail: action.userEmail
                 }
             }
         default:

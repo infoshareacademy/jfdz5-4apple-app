@@ -6,6 +6,7 @@ class RegistrationForm extends React.Component {
 
     state = {
         userName: '',
+        userEmail: '',
         password: ''
     }
 
@@ -16,9 +17,9 @@ class RegistrationForm extends React.Component {
                 <Form horizontal onSubmit={(event) => {
                     event.preventDefault()
 
-                    this.props.addNewUser(this.state.userName, this.state.password)
+                    this.props.addNewUser(this.state.userName, this.state.userEmail, this.state.password)
                 }}>
-                    <FormGroup controlId="formHorizontalEmail" onChange={(event) => {
+                    <FormGroup controlId="formHorizontalName" onChange={(event) => {
 
                         this.setState({
                             userName: event.target.value
@@ -28,13 +29,26 @@ class RegistrationForm extends React.Component {
                             User name
                         </Col>
                         <Col sm={10}>
-                            <FormControl type="email" placeholder="Email"/>
+                            <FormControl type="text" placeholder="User name" required/>
+                        </Col>
+                    </FormGroup>
+
+                    <FormGroup controlId="formHorizontalEmail" onChange={(event) => {
+
+                        this.setState({
+                            userEmail: event.target.value
+                        })
+                    }}>
+                        <Col componentClass={ControlLabel} sm={2}>
+                            Email
+                        </Col>
+                        <Col sm={10}>
+                            <FormControl type="text" placeholder="Email" required/>
                         </Col>
                     </FormGroup>
 
                     <FormGroup controlId="formHorizontalPassword"
                                onChange={(event) => {
-
                                    this.setState({
                                        password: event.target.value
                                    })
@@ -43,7 +57,7 @@ class RegistrationForm extends React.Component {
                             Password
                         </Col>
                         <Col sm={10}>
-                            <FormControl type="password" placeholder="Password"/>
+                            <FormControl type="password" placeholder="Password" required/>
                         </Col>
                     </FormGroup>
 
@@ -68,9 +82,9 @@ export default connect(
         //     userName: this.state.userName,
         //     password: this.state.password
         // }
-        addNewUser: (userName, password) => dispatch({
+        addNewUser: (userName, userEmail, password) => dispatch({
             type: 'addNewUser',
-            userName, password
+            userName, userEmail, password
         })
     })
 )(RegistrationForm)
