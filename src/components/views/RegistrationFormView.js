@@ -2,6 +2,8 @@ import React from 'react'
 import {connect} from 'react-redux'
 import {Button, Col, ControlLabel, Form, FormControl, FormGroup} from "react-bootstrap";
 
+import {add} from '../../state/auth'
+
 class RegistrationForm extends React.Component {
 
     state = {
@@ -71,10 +73,6 @@ class RegistrationForm extends React.Component {
 export default connect(
     null,
     dispatch => ({
-
-        addNewUser: (userName, userEmail, password) => dispatch({
-            type: 'addNewUser',
-            userName, userEmail, password
-        })
+        addNewUser: (userName, userEmail, password) => dispatch(add(userName,userEmail,password))
     })
 )(RegistrationForm)
