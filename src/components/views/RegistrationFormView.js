@@ -69,10 +69,11 @@ class RegistrationForm extends React.Component {
         )
     }
 }
+const mapDispatchToProps = dispatch => ({
+    addNewUser: (userName, userEmail, password) => dispatch(add(userName,userEmail,password))
+});
 
 export default connect(
     null,
-    dispatch => ({
-        addNewUser: (userName, userEmail, password) => dispatch(add(userName,userEmail,password))
-    })
+    mapDispatchToProps,
 )(RegistrationForm)
