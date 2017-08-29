@@ -1,16 +1,14 @@
 import products from '../../data/products.json'
 
-const searchingName = "Apple";
-let searchResults = [];
+const searchingName = "M";
 
-products.map(function (product) {
-  return product.items
-}).map(function (productList) {
-  productList.map(function (product) {
-    (product.brand || product.model || product.title || product.author) === searchingName ?
-      searchResults.push(product)
-      : null
-  })
-});
-export default searchResults
-
+export default (products.map(
+  product => product.items
+).reduce(
+  (result, next) => result.concat(next),
+  []
+).filter(
+  product => [product.brand, product.model, product.title, product.author].some(
+    name => name && name.includes(searchingName)
+  )
+))
