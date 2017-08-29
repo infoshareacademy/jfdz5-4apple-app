@@ -17,7 +17,7 @@ const SearchResultsList = () => (
                   <h2>{product.brand + " " + product.model}</h2>
                 </div>
                 <div className="product--details">
-                  {product.description}
+                  <p>{product.description}</p>
                   <div>
                     <h4>Kolor: {product.color}</h4>
                     <h4>Rozmiar: {product.size}</h4>
@@ -25,8 +25,7 @@ const SearchResultsList = () => (
                 </div>
               </div>
               <div className="product--price">
-                <h3 className="price">od: <span className="price--currency"><span
-                  className="price">{(product.price).toFixed(2)}</span> zł</span></h3>
+                <h3>od: <span className="price">{(product.price).toFixed(2)} zł</span></h3>
                 <Button bsSize="large" bsStyle="primary"
                         className="button--continue">Porównaj</Button>
                 <h6>w {"*quantity*"} sklepach</h6>
