@@ -5,7 +5,6 @@ import logo from "../img/logo.svg"
 import magnifier from "../img/magnifier.png"
 import '../components/SearchBar.css'
 import Link from "react-router-dom/es/Link"
-import searchResults from '../components/SearchingProducts/'
 
 class SearchBar extends React.Component {
 
@@ -23,8 +22,8 @@ class SearchBar extends React.Component {
         <Navbar>
           <div className="navbar--contaiter">
             <Navbar.Header>
-              <Navbar.Brand>
-                <Link to={`/`}><a className="logo"><img src={logo} alt="logo" height="50"/></a></Link>
+              <Navbar.Brand className="logo">
+                <Link to={`/`}><img src={logo} alt="logo" height="50"/></Link>
               </Navbar.Brand>
               <Navbar.Toggle />
             </Navbar.Header>

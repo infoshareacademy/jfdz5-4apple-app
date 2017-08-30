@@ -1,5 +1,3 @@
-import React from 'react'
-
 import products from '../../data/products.json'
 
 const searchingName = "Apple";
