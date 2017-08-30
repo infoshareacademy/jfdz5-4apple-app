@@ -4,14 +4,18 @@ import {Navbar, FormGroup, FormControl, Button} from 'react-bootstrap'
 import logo from "../img/logo.svg"
 import magnifier from "../img/magnifier.png"
 import '../components/SearchBar.css'
+import Link from "react-router-dom/es/Link"
+import searchResults from '../components/SearchingProducts/'
 
 class SearchBar extends React.Component {
 
-  // handleSubmit = (event) => {
-  //   event.preventDefault();
-  //   console.log(this.target.value);
-  //
-  // };
+  state = {
+    searchingItems: ''
+  }
+
+  handleChange = (event) => this.setState({
+    searchingItems: event.target.value
+  })
 
   render() {
     return (
@@ -20,7 +24,7 @@ class SearchBar extends React.Component {
           <div className="navbar--contaiter">
             <Navbar.Header>
               <Navbar.Brand>
-                <a className="logo"><img src={logo} alt="logo" height="50"/></a>
+                <Link to={`/`}><a className="logo"><img src={logo} alt="logo" height="50"/></a></Link>
               </Navbar.Brand>
               <Navbar.Toggle />
             </Navbar.Header>
@@ -28,11 +32,17 @@ class SearchBar extends React.Component {
               <Navbar.Form pullLeft>
                 <form className="search--form" onSubmit={this.handleSubmit}>
                   <FormGroup >
-                    <FormControl type="text" placeholder="Znajdź produkt"/>
+                    <FormControl type="text"
+                                 value={this.state.searchingItems}
+                                 onChange={this.handleChange}
+                                 placeholder="Znajdź produkt"/>
                   </FormGroup>
                   {' '}
-                  <Button className="search-button" type="submit"><img src={magnifier} alt="search"
-                                                                       height="35"/></Button>
+                  <Link to={`/results/list`}>
+                    <Button className="search-button" type="submit">
+                      <img src={magnifier}
+                           alt="search"
+                           height="35"/></Button></Link>
                 </form>
               </Navbar.Form >
             </Navbar.Collapse>

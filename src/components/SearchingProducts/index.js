@@ -14,6 +14,3 @@ export default (products.map(
     name => name && name.includes(searchingName)
   )
 ))
-
-
-export default searchProducts
