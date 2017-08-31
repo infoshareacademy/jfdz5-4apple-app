@@ -10,7 +10,7 @@ class SearchResultsList extends React.Component {
     products: null
   }
 
-  componentWillMount() {
+  componentDidMount() {
     fetch('http://localhost:3000/data/products.json')
       .then(response => response.json())
       .then(data => this.setState({
@@ -18,13 +18,16 @@ class SearchResultsList extends React.Component {
       }))
   }
 
-  componentDidMount() {
-
-  }
-
   render() {
-    const products = this.state.products || []
-    const searchingName = "Nike";
+    const {products} = this.state
+    const searchingName = "A";
+
+    if (this.state.products === null) {
+      return (
+        <h1>Loading results...</h1>
+      )
+    }
+
 
     const searchResults = products.map(
       product => product.items

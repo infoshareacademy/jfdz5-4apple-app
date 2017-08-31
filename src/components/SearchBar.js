@@ -23,7 +23,7 @@ class SearchBar extends React.Component {
           <div className="navbar--contaiter">
             <Navbar.Header>
               <Navbar.Brand className="logo">
-                <Link to={`/`}><img src={logo} alt="logo" height="50"/></Link>
+                <Link to={`/`}><img src={logo} alt="logo"/></Link>
               </Navbar.Brand>
               <Navbar.Toggle />
             </Navbar.Header>
