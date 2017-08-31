@@ -9,11 +9,13 @@
         "shops": [
           {
             "name": "NIKE",
+            "localPrice": 419,
             "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
             "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
           },
           {
             "name": "BUTYJANA",
+            "localPrice": 555,
             "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
             "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
           }
@@ -42,6 +44,7 @@
         "shops": [
           {
             "name": "NIKE",
+            "localPrice": 419,
             "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
             "url": "https://store.nike.com/pl/pl_pl/pd/buty-treningowe-flex-adapt-tr/pid-10945118/pgid-12107970?cp=euns_kw_pla%21pl%21goo%21c%21%21213773252829&gclid=EAIaIQobChMI5t6vgIiB1gIVEM-yCh2_jAvBEAQYASABEgK_ivD_BwE&gclsrc=aw.ds"
           }
@@ -76,7 +79,21 @@
         "color": "silver",
         "available": true,
         "image": "http://via.placeholder.com/242x200",
-        "description": "Risus pretium quam vulputate dignissim suspendisse in est. Eu feugiat pretium nibh. Id ornare arcu odio ut sem nulla pharetra diam. Vestibulum lectus mauris ultrices eros in cursus. Urna duis convallis. Dolor morbi non arcu risus quis varius quam quisque."
+        "description": "Risus pretium quam vulputate dignissim suspendisse in est. Eu feugiat pretium nibh. Id ornare arcu odio ut sem nulla pharetra diam. Vestibulum lectus mauris ultrices eros in cursus. Urna duis convallis. Dolor morbi non arcu risus quis varius quam quisque.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       },
       {
         "brand": "Samsung",
@@ -85,7 +102,21 @@
         "color": "silver",
         "available": true,
         "image": "http://via.placeholder.com/242x200",
-        "description": "Et magnis dis parturient montes nascetur ridiculus mus. Sed nisi lacus sed viverra tellus. Ut consequat semper viverra nam libero justo. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non."
+        "description": "Et magnis dis parturient montes nascetur ridiculus mus. Sed nisi lacus sed viverra tellus. Ut consequat semper viverra nam libero justo. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       },
       {
         "brand": "Philips",
@@ -94,7 +125,21 @@
         "color": "black",
         "available": true,
         "image": "http://via.placeholder.com/242x200",
-        "description": "Adipiscing commodo elit. Bibendum at varius vel. Risus feugiat in ante metus."
+        "description": "Adipiscing commodo elit. Bibendum at varius vel. Risus feugiat in ante metus.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       },
       {
         "brand": "Panasonic",
@@ -103,7 +148,21 @@
         "color": "black",
         "available": true,
         "image": "http://via.placeholder.com/242x200",
-        "description": "Ullamcorper dignissim cras. Vel pharetra vel turpis nunc eget lorem. Vestibulum rhoncus est pellentesque elit ullamcorper."
+        "description": "Ullamcorper dignissim cras. Vel pharetra vel turpis nunc eget lorem. Vestibulum rhoncus est pellentesque elit ullamcorper.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       },
       {
         "brand": "Panasonic",
@@ -112,7 +171,21 @@
         "color": "black",
         "available": true,
         "image": "http://via.placeholder.com/242x200",
-        "description": "Id consectetur purus. Gravida in fermentum et sollicitudin ac orci. Posuere ac ut consequat semper viverra nam libero justo. Cras sed felis eget velit aliquet sagittis id. Ligula ullamcorper malesuada proin libero nunc consequat. Cum sociis natoque penatibus et magnis dis parturient montes nascetur."
+        "description": "Id consectetur purus. Gravida in fermentum et sollicitudin ac orci. Posuere ac ut consequat semper viverra nam libero justo. Cras sed felis eget velit aliquet sagittis id. Ligula ullamcorper malesuada proin libero nunc consequat. Cum sociis natoque penatibus et magnis dis parturient montes nascetur.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       },
       {
         "brand": "Apple",
@@ -121,7 +194,21 @@
         "color": "srebrny",
         "available": true,
         "image": "http://via.placeholder.com/242x200",
-        "description": "Quam elementum pulvinar. Urna molestie at elementum eu facilisis. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Non quam lacus suspendisse faucibus. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit."
+        "description": "Quam elementum pulvinar. Urna molestie at elementum eu facilisis. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Non quam lacus suspendisse faucibus. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       },
       {
         "brand": "Apple",
@@ -130,7 +217,21 @@
         "color": "white",
         "available": true,
         "image": "http://via.placeholder.com/242x200",
-        "description": "Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Quisque egestas diam in arcu cursus euismod quis. Tristique nulla aliquet enim tortor at."
+        "description": "Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Quisque egestas diam in arcu cursus euismod quis. Tristique nulla aliquet enim tortor at.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       },
       {
         "brand": "Apple",
@@ -139,7 +240,21 @@
         "color": "silver",
         "available": true,
         "image": "http://via.placeholder.com/242x200",
-        "description": "Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Duis at consectetur lorem donec massa. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Lectus nulla at volutpat diam ut venenatis."
+        "description": "Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Duis at consectetur lorem donec massa. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Lectus nulla at volutpat diam ut venenatis.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       },
       {
         "brand": "Apple",
@@ -148,7 +263,21 @@
         "color": "silver",
         "available": true,
         "image": "http://via.placeholder.com/242x200",
-        "description": "Quis varius quam quisque id diam vel quam elementum pulvinar. Tristique senectus et netus et malesuada fames ac turpis. Nec ullamcorper sit amet risus nullam eget felis eget nunc. Ac felis donec et odio pellentesque diam."
+        "description": "Quis varius quam quisque id diam vel quam elementum pulvinar. Tristique senectus et netus et malesuada fames ac turpis. Nec ullamcorper sit amet risus nullam eget felis eget nunc. Ac felis donec et odio pellentesque diam.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       }
     ]
   },
@@ -162,7 +291,21 @@
         "gender": "meski",
         "available": true,
         "image": "http://via.placeholder.com/242x200",
-        "description": "Nunc sed blandit libero volutpat. Aliquet risus feugiat. Et malesuada fames ac turpis egestas. Ut faucibus pulvinar elementum integer enim. Ullamcorper sit amet risus nullam eget felis eget. Volutpat diam ut."
+        "description": "Nunc sed blandit libero volutpat. Aliquet risus feugiat. Et malesuada fames ac turpis egestas. Ut faucibus pulvinar elementum integer enim. Ullamcorper sit amet risus nullam eget felis eget. Volutpat diam ut.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       },
       {
         "brand": "Lancome",
@@ -171,7 +314,21 @@
         "gender": "meski",
         "available": true,
         "image": "http://via.placeholder.com/242x200",
-        "description": "Tellus orci ac. Aliquam sem et tortor consequat id porta. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Mi tempus imperdiet. Congue quisque egestas diam in."
+        "description": "Tellus orci ac. Aliquam sem et tortor consequat id porta. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Mi tempus imperdiet. Congue quisque egestas diam in.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       },
       {
         "brand": "Calvin Klein",
@@ -179,7 +336,21 @@
         "price": 150,
         "gender": "zenski",
         "available": true,
-        "description": "Mauris cursus mattis molestie a iaculis. Libero id faucibus nisl tincidunt eget. Diam maecenas sed enim ut. Faucibus turpis in eu mi bibendum. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra."
+        "description": "Mauris cursus mattis molestie a iaculis. Libero id faucibus nisl tincidunt eget. Diam maecenas sed enim ut. Faucibus turpis in eu mi bibendum. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       },
       {
         "brand": "Christian Dior",
@@ -188,7 +359,21 @@
         "gender": "meski",
         "available": true,
         "image": "http://via.placeholder.com/242x200",
-        "description": "Ultricies leo integer malesuada nunc. Integer enim neque volutpat ac tincidunt vitae. Risus nullam eget felis eget nunc."
+        "description": "Ultricies leo integer malesuada nunc. Integer enim neque volutpat ac tincidunt vitae. Risus nullam eget felis eget nunc.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       }
     ]
   },
@@ -202,7 +387,21 @@
         "pages": 200,
         "available": true,
         "image": "http://via.placeholder.com/242x200",
-        "description": "Nunc sed blandit libero volutpat. Aliquet risus feugiat. Et malesuada fames ac turpis egestas. Ut faucibus pulvinar elementum integer enim. Ullamcorper sit amet risus nullam eget felis eget. Volutpat diam ut."
+        "description": "Nunc sed blandit libero volutpat. Aliquet risus feugiat. Et malesuada fames ac turpis egestas. Ut faucibus pulvinar elementum integer enim. Ullamcorper sit amet risus nullam eget felis eget. Volutpat diam ut.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       },
       {
         "title": "Zioła z polskich łąk",
@@ -211,7 +410,21 @@
         "pages": 150,
         "available": true,
         "image": "http://via.placeholder.com/242x200",
-        "description": "Tellus orci ac. Aliquam sem et tortor consequat id porta. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Mi tempus imperdiet. Congue quisque egestas diam in."
+        "description": "Tellus orci ac. Aliquam sem et tortor consequat id porta. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Mi tempus imperdiet. Congue quisque egestas diam in.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       },
       {
         "title": "Gra o tron",
@@ -220,7 +433,21 @@
         "pages": 300,
         "available": true,
         "image": "http://via.placeholder.com/242x200",
-        "description": "Mauris cursus mattis molestie a iaculis. Libero id faucibus nisl tincidunt eget. Diam maecenas sed enim ut. Faucibus turpis in eu mi bibendum. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra."
+        "description": "Mauris cursus mattis molestie a iaculis. Libero id faucibus nisl tincidunt eget. Diam maecenas sed enim ut. Faucibus turpis in eu mi bibendum. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       },
       {
         "title": "Religia szkoła podstawowa",
@@ -229,7 +456,21 @@
         "pages": 500,
         "available": true,
         "image": "http://via.placeholder.com/242x200",
-        "description": "Ultricies leo integer malesuada nunc. Integer enim neque volutpat ac tincidunt vitae. Risus nullam eget felis eget nunc."
+        "description": "Ultricies leo integer malesuada nunc. Integer enim neque volutpat ac tincidunt vitae. Risus nullam eget felis eget nunc.",
+        "shops": [
+          {
+            "name": "NIKE",
+            "localPrice": 419,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+          },
+          {
+            "name": "BUTYJANA",
+            "localPrice": 555,
+            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+          }
+        ]
       }
     ]
   }
