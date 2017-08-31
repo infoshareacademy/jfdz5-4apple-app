@@ -1,14 +1,15 @@
 import React from 'react'
 
 import {ListGroupItem, ListGroup, Button} from "react-bootstrap";
+import {Link} from 'react-router-dom'
 import searchResults from './SearchingProducts'
 import '../components/SearchResultsList.css'
 
 const SearchResultsList = () => (
   <div className="container products--container">
     <ListGroup>{
-      searchResults.map(function (product) {
-        return <ListGroupItem >
+      searchResults.map(function (product, index) {
+        return <ListGroupItem key={index}>
           <div className="product--container">
             <img className="product--img" alt="product" src={product.image}/>
             <div className="product--info">
@@ -27,9 +28,11 @@ const SearchResultsList = () => (
               <div className="product--price">
                 <h3 className="price">od: <span className="price--currency"><span
                   className="price">{(product.price).toFixed(2)}</span> zł</span></h3>
-                <Button bsSize="large" bsStyle="primary"
-                        className="button--continue">Porównaj</Button>
-                <h6>w {"*quantity*"} sklepach</h6>
+                <Link to={`/results/details/${index}`}><Button bsSize="large"
+                                                               bsStyle="primary"
+                                                               className="button--continue">Porównaj</Button>
+                </Link>
+                <h6>w {product.shops.length} sklepach</h6>
               </div>
             </div>
           </div>

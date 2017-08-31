@@ -1,6 +1,6 @@
 import products from '../../data/products.json'
 
-const searchingName = "Apple";
+const searchingName = "Nike";
 
 export default (products.map(
   product => product.items

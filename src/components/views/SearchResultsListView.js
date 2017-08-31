@@ -1,11 +1,14 @@
 import React from 'react'
 
+import SearchResultsList from '../SearchResultsList'
+
 import SearchBar from '../SearchBar'
 
-const SearchResultsList = () => (
+const SearchResultsListView = () => (
   <div>
     <SearchBar/>
+    <SearchResultsList/>
   </div>
 )
 
-export default SearchResultsList
+export default SearchResultsListView
