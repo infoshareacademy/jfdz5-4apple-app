@@ -1,8 +1,10 @@
 import React from 'react'
 
 import {ListGroupItem, ListGroup, Button} from "react-bootstrap";
-import {Link} from 'react-router-dom'
+import {Link, withRouter} from 'react-router-dom'
 import '../components/SearchResultsList.css'
+import {connect} from "react-redux";
+import {search} from "../state/searching";
 
 class SearchResultsList extends React.Component {
 
@@ -20,7 +22,7 @@ class SearchResultsList extends React.Component {
 
   render() {
     const {products} = this.state
-    const searchingName = "A";
+    const searchingName = this.props.searchedItems;
 
     if (this.state.products === null) {
       return (
@@ -79,5 +81,12 @@ class SearchResultsList extends React.Component {
   }
 }
 
-
-export default SearchResultsList
+export default withRouter(
+  connect(
+    state => ({
+      searchedItems: state.searching.searchedItems
+    }),
+    dispatch => ({
+      addSearchedItem: searchedItem => dispatch(search(searchedItem))
+    })
+  )(SearchResultsList))
