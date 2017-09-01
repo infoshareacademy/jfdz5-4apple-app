@@ -28,7 +28,6 @@ class SearchResultsList extends React.Component {
       )
     }
 
-
     const searchResults = products.map(
       product => product.items
     ).reduce(

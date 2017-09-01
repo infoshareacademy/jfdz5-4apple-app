@@ -5,16 +5,24 @@ import logo from "../img/logo.svg"
 import magnifier from "../img/magnifier.png"
 import '../components/SearchBar.css'
 import Link from "react-router-dom/es/Link"
+import {connect} from 'react-redux'
+import {search} from '../state/searching'
 
 class SearchBar extends React.Component {
 
   state = {
-    searchingItems: ''
+    searchedName: '',
   }
 
   handleChange = (event) => this.setState({
-    searchingItems: event.target.value
+    searchedName: event.target.value
   })
+
+
+  handleSubmit = event => {
+    event.preventDefault();
+    this.props.addSearchedItem(this.state.searchedName)
+  }
 
   render() {
     return (
@@ -32,7 +40,7 @@ class SearchBar extends React.Component {
                 <form className="search--form" onSubmit={this.handleSubmit}>
                   <FormGroup >
                     <FormControl type="text"
-                                 value={this.state.searchingItems}
+                                 value={this.state.searchedName}
                                  onChange={this.handleChange}
                                  placeholder="Znajdź produkt"/>
                   </FormGroup>
@@ -52,4 +60,11 @@ class SearchBar extends React.Component {
   }
 }
 
-export default SearchBar
+export default connect(
+  state => ({
+    searchedItems: state.searching.searchedItems
+  }),
+  dispatch => ({
+    addSearchedItem: searchedItem => dispatch(search(searchedItem))
+  })
+)(SearchBar)
