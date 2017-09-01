@@ -1,7 +1,7 @@
 import React from 'react'
 
 import {ListGroupItem, ListGroup, Button} from "react-bootstrap";
-import {Link, withRouter} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import '../components/SearchResultsList.css'
 import {connect} from "react-redux";
 import {search} from "../state/searching";
@@ -91,7 +91,7 @@ class SearchResultsList extends React.Component {
   }
 }
 
-export default withRouter(
+export default
   connect(
     state => ({
       searchedItems: state.searching.searchedItems
@@ -99,4 +99,4 @@ export default withRouter(
     dispatch => ({
       addSearchedItem: searchedItem => dispatch(search(searchedItem))
     })
-  )(SearchResultsList))
+  )(SearchResultsList)
