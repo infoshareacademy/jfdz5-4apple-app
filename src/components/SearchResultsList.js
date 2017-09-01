@@ -24,7 +24,7 @@ class SearchResultsList extends React.Component {
 
     if (this.state.products === null) {
       return (
-        <h1>Loading results...</h1>
+        <div className="loader">Loading</div>
       )
     }
 
