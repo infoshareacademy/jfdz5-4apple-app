@@ -68,3 +68,4 @@ export default connect(
     addSearchedItem: searchedItem => dispatch(search(searchedItem))
   })
 )(SearchBar)
+
