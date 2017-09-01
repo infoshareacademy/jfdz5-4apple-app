@@ -9,11 +9,12 @@ const initialState = {
   searchedItems: ''
 }
 
+
 export default (state = initialState, action) => {
   switch (action.type) {
-    case 'searching/SEARCH':
+    case SEARCH:
       return {
-        searchedItems: state.searchedItems
+        searchedItems: action.searchedItem
       }
     default:
       return state

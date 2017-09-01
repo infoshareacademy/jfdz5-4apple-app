@@ -1,14 +1,14 @@
 import React from 'react'
 
-import { withRouter } from 'react-router-dom'
+import {withRouter} from 'react-router-dom'
 
-import { Navbar, FormGroup, FormControl, Button } from 'react-bootstrap'
+import {Navbar, FormGroup, FormControl, Button} from 'react-bootstrap'
 import logo from "../img/logo.svg"
 import magnifier from "../img/magnifier.png"
 import '../components/SearchBar.css'
 import Link from "react-router-dom/es/Link"
-import { connect } from 'react-redux'
-import { search } from '../state/searching'
+import {connect} from 'react-redux'
+import {search} from '../state/searching'
 
 class SearchBar extends React.Component {
 
