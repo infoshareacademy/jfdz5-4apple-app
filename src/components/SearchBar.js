@@ -25,6 +25,9 @@ class SearchBar extends React.Component {
     event.preventDefault();
     this.props.history.push('/results/list')
     this.props.addSearchedItem(this.state.searchedName)
+    this.setState({
+      searchedName: ''
+    })
   }
 
   render() {
@@ -45,6 +48,7 @@ class SearchBar extends React.Component {
                     <FormControl type="text"
                                  value={this.state.searchedName}
                                  onChange={this.handleChange}
+                                 required
                                  placeholder="Znajdź produkt"/>
                   </FormGroup>
                   {' '}
