@@ -50,7 +50,19 @@
     font-size: 20px;
     justify-content: center;
     align-items: center;
+}
 
+.no-items-found {
+    color: grey;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.no-items-found--message {
+    font-weight: 600;
+    font-size: 18px;
 }
 
 @keyframes spin {
@@ -84,6 +96,14 @@
 
     .product--description {
         text-align: justify;
+    }
+
+    .no-items-found--message {
+        font-size: 25px;
+    }
+
+    .no-items-found--advice {
+        font-size: 18px;
     }
 }
 

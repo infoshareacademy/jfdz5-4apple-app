@@ -1,5 +1,7 @@
 import React from 'react'
 
+import {withRouter} from 'react-router-dom'
+
 import {Navbar, FormGroup, FormControl, Button} from 'react-bootstrap'
 import logo from "../img/logo.svg"
 import magnifier from "../img/magnifier.png"
@@ -21,7 +23,11 @@ class SearchBar extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    this.props.history.push('/results/list')
     this.props.addSearchedItem(this.state.searchedName)
+    this.setState({
+      searchedName: ''
+    })
   }
 
   render() {
@@ -33,25 +39,26 @@ class SearchBar extends React.Component {
               <Navbar.Brand className="logo">
                 <Link to={`/`}><img src={logo} alt="logo"/></Link>
               </Navbar.Brand>
-              <Navbar.Toggle />
+              <Navbar.Toggle/>
             </Navbar.Header>
             <Navbar.Collapse>
               <Navbar.Form pullLeft>
                 <form className="search--form" onSubmit={this.handleSubmit}>
-                  <FormGroup >
+                  <FormGroup>
                     <FormControl type="text"
                                  value={this.state.searchedName}
                                  onChange={this.handleChange}
+                                 required
                                  placeholder="Znajdź produkt"/>
                   </FormGroup>
                   {' '}
-                  <Link to={`/results/list`}>
-                    <Button className="search-button" type="submit">
-                      <img src={magnifier}
-                           alt="search"
-                           height="35"/></Button></Link>
+
+                  <Button className="search-button" type="submit">
+                    <img src={magnifier}
+                         alt="search"
+                         height="35"/></Button>
                 </form>
-              </Navbar.Form >
+              </Navbar.Form>
             </Navbar.Collapse>
           </div>
         </Navbar>
@@ -60,12 +67,13 @@ class SearchBar extends React.Component {
   }
 }
 
-export default connect(
-  state => ({
-    searchedItems: state.searching.searchedItems
-  }),
-  dispatch => ({
-    addSearchedItem: searchedItem => dispatch(search(searchedItem))
-  })
-)(SearchBar)
-
+export default withRouter(
+  connect(
+    state => ({
+      searchedItems: state.searching.searchedItems
+    }),
+    dispatch => ({
+      addSearchedItem: searchedItem => dispatch(search(searchedItem))
+    })
+  )(SearchBar)
+)

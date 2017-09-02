@@ -1,12 +1,11 @@
 import React from 'react'
 
 import SearchResultsList from '../SearchResultsList'
-
-import SearchBar from '../SearchBar'
+import SearchBarWithFilters from "../SearchBarWithFilters";
 
 const SearchResultsListView = () => (
   <div>
-    <SearchBar/>
+    <SearchBarWithFilters/>
     <SearchResultsList/>
   </div>
 )
