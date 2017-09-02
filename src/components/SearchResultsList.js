@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import '../components/SearchResultsList.css'
 import {connect} from "react-redux";
 import {search} from "../state/searching";
+import NoItemFound from "./NoItemFound";
 
 class SearchResultsList extends React.Component {
 
@@ -45,14 +46,7 @@ class SearchResultsList extends React.Component {
       <div className="container products--container">
         <ListGroup>{
           searchResults.toString() === "" ?
-            <div>
-              <span className="no-items-found no-items-found--message">
-                  Wygląda na to, że nie mamy tego, czego szukasz.
-              </span>
-              <span className="no-items-found no-items-found--advice">
-                  Spróbuj zmienić zapytanie albo poszukaj w kategoriach.
-              </span>
-            </div>
+            <NoItemFound/>
             :
             searchResults.map(function (product, index) {
               return <ListGroupItem key={index}>
@@ -92,11 +86,11 @@ class SearchResultsList extends React.Component {
 }
 
 export default
-  connect(
-    state => ({
-      searchedItems: state.searching.searchedItems
-    }),
-    dispatch => ({
-      addSearchedItem: searchedItem => dispatch(search(searchedItem))
-    })
-  )(SearchResultsList)
+connect(
+  state => ({
+    searchedItems: state.searching.searchedItems
+  }),
+  dispatch => ({
+    addSearchedItem: searchedItem => dispatch(search(searchedItem))
+  })
+)(SearchResultsList)
