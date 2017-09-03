@@ -4,7 +4,22 @@ import { connect } from 'react-redux'
 
 class SignIn extends React.Component {
 
+state = {
+    login: '',
+    password: ''
+}
 
+handleLoginChange = (event) => {
+    this.setState ({
+        login: event.currentTarget.value
+    })
+}
+
+    handlePasswordChange = (event) => {
+        this.setState ({
+            password: event.currentTarget.value
+        })
+    }
 
     render (){
         return (
@@ -15,7 +30,7 @@ class SignIn extends React.Component {
                             Login
                         </Col>
                         <Col sm={2}>
-                            <FormControl type="text" placeholder="login" />
+                            <FormControl onChange={ this.handleLoginChange } type="text" placeholder="login" />
                         </Col>
                     </FormGroup>
 
@@ -24,7 +39,7 @@ class SignIn extends React.Component {
                             Hasło
                         </Col>
                         <Col sm={2}>
-                            <FormControl type="password" placeholder="hasło" />
+                            <FormControl onChange={ this.handlePasswordChange} type="password" placeholder="hasło" />
                         </Col>
                     </FormGroup>
 
