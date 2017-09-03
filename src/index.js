@@ -11,12 +11,15 @@ import 'bootstrap/dist/css/bootstrap-theme.css';
 import './index.css';
 
 import App from './components/App';
+import Auth from './components/Auth';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
     <Provider store={store}>
         <Router>
-            <App />
+            <Auth>
+                <App />
+            </Auth>
         </Router>
     </Provider>,
     document.getElementById('root'));

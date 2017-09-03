@@ -10,7 +10,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
 const enhancer = composeEnhancers(
 
-    persistState([auth]),
+    persistState(['auth']),
 )
 
 const store = createStore(

@@ -1,10 +1,8 @@
 import React from 'react'
 
-import RegistrationFormView from "./RegistrationFormView";
-
 const HomeView = () => (
     <div>
-        <RegistrationFormView/>
+        <h1>Welcome</h1>
     </div>
 )
 
