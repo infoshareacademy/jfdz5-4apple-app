@@ -1,10 +1,10 @@
 const ADD_NEW_USER = 'auth/ADD_NEW_USER';
 
 export const add = (userName, userEmail, password) => ({
-    type: ADD_NEW_USER,
-        userName,
-        userEmail,
-        password
+    type:   ADD_NEW_USER,
+            userName,
+            userEmail,
+            password
 });
 const initialState = {
     user: null
