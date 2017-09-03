@@ -7,12 +7,12 @@ import DataFetcher from './../DataFetcher'
 
 const SearchResultsListView = () => (
   <div>
-    <SearchBar/>
     <DataFetcher
       dataUrl={'http://localhost:3000/data/products.json'}
-      component={SearchResultsList}
-      propName="products"
+      component={SearchBar}
+      propName="searchedProducts"
     />
+    <SearchResultsList/>
   </div>
 )
 
