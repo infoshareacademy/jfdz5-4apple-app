@@ -8,7 +8,7 @@ import './SearchResultsList.css'
 
 const SearchResultsListItem = ({searchResults}) => {
   return (
-    <div>{}
+    <div>
       {searchResults.map((product, index) => {
         return (
           <ListGroupItem key={index}>

@@ -8,53 +8,27 @@ import {search} from "../state/searching";
 import NoItemFound from "./NoItemFound";
 import SearchResultsListItem from "./SearchResultsListItem";
 
-class SearchResultsList extends React.Component {
+const SearchResultsList = ({products, searchedItems}) => {
 
-  state = {
-    products: null
-  }
+  const searchingName = searchedItems;
 
-  componentDidMount() {
-    fetch('http://localhost:3000/data/products.json')
-      .then(response => response.json())
-      .then(data => this.setState({
-        products: data
-      }))
-  }
-
-  render() {
-    const {products} = this.state
-    const searchingName = this.props.searchedItems;
-
-    if (this.state.products === null) {
-      return (
-        <span className="loader"> </span>
-      )
-    }
-
-    const searchResults = products.map(
-      product => product.items
-    ).reduce(
-      (result, next) => result.concat(next),
-      []
-    ).filter(
-      product => [product.brand, product.model, product.title, product.author].some(
-        name => name && name.includes(searchingName)
+  const searchResults = products.map(product => product.items)
+    .reduce((result, next) => result.concat(next), [])
+    .filter(product => [product.brand, product.model, product.title, product.author]
+      .some(name => name && name.includes(searchingName)
       )
     )
-
-    return (
-      <div className="container products--container">
-        <ListGroup>{
-          searchResults.toString() === "" ?
-            <NoItemFound/>
-            :
-            <SearchResultsListItem searchResults={searchResults}/>
-        }
-        </ListGroup>
-      </div>
-    )
-  }
+  return (
+    <div className="container products--container">
+      <ListGroup>{
+        searchResults.toString() === "" ?
+          <NoItemFound/>
+          :
+          <SearchResultsListItem searchResults={searchResults}/>
+      }
+      </ListGroup>
+    </div>
+  )
 }
 
 export default
