@@ -1,18 +1,18 @@
 import React from 'react'
-
-import SearchBar from '../SearchBar'
 import DataFetcher from "../DataFetcher/DataFetcher";
+import SearchBar from "../SearchBar";
 
-const HomeView = () => (
+const ProductDetailsView = () => (
   <div>
     <DataFetcher
       dataUrl={'http://localhost:3000/data/products.json'}
       component={SearchBar}
       propName="searchedProducts"
     />
+    <h1>Product Details</h1>
   </div>
 )
 
 
-export default HomeView
+export default ProductDetailsView
 

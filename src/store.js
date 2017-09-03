@@ -1,20 +1,17 @@
-import { createStore, combineReducers, compose } from 'redux'
-import persistState from 'redux-localstorage'
+import {createStore, combineReducers} from 'redux'
+
+import searching from './state/searching'
 
 const reducer = combineReducers({
-
-});
-
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
-
-const enhancer = composeEnhancers(
-
-    persistState([]),
-);
+  searching,
+})
 
 const store = createStore(
-    reducer,
-    enhancer
-);
+  reducer,
+  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+)
+
+store.subscribe(() => {
+})
 
 export default store
