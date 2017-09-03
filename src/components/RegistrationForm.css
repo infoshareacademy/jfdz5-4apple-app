@@ -1,0 +1,28 @@
+.container {
+    min-height: 100vh;
+}
+.registation-form__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 700px;
+    margin: 0 auto;
+
+}
+.registation-form__logo {
+    width: 90%;
+    margin: 0 auto;
+
+}
+
+
+
+@media (min-width: 768px) {
+    .registation-form__logo {
+        max-width: 500px;
+    }
+    .registation-form__form {
+        min-width: 500px;
+    }
+}

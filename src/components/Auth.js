@@ -1,14 +1,14 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import RegistrationFormView from "./views/RegistrationFormView";
+import RegistrationForm from "./RegistrationForm";
 
 
 const Auth = ({ user, children }) => (
     <div>
         {
             user === null ?
-                <RegistrationFormView/> :
+                <RegistrationForm/> :
                 children
         }
     </div>
