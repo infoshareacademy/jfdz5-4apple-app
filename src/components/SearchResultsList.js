@@ -1,11 +1,12 @@
 import React from 'react'
 
-import {ListGroupItem, ListGroup, Button} from "react-bootstrap";
+import {ListGroupItem, ListGroup} from "react-bootstrap";
 import {Link} from 'react-router-dom'
 import '../components/SearchResultsList.css'
 import {connect} from "react-redux";
 import {search} from "../state/searching";
 import NoItemFound from "./NoItemFound";
+import ButtonBlue from "./Button";
 
 class SearchResultsList extends React.Component {
 
@@ -68,9 +69,7 @@ class SearchResultsList extends React.Component {
                     <div className="product--price">
                       <h3 className="price">od: <span className="price--currency"><span
                         className="price">{(product.price).toFixed(2)}</span> zł</span></h3>
-                      <Link to={`/results/details/${index}`}><Button bsSize="large"
-                                                                     bsStyle="primary"
-                                                                     className="button--continue">Porównaj</Button>
+                      <Link to={`/results/details/${index}`}><ButtonBlue textContent={"Porównaj"}/>
                       </Link>
                       <h6>w {product.shops.length} sklepach</h6>
                     </div>
