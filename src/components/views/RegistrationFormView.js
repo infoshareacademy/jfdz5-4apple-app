@@ -25,8 +25,8 @@ class RegistrationForm extends React.Component {
 
     render() {
         return (
-            <div>
-                <h1>RegistationForm</h1>
+            <div className="container">
+                <h1>Zarejestruj się</h1>
                 <Form horizontal onSubmit={this.handleSubmit}>
                     <FormGroup controlId="formHorizontalName" onChange={this.handleChange}>
                         <Col componentClass={ControlLabel} sm={2}>
@@ -42,7 +42,7 @@ class RegistrationForm extends React.Component {
                             Email
                         </Col>
                         <Col sm={10}>
-                            <FormControl type="text" placeholder="Email" required/>
+                            <FormControl type="email" placeholder="Email" required/>
                         </Col>
                     </FormGroup>
 

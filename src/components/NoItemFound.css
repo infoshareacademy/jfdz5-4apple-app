@@ -1,0 +1,22 @@
+.no-items-found {
+    color: grey;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.no-items-found--message {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+@media (min-width: 768px) {
+    .no-items-found--message {
+        font-size: 25px;
+    }
+
+    .no-items-found--advice {
+        font-size: 18px;
+    }
+}
