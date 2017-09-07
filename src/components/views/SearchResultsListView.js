@@ -1,11 +1,19 @@
 import React from 'react'
 
 import SearchResultsList from '../SearchResultsList'
-import SearchBarWithFilters from "../SearchBarWithFilters";
+import SearchBar from '../SearchBar'
+import DataFetcher from './../DataFetcher'
+import SearchBarFilters from "../SearchBarFilters";
+
 
 const SearchResultsListView = () => (
   <div>
-    <SearchBarWithFilters/>
+    <DataFetcher
+      dataUrl={'http://localhost:3000/data/products.json'}
+      component={SearchBar}
+      propName="searchedProducts"
+    />
+    <SearchBarFilters/>
     <SearchResultsList/>
   </div>
 )
