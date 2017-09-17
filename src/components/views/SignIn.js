@@ -1,6 +1,11 @@
 import React from 'react'
 import {Button, Col, ControlLabel, Form, FormControl, FormGroup, Checkbox} from 'react-bootstrap'
-// import {connect} from 'react-redux'
+import {connect} from 'react-redux'
+import { set } from '../../state/auth'
+import firebase from 'firebase'
+
+const providerForFacebook = new firebase.auth.FacebookAuthProvider()
+const providerForGoogle = new firebase.auth.GoogleAuthProvider()
 
 class SignIn extends React.Component {
 
@@ -21,10 +26,26 @@ class SignIn extends React.Component {
         })
     }
 
+    handleSubmit = (event) => {
+        event.preventDefault()
+
+        firebase.auth().signInWithEmailAndPassword(this.state.login, this.state.password).then(
+              user => {
+                this.props.setUser(user)
+                firebase.database().ref('favorites/' + user.uid).on('value', snapshot => {
+                    console.log(snapshot.val())
+                })
+                firebase.database().ref('favorites/' + user.uid).set({ zupa: 9000000 })
+            }
+        ).catch(
+            err => console.log(err)
+        )
+    }
+
     render() {
         return (
             <div>
-                <Form horizontal>
+                <Form horizontal onSubmit={this.handleSubmit}>
                     <FormGroup controlId="formHorizontalEmail">
                         <Col componentClass={ControlLabel} sm={2}>
                         </Col>
@@ -56,14 +77,13 @@ class SignIn extends React.Component {
                         </Col>
                     </FormGroup>
                 </Form>
-                );
             </div>
         )
     }
 }
 
-// const mapDispatchToProps = dispatch => ({
-//     check: (userName, userEmail, password) => dispatch(check(userName, userEmail, password))
-// });
+const mapDispatchToProps = dispatch => ({
+    setUser: user => dispatch(set(user))
+});
 
-export default SignIn
+export default connect(null, ma pDispatchToProps)(SignIn)
