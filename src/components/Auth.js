@@ -1,7 +1,7 @@
 import React from 'react'
 import {connect} from 'react-redux'
 
-import RegistrationFormView from "./views/RegistrationFormView";
+// import RegistrationFormView from "./views/RegistrationFormView";
 import SignIn from './views/SignIn'
 
 const Auth = ({ user, children }) => (
