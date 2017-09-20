@@ -11,7 +11,6 @@ const SearchResultsGridItem = ({searchResults}) => {
         <div className="thumbnail--container">
             {searchResults.map((product, index) => {
                 return (
-
                     <Thumbnail key={index} className="thumbnail--cell">
                         <img className="thumbnail--img" src={product.image} alt="242x200"/>
                             <div className="thumbnail--info">

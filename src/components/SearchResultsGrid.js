@@ -16,7 +16,6 @@ class SearchResultsGrid extends React.Component {
         return (
 
             <div>
-                <h1>Grid</h1>
                 <Thumbnail>{
                     searchResults && searchResults.toString() === "" ?
                         <NoItemFound/>
