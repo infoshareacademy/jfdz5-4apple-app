@@ -8,7 +8,6 @@ import magnifier from "../img/magnifier.png"
 import '../components/SearchBar.css'
 import Link from "react-router-dom/es/Link"
 import {connect} from 'react-redux'
-import {search} from '../state/searching'
 import {filterResults} from '../state/searching'
 
 class SearchBar extends React.Component {
