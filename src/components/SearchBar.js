@@ -8,7 +8,6 @@ import magnifier from "../img/magnifier.png"
 import '../components/SearchBar.css'
 import Link from "react-router-dom/es/Link"
 import {connect} from 'react-redux'
-import {search} from '../state/searching'
 import {filterResults} from '../state/searching'
 
 class SearchBar extends React.Component {
@@ -26,7 +25,6 @@ class SearchBar extends React.Component {
   handleSubmit = event => {
     event.preventDefault();
     this.props.history.push('/results/list')
-    this.props.addSearchedItem(this.state.searchedName)
     this.props.addSearchedResults(this.state.searchedProducts, this.state.searchedName)
     this.setState({
       searchedName: '',
@@ -73,11 +71,9 @@ class SearchBar extends React.Component {
 export default withRouter(
   connect(
     state => ({
-      searchedItems: state.searching.searchedItems,
       filteredResults: state.searching.searchedProducts
     }),
     dispatch => ({
-      addSearchedItem: searchedItem => dispatch(search(searchedItem)),
       addSearchedResults: (searchedProducts, searchedItem) => dispatch(filterResults(searchedProducts, searchedItem))
     })
   )(SearchBar)
