@@ -25,7 +25,7 @@ class SearchBar extends React.Component {
 
   handleSubmit = event => {
     event.preventDefault();
-    this.props.history.push('/results')
+    this.props.history.push('/results/grid')
     this.props.addSearchedItem(this.state.searchedName)
     this.props.addSearchedResults(this.state.searchedProducts, this.state.searchedName)
     this.setState({

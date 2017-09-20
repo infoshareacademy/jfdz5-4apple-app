@@ -4,25 +4,36 @@ import {Link} from 'react-router-dom'
 import {Thumbnail} from "react-bootstrap";
 
 import ButtonBlue from "./ButtonBlue";
-import './SearchResultsList.css'
+import './SearchResultsGrid.css'
 
 const SearchResultsGridItem = ({searchResults}) => {
     return (
-        <div>
+        <div className="thumbnail--container">
             {searchResults.map((product, index) => {
                 return (
-                    <div>
 
-                        <Thumbnail src="http://via.placeholder.com/242x200" alt="242x200">
+                    <Thumbnail key={index} className="thumbnail--cell">
+                        <img className="thumbnail--img" src={product.image} alt="242x200"/>
+                            <div className="thumbnail--info">
+                                <div className="product--description">
+                                    <div className="thumbnail--name">
+                                        <h3>{product.brand} {product.model} {product.author} {product.title} </h3>
+                                    </div>
+                                </div>
+                                <div className="thumbnail--price-item">
+                                    <h3 className="thumbnail--price">od:<span
+                                        className="thumbnail--price">{(product.price).toFixed(2)}</span> zł</h3>
+                                    <Link to={`/results/details/${index}`}><ButtonBlue textContent={"Porównaj"}/>
+                                    </Link>
+                                    <h6>w {product.shops.length} sklepach</h6>
+                                </div>
+                            </div>
 
-                            <h2>{product.brand} {product.model} {product.author} {product.title} </h2>
+                    </Thumbnail>
 
-                        </Thumbnail>
-
-                    </div>
                 )
 
-            })}</div>
+                })}</div>
     )
 }
 export default SearchResultsGridItem
