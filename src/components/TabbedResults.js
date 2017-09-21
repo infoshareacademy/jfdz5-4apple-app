@@ -1,5 +1,4 @@
 import React from 'react'
-import {connect} from "react-redux";
 
 import {
     Tab,
@@ -9,48 +8,25 @@ import {
 import SearchBar from './SearchBar'
 import SearchResultsList from './SearchResultsList'
 import SearchResultsGrid from './SearchResultsGrid'
-import {filterResults} from "../state/searching";
+import DataFetcher from "./DataFetcher/DataFetcher";
 
-class TabbedResults extends React.Component {
-    render() {
-        const searchResults = this.props.filteredResults
+const TabbedResults = ({products}) => (
+    <div>
+        <DataFetcher
+            dataUrl={'http://localhost:3000/data/products.json'}
+            component={SearchBar}
+            propName="searchedProducts"
+        />
+        <Tabs defaultActiveKey={1} id="tabbed-results">
+            <Tab eventKey={1} title="List">
+                <SearchResultsList products={products}/>
+            </Tab>
 
-        return (
-            <div>
-                <SearchBar searchResults={searchResults}/>
-                <Tabs defaultActiveKey={1} id="tabbed-results">
-                    <Tab eventKey={1} title="List">
-                        <SearchResultsList products={this.props.products}/>
-                    </Tab>
+            <Tab eventKey={2} title="Grid">
+                <SearchResultsGrid products={products}/>
+            </Tab>
+        </Tabs>
+    </div>
+)
 
-                    <Tab eventKey={2} title="Grid">
-                        <SearchResultsGrid products={this.props.products}/>
-                    </Tab>
-                </Tabs>
-            </div>
-        )
-    }
-}
-// const TabbedResults = ({products}) => (
-//     <div>
-//         <SearchBar filteredResults={filterResults}/>
-//         <Tabs defaultActiveKey={1} id="tabbed-results">
-//             <Tab eventKey={1} title="List">
-//                 <SearchResultsList products={products}/>
-//             </Tab>
-//
-//             <Tab eventKey={2} title="Grid">
-//                 <SearchResultsGrid products={products}/>
-//             </Tab>
-//         </Tabs>
-//     </div>
-// )
-
-export default connect(
-    state => ({
-        filteredResults: state.searching.filteredResults
-    }),
-    dispatch => ({
-        addSearchedResults: (searchedProducts, searchedItem) => dispatch(filterResults(searchedProducts, searchedItem))
-    })
-)(TabbedResults)
+export default TabbedResults
