@@ -1,7 +1,8 @@
 const SHOW = 'presentationOfResults/SHOW'
 
-export const presentationOfResults () => ({
-     type: SHOW
+export const presentationOfResults = (chosenView) => ({
+     type: SHOW,
+    chosenView
     })
 
 const initialState = {
