@@ -11,30 +11,48 @@
             "name": "NIKE",
             "localPrice": 419,
             "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287",
+            "size": [
+              41,
+              42.5
+            ],
+            "color": [
+              "biały",
+              "czarny",
+              "czerwony"
+            ]
           },
           {
             "name": "BUTYJANA",
             "localPrice": 555,
             "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html",
+            "size": [
+              36,
+              38
+            ],
+            "color": [
+              "biały",
+              "szary"
+            ]
           }
         ],
-        "female": true,
-        "male": true,
-        "available": true,
-        "image": "https://images.nike.com/is/image/DotCom/PDP_HERO/315122_111_A_PREM/buty-meskie-air-force-1-07.jpg",
+        "color": [
+          "biały",
+          "czarny",
+          "czerwony",
+          "szary"
+        ],
         "size": [
           36,
           38,
           41,
           42.5
         ],
-        "color": [
-          "biały",
-          "czarny",
-          "czerwony"
-        ],
+        "female": true,
+        "male": true,
+        "available": true,
+        "image": "https://images.nike.com/is/image/DotCom/PDP_HERO/315122_111_A_PREM/buty-meskie-air-force-1-07.jpg",
         "description": "Buty męskie Nike Air Force 1 '07 to nowoczesna odsłona legendarnego modelu, stanowiąca mieszankę klasyki i nowości."
       },
       {
@@ -46,13 +64,21 @@
             "name": "NIKE",
             "localPrice": 419,
             "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-treningowe-flex-adapt-tr/pid-10945118/pgid-12107970?cp=euns_kw_pla%21pl%21goo%21c%21%21213773252829&gclid=EAIaIQobChMI5t6vgIiB1gIVEM-yCh2_jAvBEAQYASABEgK_ivD_BwE&gclsrc=aw.ds"
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-treningowe-flex-adapt-tr/pid-10945118/pgid-12107970?cp=euns_kw_pla%21pl%21goo%21c%21%21213773252829&gclid=EAIaIQobChMI5t6vgIiB1gIVEM-yCh2_jAvBEAQYASABEgK_ivD_BwE&gclsrc=aw.ds",
+            "size": [
+              35,
+              37,
+              38.5,
+              45,
+              47.5
+            ],
+            "color": [
+              "żółty",
+              "szary",
+              "niebieski"
+            ]
           }
         ],
-        "female": true,
-        "male": false,
-        "available": true,
-        "image": "https://images.nike.com/is/image/DotCom/PDP_HERO/831579_001_A_PREM/buty-treningowe-flex-adapt-tr.jpg",
         "size": [
           35,
           37,
@@ -65,6 +91,10 @@
           "szary",
           "niebieski"
         ],
+        "female": true,
+        "male": false,
+        "available": true,
+        "image": "https://images.nike.com/is/image/DotCom/PDP_HERO/831579_001_A_PREM/buty-treningowe-flex-adapt-tr.jpg",
         "description": "Damskie buty treningowe Nike Flex Adapt TR mają lekką cholewkę z siateczki i system linek obejmujących śródstopie, dzięki czemu są przewiewne oraz zapewniają wsparcie i idealnie dopasowują się do stopy."
       }
     ]
@@ -75,115 +105,156 @@
       {
         "brand": "Samsung",
         "model": "UE49M5672AU",
-        "price": 2399,
-        "color": "silver",
+        "price": 2389,
+        "color": "srebrny",
+        "size": 49,
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Risus pretium quam vulputate dignissim suspendisse in est. Eu feugiat pretium nibh. Id ornare arcu odio ut sem nulla pharetra diam. Vestibulum lectus mauris ultrices eros in cursus. Urna duis convallis. Dolor morbi non arcu risus quis varius quam quisque.",
+        "image": "https://stat-s4.ms-online.pl/media/cache/gallery/rc/vbghdzeg/images/20/20397716/samsung-m5672-1.jpg",
+        "description": "Telewizor z podświetleniem LED. Posiada rozdzielczość Full HD 1920 x 1080 oraz funkcję Smart TV.Korzyści: Full High Definition: większa czystość i szczegółowość obrazu. Wbudowany tuner do odbioru programów satelitarnych (DVB-S2). Technologia PurColour: wiernie odwzorowuje szerszy zakres barw co sprawia, że obraz staje się znacznie bardziej naturalny. Smart TV: aplikacje, przeglądarka internetowa PVR: możliwość nagrywania programów na podłączony nośnik USB",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "SATURN",
+            "localPrice": 2389,
+            "image": "http://zaglebie.lubin.pl/wp-content/uploads/2016/04/saturn_logo_1a.jpg",
+            "url": "https://saturn.pl/rtv-i-telewizory/telewizor-samsung-ue49m5672au?querystring=UE49M5672AU"
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "MEDIA MARKT",
+            "localPrice": 2399,
+            "image": "http://3.bp.blogspot.com/-MCckJgb3-iw/VK1y2X7ZVBI/AAAAAAAAIMc/jP-rCi12Ogg/w1200-h630-p-k-no-nu/Logo%2BMediaMarkt.png",
+            "url": "https://mediamarkt.pl/rtv-i-telewizory/telewizor-samsung-ue49m5672au?gclid=CjwKCAjwjJjOBRBVEiwAfvnvBFFGAlwwRbuGcdNZnRmA2dReo1AlqjzcJ8dCZfyPhjDXhu54sAeD3BoC7xgQAvD_BwE"
+          },
+          {
+            "name": "REDCOON",
+            "localPrice": 2398,
+            "image": "https://i.tanio.co/sd/2017/06/redcoon-promocje.jpg",
+            "url": "https://redcoon.pl/telewizory/telewizor-samsung-ue49m5672au?utm_source=ceneo.pl&utm_medium=cpc"
           }
         ]
       },
       {
         "brand": "Samsung",
         "model": "UE49MU6442U",
-        "price": 2899,
-        "color": "silver",
+        "price": 3098,
+        "color": "ciemny tytan",
+        "size": 49,
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Et magnis dis parturient montes nascetur ridiculus mus. Sed nisi lacus sed viverra tellus. Ut consequat semper viverra nam libero justo. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.",
+        "image": "https://stat-m4.ms-online.pl/media/cache/gallery/rc/4fijq8pt/images/20/20397744/mu6442u.jpg",
+        "description": "Technologia Active Crystal Colour sprawia, że kolory są dokładniej odwzorowane i zauważalnie naturalniejsze. To zasługa ulepszonego podświetlenia ekranu, dzięki któremu zwiększyła się nie tylko jakość obrazu, ale zmniejszyło też zużycie energii.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "SATURN",
+            "localPrice": 3099,
+            "image": "http://zaglebie.lubin.pl/wp-content/uploads/2016/04/saturn_logo_1a.jpg",
+            "url": "https://saturn.pl/rtv-i-telewizory/telewizor-samsung-ue49m5672au?querystring=UE49M5672AU"
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "MEDIA MARKT",
+            "localPrice": 3099,
+            "image": "http://3.bp.blogspot.com/-MCckJgb3-iw/VK1y2X7ZVBI/AAAAAAAAIMc/jP-rCi12Ogg/w1200-h630-p-k-no-nu/Logo%2BMediaMarkt.png",
+            "url": "https://mediamarkt.pl/rtv-i-telewizory/telewizor-samsung-ue49m5672au?gclid=CjwKCAjwjJjOBRBVEiwAfvnvBFFGAlwwRbuGcdNZnRmA2dReo1AlqjzcJ8dCZfyPhjDXhu54sAeD3BoC7xgQAvD_BwE"
+          },
+          {
+            "name": "REDCOON",
+            "localPrice": 3098,
+            "image": "https://i.tanio.co/sd/2017/06/redcoon-promocje.jpg",
+            "url": "https://redcoon.pl/telewizory/telewizor-samsung-ue49m5672au?utm_source=ceneo.pl&utm_medium=cpc"
           }
         ]
       },
       {
         "brand": "Philips",
         "model": "49PUS6561/12",
-        "price": 2949,
-        "color": "black",
+        "price": 2999,
+        "color": "srebrny",
+        "size": 49,
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Adipiscing commodo elit. Bibendum at varius vel. Risus feugiat in ante metus.",
+        "image": "https://f01.esfr.pl/foto/3/12616115619/6bf616e6538ac1d93f874d6fc2b61fe/philips-49pus6561-12,12616115619_7.jpg",
+        "description": "Pięknie wykonane telewizory Philips z serii 6500 są już dostępne. Ciesz się niesamowitą jakością obrazu 4K Ultra HD i otwórz drzwi do świata rozrywki dzięki systemowi Android TV. Wąska obudowa i wyjątkowa podstawa Arc dopełniają wygląd telewizora i stanowią eleganckie, stylowe wykończenie.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
-          },
-          {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "MEDIA EXPERT",
+            "localPrice": 2999,
+            "image": "http://www.nowy-rynek.com/media/1280/mediaexpert-logo.png",
+            "url": "https://www.euro.com.pl/telewizory-led-lcd-plazmowe/philips-49pus6561-12.bhtml?from=ceneo&p=2999.00&cr=0&t=20170923-0926"
           }
         ]
       },
       {
         "brand": "Panasonic",
         "model": "TX-55EX633E",
-        "price": 3599,
-        "color": "black",
+        "price": 3749,
+        "color": "czarny",
+        "size": 49,
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Ullamcorper dignissim cras. Vel pharetra vel turpis nunc eget lorem. Vestibulum rhoncus est pellentesque elit ullamcorper.",
+        "image": "https://stat-m6.ms-online.pl/media/cache/gallery/rc/ghlqqhid/images/20/20390786/TX_55EX_633E_2.jpg",
+        "description": "Zaawansowansowane przetwarzaniu obrazu zapewnia precyzyjne odwzorowanie realistycznych barw. Aby zapewnić piękny, realistyczny i wierny obraz technologia 4K HDR firmy Panasonic korzysta z całości naszej wiedzy fachowej.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "MATRIX MEDIA",
+            "localPrice": 3749,
+            "image": "https://matrixmedia.pl/skin/frontend/matrixmedia/default/gfx/naglowek/logo.png",
+            "url": "https://matrixmedia.pl/telewizor-panasonic-tx-55ex633e.html?ceneo_spo=true"
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "SATURN",
+            "localPrice": 3798,
+            "image": "http://zaglebie.lubin.pl/wp-content/uploads/2016/04/saturn_logo_1a.jpg",
+            "url": "https://saturn.pl/rtv-i-telewizory/telewizor-samsung-ue49m5672au?querystring=UE49M5672AU"
+          },
+          {
+            "name": "MEDIA MARKT",
+            "localPrice": 3799,
+            "image": "http://3.bp.blogspot.com/-MCckJgb3-iw/VK1y2X7ZVBI/AAAAAAAAIMc/jP-rCi12Ogg/w1200-h630-p-k-no-nu/Logo%2BMediaMarkt.png",
+            "url": "https://mediamarkt.pl/rtv-i-telewizory/telewizor-samsung-ue49m5672au?gclid=CjwKCAjwjJjOBRBVEiwAfvnvBFFGAlwwRbuGcdNZnRmA2dReo1AlqjzcJ8dCZfyPhjDXhu54sAeD3BoC7xgQAvD_BwE"
+          },
+          {
+            "name": "REDCOON",
+            "localPrice": 3748,
+            "image": "https://i.tanio.co/sd/2017/06/redcoon-promocje.jpg",
+            "url": "https://redcoon.pl/telewizory/telewizor-samsung-ue49m5672au?utm_source=ceneo.pl&utm_medium=cpc"
           }
         ]
       },
       {
         "brand": "Panasonic",
         "model": "TX-65EX600E",
-        "price": 5499,
-        "color": "black",
+        "price": 5349,
+        "color": "czarny",
+        "size": 65,
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Id consectetur purus. Gravida in fermentum et sollicitudin ac orci. Posuere ac ut consequat semper viverra nam libero justo. Cras sed felis eget velit aliquet sagittis id. Ligula ullamcorper malesuada proin libero nunc consequat. Cum sociis natoque penatibus et magnis dis parturient montes nascetur.",
+        "image": "https://images.morele.net/full/1371318_0_f.jpg",
+        "description": "Seria EX600 zapewnia żywy obraz 4K HDR i funkcje inteligentne, zaś umożliwiająca konfigurowanie konstrukcja Switch Design pozwala dopasować telewizor do każdego wnętrza.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "MORELE.NET",
+            "localPrice": 5334.54,
+            "image": "https://www.morele.net/static/img/shop/img-morele-logo.png",
+            "url": "https://www.morele.net/telewizor-panasonic-tx-65ex600e-1371318/"
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "SATURN",
+            "localPrice": 5978,
+            "image": "http://zaglebie.lubin.pl/wp-content/uploads/2016/04/saturn_logo_1a.jpg",
+            "url": "https://saturn.pl/rtv-i-telewizory/telewizor-panasonic-tx-65ex600e?utm_source=ceneo&utm_medium=cpc&utm_term=ceneo&utm_campaign=xml"
+          },
+          {
+            "name": "MEDIA MARKT",
+            "localPrice": 5978,
+            "image": "http://3.bp.blogspot.com/-MCckJgb3-iw/VK1y2X7ZVBI/AAAAAAAAIMc/jP-rCi12Ogg/w1200-h630-p-k-no-nu/Logo%2BMediaMarkt.png",
+            "url": "https://mediamarkt.pl/rtv-i-telewizory/telewizor-panasonic-tx-65ex600e?utm_source=ceneo&utm_medium=cpc&utm_term=ceneo&utm_campaign=xml"
+          },
+          {
+            "name": "REDCOON",
+            "localPrice": 5349,
+            "image": "https://i.tanio.co/sd/2017/06/redcoon-promocje.jpg",
+            "url": "https://redcoon.pl/telewizory/telewizor-panasonic-tx-65ex600e?utm_source=ceneo.pl&utm_medium=cpc"
+          },
+          {
+            "name": "SFERIS",
+            "localPrice": 5227.50,
+            "image": "https://www.sferis.pl/img/logo.svg?v=4",
+            "url": "https://www.sferis.pl/telewizor-65-panasonic-tx-65ex600e-4k-3840x2160-smarttv-p508645"
           }
         ]
       },
