@@ -336,6 +336,7 @@
         "brand": "Apple",
         "model": "iMac 27",
         "price": 7099,
+        "size": "27''",
         "color": "srebrny",
         "available": true,
         "image": "https://images.morele.net/full/799651_3_f.jpeg",
@@ -369,6 +370,7 @@
           " biały",
           " srebrny"
         ],
+        "size": "10.5''",
         "available": true,
         "image": "https://image.ceneo.pl/data/products/52404806/f-apple-ipad-pro-10-5-64gb-wi-fi-gwiezdna-szarosc-mqdt2fda.jpg",
         "description": "Cokolwiek zechcesz na nim zrobić – zrobisz. I to lepiej niż myślisz. Oferuje znacznie więcej mocy niż większość laptopów PC, a jest przy tym rozkosznie prosty w obsłudze. Wyświetlacz Retina został przeprojektowany i nie sposób oderwać od niego wzroku. Podobnie jak rąk. A wszystkim steruje iOS, najbardziej zaawansowany mobilny system operacyjny na świecie. iPad Pro ma wszystko, czego oczekujesz od nowoczesnego komputera. Tylko lepsze.",
@@ -472,7 +474,7 @@
         "gender": "meski",
         "available": true,
         "image": "http://static5.perfumesco.pl/img/388/48651.jpg",
-        "description": "Ultricies leo integer malesuada nunc. Integer enim neque volutpat ac tincidunt vitae. Risus nullam eget felis eget nunc.",
+        "description": "Niespotykanie świeża kompozycja, której nazwa już sama w sobie jest manifestem. I taki właśnie był cel twórcy zapachów Dior, François Demachy: stworzyć zapach szlachetny i surowy zarazem. Naturalne składniki, wybrane z najwyższą starannością, dostarczone w skrajnie skoncentrowanych dawkach. Promienne nuty nasycone są soczystą świeżością bergamotki z Kalabrii. Ambroksan, będący pochodną cennej ambry uwalnia potężny drzewny akord. Sauvage został zainspirowany przez otwarte przestrzenie. Intensywnie niebieskie niebo, rozpostarte nad kamienistym krajobrazem skąpanej w gorącym słońcu pustyni. Twarzą zapachu jest Johnny Depp.",
         "shops": [
           {
             "name": "TAGOMAGO",
@@ -504,7 +506,7 @@
         ],
         "available": true,
         "image": "https://www.swiatksiazki.pl/media/catalog/product/cache/image/e9c3970ab036de70892d86c6d221abfe/9/9/99906355604.jpg",
-        "description": "Nunc sed blandit libero volutpat. Aliquet risus feugiat. Et malesuada fames ac turpis egestas. Ut faucibus pulvinar elementum integer enim. Ullamcorper sit amet risus nullam eget felis eget. Volutpat diam ut.",
+        "description": "Książka Macierewicz i jego tajemnice zawiera fakty na temat niepokojących koneksji obecnego ministra obrony Antoniego Macierewicza.",
         "shops": [
           {
             "name": "CZYTAM.PL",
@@ -536,7 +538,7 @@
         ],
         "available": true,
         "image": "https://www.booksfera.pl/foto/warianty/250/0/ziola-z-polskich-lak.jpg",
-        "description": "Tellus orci ac. Aliquam sem et tortor consequat id porta. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Mi tempus imperdiet. Congue quisque egestas diam in.",
+        "description": "Polskie łąki, pastwiska, miedze to jedna wielka apteka, z której, przy zachowaniu odpowiedniej wiedzy, można pozyskiwać zupełnie za darmo mnóstwo leków cenionych przez współczesną medycynę. Do zupełnie wyjątkowych roślin leczniczych rosnących na naszych łąkach zaliczamy m.in.: babkę lancetowatą, bluszczyk kurdybanek, krwawnik, mniszek lekarski, pokrzywę, podbiał, skrzyp polny, stokrotkę, tasznik, oman łąkowy, pięciornik gęsi, szczaw, świetlik łąkowy, żywokost lekarski i wiele innych.",
         "shops": [
           {
             "name": "BOOKSFERA",
@@ -559,7 +561,7 @@
         ],
         "available": true,
         "image": "https://image.ceneo.pl/data/products/1219238/f-gra-o-tron.jpg",
-        "description": "Mauris cursus mattis molestie a iaculis. Libero id faucibus nisl tincidunt eget. Diam maecenas sed enim ut. Faucibus turpis in eu mi bibendum. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra.",
+        "description": "W Zachodnich Krainach o ośmiu tysiącach lat zapisanej historii widmo wojen i katastrofy nieustannie wisi nad ludźmi. Zbliża się zima, lodowate wichry wieją z północy, gdzie schroniły się wyparte przez ludzi pradawne rasy oraz starzy bogowie. Zbuntowani władcy na szczęście pokonali szalonego Smoczego Króla, Aerysa Targaryena, zasiadającego na Żelaznym Tronie Zachodnich Krain, ale tyranowi udało się zbiec, śmierć dosięgła go z ręki gwardzisty. Niestety, obalony władca pozostawił potomstwo, równie nieobliczalne jak ON sam... Opuszczony tron objął Robert - najznamienitszy z buntowników. Minęły już lata pokoju i oto możnowładcy zaczynają grę o tron.",
         "shops": [
           {
             "name": "AVALON",
@@ -582,7 +584,7 @@
         ],
         "available": true,
         "image": "http://www.korob.pl/pol_pm_Religia-SP-3-Jezus-jest-z-nami-cw-JEDNOSC-10258_1.jpg",
-        "description": "Ultricies leo integer malesuada nunc. Integer enim neque volutpat ac tincidunt vitae. Risus nullam eget felis eget nunc.",
+        "description": "Zawarte w zeszycie zadania:– ściśle wiążą się z treścią podręcznika– stanowią istotną pomoc w realizacji celów katechetycznych i wymagań szczegółowych– przez swą różnorodność (uzupełnianie tekstu, rysowanie, kolorowanie, rebusy, krzyżówki i inne łamigłówki oraz wycinanki i naklejki) wszechstronnie aktywizują ucznia i pobudzają do samodzielnej twórczej pracy– posiadają zróżnicowany stopień trudności– ich miejsce w toku lekcji oraz dodatkowe wskazówki opisane są w przewodniku metodycznym– ułatwiają katechecie bieżącą ocenę pracy ucznia.",
         "shops": [
           {
             "name": "MEGA KSIĄŻKI",
