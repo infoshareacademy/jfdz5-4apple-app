@@ -11,30 +11,48 @@
             "name": "NIKE",
             "localPrice": 419,
             "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287",
+            "size": [
+              41,
+              42.5
+            ],
+            "color": [
+              "biały",
+              "czarny",
+              "czerwony"
+            ]
           },
           {
             "name": "BUTYJANA",
             "localPrice": 555,
             "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html",
+            "size": [
+              36,
+              38
+            ],
+            "color": [
+              "biały",
+              "szary"
+            ]
           }
         ],
-        "female": true,
-        "male": true,
-        "available": true,
-        "image": "https://images.nike.com/is/image/DotCom/PDP_HERO/315122_111_A_PREM/buty-meskie-air-force-1-07.jpg",
+        "color": [
+          "biały",
+          "czarny",
+          "czerwony",
+          "szary"
+        ],
         "size": [
           36,
           38,
           41,
           42.5
         ],
-        "color": [
-          "biały",
-          "czarny",
-          "czerwony"
-        ],
+        "female": true,
+        "male": true,
+        "available": true,
+        "image": "https://images.nike.com/is/image/DotCom/PDP_HERO/315122_111_A_PREM/buty-meskie-air-force-1-07.jpg",
         "description": "Buty męskie Nike Air Force 1 '07 to nowoczesna odsłona legendarnego modelu, stanowiąca mieszankę klasyki i nowości."
       },
       {
@@ -46,13 +64,21 @@
             "name": "NIKE",
             "localPrice": 419,
             "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-treningowe-flex-adapt-tr/pid-10945118/pgid-12107970?cp=euns_kw_pla%21pl%21goo%21c%21%21213773252829&gclid=EAIaIQobChMI5t6vgIiB1gIVEM-yCh2_jAvBEAQYASABEgK_ivD_BwE&gclsrc=aw.ds"
+            "url": "https://store.nike.com/pl/pl_pl/pd/buty-treningowe-flex-adapt-tr/pid-10945118/pgid-12107970?cp=euns_kw_pla%21pl%21goo%21c%21%21213773252829&gclid=EAIaIQobChMI5t6vgIiB1gIVEM-yCh2_jAvBEAQYASABEgK_ivD_BwE&gclsrc=aw.ds",
+            "size": [
+              35,
+              37,
+              38.5,
+              45,
+              47.5
+            ],
+            "color": [
+              "żółty",
+              "szary",
+              "niebieski"
+            ]
           }
         ],
-        "female": true,
-        "male": false,
-        "available": true,
-        "image": "https://images.nike.com/is/image/DotCom/PDP_HERO/831579_001_A_PREM/buty-treningowe-flex-adapt-tr.jpg",
         "size": [
           35,
           37,
@@ -65,6 +91,10 @@
           "szary",
           "niebieski"
         ],
+        "female": true,
+        "male": false,
+        "available": true,
+        "image": "https://images.nike.com/is/image/DotCom/PDP_HERO/831579_001_A_PREM/buty-treningowe-flex-adapt-tr.jpg",
         "description": "Damskie buty treningowe Nike Flex Adapt TR mają lekką cholewkę z siateczki i system linek obejmujących śródstopie, dzięki czemu są przewiewne oraz zapewniają wsparcie i idealnie dopasowują się do stopy."
       }
     ]
@@ -75,207 +105,294 @@
       {
         "brand": "Samsung",
         "model": "UE49M5672AU",
-        "price": 2399,
-        "color": "silver",
+        "price": 2389,
+        "color": "srebrny",
+        "size": "49''",
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Risus pretium quam vulputate dignissim suspendisse in est. Eu feugiat pretium nibh. Id ornare arcu odio ut sem nulla pharetra diam. Vestibulum lectus mauris ultrices eros in cursus. Urna duis convallis. Dolor morbi non arcu risus quis varius quam quisque.",
+        "image": "https://stat-s4.ms-online.pl/media/cache/gallery/rc/vbghdzeg/images/20/20397716/samsung-m5672-1.jpg",
+        "description": "Telewizor z podświetleniem LED. Posiada rozdzielczość Full HD 1920 x 1080 oraz funkcję Smart TV.Korzyści: Full High Definition: większa czystość i szczegółowość obrazu. Wbudowany tuner do odbioru programów satelitarnych (DVB-S2). Technologia PurColour: wiernie odwzorowuje szerszy zakres barw co sprawia, że obraz staje się znacznie bardziej naturalny. Smart TV: aplikacje, przeglądarka internetowa PVR: możliwość nagrywania programów na podłączony nośnik USB",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "SATURN",
+            "localPrice": 2389,
+            "image": "http://zaglebie.lubin.pl/wp-content/uploads/2016/04/saturn_logo_1a.jpg",
+            "url": "https://saturn.pl/rtv-i-telewizory/telewizor-samsung-ue49m5672au?querystring=UE49M5672AU"
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "MEDIA MARKT",
+            "localPrice": 2399,
+            "image": "http://3.bp.blogspot.com/-MCckJgb3-iw/VK1y2X7ZVBI/AAAAAAAAIMc/jP-rCi12Ogg/w1200-h630-p-k-no-nu/Logo%2BMediaMarkt.png",
+            "url": "https://mediamarkt.pl/rtv-i-telewizory/telewizor-samsung-ue49m5672au?gclid=CjwKCAjwjJjOBRBVEiwAfvnvBFFGAlwwRbuGcdNZnRmA2dReo1AlqjzcJ8dCZfyPhjDXhu54sAeD3BoC7xgQAvD_BwE"
+          },
+          {
+            "name": "REDCOON",
+            "localPrice": 2398,
+            "image": "https://i.tanio.co/sd/2017/06/redcoon-promocje.jpg",
+            "url": "https://redcoon.pl/telewizory/telewizor-samsung-ue49m5672au?utm_source=ceneo.pl&utm_medium=cpc"
           }
         ]
       },
       {
         "brand": "Samsung",
         "model": "UE49MU6442U",
-        "price": 2899,
-        "color": "silver",
+        "price": 3098,
+        "color": "ciemny tytan",
+        "size": "49''",
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Et magnis dis parturient montes nascetur ridiculus mus. Sed nisi lacus sed viverra tellus. Ut consequat semper viverra nam libero justo. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.",
+        "image": "https://stat-m4.ms-online.pl/media/cache/gallery/rc/4fijq8pt/images/20/20397744/mu6442u.jpg",
+        "description": "Technologia Active Crystal Colour sprawia, że kolory są dokładniej odwzorowane i zauważalnie naturalniejsze. To zasługa ulepszonego podświetlenia ekranu, dzięki któremu zwiększyła się nie tylko jakość obrazu, ale zmniejszyło też zużycie energii.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "SATURN",
+            "localPrice": 3099,
+            "image": "http://zaglebie.lubin.pl/wp-content/uploads/2016/04/saturn_logo_1a.jpg",
+            "url": "https://saturn.pl/rtv-i-telewizory/telewizor-samsung-ue49mu6442u?utm_source=ceneo&utm_medium=cpc&utm_term=ceneo&utm_campaign=xml"
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "MEDIA MARKT",
+            "localPrice": 3099,
+            "image": "http://3.bp.blogspot.com/-MCckJgb3-iw/VK1y2X7ZVBI/AAAAAAAAIMc/jP-rCi12Ogg/w1200-h630-p-k-no-nu/Logo%2BMediaMarkt.png",
+            "url": "https://mediamarkt.pl/rtv-i-telewizory/telewizor-samsung-ue49mu6442u?utm_source=ceneo&utm_medium=cpc&utm_term=ceneo&utm_campaign=xml"
+          },
+          {
+            "name": "REDCOON",
+            "localPrice": 3098,
+            "image": "https://i.tanio.co/sd/2017/06/redcoon-promocje.jpg",
+            "url": "https://redcoon.pl/telewizory/telewizor-samsung-ue49mu6442u?utm_source=ceneo.pl&utm_medium=cpc"
           }
         ]
       },
       {
         "brand": "Philips",
         "model": "49PUS6561/12",
-        "price": 2949,
-        "color": "black",
+        "price": 2999,
+        "color": "srebrny ",
+        "size": "49''",
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Adipiscing commodo elit. Bibendum at varius vel. Risus feugiat in ante metus.",
+        "image": "https://f01.esfr.pl/foto/3/12616115619/6bf616e6538ac1d93f874d6fc2b61fe/philips-49pus6561-12,12616115619_7.jpg",
+        "description": "Pięknie wykonane telewizory Philips z serii 6500 są już dostępne. Ciesz się niesamowitą jakością obrazu 4K Ultra HD i otwórz drzwi do świata rozrywki dzięki systemowi Android TV. Wąska obudowa i wyjątkowa podstawa Arc dopełniają wygląd telewizora i stanowią eleganckie, stylowe wykończenie.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
-          },
-          {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "MEDIA EXPERT",
+            "localPrice": 2999,
+            "image": "http://www.nowy-rynek.com/media/1280/mediaexpert-logo.png",
+            "url": "https://www.euro.com.pl/telewizory-led-lcd-plazmowe/philips-49pus6561-12.bhtml?from=ceneo&p=2999.00&cr=0&t=20170923-0926"
           }
         ]
       },
       {
         "brand": "Panasonic",
         "model": "TX-55EX633E",
-        "price": 3599,
-        "color": "black",
+        "price": 3749,
+        "color": "czarny ",
+        "size": "49''",
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Ullamcorper dignissim cras. Vel pharetra vel turpis nunc eget lorem. Vestibulum rhoncus est pellentesque elit ullamcorper.",
+        "image": "https://stat-m6.ms-online.pl/media/cache/gallery/rc/ghlqqhid/images/20/20390786/TX_55EX_633E_2.jpg",
+        "description": "Zaawansowansowane przetwarzaniu obrazu zapewnia precyzyjne odwzorowanie realistycznych barw. Aby zapewnić piękny, realistyczny i wierny obraz technologia 4K HDR firmy Panasonic korzysta z całości naszej wiedzy fachowej.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "MATRIX MEDIA",
+            "localPrice": 3749,
+            "image": "https://matrixmedia.pl/skin/frontend/matrixmedia/default/gfx/naglowek/logo.png",
+            "url": "https://matrixmedia.pl/telewizor-panasonic-tx-55ex633e.html?ceneo_spo=true"
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "SATURN",
+            "localPrice": 3798,
+            "image": "http://zaglebie.lubin.pl/wp-content/uploads/2016/04/saturn_logo_1a.jpg",
+            "url": "https://saturn.pl/rtv-i-telewizory/telewizor-samsung-ue49m5672au?querystring=UE49M5672AU"
+          },
+          {
+            "name": "MEDIA MARKT",
+            "localPrice": 3799,
+            "image": "http://3.bp.blogspot.com/-MCckJgb3-iw/VK1y2X7ZVBI/AAAAAAAAIMc/jP-rCi12Ogg/w1200-h630-p-k-no-nu/Logo%2BMediaMarkt.png",
+            "url": "https://mediamarkt.pl/rtv-i-telewizory/telewizor-samsung-ue49m5672au?gclid=CjwKCAjwjJjOBRBVEiwAfvnvBFFGAlwwRbuGcdNZnRmA2dReo1AlqjzcJ8dCZfyPhjDXhu54sAeD3BoC7xgQAvD_BwE"
+          },
+          {
+            "name": "REDCOON",
+            "localPrice": 3748,
+            "image": "https://i.tanio.co/sd/2017/06/redcoon-promocje.jpg",
+            "url": "https://redcoon.pl/telewizory/telewizor-samsung-ue49m5672au?utm_source=ceneo.pl&utm_medium=cpc"
           }
         ]
       },
       {
         "brand": "Panasonic",
         "model": "TX-65EX600E",
-        "price": 5499,
-        "color": "black",
+        "price": 5349,
+        "color": "czarny",
+        "size": "65''",
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Id consectetur purus. Gravida in fermentum et sollicitudin ac orci. Posuere ac ut consequat semper viverra nam libero justo. Cras sed felis eget velit aliquet sagittis id. Ligula ullamcorper malesuada proin libero nunc consequat. Cum sociis natoque penatibus et magnis dis parturient montes nascetur.",
+        "image": "https://images.morele.net/full/1371318_0_f.jpg",
+        "description": "Seria EX600 zapewnia żywy obraz 4K HDR i funkcje inteligentne, zaś umożliwiająca konfigurowanie konstrukcja Switch Design pozwala dopasować telewizor do każdego wnętrza.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "MORELE.NET",
+            "localPrice": 5334.54,
+            "image": "https://www.morele.net/static/img/shop/img-morele-logo.png",
+            "url": "https://www.morele.net/telewizor-panasonic-tx-65ex600e-1371318/"
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "SATURN",
+            "localPrice": 5978,
+            "image": "http://zaglebie.lubin.pl/wp-content/uploads/2016/04/saturn_logo_1a.jpg",
+            "url": "https://saturn.pl/rtv-i-telewizory/telewizor-panasonic-tx-65ex600e?utm_source=ceneo&utm_medium=cpc&utm_term=ceneo&utm_campaign=xml"
+          },
+          {
+            "name": "MEDIA MARKT",
+            "localPrice": 5978,
+            "image": "http://3.bp.blogspot.com/-MCckJgb3-iw/VK1y2X7ZVBI/AAAAAAAAIMc/jP-rCi12Ogg/w1200-h630-p-k-no-nu/Logo%2BMediaMarkt.png",
+            "url": "https://mediamarkt.pl/rtv-i-telewizory/telewizor-panasonic-tx-65ex600e?utm_source=ceneo&utm_medium=cpc&utm_term=ceneo&utm_campaign=xml"
+          },
+          {
+            "name": "REDCOON",
+            "localPrice": 5349,
+            "image": "https://i.tanio.co/sd/2017/06/redcoon-promocje.jpg",
+            "url": "https://redcoon.pl/telewizory/telewizor-panasonic-tx-65ex600e?utm_source=ceneo.pl&utm_medium=cpc"
+          },
+          {
+            "name": "SFERIS",
+            "localPrice": 5227.50,
+            "image": "https://www.sferis.pl/img/logo.svg?v=4",
+            "url": "https://www.sferis.pl/telewizor-65-panasonic-tx-65ex600e-4k-3840x2160-smarttv-p508645"
           }
         ]
       },
       {
         "brand": "Apple",
         "model": "iPhone 7",
-        "price": 3499,
-        "color": "srebrny",
-        "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Quam elementum pulvinar. Urna molestie at elementum eu facilisis. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Non quam lacus suspendisse faucibus. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit.",
+        "price": 2689,
+        "color": [
+          " srebrny",
+          " złoty",
+          " biały"
+        ],
+        "size": "4.7''",
+        "image": "http://www.avans.pl/temp/thumbs-new/3/products/597/739597_1923859_500x500w50.jpg",
+        "description": "iPhone 7 radykalnie udoskonala kluczowe elementy iPhone’a. Przynosi nowe, zaawansowane aparaty do zdjęć i wideo. Największą moc i najwydajniejszą baterię w historii tego urządzenia. Głośniki stereo hipnotyzujące fantastycznym dźwiękiem. Najjaśniejszy i wyświetlający najszerszą gamę kolorów ekran. Odporność na wodę i zachlapania.1 Oraz imponujący wygląd, na który zasługuje coś tak potężnego. Oto on. iPhone 7.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "EMAG",
+            "localPrice": 2696.90,
+            "image": "https://s5emagst.akamaized.net/assets/pl/css/icons/logo.svg",
+            "url": "https://www.emag.pl/telefon-apple-iphone-7-32gb-czarny-apple-iphone-7-32gb-black/pd/D9GKV2BBM/?cmpid=60049&utm_campaign=wszystkie&utm_content=14820134&utm_medium=Feed&utm_source=Ceneo.pl",
+            "color": [
+              "srebrny",
+              "złoty",
+              "biały"
+            ]
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "ELEKTRO",
+            "localPrice": 2689,
+            "image": "http://www.electro.pl/common/images/electro.jpg",
+            "url": "http://www.electro.pl/smartfony/smartfon-apple-iphone-7-32gb-czarny,id-739597?utm_source=ceneo&utm_medium=cpc&utm_content=861322&utm_campaign=2017-09&utm_term=SMARTFONY&ceneo_spo=true",
+            "color": [
+              "biały"
+            ]
+          },
+          {
+            "name": "AVANS",
+            "localPrice": 2689,
+            "image": "http://www.avans.pl/common4/images/logos/logo.png",
+            "url": "http://www.avans.pl/smartfony/smartfon-apple-iphone-7-32gb-czarny,id-739597?utm_source=Ceneo&utm_medium=cpc&utm_content=861322&utm_campaign=2017-09&utm_term=SMARTFONY&ceneo_spo=true&gclid=CJC4htTCvNYCFQLBGQodUM0Jxg&gclsrc=ds&dclid=CI2_jtTCvNYCFVIcGAodMToDsw",
+            "color": [
+              "złoty",
+              "biały"
+            ]
           }
         ]
       },
       {
         "brand": "Apple",
         "model": "iPhone 7 plus",
-        "price": 3999,
-        "color": "white",
+        "price": 3319,
+        "color": [
+          " różowy",
+          " biały",
+          " srebrny",
+          " czarny"
+        ],
+        "size": "5.5''",
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Quisque egestas diam in arcu cursus euismod quis. Tristique nulla aliquet enim tortor at.",
+        "image": "https://image.ceneo.pl/data/products/47045340/89424e37-6218-4b38-a752-303eabb5dec6_i-apple-iphone-7-plus-32gb-czarny.jpg?=f65a8",
+        "description": "Smartfon Apple iPhone 7, to arcydzieło sztuki użytkowej, wyposażone w nowy, potężny procesor A10 Fusion, który poradzi sobie z każdym, nawet najbardziej wymagającym zadaniem. Doskonały wyświetlacz Retina HD wyświetli, niezwykle żywe i bardziej naturalne kolory, a stereofoniczne głośniki o szerokim zakresie dynamiki, bezbłędnie trafią w gusta miłośników dobrego brzmienia. Bezkonkurencyjny aparat 12Mpix, został uzbrojony w jasny f/1.8 obiektyw, który wraz z diodowym flashem True Tone rozproszy nawet największe ciemności.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
-          },
-          {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "IDREAM",
+            "localPrice": 3319,
+            "image": "https://idream.pl/images/logo-idream.png",
+            "url": "https://idream.pl/iphone/iphone-7-plus/apple-iphone-7-plus-32gb-czarny.html",
+            "color": [
+              "różowy",
+              "biały",
+              "srebrny",
+              "czarny"
+            ]
           }
         ]
       },
       {
         "brand": "Apple",
         "model": "iMac 27",
-        "price": 9999,
-        "color": "silver",
+        "price": 7099,
+        "size": "27''",
+        "color": "srebrny",
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Duis at consectetur lorem donec massa. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Lectus nulla at volutpat diam ut venenatis.",
+        "image": "https://images.morele.net/full/799651_3_f.jpeg",
+        "description": "Od pierwszego modelu iMac miał być zawsze najbardziej wyrafinowanym komputerem stacjonarnym. Z niemożliwie smukłą, bezszczelinową obudową, najlepszym wyświetlaczem, hiperwydajnymi procesorami, grafiką i pamięcią masową. Zupełnie nowy, 21,5-calowy iMac z wyświetlaczem Retina 4K jest wierny tej koncepcji. Podobnie jak rewolucyjny 27-calowy model 5K, jakością wyświetlanego obrazu gasi wszystko wokół. Dostarcza takich wrażeń, że kompletnie pochłania odbiorcę. I tym sposobem robi kolejny, spektakularny krok naprzód.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "MORELE.NET",
+            "localPrice": 7970.59,
+            "image": "https://www.morele.net/static/img/shop/img-morele-logo.png",
+            "url": "https://www.morele.net/komputer-apple-imac-27-mk462pl-a-799651/"
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "MEDIA MARKT",
+            "localPrice": 7099,
+            "image": "http://3.bp.blogspot.com/-MCckJgb3-iw/VK1y2X7ZVBI/AAAAAAAAIMc/jP-rCi12Ogg/w1200-h630-p-k-no-nu/Logo%2BMediaMarkt.png",
+            "url": "https://mediamarkt.pl/komputery-i-tablety/komputer-apple-imac-27-z-wyswietlaczem-retina-5k-mk462pl-a?utm_source=ceneo&utm_medium=cpc&utm_term=ceneo&utm_campaign=xml"
+          },
+          {
+            "name": "KOMPUTRONIK",
+            "localPrice": 7399,
+            "image": "http://www.komputronik.pl/informacje/wp-content/uploads/2017/01/logo-kt-800px-wide.png",
+            "url": "https://www.komputronik.pl/product/293615/apple-imac-27-mk462pl-a-.html?utm_source=Ceneo&utm_medium=link&utm_campaign=Promo"
           }
         ]
       },
       {
         "brand": "Apple",
         "model": "iPad PRO",
-        "price": 2999,
-        "color": "silver",
+        "price": 2984,
+        "color": [
+          " biały",
+          " srebrny"
+        ],
+        "size": "10.5''",
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Quis varius quam quisque id diam vel quam elementum pulvinar. Tristique senectus et netus et malesuada fames ac turpis. Nec ullamcorper sit amet risus nullam eget felis eget nunc. Ac felis donec et odio pellentesque diam.",
+        "image": "https://image.ceneo.pl/data/products/52404806/f-apple-ipad-pro-10-5-64gb-wi-fi-gwiezdna-szarosc-mqdt2fda.jpg",
+        "description": "Cokolwiek zechcesz na nim zrobić – zrobisz. I to lepiej niż myślisz. Oferuje znacznie więcej mocy niż większość laptopów PC, a jest przy tym rozkosznie prosty w obsłudze. Wyświetlacz Retina został przeprojektowany i nie sposób oderwać od niego wzroku. Podobnie jak rąk. A wszystkim steruje iOS, najbardziej zaawansowany mobilny system operacyjny na świecie. iPad Pro ma wszystko, czego oczekujesz od nowoczesnego komputera. Tylko lepsze.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "EMAG",
+            "localPrice": 3149,
+            "image": "https://s5emagst.akamaized.net/assets/pl/css/icons/logo.svg",
+            "url": "https://www.emag.pl/tablet-apple-ipad-pro-10-5-wifi-64gb-space-grey-mqdt2fd-a/pd/DVDB6KBBM/?cmpid=60049&utm_campaign=wszystkie&utm_content=15215212&utm_medium=Feed&utm_source=Ceneo.pl",
+            "color": [
+              "srebrny",
+              "biały"
+            ]
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "MORELE.NET",
+            "localPrice": 2984,
+            "image": "https://www.morele.net/static/img/shop/img-morele-logo.png",
+            "url": "https://www.morele.net/tablet-apple-ipad-pro-10-5-wifi-64gb-space-grey-mqdt2fd-a-2017-1342435/",
+            "color": [
+              "biały"
+            ]
           }
         ]
       }
@@ -287,91 +404,89 @@
       {
         "brand": "Biotherm",
         "model": "Aquapower",
-        "price": 150,
-        "gender": "meski",
+        "price": 149,
+        "female": false,
+        "male": true,
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Nunc sed blandit libero volutpat. Aliquet risus feugiat. Et malesuada fames ac turpis egestas. Ut faucibus pulvinar elementum integer enim. Ullamcorper sit amet risus nullam eget felis eget. Volutpat diam ut.",
+        "image": "https://image.ceneo.pl/data/products/8579942/f-biotherm-nawilzajacy-zel-do-twarzy-homme-aquapower-75ml.jpg",
+        "description": "Homme Aquapower Oligo-Thermal Comfort Care to silnie nawliżający krem-żel do pięlegnacji skóry suchej dla mężczyzn. To natychmistowe nawilżenie i ukojenie w nawet najbardziej podrażnionych miejscach. Nowoczesna formuła krem-żelu wzbogacona silnie nawilżająmy kompleksem na bazie czystego ekstraktu z Planktonu Termalnego, kompozycji witamin i oligominerałów.Innowacyjny krem-żel Homme Aquapower Oligo-Thermal Comfort Care głęboko wnika w wewnętrzne warstwy skóry zapobiega wysuszaniu oraz pozostawia ją idealnie nawilżoną, elastyczną i miękką w dotyku.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "name": "TAGOMAGO",
+            "localPrice": 149,
+            "image": "https://cdn.shopify.com/s/files/1/2096/6099/t/1/assets/logo.png?1859604075280416780",
             "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "MAKEUP",
+            "localPrice": 156,
+            "image": "https://s3-eu-west-1.amazonaws.com/tpd/logos/586284900000ff000599c4a3/0x0.png",
+            "url": "https://makeup.pl/product/292339/?utm_source=ceneo&utm_campaign=recommended&utm_medium=cpc#/option/326101/"
           }
         ]
       },
       {
         "brand": "Lancome",
         "model": "3d lifting",
-        "price": 227,
-        "gender": "meski",
+        "price": 228,
+        "female": false,
+        "male": true,
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Tellus orci ac. Aliquam sem et tortor consequat id porta. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Mi tempus imperdiet. Congue quisque egestas diam in.",
+        "image": "http://www.luxe24.pl/components/com_virtuemart/shop_image/product/resized/Lancome_Men_Rene_4e16eeef0d990_150x150.jpg",
+        "description": "Połączenie koloidalnych mikrocząsteczek i protein sojowych generuje mikronapreżeniarównowazne 25000 mikroliftingów.Skóra staje się jędrna ,napięta jak po liftingu.Odpowiedni do każdego rodzaju skóry ,również wrażliwej.Polecany mążczyznom po 40roku życia.Może być stosowany po goleniu.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "TAGOMAGO",
+            "localPrice": 239,
+            "image": "https://cdn.shopify.com/s/files/1/2096/6099/t/1/assets/logo.png?1859604075280416780",
+            "url": "https://tagomago.pl/products/lancome-renergy-3d-lifting-anti-wrinkle-firming-cream-men-liftinujaco-przeciwzmarszczkowo-ujedrniajacy-krem-do-twarzy-50ml/?utm_campaign=Ceneo_ST&utm_medium=CPC&utm_source=Ceneo_"
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "LUXE24",
+            "localPrice": 228,
+            "image": "http://www.luxe24.pl/images/stories/luxe24.gif",
+            "url": "http://www.luxe24.pl/index.php?page=shop.product_details&option=com_virtuemart&product_id=7775"
           }
         ]
       },
       {
         "brand": "Calvin Klein",
         "model": "Euphoria",
-        "price": 150,
-        "gender": "zenski",
+        "price": 147,
+        "female": true,
+        "male": false,
         "available": true,
-        "description": "Mauris cursus mattis molestie a iaculis. Libero id faucibus nisl tincidunt eget. Diam maecenas sed enim ut. Faucibus turpis in eu mi bibendum. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra.",
+        "image": "http://superperfumeria.pl/pol_pl_Calvin-Klein-Euphoria-100ml-woda-perfumowana-W-16906_1.png",
+        "description": "Daj się zabrać w ekscytującą podróż z zapachem Euphoria! Ta kultowa woda perfumowana marki Calvin Klein pachnie nieskończoną radością i zapewnia mocne wrażenia. Na pewno spodoba się kobietom, które lubią dreszczyk adrenaliny i na co dzień nie podążają utartymi ścieżkami. Kobieta, której skóra pachnie tą kompozycją, ponad wszystko ceni wolność – jest jak egzotyczny, piękny ptak. A same perfumy Euphoria są jak historia dalekiej podróży. Już od pierwszych akordów wprowadzają Cię w sensualny, pobudzający świat orientu. Ich brzmienie opiera się na kontrastujących ze sobą zielonych i owocowych nutach. Granatowe jabłko skusi Cię wyjątkowym, sensualnym i świeżym aromatem. Po kilku chwilach serce perfum zabije euforycznymi nutami czarnej orchidei i lotosu – tak pachną egzotyczne wakacje. Bazą dla zapachu jest mieszanka drzewno-kwiatowo-żywiczna, nadająca całości trwałość. Ten zapach uzależnia!",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
-          },
-          {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "TAGOMAGO",
+            "localPrice": 147,
+            "image": "https://cdn.shopify.com/s/files/1/2096/6099/t/1/assets/logo.png?1859604075280416780",
+            "url": "https://tagomago.pl/products/calvin-klein-euphoria-woda-perfumowana-spray-100ml/?utm_campaign=Ceneo_ST&utm_medium=CPC&utm_source=Ceneo_"
           }
         ]
       },
       {
         "brand": "Christian Dior",
         "model": "Sauvage",
-        "price": 294,
+        "price": 331,
         "gender": "meski",
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Ultricies leo integer malesuada nunc. Integer enim neque volutpat ac tincidunt vitae. Risus nullam eget felis eget nunc.",
+        "image": "http://static5.perfumesco.pl/img/388/48651.jpg",
+        "description": "Niespotykanie świeża kompozycja, której nazwa już sama w sobie jest manifestem. I taki właśnie był cel twórcy zapachów Dior, François Demachy: stworzyć zapach szlachetny i surowy zarazem. Naturalne składniki, wybrane z najwyższą starannością, dostarczone w skrajnie skoncentrowanych dawkach. Promienne nuty nasycone są soczystą świeżością bergamotki z Kalabrii. Ambroksan, będący pochodną cennej ambry uwalnia potężny drzewny akord. Sauvage został zainspirowany przez otwarte przestrzenie. Intensywnie niebieskie niebo, rozpostarte nad kamienistym krajobrazem skąpanej w gorącym słońcu pustyni. Twarzą zapachu jest Johnny Depp.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "TAGOMAGO",
+            "localPrice": 331,
+            "image": "https://cdn.shopify.com/s/files/1/2096/6099/t/1/assets/logo.png?1859604075280416780",
+            "url": "https://tagomago.pl/products/dior-sauvage-woda-toaletowa-spray-100ml/?utm_campaign=Ceneo_ST&utm_medium=CPC&utm_source=Ceneo_"
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "PERFUMESCO",
+            "localPrice": 336.10,
+            "image": "http://static5.perfumesco.pl/img/27964.png",
+            "url": "http://www.perfumesco.pl/dior-sauvage-(m)-edt-100ml?utm_source=ceneo&utm_medium=cpc&utm_campaign=ceneo_spo&offer_id=17&aff_id=237"
           }
         ]
       }
@@ -383,92 +498,120 @@
       {
         "title": "Macierewicz i jego tajemnice",
         "author": "Tomasz Piatek",
-        "price": 38.50,
-        "pages": 200,
+        "price": 27.10,
+        "pages": 216,
+        "cover": [
+          " miękka",
+          " twarda"
+        ],
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Nunc sed blandit libero volutpat. Aliquet risus feugiat. Et malesuada fames ac turpis egestas. Ut faucibus pulvinar elementum integer enim. Ullamcorper sit amet risus nullam eget felis eget. Volutpat diam ut.",
+        "image": "https://www.swiatksiazki.pl/media/catalog/product/cache/image/e9c3970ab036de70892d86c6d221abfe/9/9/99906355604.jpg",
+        "description": "Książka Macierewicz i jego tajemnice zawiera fakty na temat niepokojących koneksji obecnego ministra obrony Antoniego Macierewicza.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "CZYTAM.PL",
+            "localPrice": 39.90,
+            "image": "hhttp://czytam.pl/img/logo.png",
+            "url": "http://czytam.pl/k,ks_675499,Macierewicz-i-jego-tajemnice-Piatek-Tomasz.html?ceneo_spo=true",
+            "cover": [
+              "twarda"
+            ]
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "ŚWIAT KSIĄŻKI",
+            "localPrice": 27.10,
+            "image": "https://www.swiatksiazki.pl/static/version1505884371/frontend/Olesiejuk/default/pl_PL/images/logo.svg",
+            "url": "https://www.swiatksiazki.pl/macierewicz-i-jego-tajemnice-6355604-ksiazka.html?oferta_nr",
+            "cover": [
+              "miękka"
+            ]
           }
         ]
       },
       {
         "title": "Zioła z polskich łąk",
         "author": "Bob Marley",
-        "price": 27.00,
-        "pages": 150,
+        "price": 27.10,
+        "pages": 328,
+        "cover": [
+          " twarda"
+        ],
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Tellus orci ac. Aliquam sem et tortor consequat id porta. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Mi tempus imperdiet. Congue quisque egestas diam in.",
+        "image": "https://www.booksfera.pl/foto/warianty/250/0/ziola-z-polskich-lak.jpg",
+        "description": "Polskie łąki, pastwiska, miedze to jedna wielka apteka, z której, przy zachowaniu odpowiedniej wiedzy, można pozyskiwać zupełnie za darmo mnóstwo leków cenionych przez współczesną medycynę. Do zupełnie wyjątkowych roślin leczniczych rosnących na naszych łąkach zaliczamy m.in.: babkę lancetowatą, bluszczyk kurdybanek, krwawnik, mniszek lekarski, pokrzywę, podbiał, skrzyp polny, stokrotkę, tasznik, oman łąkowy, pięciornik gęsi, szczaw, świetlik łąkowy, żywokost lekarski i wiele innych.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
-          },
-          {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "BOOKSFERA",
+            "localPrice": 27.10,
+            "image": "https://www.booksfera.pl/obrazki/booksfera.png",
+            "url": "https://www.booksfera.pl/ziola-z-polskich-lak.html",
+            "cover": [
+              "twarda"
+            ]
           }
         ]
       },
       {
         "title": "Gra o tron",
         "author": "George Martin",
-        "price": 31.00,
-        "pages": 300,
+        "price": 43.60,
+        "pages": 773,
+        "cover": [
+          " miękka"
+        ],
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Mauris cursus mattis molestie a iaculis. Libero id faucibus nisl tincidunt eget. Diam maecenas sed enim ut. Faucibus turpis in eu mi bibendum. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra.",
+        "image": "https://image.ceneo.pl/data/products/1219238/f-gra-o-tron.jpg",
+        "description": "W Zachodnich Krainach o ośmiu tysiącach lat zapisanej historii widmo wojen i katastrofy nieustannie wisi nad ludźmi. Zbliża się zima, lodowate wichry wieją z północy, gdzie schroniły się wyparte przez ludzi pradawne rasy oraz starzy bogowie. Zbuntowani władcy na szczęście pokonali szalonego Smoczego Króla, Aerysa Targaryena, zasiadającego na Żelaznym Tronie Zachodnich Krain, ale tyranowi udało się zbiec, śmierć dosięgła go z ręki gwardzisty. Niestety, obalony władca pozostawił potomstwo, równie nieobliczalne jak ON sam... Opuszczony tron objął Robert - najznamienitszy z buntowników. Minęły już lata pokoju i oto możnowładcy zaczynają grę o tron.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
-          },
-          {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "AVALON",
+            "localPrice": 43.60,
+            "image": "https://image.ceneo.pl/data/shops/14555/logo.jpg",
+            "url": "http://www.avalon.pl/gra-o-tron-p1319583.html",
+            "cover": [
+              "miękka"
+            ]
           }
         ]
       },
       {
-        "title": "Religia szkoła podstawowa",
+        "title": "Religia szkoła podstawowa klasa 3",
         "author": "Elżbieta Kondrak",
-        "price": 25.00,
-        "pages": 500,
+        "price": 7.75,
+        "pages": 128,
+        "cover": [
+          " miękka"
+        ],
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Ultricies leo integer malesuada nunc. Integer enim neque volutpat ac tincidunt vitae. Risus nullam eget felis eget nunc.",
+        "image": "http://www.korob.pl/pol_pm_Religia-SP-3-Jezus-jest-z-nami-cw-JEDNOSC-10258_1.jpg",
+        "description": "Zawarte w zeszycie zadania:– ściśle wiążą się z treścią podręcznika– stanowią istotną pomoc w realizacji celów katechetycznych i wymagań szczegółowych– przez swą różnorodność (uzupełnianie tekstu, rysowanie, kolorowanie, rebusy, krzyżówki i inne łamigłówki oraz wycinanki i naklejki) wszechstronnie aktywizują ucznia i pobudzają do samodzielnej twórczej pracy– posiadają zróżnicowany stopień trudności– ich miejsce w toku lekcji oraz dodatkowe wskazówki opisane są w przewodniku metodycznym– ułatwiają katechecie bieżącą ocenę pracy ucznia.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "MEGA KSIĄŻKI",
+            "localPrice": 8.11,
+            "image": "https://www.megaksiazki.pl/themes/template/img/logo.png?21434484523",
+            "url": "https://www.megaksiazki.pl/szkola-podstawowa/1016993-jezus-jest-z-nami-klasa-3-szkola-podstawowa-religia-cwiczenia-plyta-cd.html?utm_campaign=normal",
+            "cover": [
+              "miękka"
+            ]
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "EMPIK",
+            "localPrice": 9.34,
+            "image": "http://www.empik.com/b/mp/img/logo.svg",
+            "url": "http://www.empik.com/jezus-jest-z-nami-3-zeszyt-cwiczen-szkola-podstawowa-cd-kondrak-elzbieta-czerkawski-jaroslaw,p1080875478,ksiazka-p?utm_source=ceneo.pl&utm_medium=oferty_cpc&utm_content=p1080875478",
+            "cover": [
+              "miękka"
+            ]
+          },
+          {
+            "name": "EMPIK",
+            "localPrice": 7.75,
+            "image": "http://www.korob.pl/data/include/cms/site/korob_logo.png",
+            "url": "http://www.korob.pl/product-pol-10258-Religia-SP-3-Jezus-jest-z-nami-cw-JEDNOSC.html",
+            "cover": [
+              "miękka"
+            ]
           }
         ]
       }
