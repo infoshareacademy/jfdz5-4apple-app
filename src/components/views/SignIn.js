@@ -4,7 +4,7 @@ import {connect} from 'react-redux'
 import {set} from '../../state/auth'
 import firebase from 'firebase'
 
-// const providerForGoogle = new firebase.auth.GoogleAuthProvider();
+const providerForGoogle = new firebase.auth.GoogleAuthProvider();
 const providerForFacebook = new firebase.auth.FacebookAuthProvider();
 
 
@@ -32,7 +32,6 @@ class SignIn extends React.Component {
 
     firebase.auth().signInWithEmailAndPassword(this.state.login, this.state.password).then(
       user => {
-        debugger
         this.props.setUser(user);
         firebase.database().ref('favorites/' + user.uid).on('value', snapshot => {
           console.log(snapshot.val())
@@ -44,21 +43,32 @@ class SignIn extends React.Component {
     )
   };
 
+  handlerGoogleLogIn = () => {
+
+    firebase.auth().signInWithPopup(providerForGoogle).then(
+      result => {
+        console.log(result)
+        firebase.database().ref('favorites/' + result.user.uid).on('value', snapshot => {
+          console.log(snapshot.val())
+        });
+        firebase.database().ref('favorites/' + result.user.uid).set({google: 1})
+      }
+    ).catch(function (error) {
+
+    });
+  }
 
   handlerFacebookLogIn = () => {
 
     firebase.auth().signInWithPopup(providerForFacebook).then(
       result => {
-        debugger
+
         console.log(result)
         firebase.database().ref('favorites/' + result.user.uid).on('value', snapshot => {
           console.log(snapshot.val())
         });
         firebase.database().ref('favorites/' + result.user.uid).set({fb: 1})
       }
-
-
-
     ).catch(function (error) {
 
     });
