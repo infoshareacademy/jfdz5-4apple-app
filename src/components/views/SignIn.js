@@ -46,8 +46,10 @@ class SignIn extends React.Component {
   handlerGoogleLogIn = () => {
 
     firebase.auth().signInWithPopup(providerForGoogle).then(
+
       result => {
         console.log(result)
+        this.props.setUser(result);
         firebase.database().ref('favorites/' + result.user.uid).on('value', snapshot => {
           console.log(snapshot.val())
         });
@@ -64,10 +66,13 @@ class SignIn extends React.Component {
       result => {
 
         console.log(result)
+        this.props.setUser(result);
         firebase.database().ref('favorites/' + result.user.uid).on('value', snapshot => {
           console.log(snapshot.val())
         });
         firebase.database().ref('favorites/' + result.user.uid).set({fb: 1})
+
+
       }
     ).catch(function (error) {
 
