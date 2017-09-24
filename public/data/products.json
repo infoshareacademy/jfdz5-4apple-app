@@ -403,7 +403,8 @@
         "brand": "Biotherm",
         "model": "Aquapower",
         "price": 149,
-        "gender": "meski",
+        "female": false,
+        "male": true,
         "available": true,
         "image": "https://image.ceneo.pl/data/products/8579942/f-biotherm-nawilzajacy-zel-do-twarzy-homme-aquapower-75ml.jpg",
         "description": "Homme Aquapower Oligo-Thermal Comfort Care to silnie nawliżający krem-żel do pięlegnacji skóry suchej dla mężczyzn. To natychmistowe nawilżenie i ukojenie w nawet najbardziej podrażnionych miejscach. Nowoczesna formuła krem-żelu wzbogacona silnie nawilżająmy kompleksem na bazie czystego ekstraktu z Planktonu Termalnego, kompozycji witamin i oligominerałów.Innowacyjny krem-żel Homme Aquapower Oligo-Thermal Comfort Care głęboko wnika w wewnętrzne warstwy skóry zapobiega wysuszaniu oraz pozostawia ją idealnie nawilżoną, elastyczną i miękką w dotyku.",
@@ -425,68 +426,65 @@
       {
         "brand": "Lancome",
         "model": "3d lifting",
-        "price": 227,
-        "gender": "meski",
+        "price": 228,
+        "female": false,
+        "male": true,
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Tellus orci ac. Aliquam sem et tortor consequat id porta. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Mi tempus imperdiet. Congue quisque egestas diam in.",
+        "image": "http://www.luxe24.pl/components/com_virtuemart/shop_image/product/resized/Lancome_Men_Rene_4e16eeef0d990_150x150.jpg",
+        "description": "Połączenie koloidalnych mikrocząsteczek i protein sojowych generuje mikronapreżeniarównowazne 25000 mikroliftingów.Skóra staje się jędrna ,napięta jak po liftingu.Odpowiedni do każdego rodzaju skóry ,również wrażliwej.Polecany mążczyznom po 40roku życia.Może być stosowany po goleniu.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "TAGOMAGO",
+            "localPrice": 239,
+            "image": "https://cdn.shopify.com/s/files/1/2096/6099/t/1/assets/logo.png?1859604075280416780",
+            "url": "https://tagomago.pl/products/lancome-renergy-3d-lifting-anti-wrinkle-firming-cream-men-liftinujaco-przeciwzmarszczkowo-ujedrniajacy-krem-do-twarzy-50ml/?utm_campaign=Ceneo_ST&utm_medium=CPC&utm_source=Ceneo_"
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://makeup.pl/product/292339/?utm_source=ceneo&utm_campaign=recommended&utm_medium=cpc#/option/326101/"
+            "name": "LUXE24",
+            "localPrice": 228,
+            "image": "http://www.luxe24.pl/images/stories/luxe24.gif",
+            "url": "http://www.luxe24.pl/index.php?page=shop.product_details&option=com_virtuemart&product_id=7775"
           }
         ]
       },
       {
         "brand": "Calvin Klein",
         "model": "Euphoria",
-        "price": 150,
-        "gender": "zenski",
+        "price": 147,
+        "female": true,
+        "male": false,
         "available": true,
-        "description": "Mauris cursus mattis molestie a iaculis. Libero id faucibus nisl tincidunt eget. Diam maecenas sed enim ut. Faucibus turpis in eu mi bibendum. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra.",
+        "image": "http://superperfumeria.pl/pol_pl_Calvin-Klein-Euphoria-100ml-woda-perfumowana-W-16906_1.png",
+        "description": "Daj się zabrać w ekscytującą podróż z zapachem Euphoria! Ta kultowa woda perfumowana marki Calvin Klein pachnie nieskończoną radością i zapewnia mocne wrażenia. Na pewno spodoba się kobietom, które lubią dreszczyk adrenaliny i na co dzień nie podążają utartymi ścieżkami. Kobieta, której skóra pachnie tą kompozycją, ponad wszystko ceni wolność – jest jak egzotyczny, piękny ptak. A same perfumy Euphoria są jak historia dalekiej podróży. Już od pierwszych akordów wprowadzają Cię w sensualny, pobudzający świat orientu. Ich brzmienie opiera się na kontrastujących ze sobą zielonych i owocowych nutach. Granatowe jabłko skusi Cię wyjątkowym, sensualnym i świeżym aromatem. Po kilku chwilach serce perfum zabije euforycznymi nutami czarnej orchidei i lotosu – tak pachną egzotyczne wakacje. Bazą dla zapachu jest mieszanka drzewno-kwiatowo-żywiczna, nadająca całości trwałość. Ten zapach uzależnia!",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
-          },
-          {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "TAGOMAGO",
+            "localPrice": 147,
+            "image": "https://cdn.shopify.com/s/files/1/2096/6099/t/1/assets/logo.png?1859604075280416780",
+            "url": "https://tagomago.pl/products/calvin-klein-euphoria-woda-perfumowana-spray-100ml/?utm_campaign=Ceneo_ST&utm_medium=CPC&utm_source=Ceneo_"
           }
         ]
       },
       {
         "brand": "Christian Dior",
         "model": "Sauvage",
-        "price": 294,
+        "price": 331,
         "gender": "meski",
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
+        "image": "http://static5.perfumesco.pl/img/388/48651.jpg",
         "description": "Ultricies leo integer malesuada nunc. Integer enim neque volutpat ac tincidunt vitae. Risus nullam eget felis eget nunc.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "TAGOMAGO",
+            "localPrice": 331,
+            "image": "https://cdn.shopify.com/s/files/1/2096/6099/t/1/assets/logo.png?1859604075280416780",
+            "url": "https://tagomago.pl/products/dior-sauvage-woda-toaletowa-spray-100ml/?utm_campaign=Ceneo_ST&utm_medium=CPC&utm_source=Ceneo_"
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "PERFUMESCO",
+            "localPrice": 336.10,
+            "image": "http://static5.perfumesco.pl/img/27964.png",
+            "url": "http://www.perfumesco.pl/dior-sauvage-(m)-edt-100ml?utm_source=ceneo&utm_medium=cpc&utm_campaign=ceneo_spo&offer_id=17&aff_id=237"
           }
         ]
       }
@@ -498,92 +496,120 @@
       {
         "title": "Macierewicz i jego tajemnice",
         "author": "Tomasz Piatek",
-        "price": 38.50,
-        "pages": 200,
+        "price": 27.10,
+        "pages": 216,
+        "cover": [
+          " miękka",
+          " twarda"
+        ],
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
+        "image": "https://www.swiatksiazki.pl/media/catalog/product/cache/image/e9c3970ab036de70892d86c6d221abfe/9/9/99906355604.jpg",
         "description": "Nunc sed blandit libero volutpat. Aliquet risus feugiat. Et malesuada fames ac turpis egestas. Ut faucibus pulvinar elementum integer enim. Ullamcorper sit amet risus nullam eget felis eget. Volutpat diam ut.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "CZYTAM.PL",
+            "localPrice": 39.90,
+            "image": "hhttp://czytam.pl/img/logo.png",
+            "url": "http://czytam.pl/k,ks_675499,Macierewicz-i-jego-tajemnice-Piatek-Tomasz.html?ceneo_spo=true",
+            "cover": [
+              "twarda"
+            ]
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "ŚWIAT KSIĄŻKI",
+            "localPrice": 27.10,
+            "image": "https://www.swiatksiazki.pl/static/version1505884371/frontend/Olesiejuk/default/pl_PL/images/logo.svg",
+            "url": "https://www.swiatksiazki.pl/macierewicz-i-jego-tajemnice-6355604-ksiazka.html?oferta_nr",
+            "cover": [
+              "miękka"
+            ]
           }
         ]
       },
       {
         "title": "Zioła z polskich łąk",
         "author": "Bob Marley",
-        "price": 27.00,
-        "pages": 150,
+        "price": 27.10,
+        "pages": 328,
+        "cover": [
+          " twarda"
+        ],
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
+        "image": "https://www.booksfera.pl/foto/warianty/250/0/ziola-z-polskich-lak.jpg",
         "description": "Tellus orci ac. Aliquam sem et tortor consequat id porta. Suspendisse ultrices gravida dictum fusce ut placerat orci nulla. Mi tempus imperdiet. Congue quisque egestas diam in.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
-          },
-          {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "BOOKSFERA",
+            "localPrice": 27.10,
+            "image": "https://www.booksfera.pl/obrazki/booksfera.png",
+            "url": "https://www.booksfera.pl/ziola-z-polskich-lak.html",
+            "cover": [
+              "twarda"
+            ]
           }
         ]
       },
       {
         "title": "Gra o tron",
         "author": "George Martin",
-        "price": 31.00,
-        "pages": 300,
+        "price": 43.60,
+        "pages": 773,
+        "cover": [
+          " miękka"
+        ],
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
+        "image": "https://image.ceneo.pl/data/products/1219238/f-gra-o-tron.jpg",
         "description": "Mauris cursus mattis molestie a iaculis. Libero id faucibus nisl tincidunt eget. Diam maecenas sed enim ut. Faucibus turpis in eu mi bibendum. Tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
-          },
-          {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "AVALON",
+            "localPrice": 43.60,
+            "image": "https://image.ceneo.pl/data/shops/14555/logo.jpg",
+            "url": "http://www.avalon.pl/gra-o-tron-p1319583.html",
+            "cover": [
+              "miękka"
+            ]
           }
         ]
       },
       {
-        "title": "Religia szkoła podstawowa",
+        "title": "Religia szkoła podstawowa klasa 3",
         "author": "Elżbieta Kondrak",
-        "price": 25.00,
-        "pages": 500,
+        "price": 7.75,
+        "pages": 128,
+        "cover": [
+          " miękka"
+        ],
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
+        "image": "http://www.korob.pl/pol_pm_Religia-SP-3-Jezus-jest-z-nami-cw-JEDNOSC-10258_1.jpg",
         "description": "Ultricies leo integer malesuada nunc. Integer enim neque volutpat ac tincidunt vitae. Risus nullam eget felis eget nunc.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "MEGA KSIĄŻKI",
+            "localPrice": 8.11,
+            "image": "https://www.megaksiazki.pl/themes/template/img/logo.png?21434484523",
+            "url": "https://www.megaksiazki.pl/szkola-podstawowa/1016993-jezus-jest-z-nami-klasa-3-szkola-podstawowa-religia-cwiczenia-plyta-cd.html?utm_campaign=normal",
+            "cover": [
+              "miękka"
+            ]
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "EMPIK",
+            "localPrice": 9.34,
+            "image": "http://www.empik.com/b/mp/img/logo.svg",
+            "url": "http://www.empik.com/jezus-jest-z-nami-3-zeszyt-cwiczen-szkola-podstawowa-cd-kondrak-elzbieta-czerkawski-jaroslaw,p1080875478,ksiazka-p?utm_source=ceneo.pl&utm_medium=oferty_cpc&utm_content=p1080875478",
+            "cover": [
+              "miękka"
+            ]
+          },
+          {
+            "name": "EMPIK",
+            "localPrice": 7.75,
+            "image": "http://www.korob.pl/data/include/cms/site/korob_logo.png",
+            "url": "http://www.korob.pl/product-pol-10258-Religia-SP-3-Jezus-jest-z-nami-cw-JEDNOSC.html",
+            "cover": [
+              "miękka"
+            ]
           }
         ]
       }
