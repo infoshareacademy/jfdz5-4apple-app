@@ -58,8 +58,8 @@ class SearchBar extends React.Component {
                     <img src={magnifier}
                          alt="search"
                          height="35"/></Button>
-                  <Button type="submit">Log out
-                    </Button>
+
+                  <Button onClick={this.handleSubmit} type="reset">Wyloguj się</Button>
                 </form>
               </Navbar.Form>
             </Navbar.Collapse>
