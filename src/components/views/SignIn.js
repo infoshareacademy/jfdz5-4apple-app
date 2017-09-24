@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button, Col, ControlLabel, Form, FormControl, FormGroup, Checkbox} from 'react-bootstrap'
+import {Button, Col, ControlLabel, Form, FormControl, FormGroup, Checkbox, Alert} from 'react-bootstrap'
 import {connect} from 'react-redux'
 import {set} from '../../state/auth'
 import firebase from 'firebase'
@@ -41,15 +41,12 @@ class SignIn extends React.Component {
       }
     ).catch(
       err => this.setState({error: err.message})
-
-
     )
   };
 
   handlerGoogleLogIn = () => {
 
     firebase.auth().signInWithPopup(providerForGoogle).then(
-
       result => {
         console.log(result)
         this.props.setUser(result);
@@ -85,7 +82,10 @@ class SignIn extends React.Component {
   render() {
     return (
       <div>
-        <p>{this.state.error}</p>
+        {
+          this.state.error === null ? null : <Alert bsStyle="danger">{this.state.error}</Alert>
+
+        }
         <Form horizontal onSubmit={this.handleSubmit}>
           <FormGroup controlId="formHorizontalEmail">
             <Col componentClass={ControlLabel} sm={2}>
