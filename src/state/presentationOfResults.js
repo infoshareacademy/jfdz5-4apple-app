@@ -7,6 +7,7 @@ export const presentationOfResults = (chosenView) => ({
 
 const initialState = {
     chosenView: 1
+
 }
 
 export default (state = initialState, action) => {
@@ -14,7 +15,7 @@ export default (state = initialState, action) => {
         case SHOW:
             return {
                 ...state,
-                chosenView: state.chosenView
+                chosenView: action.chosenView
             }
         default:
             return state
