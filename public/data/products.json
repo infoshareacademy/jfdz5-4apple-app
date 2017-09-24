@@ -107,7 +107,7 @@
         "model": "UE49M5672AU",
         "price": 2389,
         "color": "srebrny",
-        "size": 49,
+        "size": "49''",
         "available": true,
         "image": "https://stat-s4.ms-online.pl/media/cache/gallery/rc/vbghdzeg/images/20/20397716/samsung-m5672-1.jpg",
         "description": "Telewizor z podświetleniem LED. Posiada rozdzielczość Full HD 1920 x 1080 oraz funkcję Smart TV.Korzyści: Full High Definition: większa czystość i szczegółowość obrazu. Wbudowany tuner do odbioru programów satelitarnych (DVB-S2). Technologia PurColour: wiernie odwzorowuje szerszy zakres barw co sprawia, że obraz staje się znacznie bardziej naturalny. Smart TV: aplikacje, przeglądarka internetowa PVR: możliwość nagrywania programów na podłączony nośnik USB",
@@ -137,7 +137,7 @@
         "model": "UE49MU6442U",
         "price": 3098,
         "color": "ciemny tytan",
-        "size": 49,
+        "size": "49''",
         "available": true,
         "image": "https://stat-m4.ms-online.pl/media/cache/gallery/rc/4fijq8pt/images/20/20397744/mu6442u.jpg",
         "description": "Technologia Active Crystal Colour sprawia, że kolory są dokładniej odwzorowane i zauważalnie naturalniejsze. To zasługa ulepszonego podświetlenia ekranu, dzięki któremu zwiększyła się nie tylko jakość obrazu, ale zmniejszyło też zużycie energii.",
@@ -146,19 +146,19 @@
             "name": "SATURN",
             "localPrice": 3099,
             "image": "http://zaglebie.lubin.pl/wp-content/uploads/2016/04/saturn_logo_1a.jpg",
-            "url": "https://saturn.pl/rtv-i-telewizory/telewizor-samsung-ue49m5672au?querystring=UE49M5672AU"
+            "url": "https://saturn.pl/rtv-i-telewizory/telewizor-samsung-ue49mu6442u?utm_source=ceneo&utm_medium=cpc&utm_term=ceneo&utm_campaign=xml"
           },
           {
             "name": "MEDIA MARKT",
             "localPrice": 3099,
             "image": "http://3.bp.blogspot.com/-MCckJgb3-iw/VK1y2X7ZVBI/AAAAAAAAIMc/jP-rCi12Ogg/w1200-h630-p-k-no-nu/Logo%2BMediaMarkt.png",
-            "url": "https://mediamarkt.pl/rtv-i-telewizory/telewizor-samsung-ue49m5672au?gclid=CjwKCAjwjJjOBRBVEiwAfvnvBFFGAlwwRbuGcdNZnRmA2dReo1AlqjzcJ8dCZfyPhjDXhu54sAeD3BoC7xgQAvD_BwE"
+            "url": "https://mediamarkt.pl/rtv-i-telewizory/telewizor-samsung-ue49mu6442u?utm_source=ceneo&utm_medium=cpc&utm_term=ceneo&utm_campaign=xml"
           },
           {
             "name": "REDCOON",
             "localPrice": 3098,
             "image": "https://i.tanio.co/sd/2017/06/redcoon-promocje.jpg",
-            "url": "https://redcoon.pl/telewizory/telewizor-samsung-ue49m5672au?utm_source=ceneo.pl&utm_medium=cpc"
+            "url": "https://redcoon.pl/telewizory/telewizor-samsung-ue49mu6442u?utm_source=ceneo.pl&utm_medium=cpc"
           }
         ]
       },
@@ -166,8 +166,8 @@
         "brand": "Philips",
         "model": "49PUS6561/12",
         "price": 2999,
-        "color": "srebrny",
-        "size": 49,
+        "color": "srebrny ",
+        "size": "49''",
         "available": true,
         "image": "https://f01.esfr.pl/foto/3/12616115619/6bf616e6538ac1d93f874d6fc2b61fe/philips-49pus6561-12,12616115619_7.jpg",
         "description": "Pięknie wykonane telewizory Philips z serii 6500 są już dostępne. Ciesz się niesamowitą jakością obrazu 4K Ultra HD i otwórz drzwi do świata rozrywki dzięki systemowi Android TV. Wąska obudowa i wyjątkowa podstawa Arc dopełniają wygląd telewizora i stanowią eleganckie, stylowe wykończenie.",
@@ -184,8 +184,8 @@
         "brand": "Panasonic",
         "model": "TX-55EX633E",
         "price": 3749,
-        "color": "czarny",
-        "size": 49,
+        "color": "czarny ",
+        "size": "49''",
         "available": true,
         "image": "https://stat-m6.ms-online.pl/media/cache/gallery/rc/ghlqqhid/images/20/20390786/TX_55EX_633E_2.jpg",
         "description": "Zaawansowansowane przetwarzaniu obrazu zapewnia precyzyjne odwzorowanie realistycznych barw. Aby zapewnić piękny, realistyczny i wierny obraz technologia 4K HDR firmy Panasonic korzysta z całości naszej wiedzy fachowej.",
@@ -221,7 +221,7 @@
         "model": "TX-65EX600E",
         "price": 5349,
         "color": "czarny",
-        "size": 65,
+        "size": "65''",
         "available": true,
         "image": "https://images.morele.net/full/1371318_0_f.jpg",
         "description": "Seria EX600 zapewnia żywy obraz 4K HDR i funkcje inteligentne, zaś umożliwiająca konfigurowanie konstrukcja Switch Design pozwala dopasować telewizor do każdego wnętrza.",
@@ -261,92 +261,136 @@
       {
         "brand": "Apple",
         "model": "iPhone 7",
-        "price": 3499,
-        "color": "srebrny",
-        "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Quam elementum pulvinar. Urna molestie at elementum eu facilisis. Tincidunt vitae semper quis lectus nulla at volutpat diam ut. Ornare arcu dui vivamus arcu felis bibendum ut tristique et. Non quam lacus suspendisse faucibus. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit.",
+        "price": 2689,
+        "color": [
+          " srebrny",
+          " złoty",
+          " biały"
+        ],
+        "size": "4.7''",
+        "image": "http://www.avans.pl/temp/thumbs-new/3/products/597/739597_1923859_500x500w50.jpg",
+        "description": "iPhone 7 radykalnie udoskonala kluczowe elementy iPhone’a. Przynosi nowe, zaawansowane aparaty do zdjęć i wideo. Największą moc i najwydajniejszą baterię w historii tego urządzenia. Głośniki stereo hipnotyzujące fantastycznym dźwiękiem. Najjaśniejszy i wyświetlający najszerszą gamę kolorów ekran. Odporność na wodę i zachlapania.1 Oraz imponujący wygląd, na który zasługuje coś tak potężnego. Oto on. iPhone 7.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "EMAG",
+            "localPrice": 2696.90,
+            "image": "https://s5emagst.akamaized.net/assets/pl/css/icons/logo.svg",
+            "url": "https://www.emag.pl/telefon-apple-iphone-7-32gb-czarny-apple-iphone-7-32gb-black/pd/D9GKV2BBM/?cmpid=60049&utm_campaign=wszystkie&utm_content=14820134&utm_medium=Feed&utm_source=Ceneo.pl",
+            "color": [
+              "srebrny",
+              "złoty",
+              "biały"
+            ]
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "ELEKTRO",
+            "localPrice": 2689,
+            "image": "http://www.electro.pl/common/images/electro.jpg",
+            "url": "http://www.electro.pl/smartfony/smartfon-apple-iphone-7-32gb-czarny,id-739597?utm_source=ceneo&utm_medium=cpc&utm_content=861322&utm_campaign=2017-09&utm_term=SMARTFONY&ceneo_spo=true",
+            "color": [
+              "biały"
+            ]
+          },
+          {
+            "name": "AVANS",
+            "localPrice": 2689,
+            "image": "http://www.avans.pl/common4/images/logos/logo.png",
+            "url": "http://www.avans.pl/smartfony/smartfon-apple-iphone-7-32gb-czarny,id-739597?utm_source=Ceneo&utm_medium=cpc&utm_content=861322&utm_campaign=2017-09&utm_term=SMARTFONY&ceneo_spo=true&gclid=CJC4htTCvNYCFQLBGQodUM0Jxg&gclsrc=ds&dclid=CI2_jtTCvNYCFVIcGAodMToDsw",
+            "color": [
+              "złoty",
+              "biały"
+            ]
           }
         ]
       },
       {
         "brand": "Apple",
         "model": "iPhone 7 plus",
-        "price": 3999,
-        "color": "white",
+        "price": 3319,
+        "color": [
+          " różowy",
+          " biały",
+          " srebrny",
+          " czarny"
+        ],
+        "size": "5.5''",
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Egestas egestas fringilla phasellus faucibus scelerisque eleifend. Quisque egestas diam in arcu cursus euismod quis. Tristique nulla aliquet enim tortor at.",
+        "image": "https://image.ceneo.pl/data/products/47045340/89424e37-6218-4b38-a752-303eabb5dec6_i-apple-iphone-7-plus-32gb-czarny.jpg?=f65a8",
+        "description": "Smartfon Apple iPhone 7, to arcydzieło sztuki użytkowej, wyposażone w nowy, potężny procesor A10 Fusion, który poradzi sobie z każdym, nawet najbardziej wymagającym zadaniem. Doskonały wyświetlacz Retina HD wyświetli, niezwykle żywe i bardziej naturalne kolory, a stereofoniczne głośniki o szerokim zakresie dynamiki, bezbłędnie trafią w gusta miłośników dobrego brzmienia. Bezkonkurencyjny aparat 12Mpix, został uzbrojony w jasny f/1.8 obiektyw, który wraz z diodowym flashem True Tone rozproszy nawet największe ciemności.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
-          },
-          {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "IDREAM",
+            "localPrice": 3319,
+            "image": "https://idream.pl/images/logo-idream.png",
+            "url": "https://idream.pl/iphone/iphone-7-plus/apple-iphone-7-plus-32gb-czarny.html",
+            "color": [
+              "różowy",
+              "biały",
+              "srebrny",
+              "czarny"
+            ]
           }
         ]
       },
       {
         "brand": "Apple",
         "model": "iMac 27",
-        "price": 9999,
-        "color": "silver",
+        "price": 7099,
+        "color": "srebrny",
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Duis at consectetur lorem donec massa. Tortor pretium viverra suspendisse potenti nullam ac tortor vitae. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Lectus nulla at volutpat diam ut venenatis.",
+        "image": "https://images.morele.net/full/799651_3_f.jpeg",
+        "description": "Od pierwszego modelu iMac miał być zawsze najbardziej wyrafinowanym komputerem stacjonarnym. Z niemożliwie smukłą, bezszczelinową obudową, najlepszym wyświetlaczem, hiperwydajnymi procesorami, grafiką i pamięcią masową. Zupełnie nowy, 21,5-calowy iMac z wyświetlaczem Retina 4K jest wierny tej koncepcji. Podobnie jak rewolucyjny 27-calowy model 5K, jakością wyświetlanego obrazu gasi wszystko wokół. Dostarcza takich wrażeń, że kompletnie pochłania odbiorcę. I tym sposobem robi kolejny, spektakularny krok naprzód.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "MORELE.NET",
+            "localPrice": 7970.59,
+            "image": "https://www.morele.net/static/img/shop/img-morele-logo.png",
+            "url": "https://www.morele.net/komputer-apple-imac-27-mk462pl-a-799651/"
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "MEDIA MARKT",
+            "localPrice": 7099,
+            "image": "http://3.bp.blogspot.com/-MCckJgb3-iw/VK1y2X7ZVBI/AAAAAAAAIMc/jP-rCi12Ogg/w1200-h630-p-k-no-nu/Logo%2BMediaMarkt.png",
+            "url": "https://mediamarkt.pl/komputery-i-tablety/komputer-apple-imac-27-z-wyswietlaczem-retina-5k-mk462pl-a?utm_source=ceneo&utm_medium=cpc&utm_term=ceneo&utm_campaign=xml"
+          },
+          {
+            "name": "KOMPUTRONIK",
+            "localPrice": 7399,
+            "image": "http://www.komputronik.pl/informacje/wp-content/uploads/2017/01/logo-kt-800px-wide.png",
+            "url": "https://www.komputronik.pl/product/293615/apple-imac-27-mk462pl-a-.html?utm_source=Ceneo&utm_medium=link&utm_campaign=Promo"
           }
         ]
       },
       {
         "brand": "Apple",
         "model": "iPad PRO",
-        "price": 2999,
-        "color": "silver",
+        "price": 2984,
+        "color": [
+          " biały",
+          " srebrny"
+        ],
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Quis varius quam quisque id diam vel quam elementum pulvinar. Tristique senectus et netus et malesuada fames ac turpis. Nec ullamcorper sit amet risus nullam eget felis eget nunc. Ac felis donec et odio pellentesque diam.",
+        "image": "https://image.ceneo.pl/data/products/52404806/f-apple-ipad-pro-10-5-64gb-wi-fi-gwiezdna-szarosc-mqdt2fda.jpg",
+        "description": "Cokolwiek zechcesz na nim zrobić – zrobisz. I to lepiej niż myślisz. Oferuje znacznie więcej mocy niż większość laptopów PC, a jest przy tym rozkosznie prosty w obsłudze. Wyświetlacz Retina został przeprojektowany i nie sposób oderwać od niego wzroku. Podobnie jak rąk. A wszystkim steruje iOS, najbardziej zaawansowany mobilny system operacyjny na świecie. iPad Pro ma wszystko, czego oczekujesz od nowoczesnego komputera. Tylko lepsze.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
+            "name": "EMAG",
+            "localPrice": 3149,
+            "image": "https://s5emagst.akamaized.net/assets/pl/css/icons/logo.svg",
+            "url": "https://www.emag.pl/tablet-apple-ipad-pro-10-5-wifi-64gb-space-grey-mqdt2fd-a/pd/DVDB6KBBM/?cmpid=60049&utm_campaign=wszystkie&utm_content=15215212&utm_medium=Feed&utm_source=Ceneo.pl",
+            "color": [
+              "srebrny",
+              "biały"
+            ]
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "MORELE.NET",
+            "localPrice": 2984,
+            "image": "https://www.morele.net/static/img/shop/img-morele-logo.png",
+            "url": "https://www.morele.net/tablet-apple-ipad-pro-10-5-wifi-64gb-space-grey-mqdt2fd-a-2017-1342435/",
+            "color": [
+              "biały"
+            ]
           }
         ]
       }
@@ -358,23 +402,23 @@
       {
         "brand": "Biotherm",
         "model": "Aquapower",
-        "price": 150,
+        "price": 149,
         "gender": "meski",
         "available": true,
-        "image": "http://via.placeholder.com/242x200",
-        "description": "Nunc sed blandit libero volutpat. Aliquet risus feugiat. Et malesuada fames ac turpis egestas. Ut faucibus pulvinar elementum integer enim. Ullamcorper sit amet risus nullam eget felis eget. Volutpat diam ut.",
+        "image": "https://image.ceneo.pl/data/products/8579942/f-biotherm-nawilzajacy-zel-do-twarzy-homme-aquapower-75ml.jpg",
+        "description": "Homme Aquapower Oligo-Thermal Comfort Care to silnie nawliżający krem-żel do pięlegnacji skóry suchej dla mężczyzn. To natychmistowe nawilżenie i ukojenie w nawet najbardziej podrażnionych miejscach. Nowoczesna formuła krem-żelu wzbogacona silnie nawilżająmy kompleksem na bazie czystego ekstraktu z Planktonu Termalnego, kompozycji witamin i oligominerałów.Innowacyjny krem-żel Homme Aquapower Oligo-Thermal Comfort Care głęboko wnika w wewnętrzne warstwy skóry zapobiega wysuszaniu oraz pozostawia ją idealnie nawilżoną, elastyczną i miękką w dotyku.",
         "shops": [
           {
-            "name": "NIKE",
-            "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "name": "TAGOMAGO",
+            "localPrice": 149,
+            "image": "https://cdn.shopify.com/s/files/1/2096/6099/t/1/assets/logo.png?1859604075280416780",
             "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
           },
           {
-            "name": "BUTYJANA",
-            "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "name": "MAKEUP",
+            "localPrice": 156,
+            "image": "https://s3-eu-west-1.amazonaws.com/tpd/logos/586284900000ff000599c4a3/0x0.png",
+            "url": "https://makeup.pl/product/292339/?utm_source=ceneo&utm_campaign=recommended&utm_medium=cpc#/option/326101/"
           }
         ]
       },
@@ -397,7 +441,7 @@
             "name": "BUTYJANA",
             "localPrice": 555,
             "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
-            "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html"
+            "url": "https://makeup.pl/product/292339/?utm_source=ceneo&utm_campaign=recommended&utm_medium=cpc#/option/326101/"
           }
         ]
       },
