@@ -31,6 +31,11 @@ class SearchBar extends React.Component {
     })
   }
 
+  handleLogOut = (event) => {
+    event.preventDefault();
+    console.log('wyloguj')
+  }
+
   render() {
     return (
       <div>
@@ -59,7 +64,7 @@ class SearchBar extends React.Component {
                          alt="search"
                          height="35"/></Button>
 
-                  <Button onClick={this.handleSubmit} type="reset">Wyloguj się</Button>
+                  <Button onClick={this.handleLogOut} type="reset">Wyloguj się</Button>
                 </form>
               </Navbar.Form>
             </Navbar.Collapse>
