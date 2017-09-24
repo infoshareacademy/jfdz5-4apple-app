@@ -8,7 +8,8 @@ const Auth = ({user, children}) => (
   <div>
     {
       user === null ?
-        <SignIn/> :
+
+        <div><SignIn/> </div>:
         children
     }
   </div>

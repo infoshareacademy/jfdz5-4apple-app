@@ -12,7 +12,8 @@ class SignIn extends React.Component {
 
   state = {
     login: '',
-    password: ''
+    password: '',
+    error: null
   };
 
   handleLoginChange = (event) => {
@@ -39,7 +40,9 @@ class SignIn extends React.Component {
         firebase.database().ref('favorites/' + user.uid).set({email: 1})
       }
     ).catch(
-      err => console.log(err)
+      err => this.setState({error: err.message})
+
+
     )
   };
 
@@ -82,6 +85,7 @@ class SignIn extends React.Component {
   render() {
     return (
       <div>
+        <p>{this.state.error}</p>
         <Form horizontal onSubmit={this.handleSubmit}>
           <FormGroup controlId="formHorizontalEmail">
             <Col componentClass={ControlLabel} sm={2}>
