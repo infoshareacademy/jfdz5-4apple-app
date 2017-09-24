@@ -40,7 +40,7 @@ class SignIn extends React.Component {
         firebase.database().ref('favorites/' + user.uid).set({email: 1})
       }
     ).catch(
-      err => this.setState({error: err.message})
+      err => this.setState({error:"Nieprawidłowe dane logowania. Spróbuj ponownie"})
     )
   };
 
@@ -119,12 +119,12 @@ class SignIn extends React.Component {
           </FormGroup>
 
           <FormGroup>
-            <Col smOffset={4} sm={10}>
+            <Col smOffset={6} sm={12}>
               <Button onClick={this.handlerGoogleLogIn} bsStyle="primary">
                 google
               </Button>
             </Col>
-            <Col smOffset={4} sm={10}>
+            <Col smOffset={6} sm={12}>
               <Button onClick={this.handlerFacebookLogIn} bsStyle="primary">
                 FB
               </Button>
