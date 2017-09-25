@@ -1,9 +1,10 @@
-import { createStore, combineReducers, compose } from 'redux'
+import {createStore, combineReducers, compose} from 'redux'
 import persistState from 'redux-localstorage'
 import firebase from 'firebase'
 
 import auth, {addUNewUser} from './state/auth'
 import searching from './state/searching'
+import presentationOfResults from './state/presentationOfResults'
 
 const config = {
     apiKey: "AIzaSyBfMc_ewDjLN4mtSbeufm9IiKtIxg9peHM",
@@ -17,14 +18,14 @@ firebase.initializeApp(config);
 
 
 const reducer = combineReducers({
+    searching,
+    presentationOfResults,
     auth,
-    searching
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
 
 const enhancer = composeEnhancers(
-
     persistState(['auth']),
 )
 
