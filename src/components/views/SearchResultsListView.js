@@ -13,7 +13,7 @@ const SearchResultsListView = () => (
       component={SearchBar}
       propName="searchedProducts"
     />
-    {/*<SearchBarFilters/>*/}
+    <SearchBarFilters/>
     <SearchResultsList/>
   </div>
 )
