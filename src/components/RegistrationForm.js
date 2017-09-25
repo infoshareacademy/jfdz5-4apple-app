@@ -10,7 +10,9 @@ class RegistrationForm extends React.Component {
 
     state = {
         email: '',
-        password: ''
+        password: '',
+        confirmPassword: '',
+        error: null,
     };
 
     handleChange = (event) => {
@@ -19,13 +21,21 @@ class RegistrationForm extends React.Component {
         })
     };
 
-    handleSubmit = (event) => {
-        event.preventDefault();
+    handleConfirmPassword = event =>
+        this.setState({
+            confirmPassword: event.target.value
+        })
 
-        firebase.auth().createUserWithEmailAndPassword(
-            this.state.email,
-            this.state.password
-        )
+    handleSubmit = (event) => {
+
+        if (this.state.password === this.state.confirmPassword) {
+            event.preventDefault();
+
+            firebase.auth().createUserWithEmailAndPassword(
+                this.state.email,
+                this.state.password
+            )
+        }
     };
 
     render() {
@@ -47,7 +57,15 @@ class RegistrationForm extends React.Component {
                         <FormGroup controlId="formHorizontalPassword"
                                    onChange={this.handleChange}>
                             <Col sm={12}>
-                                <FormControl type="password" placeholder="Hasło" name="password" required/>
+                                <FormControl type="password" placeholder="Podaj hasło" name="password" required/>
+                            </Col>
+                        </FormGroup>
+
+                        <FormGroup controlId="formHorizontalPassword"
+                                   onChange={this.handleConfirmPassword}>
+                            <Col sm={12}>
+                                <FormControl type="password" placeholder="Powtórz hasło" name="confirmPassword"
+                                             required/>
                             </Col>
                         </FormGroup>
 
