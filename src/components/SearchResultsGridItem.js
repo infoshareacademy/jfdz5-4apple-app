@@ -16,7 +16,7 @@ const SearchResultsGridItem = ({searchResults}) => {
                             <div className="thumbnail--info">
                                 <div className="product--description">
                                     <div className="thumbnail--name">
-                                        <h3>{product.brand} {product.model} {product.author} {product.title} </h3>
+                                        <h3 className="thumbnail--name-details">{product.brand} {product.model} {product.author} {product.title} </h3>
                                     </div>
                                 </div>
                                 <div className="thumbnail--price-item">
