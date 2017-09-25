@@ -21,10 +21,6 @@ class RegistrationForm extends React.Component {
         })
     };
 
-    handleConfirmPassword = event =>
-        this.setState({
-            confirmPassword: event.target.value
-        })
 
     handleSubmit = (event) => {
 
@@ -35,6 +31,13 @@ class RegistrationForm extends React.Component {
                 this.state.email,
                 this.state.password
             )
+        } else {
+            window.catch(error => error.message);
+            this.setState({
+                email: this.state.email,
+                password: '',
+                confirmPassword: ''
+        })
         }
     };
 
@@ -62,7 +65,7 @@ class RegistrationForm extends React.Component {
                         </FormGroup>
 
                         <FormGroup controlId="formHorizontalPassword"
-                                   onChange={this.handleConfirmPassword}>
+                                   onChange={this.handleChange}>
                             <Col sm={12}>
                                 <FormControl type="password" placeholder="Powtórz hasło" name="confirmPassword"
                                              required/>
