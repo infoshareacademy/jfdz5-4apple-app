@@ -1,10 +1,5 @@
-const SEARCH = 'searching/SEARCH'
 const FILTER = 'searching/FILTER'
 
-export const search = searchedItem => ({
-  type: SEARCH,
-  searchedItem
-})
 export const filterResults = (searchedProducts, searchedItem) => ({
   type: FILTER,
   searchedProducts,
@@ -18,11 +13,6 @@ const initialState = {
 
 export default (state = initialState, action) => {
   switch (action.type) {
-    case SEARCH:
-      return {
-        ...state,
-        searchedItems: action.searchedItem
-      }
     case FILTER:
       return {
         ...state,
