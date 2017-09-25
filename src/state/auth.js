@@ -1,6 +1,6 @@
 const ADD_NEW_USER = 'auth/ADD_NEW_USER';
 
-export const addUNewUser = (user) => ({
+export const addNewUser = (user) => ({
     type: ADD_NEW_USER,
     user
 });

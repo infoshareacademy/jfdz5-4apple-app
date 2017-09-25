@@ -1,8 +1,7 @@
-import {createStore, combineReducers, compose} from 'redux'
-import persistState from 'redux-localstorage'
+import {createStore, combineReducers} from 'redux'
 import firebase from 'firebase'
 
-import auth, {addUNewUser} from './state/auth'
+import auth, {addNewUser} from './state/auth'
 import searching from './state/searching'
 import presentationOfResults from './state/presentationOfResults'
 
@@ -18,23 +17,19 @@ firebase.initializeApp(config);
 
 
 const reducer = combineReducers({
-    searching,
-    presentationOfResults,
     auth,
+    searching,
+    presentationOfResults
 })
 
-const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose
-
-const enhancer = composeEnhancers(
-    persistState(['auth']),
-)
 
 const store = createStore(
     reducer,
-    enhancer
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 )
+
 firebase.auth().onAuthStateChanged(user => {
-    store.dispatch(addUNewUser(user))
+    store.dispatch(addNewUser(user))
 })
 
 export default store
