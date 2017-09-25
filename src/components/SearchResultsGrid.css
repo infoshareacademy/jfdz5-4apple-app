@@ -108,10 +108,15 @@
 }
 @media (max-width: 450px){
     .thumbnail--name {
-        font-size: 18px;
         margin: 0 auto;
     }
     .thumbnail--name-details {
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 320px){
+    .thumbnail--name-details {
+        font-size: 20px;
     }
 }
