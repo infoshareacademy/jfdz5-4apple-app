@@ -1,9 +1,11 @@
 import {createStore, combineReducers} from 'redux'
 
 import searching from './state/searching'
+import presentationOfResults from './state/presentationOfResults'
 
 const reducer = combineReducers({
   searching,
+  presentationOfResults
 })
 
 const store = createStore(
