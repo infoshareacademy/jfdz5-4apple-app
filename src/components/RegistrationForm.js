@@ -1,8 +1,7 @@
 import React from 'react'
-import {connect} from 'react-redux'
+import firebase from 'firebase'
 import {Button, Col, Form, FormControl, FormGroup} from "react-bootstrap";
 
-import {add} from '../state/auth'
 import logo from '../img/logo.svg'
 
 import './RegistrationForm.css'
@@ -10,20 +9,23 @@ import './RegistrationForm.css'
 class RegistrationForm extends React.Component {
 
     state = {
-        userName: '',
-        userEmail: '',
+        email: '',
         password: ''
     };
 
     handleChange = (event) => {
         this.setState({
-            userName: event.target.value
+            [event.target.name]: event.target.value
         })
     };
 
     handleSubmit = (event) => {
         event.preventDefault();
-        this.props.addNewUser(this.state.userName, this.state.userEmail, this.state.password)
+
+        firebase.auth().createUserWithEmailAndPassword(
+            this.state.email,
+            this.state.password
+        )
     };
 
     render() {
@@ -33,23 +35,19 @@ class RegistrationForm extends React.Component {
                     <img src={logo} alt="logo" className="registation-form__logo"/>
                     <h2>Zarejestruj się</h2>
                     <Form horizontal onSubmit={this.handleSubmit} className="registation-form__form">
-                        <FormGroup controlId="formHorizontalName" onChange={this.handleChange}>
-                            <Col sm={12}>
-                                <FormControl type="text" placeholder="Nazwa użykownika" required/>
-                            </Col>
-                        </FormGroup>
+
 
                         <FormGroup controlId="formHorizontalEmail" onChange={this.handleChange}>
 
                             <Col sm={12}>
-                                <FormControl type="email" placeholder="Email" required/>
+                                <FormControl type="email" placeholder="Email" name="email" required/>
                             </Col>
                         </FormGroup>
 
                         <FormGroup controlId="formHorizontalPassword"
                                    onChange={this.handleChange}>
                             <Col sm={12}>
-                                <FormControl type="password" placeholder="Hasło" required/>
+                                <FormControl type="password" placeholder="Hasło" name="password" required/>
                             </Col>
                         </FormGroup>
 
@@ -68,11 +66,5 @@ class RegistrationForm extends React.Component {
     }
 }
 
-const mapDispatchToProps = dispatch => ({
-    addNewUser: (userName, userEmail, password) => dispatch(add(userName, userEmail, password))
-});
 
-export default connect(
-    null,
-    mapDispatchToProps,
-)(RegistrationForm)
+export default RegistrationForm

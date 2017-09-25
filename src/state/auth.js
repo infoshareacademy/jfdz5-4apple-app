@@ -1,10 +1,8 @@
 const ADD_NEW_USER = 'auth/ADD_NEW_USER';
 
-export const add = (userName, userEmail, password) => ({
+export const addUNewUser = (user) => ({
     type: ADD_NEW_USER,
-        userName,
-        userEmail,
-        password
+    user
 });
 const initialState = {
     user: null
@@ -15,10 +13,7 @@ export default (state = initialState, action) => {
         case ADD_NEW_USER:
             return {
                 ...state,
-                user: {
-                    userName: action.userName,
-                    userEmail: action.userEmail
-                }
+                user: action.user
             }
         default:
             return state
