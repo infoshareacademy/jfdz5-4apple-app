@@ -1,6 +1,6 @@
 import React from 'react'
 import firebase from 'firebase'
-import {Button, Col, Form, FormControl, FormGroup} from "react-bootstrap";
+import {Button, Col, Form, FormControl, FormGroup, Alert} from "react-bootstrap";
 
 import logo from '../img/logo.svg'
 
@@ -26,13 +26,14 @@ class RegistrationForm extends React.Component {
 
         if (this.state.password === this.state.confirmPassword) {
             event.preventDefault();
-
             firebase.auth().createUserWithEmailAndPassword(
                 this.state.email,
                 this.state.password
             )
         } else {
-            window.catch(error => error.message);
+            event.preventDefault();
+            err => this.setState({error: err.message})
+            console.log('Podane hasła różnią się od siebie')
             this.setState({
                 email: this.state.email,
                 password: '',
@@ -71,7 +72,10 @@ class RegistrationForm extends React.Component {
                                              required/>
                             </Col>
                         </FormGroup>
+                        {
+                            this.state.error === null ? null : <Alert bsStyle="danger">{this.state.error}</Alert>
 
+                        }
 
                         <FormGroup>
                             <Col sm={12}>
@@ -80,6 +84,7 @@ class RegistrationForm extends React.Component {
                                 </Button>
                             </Col>
                         </FormGroup>
+
                     </Form>
                 </div>
             </div>
