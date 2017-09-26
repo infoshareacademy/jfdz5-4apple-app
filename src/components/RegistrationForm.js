@@ -38,7 +38,7 @@ class RegistrationForm extends React.Component {
                 email: this.state.email,
                 password: '',
                 confirmPassword: ''
-        })
+            })
         }
     };
 
@@ -54,22 +54,35 @@ class RegistrationForm extends React.Component {
                         <FormGroup controlId="formHorizontalEmail" onChange={this.handleChange}>
 
                             <Col sm={12}>
-                                <FormControl type="email" placeholder="Email" name="email" required/>
-                            </Col>
-                        </FormGroup>
-
-                        <FormGroup controlId="formHorizontalPassword"
-                                   onChange={this.handleChange}>
-                            <Col sm={12}>
-                                <FormControl type="password" placeholder="Podaj hasło" name="password" required/>
-                            </Col>
-                        </FormGroup>
-
-                        <FormGroup controlId="formHorizontalPassword"
-                                   onChange={this.handleChange}>
-                            <Col sm={12}>
-                                <FormControl type="password" placeholder="Powtórz hasło" name="confirmPassword"
+                                <FormControl type="email"
+                                             placeholder="Email"
+                                             name="email"
+                                             value={this.state.email}
                                              required/>
+                            </Col>
+                        </FormGroup>
+
+                        <FormGroup controlId="formHorizontalPassword"
+                                   onChange={this.handleChange}>
+                            <Col sm={12}>
+                                <FormControl
+                                    type="password"
+                                    placeholder="Podaj hasło"
+                                    name="password"
+                                    value={this.state.password}
+                                    required/>
+                            </Col>
+                        </FormGroup>
+
+                        <FormGroup controlId="formHorizontalPassword"
+                                   onChange={this.handleChange}>
+                            <Col sm={12}>
+                                <FormControl
+                                    type="password"
+                                    placeholder="Powtórz hasło"
+                                    name="confirmPassword"
+                                    value={this.state.confirmPassword}
+                                    required/>
                             </Col>
                         </FormGroup>
                         {
