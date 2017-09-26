@@ -3,6 +3,7 @@
     "category": "Obuwie",
     "items": [
       {
+        "id":1,
         "brand": "Nike",
         "model": "Air Force 1",
         "price": 419.00,
@@ -56,6 +57,7 @@
         "description": "Buty męskie Nike Air Force 1 '07 to nowoczesna odsłona legendarnego modelu, stanowiąca mieszankę klasyki i nowości."
       },
       {
+        "id":2,
         "brand": "Nike",
         "model": "Flex Adapt TR",
         "price": 205.00,
@@ -103,6 +105,7 @@
     "category": "RTV",
     "items": [
       {
+        "id":3,
         "brand": "Samsung",
         "model": "UE49M5672AU",
         "price": 2389,
@@ -133,6 +136,7 @@
         ]
       },
       {
+        "id":4,
         "brand": "Samsung",
         "model": "UE49MU6442U",
         "price": 3098,
@@ -163,6 +167,7 @@
         ]
       },
       {
+        "id":5,
         "brand": "Philips",
         "model": "49PUS6561/12",
         "price": 2999,
@@ -181,6 +186,7 @@
         ]
       },
       {
+        "id":6,
         "brand": "Panasonic",
         "model": "TX-55EX633E",
         "price": 3749,
@@ -217,6 +223,7 @@
         ]
       },
       {
+        "id":7,
         "brand": "Panasonic",
         "model": "TX-65EX600E",
         "price": 5349,
@@ -259,6 +266,7 @@
         ]
       },
       {
+        "id":8,
         "brand": "Apple",
         "model": "iPhone 7",
         "price": 2689,
@@ -304,6 +312,7 @@
         ]
       },
       {
+        "id":9,
         "brand": "Apple",
         "model": "iPhone 7 plus",
         "price": 3319,
@@ -333,6 +342,7 @@
         ]
       },
       {
+        "id":10,
         "brand": "Apple",
         "model": "iMac 27",
         "price": 7099,
@@ -363,6 +373,7 @@
         ]
       },
       {
+        "id":11,
         "brand": "Apple",
         "model": "iPad PRO",
         "price": 2984,
@@ -402,6 +413,7 @@
     "category": "Uroda",
     "items": [
       {
+        "id":12,
         "brand": "Biotherm",
         "model": "Aquapower",
         "price": 149,
@@ -426,6 +438,7 @@
         ]
       },
       {
+        "id":13,
         "brand": "Lancome",
         "model": "3d lifting",
         "price": 228,
@@ -450,6 +463,7 @@
         ]
       },
       {
+        "id":14,
         "brand": "Calvin Klein",
         "model": "Euphoria",
         "price": 147,
@@ -468,6 +482,7 @@
         ]
       },
       {
+        "id":15,
         "brand": "Christian Dior",
         "model": "Sauvage",
         "price": 331,
@@ -496,6 +511,7 @@
     "category": "Ksiazki",
     "items": [
       {
+        "id":16,
         "title": "Macierewicz i jego tajemnice",
         "author": "Tomasz Piatek",
         "price": 27.10,
@@ -529,6 +545,7 @@
         ]
       },
       {
+        "id":17,
         "title": "Zioła z polskich łąk",
         "author": "Bob Marley",
         "price": 27.10,
@@ -552,6 +569,7 @@
         ]
       },
       {
+        "id":18,
         "title": "Gra o tron",
         "author": "George Martin",
         "price": 43.60,
@@ -575,6 +593,7 @@
         ]
       },
       {
+        "id":19,
         "title": "Religia szkoła podstawowa klasa 3",
         "author": "Elżbieta Kondrak",
         "price": 7.75,
