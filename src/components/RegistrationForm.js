@@ -19,6 +19,10 @@ class RegistrationForm extends React.Component {
         this.setState({
             [event.target.name]: event.target.value
         })
+
+        if (this.state.password === '' || this.state.confirmPassword === '') {
+            this.setState({error: null})
+        }
     };
 
 
