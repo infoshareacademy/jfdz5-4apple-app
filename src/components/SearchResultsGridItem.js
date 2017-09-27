@@ -22,7 +22,7 @@ const SearchResultsGridItem = ({searchResults}) => {
                                 <div className="thumbnail--price-item">
                                     <h3 className="thumbnail--price">od:<span
                                         className="thumbnail--price">{(product.price).toFixed(2)}</span> zł</h3>
-                                    <Link to={`/results/details/${index}`}><ButtonBlue textContent={"Porównaj"}/>
+                                    <Link to={`/results/details/${product.id}`}><ButtonBlue textContent={"Porównaj"}/>
                                     </Link>
                                     <h6>w {product.shops.length} sklepach</h6>
                                 </div>
