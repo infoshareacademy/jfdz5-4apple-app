@@ -22,7 +22,7 @@ const ShopList = (props) => {
                                     </div>
                                 </div>
                                 <div className="product--price">
-                                    <h3 className="price">od: <span className="price--currency"><span
+                                    <h3 className="price"><span className="price--currency"><span
                                         className="price">{(product.localPrice).toFixed(2)}</span> zł</span></h3>
                                     <Link to={`/results/details/orders/${index}`}><ButtonBlue textContent={"Dodaj do listy życzeń"}/>
                                     </Link>
