@@ -3,7 +3,6 @@ import firebase from 'firebase'
 import {Button, Form, FormControl, FormGroup, Alert} from "react-bootstrap";
 
 import logo from '../img/logo.svg'
-
 import './RegistrationForm.css'
 
 class RegistrationForm extends React.Component {
@@ -18,7 +17,7 @@ class RegistrationForm extends React.Component {
     handleChange = (event) => {
         this.setState({
             [event.target.name]: event.target.value
-        })
+        });
 
         if (this.state.password === '' || this.state.confirmPassword === '') {
             this.setState({error: null})
@@ -34,7 +33,7 @@ class RegistrationForm extends React.Component {
                 this.state.email,
                 this.state.password
             ).catch(
-                err => this.setState({error:"Podany przez Ciebie mail, nie istnieje."})
+                () => this.setState({error: "Podany przez Ciebie mail, nie istnieje."})
             )
         } else {
             this.setState({
@@ -44,7 +43,6 @@ class RegistrationForm extends React.Component {
                 error: 'Podane hasła różnią się od siebie'
             })
         }
-
     };
 
     render() {
@@ -93,7 +91,6 @@ class RegistrationForm extends React.Component {
                                 Zarejestruj się
                             </Button>
                         </FormGroup>
-
                     </Form>
                 </div>
             </div>
