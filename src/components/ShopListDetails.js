@@ -7,21 +7,20 @@ import NoItemFound from "./NoItemFound";
 class ShopListDetails extends React.Component {
 
     render() {
-        const ProductList = this.props.filteredResults;
-        const {itemId} = this.props
-        const Shops= ProductList.map(product => product.shops)
-            .find(product => product.id === itemId)
 
-       // console.log(Shops)
+        const ProductList = this.props.filteredResults;
+        const item = parseInt(this.props.item);
+        const Shops = ProductList.filter(product => [product.id]
+            .some(id => id === item))
+            .map(product => product.shops)
+            .reduce((result, next) => result.concat(next), [])
 
         return (
             <div className="container products--container">
-            {Shops === undefined ?  <NoItemFound/> :
-            <ShopList shops={Shops}/>}
+                {Shops === undefined ? <NoItemFound/> :
+                    <ShopList shops={Shops}/>}
             </div>
         )
-
-
     }
 }
 

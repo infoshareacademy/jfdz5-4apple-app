@@ -1,13 +1,10 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
 import {ListGroupItem} from "react-bootstrap";
 
-import ButtonBlue from "./ButtonBlue";
-
 const ShopList = (props) => {
-    console.log(props.shops);
-    const {shops} = props;
 
+    const {shops} = props;
+    console.log(shops);
     return (
         <div>
             {shops.map((product, index) => {
@@ -30,7 +27,8 @@ const ShopList = (props) => {
                     </ListGroupItem>
                 )
 
-            })}</div>
+            })}
+        </div>
     )
 }
 
