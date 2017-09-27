@@ -1,5 +1,7 @@
 import React from 'react'
 import {connect} from "react-redux";
+import ShopList from "./ShopList";
+import NoItemFound from "./NoItemFound";
 
 
 class ShopListDetails extends React.Component {
@@ -10,9 +12,14 @@ class ShopListDetails extends React.Component {
         const Shops= ProductList.map(product => product.shops)
             .find(product => product.id === itemId)
 
-        console.log(Shops)
+       // console.log(Shops)
 
-        return <h1>{itemId}</h1>
+        return (
+            <div className="container products--container">
+            {Shops === undefined ?  <NoItemFound/> :
+            <ShopList shops={Shops}/>}
+            </div>
+        )
 
 
     }

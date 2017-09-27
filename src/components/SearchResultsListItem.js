@@ -10,7 +10,6 @@ const SearchResultsListItem = ({searchResults}) => {
   return (
     <div>
       {searchResults.map((product, index) => {
-        //  console.log(index)
         return (
           <ListGroupItem key={index}>
             <div className="product--container">
