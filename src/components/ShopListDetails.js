@@ -11,9 +11,7 @@ class ShopListDetails extends React.Component {
         const {itemId} = this.props
         const Shops= ProductList.map(product => product.shops)
             .find(product => product.id === itemId)
-
-       // console.log(Shops)
-
+    console.log(Shops)
         return (
             <div className="container products--container">
             {Shops === undefined ?  <NoItemFound/> :

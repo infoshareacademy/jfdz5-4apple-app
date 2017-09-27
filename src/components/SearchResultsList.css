@@ -14,6 +14,12 @@
 .product--name {
     text-align: center;
 }
+.shop--img {
+    height: 100px;
+    width: 142px;
+    display: flex;
+    margin: auto;
+}
 
 .product--description {
     display: flex;

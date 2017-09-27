@@ -14,7 +14,7 @@ const ShopList = (props) => {
                 return (
                     <ListGroupItem key={index}>
                         <div className="product--container">
-                            <img className="product--img" alt="product" src={product.image}/>
+                            <img className="shop--img" alt="product" src={product.image}/>
                             <div className="product--info">
                                 <div className="product--description">
                                     <div className="product--name">
@@ -24,6 +24,9 @@ const ShopList = (props) => {
                                 <div className="product--price">
                                     <h3 className="price">od: <span className="price--currency"><span
                                         className="price">{(product.localPrice).toFixed(2)}</span> zł</span></h3>
+                                    <Link to={`/results/details/shoplist`}><ButtonBlue
+                                        textContent={"Dodaj do listy zyczen"}/>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
