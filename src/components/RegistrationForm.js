@@ -52,7 +52,7 @@ class RegistrationForm extends React.Component {
 
                 <div className="registation-form__content">
                     <Form horizontal onSubmit={this.handleSubmit} className="registation-form__form">
-                        <h2>Zarejestruj się</h2>
+                        <h2 className="registation-form__title">Zarejestruj się</h2>
                         <FormGroup controlId="formHorizontalEmail" onChange={this.handleChange}>
 
                             <FormControl type="email"
