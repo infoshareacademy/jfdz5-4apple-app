@@ -1,5 +1,8 @@
 import React from 'react'
 import {ListGroupItem} from "react-bootstrap";
+import {Link} from 'react-router-dom'
+import ButtonBlue from "./ButtonBlue"
+
 
 const ShopList = (props) => {
 
@@ -11,7 +14,7 @@ const ShopList = (props) => {
                 return (
                     <ListGroupItem key={index}>
                         <div className="product--container">
-                            <img className="product--img" alt="product" src={product.image}/>
+                            <img className="shop--img" alt="product" src={product.image}/>
                             <div className="product--info">
                                 <div className="product--description">
                                     <div className="product--name">
@@ -21,6 +24,8 @@ const ShopList = (props) => {
                                 <div className="product--price">
                                     <h3 className="price">od: <span className="price--currency"><span
                                         className="price">{(product.localPrice).toFixed(2)}</span> zł</span></h3>
+                                    <Link to={`/results/details/orders/${index}`}><ButtonBlue textContent={"Dodaj do listy życzeń"}/>
+                                    </Link>
                                 </div>
                             </div>
                         </div>

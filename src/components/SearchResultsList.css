@@ -10,7 +10,12 @@
     display: flex;
     margin: auto;
 }
-
+.shop--img {
+    height: 100px;
+    width: 142px;
+    display: flex;
+    margin: auto;
+}
 .product--name {
     text-align: center;
 }
