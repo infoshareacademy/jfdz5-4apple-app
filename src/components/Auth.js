@@ -1,22 +1,24 @@
 import React from 'react'
 import {connect} from 'react-redux'
+import {withRouter} from 'react-router-dom'
 
-// import RegistrationFormView from "./views/RegistrationFormView";
+import RegistrationForm from "./RegistrationForm";
 import SignIn from './views/SignIn'
 
 const Auth = ({user, children}) => (
   <div>
+
     {
       user === null ?
 
-        <div><SignIn/> </div>:
+        <div><SignIn/> <RegistrationForm/></div>:
         children
     }
   </div>
 )
 
-export default connect(
-  state => ({
-    user: state.auth.user
-  }),
-)(Auth)
+export default withRouter(connect(
+    state => ({
+        user: state.auth.user
+    }),
+)(Auth))

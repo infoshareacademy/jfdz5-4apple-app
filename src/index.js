@@ -23,7 +23,7 @@ const config = {
     storageBucket: "react-app-e2827.appspot.com",
     messagingSenderId: "5478590020"
 };
-firebase.initializeApp(config);
+// firebase.initializeApp(config);
 
 
 ReactDOM.render(
