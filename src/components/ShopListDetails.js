@@ -1,13 +1,26 @@
 import React from 'react'
-import products from '../../data/products.json'
+import {connect} from "react-redux";
 
-class ShopListDetails extends React.Component{
 
-render(){
-    const x = products;
-  return  <h1>{this.props.item}</h1>
+class ShopListDetails extends React.Component {
 
+    render() {
+        const x = this.props.filteredResults;
+        console.log(x)
+
+
+
+
+        return <h1>{this.props.item}</h1>
+    }
 }
 
-}
-export default ShopListDetails
+
+
+
+
+export default connect(
+    state => ({
+        filteredResults: state.searching.filteredResults
+    }),
+)(ShopListDetails)
