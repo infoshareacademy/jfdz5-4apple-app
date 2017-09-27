@@ -33,6 +33,8 @@ class RegistrationForm extends React.Component {
             firebase.auth().createUserWithEmailAndPassword(
                 this.state.email,
                 this.state.password
+            ).catch(
+                err => this.setState({error:"Podany przez Ciebie mail, nie istnieje."})
             )
         } else {
             this.setState({
