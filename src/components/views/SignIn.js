@@ -91,7 +91,7 @@ class SignIn extends React.Component {
             <Col componentClass={ControlLabel} sm={2}>
             </Col>
             <Col smOffset={3} sm={2}>
-              <FormControl onChange={this.handleLoginChange} type="text" placeholder="login"/>
+              <FormControl onChange={this.handleLoginChange} type="text" placeholder="email"/>
             </Col>
           </FormGroup>
 
