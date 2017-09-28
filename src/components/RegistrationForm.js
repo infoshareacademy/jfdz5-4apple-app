@@ -33,7 +33,18 @@ class RegistrationForm extends React.Component {
                 this.state.email,
                 this.state.password
             ).catch(
-                () => this.setState({error: "Podany przez Ciebie mail, nie istnieje."})
+              (error) => {
+                switch (error.code) {
+                  case "auth/invalid-email":
+                    return this.setState({error: "Podany przez Ciebie mail, nie istnieje."});
+                  case "auth/weak-password":
+                    return this.setState({error: "Hasło musi zawierać przynajmniej 6 znaków."});
+                  case "auth/email-already-in-use":
+                    return this.setState({error: "Użytkownik o takim mailu jest już zarejestrowany."});
+                  default:
+                    return this.setState({error: "Rejestracja nie powiodła się, spróbuj ponownie."});
+                }
+              }
             )
         } else {
             this.setState({
@@ -66,7 +77,7 @@ class RegistrationForm extends React.Component {
                                    onChange={this.handleChange}>
                             <FormControl
                                 type="password"
-                                placeholder="Podaj hasło"
+                                placeholder="Podaj hasło (min. 6 znaków)"
                                 name="password"
                                 value={this.state.password}
                                 required/>
