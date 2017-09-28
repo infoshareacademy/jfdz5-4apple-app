@@ -10,7 +10,6 @@ const providerForFacebook = new firebase.auth.FacebookAuthProvider();
 
 class SignIn extends React.Component {
 
-
   state = {
     login: '',
     password: '',
@@ -41,7 +40,7 @@ class SignIn extends React.Component {
         firebase.database().ref('favorites/' + user.uid).set({email: 1})
       }
     ).catch(
-      err => this.setState({error: "Nieprawidłowe dane logowania. Spróbuj ponownie"})
+      err => this.setState({error:"Nieprawidłowe dane logowania. Spróbuj ponownie"})
     )
   };
 
@@ -89,34 +88,47 @@ class SignIn extends React.Component {
         }
         <Form horizontal onSubmit={this.handleSubmit}>
           <FormGroup controlId="formHorizontalEmail">
-            <FormControl onChange={this.handleLoginChange} type="text" placeholder="email"/>
+            <Col componentClass={ControlLabel} sm={2}>
+            </Col>
+            <Col smOffset={3} sm={2}>
+              <FormControl onChange={this.handleLoginChange} type="text" placeholder="email"/>
+            </Col>
           </FormGroup>
 
           <FormGroup controlId="formHorizontalPassword">
-            <FormControl onChange={this.handlePasswordChange} type="password" placeholder="hasło"/>
+            <Col componentClass={ControlLabel} sm={2}>
+
+            </Col>
+            <Col smOffset={3} sm={2}>
+              <FormControl onChange={this.handlePasswordChange} type="password" placeholder="hasło"/>
+            </Col>
           </FormGroup>
 
           <FormGroup>
-            <Checkbox>Zapamiętaj mnie</Checkbox>
+            <Col smOffset={6} sm={10}>
+              <Checkbox>Zapamiętaj mnie</Checkbox>
+            </Col>
           </FormGroup>
 
           <FormGroup>
-            <Button bsStyle="primary" type="submit">
-              Zaloguj
-            </Button>
+            <Col smOffset={6} sm={10}>
+              <Button bsStyle="primary" type="submit">
+                Zaloguj
+              </Button>
+            </Col>
           </FormGroup>
 
           <FormGroup>
-
-            <Button onClick={this.handlerGoogleLogIn} bsStyle="primary">
-              google
-            </Button>
-
-
-            <Button onClick={this.handlerFacebookLogIn} bsStyle="primary">
-              FB
-            </Button>
-
+            <Col smOffset={6} sm={12}>
+              <Button onClick={this.handlerGoogleLogIn} bsStyle="primary">
+                google
+              </Button>
+            </Col>
+            <Col smOffset={6} sm={12}>
+              <Button onClick={this.handlerFacebookLogIn} bsStyle="primary">
+                FB
+              </Button>
+            </Col>
           </FormGroup>
         </Form>
       </div>

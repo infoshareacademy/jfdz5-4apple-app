@@ -1,8 +1,8 @@
 import React from 'react'
-
 import {withRouter} from 'react-router-dom'
-
-import {Navbar, FormGroup, FormControl, Button} from 'react-bootstrap'
+import firebase from 'firebase'
+import {Navbar,FormGroup, FormControl, Button} from 'react-bootstrap'
+import {LinkContainer} from 'react-router-bootstrap'
 import logo from "../img/logo.svg"
 import magnifier from "../img/magnifier.png"
 import '../components/SearchBar.css'
@@ -15,6 +15,14 @@ class SearchBar extends React.Component {
   state = {
     searchedName: '',
     searchedProducts: this.props.searchedProducts
+  }
+
+  signOutUser = () => {
+    firebase.auth().signOut().then(() => {
+
+    }).catch(error => {
+      error(error.message)
+    })
   }
 
   handleChange = (event) => this.setState({
@@ -64,7 +72,11 @@ class SearchBar extends React.Component {
                          alt="search"
                          height="35"/></Button>
 
-                  <Button onClick={this.handleLogOut} type="reset">Wyloguj się</Button>
+                  <LinkContainer to="/Si">
+                    <Button onClick={this.signOutUser}>Wyloguj się</Button>
+                  </LinkContainer>
+                  {/*<Button onClick={this.handleLogOut} type="reset">Wyloguj się</Button>*/}
+
                 </form>
               </Navbar.Form>
             </Navbar.Collapse>

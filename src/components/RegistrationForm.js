@@ -48,7 +48,7 @@ class RegistrationForm extends React.Component {
     render() {
         return (
             <div className="container">
-                <img src={logo} alt="logo" className="registation-form__logo"/>
+                {/*<img src={logo} alt="logo" className="registation-form__logo"/>*/}
 
                 <div className="registation-form__content">
                     <Form horizontal onSubmit={this.handleSubmit} className="registation-form__form">

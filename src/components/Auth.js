@@ -6,7 +6,7 @@ import RegistrationForm from "./RegistrationForm";
 import SignIn from './views/SignIn'
 
 const Auth = ({user, children}) => (
-  <div>
+  <div className="clearfix">
 
     {
       user === null ?
