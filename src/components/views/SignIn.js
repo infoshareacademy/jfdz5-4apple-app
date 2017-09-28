@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button, Col, ControlLabel, Form, FormControl, FormGroup, Checkbox, Alert} from 'react-bootstrap'
+import {Button, Form, FormControl, FormGroup, Checkbox, Alert, Row} from 'react-bootstrap'
 import {connect} from 'react-redux'
 import {set} from '../../state/auth'
 import firebase from 'firebase'
@@ -82,11 +82,16 @@ class SignIn extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container row col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
         {
           this.state.error === null ? null : <Alert bsStyle="danger">{this.state.error}</Alert>
 
         }
+
+
+        <h1>Zaloguj się</h1>
+
+
         <Form horizontal onSubmit={this.handleSubmit}>
           <FormGroup controlId="formHorizontalEmail">
             <FormControl onChange={this.handleLoginChange} type="text" placeholder="email"/>
@@ -101,7 +106,7 @@ class SignIn extends React.Component {
           </FormGroup>
 
           <FormGroup>
-            <Button bsStyle="primary" type="submit">
+            <Button className="btn btn-block btn-lg btn-primary btn-loading" bsStyle="success" type="submit">
               Zaloguj
             </Button>
           </FormGroup>

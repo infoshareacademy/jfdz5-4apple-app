@@ -1,17 +1,21 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {withRouter} from 'react-router-dom'
-
+import {LinkContainer} from 'react-router-bootstrap'
 import RegistrationForm from "./RegistrationForm";
 import SignIn from './views/SignIn'
 
+
+
 const Auth = ({user, children}) => (
-  <div className="clearfix">
+
+  //<RegistrationForm/>
+  <div>
 
     {
       user === null ?
 
-        <div><SignIn/> <RegistrationForm/></div>:
+        <div><SignIn/> </div>:
         children
     }
   </div>
