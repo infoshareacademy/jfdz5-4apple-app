@@ -1,8 +1,11 @@
 import React from 'react'
-import {Button, Form, FormControl, FormGroup, Checkbox, Alert, Row} from 'react-bootstrap'
+import {Button, Form, FormControl, FormGroup, Checkbox, Alert} from 'react-bootstrap'
 import {connect} from 'react-redux'
 import {set} from '../../state/auth'
 import firebase from 'firebase'
+import '../RegistrationForm.css'
+import logo from '../../img/logo.svg'
+
 
 const providerForGoogle = new firebase.auth.GoogleAuthProvider();
 const providerForFacebook = new firebase.auth.FacebookAuthProvider();
@@ -82,17 +85,25 @@ class SignIn extends React.Component {
 
   render() {
     return (
-      <div className="container row col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3">
+      <div>
+        <div id="logo">
+          {/*<img src={logo} alt="logo" className="registation-form__logo"/>*/}
+
+        </div>
+
+
+      <div className="registation-form__content container">
         {
           this.state.error === null ? null : <Alert bsStyle="danger">{this.state.error}</Alert>
 
         }
 
 
-        <h1>Zaloguj się</h1>
+
 
 
         <Form horizontal onSubmit={this.handleSubmit}>
+          <h1>Zaloguj się</h1>
           <FormGroup controlId="formHorizontalEmail">
             <FormControl onChange={this.handleLoginChange} type="text" placeholder="email"/>
           </FormGroup>
@@ -124,7 +135,7 @@ class SignIn extends React.Component {
 
           </FormGroup>
         </Form>
-      </div>
+      </div></div>
     )
   }
 }

@@ -4,18 +4,21 @@ import {withRouter} from 'react-router-dom'
 import {LinkContainer} from 'react-router-bootstrap'
 import RegistrationForm from "./RegistrationForm";
 import SignIn from './views/SignIn'
+import logo from '../img/logo.svg'
 
 
 
 const Auth = ({user, children}) => (
 
-  //<RegistrationForm/>
+
   <div>
 
     {
       user === null ?
 
-        <div><SignIn/> </div>:
+        <div>
+          <img src={logo} alt="logo" className="registation-form__logo"/>
+          <SignIn /><RegistrationForm/> </div>:
         children
     }
   </div>
