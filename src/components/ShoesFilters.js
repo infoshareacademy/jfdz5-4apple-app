@@ -3,15 +3,16 @@ import {connect} from "react-redux";
 import {Checkbox, ControlLabel, FormControl, FormGroup, Panel, PanelGroup} from "react-bootstrap";
 
 import ButtonBlue from "./ButtonBlue";
+import "./ShoesFilters.css"
 
 const ShoesFilters = (props) => {
 
-  const results = props.filteredResults || []
+  const results = props.filteredResults;
 
   const createDetailsList = (filterName) => {
     return results.reduce((productFirst, productNext) => {
       return productFirst[filterName].concat(productNext[filterName])
-    }).filter((value, index, inputArray) => {
+    }, ["Brak produktu"]).filter((value, index, inputArray) => {
       return inputArray.indexOf(value) === index
     }).sort()
   };
@@ -40,6 +41,7 @@ const ShoesFilters = (props) => {
                 return <option key={index} value={value}>{value}</option>
               })}
             </FormControl>
+            <ControlLabel>Kolor</ControlLabel>
             <FormControl componentClass="select" placeholder="Wybierz rozmiar">
               {}
               <option value="select">Wybierz kolor</option>
@@ -53,7 +55,7 @@ const ShoesFilters = (props) => {
       </Panel>
     </PanelGroup>
   )
-}
+};
 
 export default connect(
   state => ({
