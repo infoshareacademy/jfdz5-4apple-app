@@ -36,15 +36,15 @@ const ShoesFilters = (props) => {
             <FormControl componentClass="select" placeholder="Wybierz rozmiar">
               {}
               <option value="select">Wybierz rozmiar</option>
-              {createDetailsList("size").map((value) => {
-                return <option value={value}>{value}</option>
+              {createDetailsList("size").map((value, index) => {
+                return <option key={index} value={value}>{value}</option>
               })}
             </FormControl>
             <FormControl componentClass="select" placeholder="Wybierz rozmiar">
               {}
               <option value="select">Wybierz kolor</option>
-              {createDetailsList("color").map((value) => {
-                return <option value={value}>{value}</option>
+              {createDetailsList("color").map((value, index) => {
+                return <option key={index} value={value}>{value}</option>
               })}
             </FormControl>
             <ButtonBlue textContent="Filtruj"/>
