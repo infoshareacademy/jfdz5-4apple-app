@@ -1,0 +1,12 @@
+.categories {
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 200px;
+}
+.categories-list{
+    width: 200px;
+}
+.categories-list-item{
+    width: 200px;
+}
