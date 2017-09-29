@@ -60,7 +60,6 @@ class SearchBar extends React.Component {
               <LinkContainer to="/">
                 <Button onClick={this.signOutUser}>Wyloguj się</Button>
               </LinkContainer>
-
             </Navbar.Text>
 
           </Navbar.Collapse>
