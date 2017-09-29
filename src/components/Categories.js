@@ -19,30 +19,44 @@ class Categories extends React.Component {
     render() {
         const productsFromInput = this.props.filteredResults;
         console.log(productsFromInput)
-        //   console.log(this.state.chooseCategories);
+         // console.log(this.state.chooseCategories);
         const {initialState} = this.props;
-        // console.log(initialState)
         const initialCategories = this.props.categoriesProducts
-       //console.log(initialCategories)
-        const x =  initialCategories.map(products => products.category)
-        console.log(x)
+
         return (
 
 
 
             <div className="categories">
+                <ListGroup className="categories-list">
+                    {
+                        initialState === undefined ?
 
-                {
-                    initialState === undefined ? null :
+                            productsFromInput.map((products,index)=>{
+                            return(
+                                <ListGroupItem key={index} className="categories-list-item"
+                                               value={products.author === undefined ?
+                                                   products.brand : products.author}
+                                               onClick={this.handleChange}
+                                >{products.author === undefined ?
+                                    products.brand : products.author}
+                                </ListGroupItem>
+                            )
+                            })
+                            :
+                            initialCategories.map((products, index) => {
+                                return (
 
-                        <ListGroup className="categories-list">
-                            <ListGroupItem className="categories-list-item" value="Ksiazki"
-                                           onClick={this.handleChange}>Książki</ListGroupItem>
-                            <ListGroupItem value="RTV" onClick={this.handleChange}>RTV</ListGroupItem>
-                            <ListGroupItem value="OBUWIE" onClick={this.handleChange}>Obuwie</ListGroupItem>
-                            <ListGroupItem value="URODA" onClick={this.handleChange}>Uroda</ListGroupItem>
-                        </ListGroup>
-                }
+                                    <ListGroupItem key={index} className="categories-list-item"
+                                                   value={products.category}
+                                                   onClick={this.handleChange}
+                                    >{products.category}
+                                    </ListGroupItem>
+
+                                )
+                            })
+                    }
+                </ListGroup>
             </div>
 
         )
