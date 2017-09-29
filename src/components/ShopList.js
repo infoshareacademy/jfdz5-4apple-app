@@ -1,16 +1,19 @@
 import React from 'react'
 import {ListGroupItem, Button} from "react-bootstrap";
 import firebase from 'firebase'
-
+import FavsProducts from './FavsProducts'
 const ShopList = (props) => {
 
   const {shops} = props;
   console.log(shops);
   return (
     <div>
+
       {shops.map((product, index) => {
         return (
           <ListGroupItem key={index}>
+            {/*test ulubionych*/}
+            <FavsProducts/>
             <div className="product--container">
               <img className="shop--img" alt="product" src={product.image}/>
               <div className="product--info">
@@ -27,8 +30,9 @@ const ShopList = (props) => {
                           className="button--continue"
                           onClick={
                             () => firebase.database().ref(
-                              '/listOfFavsThings/' + firebase.auth().currentUser.uid + '/'
-                              + product.name + ':' + product.productId)
+                              '/FavsProducts/' + firebase.auth().currentUser.uid
+                              + '/'+ product.name + ':' + product.productId
+                            )
                               .set(true)
                           }>Dodaj do listy życzeń </Button>
 
@@ -37,7 +41,6 @@ const ShopList = (props) => {
             </div>
           </ListGroupItem>
         )
-
       })}
     </div>
   )

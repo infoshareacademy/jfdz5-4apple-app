@@ -6,14 +6,14 @@ export const setFavs = favs => ({
 })
 
 const initialState = {
-    chosenThings: []
+    chosenProducts: []
 }
 
 export default (state = initialState, action = {}) => {
     switch (action.type) {
         case SET_FAVS:
             return {
-                chosenThings: action.favs
+                chosenProducts: action.favs
             }
         default:
             return state

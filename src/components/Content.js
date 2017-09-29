@@ -5,6 +5,7 @@ import HomeView from './views/HomeView'
 import ProductDetailsView from './views/ProductDetailsView'
 import TabbedResults from './TabbedResults'
 import OrdersList from "./views/OrdersList";
+import FavsProducts from './FavsProducts'
 
 const Content = () => (
     <div>
@@ -13,6 +14,7 @@ const Content = () => (
             <Route exact path="/results" component={TabbedResults}/>
             <Route path="/results/details/:productId" component={ProductDetailsView}/>
             <Route path="/results/details/orders:productId" component={OrdersList}/>
+            <Route path="/favs" component={FavsProducts}/>
             <Route render={() => <h1>Not found</h1>}/>
         </Switch>
     </div>
