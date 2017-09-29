@@ -106,7 +106,7 @@
         "brand": "Samsung",
         "model": "UE49M5672AU",
         "price": 2389,
-        "color": "srebrny",
+        "color": ["srebrny"],
         "size": ["49''"],
         "available": true,
         "image": "https://stat-s4.ms-online.pl/media/cache/gallery/rc/vbghdzeg/images/20/20397716/samsung-m5672-1.jpg",
@@ -136,7 +136,7 @@
         "brand": "Samsung",
         "model": "UE49MU6442U",
         "price": 3098,
-        "color": "ciemny tytan",
+        "color": ["ciemny tytan"],
         "size":["49''"],
         "available": true,
         "image": "https://stat-m4.ms-online.pl/media/cache/gallery/rc/4fijq8pt/images/20/20397744/mu6442u.jpg",
@@ -166,7 +166,7 @@
         "brand": "Philips",
         "model": "49PUS6561/12",
         "price": 2999,
-        "color": "srebrny ",
+        "color": ["srebrny"],
         "size": ["49''"],
         "available": true,
         "image": "https://f01.esfr.pl/foto/3/12616115619/6bf616e6538ac1d93f874d6fc2b61fe/philips-49pus6561-12,12616115619_7.jpg",
@@ -184,7 +184,7 @@
         "brand": "Panasonic",
         "model": "TX-55EX633E",
         "price": 3749,
-        "color": "czarny ",
+        "color": ["czarny"],
         "size": ["49''"],
         "available": true,
         "image": "https://stat-m6.ms-online.pl/media/cache/gallery/rc/ghlqqhid/images/20/20390786/TX_55EX_633E_2.jpg",
@@ -220,7 +220,7 @@
         "brand": "Panasonic",
         "model": "TX-65EX600E",
         "price": 5349,
-        "color": "czarny",
+        "color": ["czarny"],
         "size": ["65''"],
         "available": true,
         "image": "https://images.morele.net/full/1371318_0_f.jpg",
@@ -263,9 +263,9 @@
         "model": "iPhone 7",
         "price": 2689,
         "color": [
-          " srebrny",
-          " złoty",
-          " biały"
+          "srebrny",
+          "złoty",
+          "biały"
         ],
         "size": ["4.7''"],
         "image": "http://www.avans.pl/temp/thumbs-new/3/products/597/739597_1923859_500x500w50.jpg",
@@ -308,10 +308,10 @@
         "model": "iPhone 7 plus",
         "price": 3319,
         "color": [
-          " różowy",
-          " biały",
-          " srebrny",
-          " czarny"
+          "różowy",
+          "biały",
+          "srebrny",
+          "czarny"
         ],
         "size": ["5.5''"],
         "available": true,
@@ -337,7 +337,7 @@
         "model": "iMac 27",
         "price": 7099,
         "size": ["27''"],
-        "color": "srebrny",
+        "color": ["srebrny"],
         "available": true,
         "image": "https://images.morele.net/full/799651_3_f.jpeg",
         "description": "Od pierwszego modelu iMac miał być zawsze najbardziej wyrafinowanym komputerem stacjonarnym. Z niemożliwie smukłą, bezszczelinową obudową, najlepszym wyświetlaczem, hiperwydajnymi procesorami, grafiką i pamięcią masową. Zupełnie nowy, 21,5-calowy iMac z wyświetlaczem Retina 4K jest wierny tej koncepcji. Podobnie jak rewolucyjny 27-calowy model 5K, jakością wyświetlanego obrazu gasi wszystko wokół. Dostarcza takich wrażeń, że kompletnie pochłania odbiorcę. I tym sposobem robi kolejny, spektakularny krok naprzód.",
@@ -367,8 +367,8 @@
         "model": "iPad PRO",
         "price": 2984,
         "color": [
-          " biały",
-          " srebrny"
+          "biały",
+          "srebrny"
         ],
         "size": ["10.5''"],
         "available": true,
@@ -501,8 +501,8 @@
         "price": 27.10,
         "pages": 216,
         "cover": [
-          " miękka",
-          " twarda"
+          "miękka",
+          "twarda"
         ],
         "available": true,
         "image": "https://www.swiatksiazki.pl/media/catalog/product/cache/image/e9c3970ab036de70892d86c6d221abfe/9/9/99906355604.jpg",
@@ -534,7 +534,7 @@
         "price": 27.10,
         "pages": 328,
         "cover": [
-          " twarda"
+          "twarda"
         ],
         "available": true,
         "image": "https://www.booksfera.pl/foto/warianty/250/0/ziola-z-polskich-lak.jpg",
@@ -557,7 +557,7 @@
         "price": 43.60,
         "pages": 773,
         "cover": [
-          " miękka"
+          "miękka"
         ],
         "available": true,
         "image": "https://image.ceneo.pl/data/products/1219238/f-gra-o-tron.jpg",
@@ -580,7 +580,7 @@
         "price": 7.75,
         "pages": 128,
         "cover": [
-          " miękka"
+          "miękka"
         ],
         "available": true,
         "image": "http://www.korob.pl/pol_pm_Religia-SP-3-Jezus-jest-z-nami-cw-JEDNOSC-10258_1.jpg",
