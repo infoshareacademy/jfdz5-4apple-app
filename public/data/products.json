@@ -248,7 +248,7 @@
         "description": "Seria EX600 zapewnia żywy obraz 4K HDR i funkcje inteligentne, zaś umożliwiająca konfigurowanie konstrukcja Switch Design pozwala dopasować telewizor do każdego wnętrza.",
         "shops": [
           {
-            "name": "MORELE.NET",
+            "name": "MORELE NET",
             "productId": 15,
             "localPrice": 5334.54,
             "image": "https://www.morele.net/static/img/shop/img-morele-logo.png",
@@ -376,7 +376,7 @@
         "description": "Od pierwszego modelu iMac miał być zawsze najbardziej wyrafinowanym komputerem stacjonarnym. Z niemożliwie smukłą, bezszczelinową obudową, najlepszym wyświetlaczem, hiperwydajnymi procesorami, grafiką i pamięcią masową. Zupełnie nowy, 21,5-calowy iMac z wyświetlaczem Retina 4K jest wierny tej koncepcji. Podobnie jak rewolucyjny 27-calowy model 5K, jakością wyświetlanego obrazu gasi wszystko wokół. Dostarcza takich wrażeń, że kompletnie pochłania odbiorcę. I tym sposobem robi kolejny, spektakularny krok naprzód.",
         "shops": [
           {
-            "name": "MORELE.NET",
+            "name": "MORELE NET",
             "productId": 24,
             "localPrice": 7970.59,
             "image": "https://www.morele.net/static/img/shop/img-morele-logo.png",
@@ -424,7 +424,7 @@
             ]
           },
           {
-            "name": "MORELE.NET",
+            "name": "MORELE NET",
             "productId": 28,
             "localPrice": 2984,
             "image": "https://www.morele.net/static/img/shop/img-morele-logo.png",
