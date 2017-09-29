@@ -2,13 +2,14 @@
     height: 40px
 }
 
-.search--input{
+.search--input {
     height: 50px;
     font-size: 18px;
 }
 
 .navbar {
     min-height: 70px;
+    margin: 0;
 }
 
 .navbar-form {

@@ -2,15 +2,17 @@
     text-align: center;
 }
 
-.panel-body {
+.filters--container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    border: 1px #ebebeb solid;
+    margin-bottom: 10px;
 }
 
-.panel-body > form {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.price-filter {
+    max-width: 120px;
 }
 
 .panel-body .form-control {
@@ -37,6 +39,7 @@
 
 .panel-body > form > .btn {
     margin: 0 5px;
+    min-width: 100px;
 }
 
 .panel-title a {
@@ -49,12 +52,11 @@
 }
 
 @media screen  and (min-width: 768px) {
-    .panel-body > form {
+    .filters--container {
         display: flex;
         justify-content: space-around;
         align-items: center;
         flex-direction: row;
-        width: 80%;
     }
 
     .panel-body > form > .form-group {
