@@ -47,31 +47,28 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div>
-        <Navbar inverse collapseOnSelect>
+        <Navbar>
           <Navbar.Header>
-            <Navbar.Brand>
-              <a href="#">Brand</a>
+            <Navbar.Brand className="logo">
+              <Link to={`/`}><img src={logo} alt="logo"/></Link>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
           <Navbar.Collapse>
-            <Navbar.Text>
-              Signed in as: <Navbar.Link href="#">Mark Otto</Navbar.Link>
-            </Navbar.Text>
+
             <Navbar.Text pullRight>
-              Have a great day!
+              <LinkContainer to="/">
+                <Button onClick={this.signOutUser}>Wyloguj się</Button>
+              </LinkContainer>
+
             </Navbar.Text>
-            <LinkContainer to="/Si">
-              <Button onClick={this.signOutUser}>Wyloguj się</Button>
-            </LinkContainer>
+
           </Navbar.Collapse>
         </Navbar>
         <Navbar>
           <div className="navbar--contaiter">
             <Navbar.Header>
-              <Navbar.Brand className="logo">
-                <Link to={`/`}><img src={logo} alt="logo"/></Link>
-              </Navbar.Brand>
+
               <Navbar.Toggle/>
             </Navbar.Header>
             <Navbar.Collapse>
