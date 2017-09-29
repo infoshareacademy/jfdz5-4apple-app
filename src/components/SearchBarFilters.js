@@ -1,8 +1,9 @@
 import React from 'react'
 
-import ShoesFilters from "./ShoesFilters";
 import ButtonBlue from "./ButtonBlue";
 import {Panel, PanelGroup} from "react-bootstrap";
+import "./Filters.css"
+import ShoesFilters from "./ShoesFilters";
 
 const SearchBarFilters = () => {
   return (

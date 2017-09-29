@@ -33,6 +33,12 @@
     margin: 0;
 }
 
+.filters--checkboxes {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
 .panel-body label {
     margin: 0 10px;
 }
