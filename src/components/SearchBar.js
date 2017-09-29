@@ -47,7 +47,7 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div>
-        <Navbar>
+        <Navbar inverse collapseOnSelect>
           <Navbar.Header>
             <Navbar.Brand>
               <a href="#">Brand</a>
