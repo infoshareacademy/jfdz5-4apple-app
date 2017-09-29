@@ -53,14 +53,12 @@ class Categories extends React.Component {
                     {
                         initialState === undefined ?
 
-                            productsFromInput.map((products,index) => {
+                            productsCategories.map((products,index) => {
                                 return (
                                     <ListGroupItem key={index} className="categories-list-item"
-                                                   value={products.author === undefined ?
-                                                       products.brand : products.author}
+                                                   value={products}
                                                    onClick={this.handleChange}
-                                    >{products.author === undefined ?
-                                        products.brand : products.author}
+                                    >{products}
                                     </ListGroupItem>
                                 )
                             })
