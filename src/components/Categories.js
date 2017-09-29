@@ -4,12 +4,17 @@ import ListGroup from "react-bootstrap/es/ListGroup";
 import withRouter from "react-router-dom/es/withRouter";
 import connect from "react-redux/es/connect/connect";
 import '../components/Categories.css'
+import {CategoriesResults, filterResults} from "../state/searching";
 
 class Categories extends React.Component {
     state = {
         chooseCategories: ''
 
     };
+
+
+
+
 
     handleChange = (e) => {
         const name = e.target.value;
@@ -18,17 +23,9 @@ class Categories extends React.Component {
 
     render() {
         const productsFromInput = this.props.filteredResults;
-        // console.log(this.state.chooseCategories);
         const {initialState} = this.props;
         const initialCategories = this.props.categoriesProducts;
-
-
-        // console.log(productsFromInput)
-
-
         const productsCategories = productsFromInput.map(products => products.brand === undefined ? products.author : products.brand)
-
-
         const deleteDuplication = (array) => {
             for (let i = 0; i < array.length; i++) {
                 let start = i;
@@ -41,13 +38,8 @@ class Categories extends React.Component {
         };
 
         deleteDuplication(productsCategories)
-        console.log(productsCategories)
-
 
         return (
-
-
-
             <div className="categories">
                 <ListGroup className="categories-list">
                     {
@@ -82,9 +74,15 @@ class Categories extends React.Component {
     }
 }
 
+
+
 export default withRouter(
     connect(
         state => ({
             filteredResults: state.searching.filteredResults
         }),
+        dispatch => ({
+            addSearchedResults: (searchedProducts, searchedItem) => dispatch(filterResults(searchedProducts, searchedItem))
+            //addCategoriesResults: (searchedProducts, searchedItem) => dispatch(CategoriesResults(searchedProducts, searchedItem))
+        })
     )(Categories))

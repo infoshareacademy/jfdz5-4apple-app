@@ -5,6 +5,12 @@ export const filterResults = (searchedProducts, searchedItem) => ({
   searchedProducts,
   searchedItem
 })
+export const CategoriesResults = (searchedProducts, searchedItem) => ({
+    type: FILTER,
+    searchedProducts,
+    searchedItem
+})
+
 
 const initialState = {
   searchedItems: '',
