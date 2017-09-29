@@ -15,6 +15,8 @@ class ShopListDetails extends React.Component {
             .map(product => product.shops)
             .reduce((result, next) => result.concat(next), [])
 
+        console.log(Shops)
+
         return (
             <div className="container products--container">
                 {Shops === undefined ? <NoItemFound/> :

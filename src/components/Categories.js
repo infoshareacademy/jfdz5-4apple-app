@@ -18,10 +18,31 @@ class Categories extends React.Component {
 
     render() {
         const productsFromInput = this.props.filteredResults;
-        console.log(productsFromInput)
-         // console.log(this.state.chooseCategories);
+        // console.log(this.state.chooseCategories);
         const {initialState} = this.props;
-        const initialCategories = this.props.categoriesProducts
+        const initialCategories = this.props.categoriesProducts;
+
+
+        // console.log(productsFromInput)
+
+
+        const productsCategories = productsFromInput.map(products => products.brand === undefined ? products.author : products.brand)
+
+
+        const deleteDuplication = (array) => {
+            for (let i = 0; i < array.length; i++) {
+                let start = i;
+                for (let j = i + 1; j < array.length; j++) {
+                    if (array[j] === array[start]) {
+                        productsCategories.splice(start, 1)
+                    }
+                }
+            }
+        };
+
+        deleteDuplication(productsCategories)
+        console.log(productsCategories)
+
 
         return (
 
@@ -32,16 +53,16 @@ class Categories extends React.Component {
                     {
                         initialState === undefined ?
 
-                            productsFromInput.map((products,index)=>{
-                            return(
-                                <ListGroupItem key={index} className="categories-list-item"
-                                               value={products.author === undefined ?
-                                                   products.brand : products.author}
-                                               onClick={this.handleChange}
-                                >{products.author === undefined ?
-                                    products.brand : products.author}
-                                </ListGroupItem>
-                            )
+                            productsFromInput.map((products,index) => {
+                                return (
+                                    <ListGroupItem key={index} className="categories-list-item"
+                                                   value={products.author === undefined ?
+                                                       products.brand : products.author}
+                                                   onClick={this.handleChange}
+                                    >{products.author === undefined ?
+                                        products.brand : products.author}
+                                    </ListGroupItem>
+                                )
                             })
                             :
                             initialCategories.map((products, index) => {
