@@ -3,7 +3,7 @@ import {connect} from "react-redux";
 import {Checkbox, ControlLabel, FormControl, FormGroup, Panel, PanelGroup} from "react-bootstrap";
 
 import ButtonBlue from "./ButtonBlue";
-import "./ShoesFilters.css"
+import "./Filters.css"
 
 const ShoesFilters = (props) => {
 
@@ -20,18 +20,20 @@ const ShoesFilters = (props) => {
 
   return (
     <PanelGroup defaultActiveKey="1" accordion>
-      <Panel header="Sprecyzuj wyszukiwanie" eventKey="1">
+      <Panel header={"Szczegóły filtrów"} eventKey="1">
         <form>
           <ControlLabel>Cena
             <FormControl type="text" placeholder="od"/>
             -
             <FormControl type="text" placeholder="do"/>
           </ControlLabel>
-          <Checkbox>
-            Damskie
-          </Checkbox>
-          <Checkbox>Męskie
-          </Checkbox>
+          <div>
+            <Checkbox>
+              Damskie
+            </Checkbox>
+            <Checkbox>Męskie
+            </Checkbox>
+          </div>
           <FormGroup controlId="formControlsSelect">
             <ControlLabel>Rozmiar</ControlLabel>
             <FormControl componentClass="select" placeholder="Wybierz rozmiar">
@@ -49,8 +51,8 @@ const ShoesFilters = (props) => {
                 return <option key={index} value={value}>{value}</option>
               })}
             </FormControl>
-            <ButtonBlue textContent="Filtruj"/>
           </FormGroup>
+          <ButtonBlue textContent="Filtruj"/>
         </form>
       </Panel>
     </PanelGroup>

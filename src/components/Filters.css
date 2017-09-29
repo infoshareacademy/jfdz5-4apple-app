@@ -1,0 +1,66 @@
+.panel {
+    text-align: center;
+}
+
+.panel-body {
+    display: flex;
+    justify-content: center;
+}
+
+.panel-body > form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.panel-body .form-control {
+    text-align: center;
+}
+
+.panel-body > .control-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.panel-body > form > .form-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.panel-body label {
+    margin: 0 10px;
+}
+
+.panel-body > form > .btn {
+    margin: 0 5px;
+}
+
+.panel-title a {
+    cursor: pointer;
+}
+
+.panel-title:hover a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media screen  and (min-width: 768px) {
+    .panel-body > form {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .panel-body > form > .form-group {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+    }
+}
