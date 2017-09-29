@@ -4,7 +4,7 @@ import {Checkbox, ControlLabel, FormControl, FormGroup} from "react-bootstrap";
 
 import {createDetailsList} from "./_utils/filtersDetails"
 
-const ShoesFilters = (props) => {
+const Filters = (props) => {
   let results;
   props !== undefined ? results = props.filteredResults : results = [];
 
@@ -79,4 +79,4 @@ export default connect(
   state => ({
     filteredResults: state.searching.filteredResults
   })
-)(ShoesFilters)
+)(Filters)
