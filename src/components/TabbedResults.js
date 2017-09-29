@@ -12,6 +12,8 @@ import SearchResultsGrid from './SearchResultsGrid'
 import DataFetcher from "./DataFetcher/DataFetcher";
 import {presentationOfResults} from '../state/presentationOfResults'
 
+import './TabbedResults.css'
+
 const TabbedResults = ({products, chosenView, changeView}) => (
   <div>
     <DataFetcher
