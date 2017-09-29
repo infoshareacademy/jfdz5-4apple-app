@@ -85,14 +85,10 @@ class SignIn extends React.Component {
 
   render() {
     return (
-      <div>
-        <div id="logo">
-          {/*<img src={logo} alt="logo" className="registation-form__logo"/>*/}
-
-        </div>
 
 
-      <div className="registation-form__content container">
+
+      <div className="container page">
         {
           this.state.error === null ? null : <Alert bsStyle="danger">{this.state.error}</Alert>
 
@@ -135,7 +131,7 @@ class SignIn extends React.Component {
 
           </FormGroup>
         </Form>
-      </div></div>
+      </div>
     )
   }
 }

@@ -18,7 +18,8 @@ const Auth = ({user, children}) => (
 
         <div>
           <img src={logo} alt="logo" className="registation-form__logo"/>
-          <SignIn /><RegistrationForm/> </div>:
+          <div><SignIn /><RegistrationForm/></div>
+        </div>:
         children
     }
   </div>

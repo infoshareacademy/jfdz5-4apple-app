@@ -48,6 +48,25 @@ class SearchBar extends React.Component {
     return (
       <div>
         <Navbar>
+          <Navbar.Header>
+            <Navbar.Brand>
+              <a href="#">Brand</a>
+            </Navbar.Brand>
+            <Navbar.Toggle />
+          </Navbar.Header>
+          <Navbar.Collapse>
+            <Navbar.Text>
+              Signed in as: <Navbar.Link href="#">Mark Otto</Navbar.Link>
+            </Navbar.Text>
+            <Navbar.Text pullRight>
+              Have a great day!
+            </Navbar.Text>
+            <LinkContainer to="/Si">
+              <Button onClick={this.signOutUser}>Wyloguj się</Button>
+            </LinkContainer>
+          </Navbar.Collapse>
+        </Navbar>
+        <Navbar>
           <div className="navbar--contaiter">
             <Navbar.Header>
               <Navbar.Brand className="logo">
@@ -72,10 +91,7 @@ class SearchBar extends React.Component {
                          alt="search"
                          height="35"/></Button>
 
-                  <LinkContainer to="/Si">
-                    <Button onClick={this.signOutUser}>Wyloguj się</Button>
-                  </LinkContainer>
-                  {/*<Button onClick={this.handleLogOut} type="reset">Wyloguj się</Button>*/}
+
 
                 </form>
               </Navbar.Form>

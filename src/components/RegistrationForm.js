@@ -3,7 +3,7 @@ import firebase from 'firebase'
 import {Button, Form, FormControl, FormGroup, Alert, Row} from "react-bootstrap";
 
 // import logo from '../img/logo.svg'
-import './RegistrationForm.css'
+// import './RegistrationForm.css'
 
 class RegistrationForm extends React.Component {
 
@@ -47,10 +47,10 @@ class RegistrationForm extends React.Component {
 
     render() {
         return (
-            <div className="container">
+            /*<div className="container">*/
 
 
-                <div className="registation-form__content container">
+                <div className="container page">
                     <Form horizontal onSubmit={this.handleSubmit} className="registation-form__form">
                         <h1>Zarejestruj się</h1>
                         <FormGroup controlId="formHorizontalEmail" onChange={this.handleChange}>
@@ -93,7 +93,7 @@ class RegistrationForm extends React.Component {
                         </FormGroup>
                     </Form>
                 </div>
-            </div>
+            // </div>
         )
     }
 }
