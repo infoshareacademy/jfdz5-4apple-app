@@ -58,7 +58,7 @@ class RegistrationForm extends React.Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="registration--container">
                 <img src={logo} alt="logo" className="registation-form__logo"/>
 
                 <div className="registation-form__content">

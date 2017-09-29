@@ -13,6 +13,8 @@ import DataFetcher from "./DataFetcher/DataFetcher";
 import {presentationOfResults} from '../state/presentationOfResults'
 
 import './TabbedResults.css'
+import SearchBarFilters from "./SearchBarFilters";
+
 
 const TabbedResults = ({products, chosenView, changeView}) => (
   <div>
@@ -21,6 +23,7 @@ const TabbedResults = ({products, chosenView, changeView}) => (
       component={SearchBar}
       propName="searchedProducts"
     />
+    <SearchBarFilters/>
     <Tabs defaultActiveKey={chosenView} id="tabbed-results" onSelect={changeView} className="container">
       <Tab eventKey={1} title="List">
         <SearchResultsList products={products}/>
