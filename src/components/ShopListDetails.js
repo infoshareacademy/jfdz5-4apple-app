@@ -9,7 +9,6 @@ class ShopListDetails extends React.Component {
     render() {
 
         const ProductList = this.props.filteredResults;
-        console.log(ProductList)
         const item = parseInt(this.props.item);
         const Shops = ProductList.filter(product => [product.id]
             .some(id => id === item))

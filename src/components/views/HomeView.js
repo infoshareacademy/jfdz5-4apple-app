@@ -4,23 +4,27 @@ import SearchBar from '../SearchBar'
 import DataFetcher from "../DataFetcher/DataFetcher";
 import Categories from "../Categories";
 
-const HomeView = () => (
+const HomeView = () => {
+    const initialState = [];
 
-    <div>
-        <DataFetcher
-            dataUrl={'http://localhost:3000/data/products.json'}
-            component={SearchBar}
-            propName="searchedProducts"
-        />
+    return (
+        <div>
+            <DataFetcher
+                dataUrl={'http://localhost:3000/data/products.json'}
+                component={SearchBar}
+                propName="searchedProducts"
+            />
 
-        <DataFetcher
-            dataUrl={'http://localhost:3000/data/products.json'}
-            component={Categories}
-            propName="categoriesProducts"
-        />
-    </div>
-
-)
+            <DataFetcher
+                         dataUrl={'http://localhost:3000/data/products.json'}
+                         component={Categories}
+                         propName="categoriesProducts"
+                         propCategories={initialState}
+                         propInitialName="initialState"
+            />
+        </div>
+    )
+}
 
 
 export default HomeView
