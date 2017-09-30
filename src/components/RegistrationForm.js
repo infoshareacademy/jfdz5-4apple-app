@@ -1,8 +1,6 @@
 import React from 'react'
 import firebase from 'firebase'
 import {Button, Form, FormControl, FormGroup, Alert} from "react-bootstrap";
-
-
 import './RegistrationForm.css'
 
 class RegistrationForm extends React.Component {
@@ -59,7 +57,6 @@ class RegistrationForm extends React.Component {
     render() {
         return (
             <div className="container registration--container">
-                <img src={logo} alt="logo" className="registation-form__logo"/>
 
                 <div className="registation-form__content">
                     <Form horizontal onSubmit={this.handleSubmit} className="registation-form__form">
