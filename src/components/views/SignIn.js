@@ -3,9 +3,10 @@ import {Button, Form, FormControl, FormGroup, Checkbox, Alert} from 'react-boots
 import {connect} from 'react-redux'
 import {set} from '../../state/auth'
 import firebase from 'firebase'
+
 import facebook from '../../img/facebook.svg'
 import gmail from '../../img/gmail.svg'
-
+import SignIn_styles from '../views/SignIn_styles.css'
 
 const providerForGoogle = new firebase.auth.GoogleAuthProvider();
 const providerForFacebook = new firebase.auth.FacebookAuthProvider();
@@ -118,14 +119,14 @@ class SignIn extends React.Component {
 
             <Button onClick={this.handlerGoogleLogIn} bsStyle="default"><img src={gmail}
                                                                              alt="gmail"
-                                                                             height="35"/>
+                                                                             height="20"/>
 
             </Button>
 
 
             <Button onClick={this.handlerFacebookLogIn} bsStyle="default"><img src={facebook}
                                                                                alt="fb"
-                                                                               height="35"/>
+                                                                               height="20"/>
 
             </Button>
 
