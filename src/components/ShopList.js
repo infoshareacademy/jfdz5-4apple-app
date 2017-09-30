@@ -7,7 +7,6 @@ import ButtonBlue from "./ButtonBlue"
 const ShopList = (props) => {
 
     const {shops} = props;
-    console.log(shops);
     return (
         <div>
             {shops.map((product, index) => {
