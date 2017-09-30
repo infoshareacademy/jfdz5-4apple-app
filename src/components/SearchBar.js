@@ -1,8 +1,8 @@
 import React from 'react'
-
 import {withRouter} from 'react-router-dom'
-
+import firebase from 'firebase'
 import {Navbar, FormGroup, FormControl, Button} from 'react-bootstrap'
+import {LinkContainer} from 'react-router-bootstrap'
 import logo from "../img/logo.svg"
 import magnifier from "../img/magnifier.png"
 import '../components/SearchBar.css'
@@ -15,6 +15,14 @@ class SearchBar extends React.Component {
   state = {
     searchedName: '',
     searchedProducts: this.props.searchedProducts
+  }
+
+  signOutUser = () => {
+    firebase.auth().signOut().then(() => {
+
+    }).catch(error => {
+      error(error.message)
+    })
   }
 
   handleChange = (event) => this.setState({
@@ -31,15 +39,31 @@ class SearchBar extends React.Component {
     })
   }
 
+
   render() {
     return (
       <div>
+        <Navbar className="top--navbar">
+          <Navbar.Header>
+            <Navbar.Brand className="logo">
+              <Link to={`/`}><img src={logo} alt="logo"/></Link>
+            </Navbar.Brand>
+            <Navbar.Toggle/>
+          </Navbar.Header>
+          <Navbar.Collapse>
+
+            <Navbar.Text pullRight>
+              <LinkContainer to="/">
+                <Button onClick={this.signOutUser}>Wyloguj się</Button>
+              </LinkContainer>
+            </Navbar.Text>
+
+          </Navbar.Collapse>
+        </Navbar>
         <Navbar>
           <div className="navbar--contaiter">
             <Navbar.Header>
-              <Navbar.Brand className="logo">
-                <Link to={`/`}><img src={logo} alt="logo"/></Link>
-              </Navbar.Brand>
+
               <Navbar.Toggle/>
             </Navbar.Header>
             <Navbar.Collapse>
@@ -58,6 +82,8 @@ class SearchBar extends React.Component {
                     <img src={magnifier}
                          alt="search"
                          height="35"/></Button>
+
+
                 </form>
               </Navbar.Form>
             </Navbar.Collapse>
