@@ -8,8 +8,8 @@ import {CategoriesResults, filterResults} from "../state/searching";
 
 class Categories extends React.Component {
     state = {
-        chooseCategories: ''
-
+        chooseCategories: '',
+        findProductsCategories: this.props.categoriesProducts
     };
 
 
@@ -17,11 +17,25 @@ class Categories extends React.Component {
 
 
     handleChange = (e) => {
+        e.preventDefault();
         const name = e.target.value;
         this.setState({chooseCategories: name})
+        this.props.history.push('/results')
+        this.props.addSearchedResults(this.state.findProductsCategories, this.state.chooseCategories)
     };
+    handleChoose = (e) => {
+        e.preventDefault();
+        const name = e.target.value;
+        this.setState({chooseCategories: name})
+        this.props.history.push('/results')
+        this.props.addCategoriesResults(this.state.findProductsCategories, this.state.chooseCategories)
+    }
 
     render() {
+
+        console.log(this.state.findProductsCategories)
+
+
         const productsFromInput = this.props.filteredResults;
         const {initialState} = this.props;
         const initialCategories = this.props.categoriesProducts;
@@ -82,7 +96,7 @@ export default withRouter(
             filteredResults: state.searching.filteredResults
         }),
         dispatch => ({
-            addSearchedResults: (searchedProducts, searchedItem) => dispatch(filterResults(searchedProducts, searchedItem))
-            //addCategoriesResults: (searchedProducts, searchedItem) => dispatch(CategoriesResults(searchedProducts, searchedItem))
+            addSearchedResults: (searchedProducts, searchedItem) => dispatch(filterResults(searchedProducts, searchedItem)),
+            addCategoriesResults: (searchedProducts, searchedItem) => dispatch(CategoriesResults(searchedProducts, searchedItem))
         })
     )(Categories))

@@ -1,4 +1,5 @@
 const FILTER = 'searching/FILTER'
+const FIND = 'searching/FIND'
 
 export const filterResults = (searchedProducts, searchedItem) => ({
   type: FILTER,
@@ -6,7 +7,7 @@ export const filterResults = (searchedProducts, searchedItem) => ({
   searchedItem
 })
 export const CategoriesResults = (searchedProducts, searchedItem) => ({
-    type: FILTER,
+    type: FIND,
     searchedProducts,
     searchedItem
 })
@@ -30,6 +31,12 @@ export default (state = initialState, action) => {
             )
           )
       }
+      case FIND:
+          return{
+              ...state,
+              filteredResults: ((action.searchedProducts).map(product => product.category))
+
+          }
     default:
       return state
   }
