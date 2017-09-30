@@ -2,7 +2,7 @@ import React from 'react'
 import firebase from 'firebase'
 import {Button, Form, FormControl, FormGroup, Alert} from "react-bootstrap";
 
-import logo from '../img/logo.svg'
+
 import './RegistrationForm.css'
 
 class RegistrationForm extends React.Component {
@@ -33,7 +33,18 @@ class RegistrationForm extends React.Component {
                 this.state.email,
                 this.state.password
             ).catch(
-                () => this.setState({error: "Podany przez Ciebie mail, nie istnieje."})
+              (error) => {
+                switch (error.code) {
+                  case "auth/invalid-email":
+                    return this.setState({error: "Podany przez Ciebie mail, nie istnieje."});
+                  case "auth/weak-password":
+                    return this.setState({error: "Hasło musi zawierać przynajmniej 6 znaków."});
+                  case "auth/email-already-in-use":
+                    return this.setState({error: "Użytkownik o takim mailu jest już zarejestrowany."});
+                  default:
+                    return this.setState({error: "Rejestracja nie powiodła się, spróbuj ponownie."});
+                }
+              }
             )
         } else {
             this.setState({
@@ -48,11 +59,10 @@ class RegistrationForm extends React.Component {
     render() {
         return (
             <div className="container">
-                <img src={logo} alt="logo" className="registation-form__logo"/>
 
                 <div className="registation-form__content">
                     <Form horizontal onSubmit={this.handleSubmit} className="registation-form__form">
-                        <h2 className="registation-form__title">Zarejestruj się</h2>
+                        <h1 className="registation-form__title">Zarejestruj się</h1>
                         <FormGroup controlId="formHorizontalEmail" onChange={this.handleChange}>
 
                             <FormControl type="email"
@@ -66,7 +76,7 @@ class RegistrationForm extends React.Component {
                                    onChange={this.handleChange}>
                             <FormControl
                                 type="password"
-                                placeholder="Podaj hasło"
+                                placeholder="Podaj hasło (min. 6 znaków)"
                                 name="password"
                                 value={this.state.password}
                                 required/>
@@ -87,7 +97,7 @@ class RegistrationForm extends React.Component {
                         }
 
                         <FormGroup>
-                            <Button type="submit">
+                            <Button type="submit" bsStyle="primary">
                                 Zarejestruj się
                             </Button>
                         </FormGroup>

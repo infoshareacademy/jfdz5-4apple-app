@@ -12,8 +12,6 @@ const ShopList = (props) => {
       {shops.map((product, index) => {
         return (
           <ListGroupItem key={index}>
-            {/*test ulubionych*/}
-            <FavsProducts/>
             <div className="product--container">
               <img className="shop--img" alt="product" src={product.image}/>
               <div className="product--info">
