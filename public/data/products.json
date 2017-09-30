@@ -3,6 +3,7 @@
     "category": "Obuwie",
     "items": [
       {
+        "id": 1,
         "brand": "Nike",
         "model": "Air Force 1",
         "category": "Obuwie",
@@ -11,7 +12,7 @@
           {
             "name": "NIKE",
             "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "image": "http://s1.thingpic.com/images/d3/nASUUAGs2WgUawiKL4bdrYxH.jpeg",
             "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287",
             "size": [
               41,
@@ -26,7 +27,7 @@
           {
             "name": "BUTYJANA",
             "localPrice": 555,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "image":"http://www.galeria-nowyswiat.pl/images/sklepy//butyjana/butyjana.pl_logo.jpg",
             "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html",
             "size": [
               36,
@@ -57,6 +58,7 @@
         "description": "Buty męskie Nike Air Force 1 '07 to nowoczesna odsłona legendarnego modelu, stanowiąca mieszankę klasyki i nowości."
       },
       {
+        "id": 2,
         "brand": "Nike",
         "model": "Flex Adapt TR",
         "category": "Obuwie",
@@ -65,7 +67,7 @@
           {
             "name": "NIKE",
             "localPrice": 419,
-            "image": "https://www.google.pl/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi5_MCnpYLWAhUQKFAKHaaXD1EQjRwIBw&url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3ALogo_NIKE.svg&psig=AFQjCNH49tUw7g3yri8hLZIUuUFs2fqQuQ&ust=1504297039386838",
+            "image": "http://s1.thingpic.com/images/d3/nASUUAGs2WgUawiKL4bdrYxH.jpeg",
             "url": "https://store.nike.com/pl/pl_pl/pd/buty-treningowe-flex-adapt-tr/pid-10945118/pgid-12107970?cp=euns_kw_pla%21pl%21goo%21c%21%21213773252829&gclid=EAIaIQobChMI5t6vgIiB1gIVEM-yCh2_jAvBEAQYASABEgK_ivD_BwE&gclsrc=aw.ds",
             "size": [
               35,
@@ -105,6 +107,7 @@
     "category": "RTV",
     "items": [
       {
+        "id": 3,
         "brand": "Samsung",
         "model": "UE49M5672AU",
         "category": "RTV",
@@ -140,6 +143,7 @@
         ]
       },
       {
+        "id": 4,
         "brand": "Samsung",
         "model": "UE49MU6442U",
         "category": "RTV",
@@ -175,6 +179,7 @@
         ]
       },
       {
+        "id": 5,
         "brand": "Philips",
         "model": "49PUS6561/12",
         "price": 2949,
@@ -192,6 +197,7 @@
         ]
       },
       {
+        "id": 6,
         "brand": "Panasonic",
         "model": "TX-55EX633E",
         "category": "RTV",
@@ -233,6 +239,7 @@
         ]
       },
       {
+        "id": 7,
         "brand": "Panasonic",
         "model": "TX-65EX600E",
         "category": "RTV",
@@ -248,7 +255,7 @@
         "description": "Seria EX600 zapewnia żywy obraz 4K HDR i funkcje inteligentne, zaś umożliwiająca konfigurowanie konstrukcja Switch Design pozwala dopasować telewizor do każdego wnętrza.",
         "shops": [
           {
-            "name": "MORELE.NET",
+            "name": "MORELE NET",
             "localPrice": 5334.54,
             "image": "https://www.morele.net/static/img/shop/img-morele-logo.png",
             "url": "https://www.morele.net/telewizor-panasonic-tx-65ex600e-1371318/"
@@ -280,6 +287,7 @@
         ]
       },
       {
+        "id": 8,
         "brand": "Apple",
         "model": "iPhone 7",
         "category": "RTV",
@@ -328,6 +336,7 @@
         ]
       },
       {
+        "id": 9,
         "brand": "Apple",
         "model": "iPhone 7 plus",
         "category": "RTV",
@@ -360,6 +369,7 @@
         ]
       },
       {
+        "id": 10,
         "brand": "Apple",
         "model": "iMac 27",
         "category": "RTV",
@@ -395,6 +405,7 @@
         ]
       },
       {
+        "id": 11,
         "brand": "Apple",
         "model": "iPad PRO",
         "category": "RTV",
@@ -437,6 +448,7 @@
     "category": "Uroda",
     "items": [
       {
+        "id": 12,
         "brand": "Biotherm",
         "model": "Aquapower",
         "category": "Uroda",
@@ -462,6 +474,7 @@
         ]
       },
       {
+        "id": 13,
         "brand": "Lancome",
         "model": "3d lifting",
         "category": "Uroda",
@@ -487,6 +500,7 @@
         ]
       },
       {
+        "id": 14,
         "brand": "Calvin Klein",
         "model": "Euphoria",
         "category": "Uroda",
@@ -506,6 +520,7 @@
         ]
       },
       {
+        "id": 15,
         "brand": "Christian Dior",
         "model": "Sauvage",
         "category": "Uroda",
@@ -535,6 +550,7 @@
     "category": "Książki",
     "items": [
       {
+        "id": 16,
         "title": "Macierewicz i jego tajemnice",
         "author": "Tomasz Piatek",
         "category": "Książki",
@@ -569,6 +585,7 @@
         ]
       },
       {
+        "id": 17,
         "title": "Zioła z polskich łąk",
         "author": "Bob Marley",
         "category": "Książki",
@@ -593,6 +610,7 @@
         ]
       },
       {
+        "id": 18,
         "title": "Gra o tron",
         "author": "George Martin",
         "category": "Książki",
@@ -617,6 +635,7 @@
         ]
       },
       {
+        "id": 19,
         "title": "Religia szkoła podstawowa klasa 3",
         "author": "Elżbieta Kondrak",
         "category": "Książki",
@@ -641,14 +660,14 @@
           {
             "name": "EMPIK",
             "localPrice": 9.34,
-            "image": "http://www.empik.com/b/mp/img/logo.svg",
+            "image":"http://www.empik.com/b/mp/img/logo-for-fb.jpg",
             "url": "http://www.empik.com/jezus-jest-z-nami-3-zeszyt-cwiczen-szkola-podstawowa-cd-kondrak-elzbieta-czerkawski-jaroslaw,p1080875478,ksiazka-p?utm_source=ceneo.pl&utm_medium=oferty_cpc&utm_content=p1080875478",
             "cover": [
               "miękka"
             ]
           },
           {
-            "name": "EMPIK",
+            "name": "KOROB",
             "localPrice": 7.75,
             "image": "http://www.korob.pl/data/include/cms/site/korob_logo.png",
             "url": "http://www.korob.pl/product-pol-10258-Religia-SP-3-Jezus-jest-z-nami-cw-JEDNOSC.html",
