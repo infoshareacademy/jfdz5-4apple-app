@@ -46,7 +46,7 @@ class Categories extends React.Component {
             <div className="categories">
                 <ListGroup className="categories-list">
                     {
-                        initialState === undefined ?
+                        initialState === undefined && productsFromInput.toString() !== "" ?
 
                             productsCategories.map((products,index) => {
                                 return (

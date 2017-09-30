@@ -20,20 +20,23 @@ const TabbedResults = ({products, chosenView, changeView}) => (
             component={SearchBar}
             propName="searchedProducts"
         />
-        <Tabs defaultActiveKey={chosenView} id="tabbed-results" onSelect={changeView} className="container">
-            <Tab eventKey={1} title="List">
-                <SearchResultsList products={products}/>
-            </Tab>
 
-            <Tab eventKey={2} title="Grid">
-                <SearchResultsGrid products={products}/>
-            </Tab>
-        </Tabs>
-        <DataFetcher
-            dataUrl={'http://localhost:3000/data/products.json'}
-            component={Categories}
-            propName="categoriesProducts"
-        />
+        <div>
+            <DataFetcher
+                dataUrl={'http://localhost:3000/data/products.json'}
+                component={Categories}
+                propName="categoriesProducts"
+            />
+            <Tabs defaultActiveKey={chosenView} id="tabbed-results" onSelect={changeView} className="container">
+                <Tab eventKey={1} title="List">
+                    <SearchResultsList products={products}/>
+                </Tab>
+
+                <Tab eventKey={2} title="Grid">
+                    <SearchResultsGrid products={products}/>
+                </Tab>
+            </Tabs>
+        </div>
     </div>
 )
 
