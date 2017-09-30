@@ -107,7 +107,7 @@ class SignIn extends React.Component {
           </FormGroup>
           <FormGroup>
             <Button className="btn btn-block btn-primary btn-loading" bsStyle="success" type="submit">
-              Zaloguj
+              Zaloguj się
             </Button>
           </FormGroup>
           <FormGroup>

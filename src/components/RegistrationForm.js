@@ -97,7 +97,7 @@ class RegistrationForm extends React.Component {
                         }
 
                         <FormGroup>
-                            <Button type="submit">
+                            <Button type="submit" bsStyle="primary">
                                 Zarejestruj się
                             </Button>
                         </FormGroup>

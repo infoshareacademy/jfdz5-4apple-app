@@ -1,7 +1,7 @@
 import React from 'react'
 import {withRouter} from 'react-router-dom'
 import firebase from 'firebase'
-import {Navbar,FormGroup, FormControl, Button} from 'react-bootstrap'
+import {Navbar, FormGroup, FormControl, Button} from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
 import logo from "../img/logo.svg"
 import magnifier from "../img/magnifier.png"
@@ -39,20 +39,16 @@ class SearchBar extends React.Component {
     })
   }
 
-  handleLogOut = (event) => {
-    event.preventDefault();
-    console.log('wyloguj')
-  }
 
   render() {
     return (
       <div>
-        <Navbar>
+        <Navbar className="top--navbar">
           <Navbar.Header>
             <Navbar.Brand className="logo">
               <Link to={`/`}><img src={logo} alt="logo"/></Link>
             </Navbar.Brand>
-            <Navbar.Toggle />
+            <Navbar.Toggle/>
           </Navbar.Header>
           <Navbar.Collapse>
 
@@ -86,7 +82,6 @@ class SearchBar extends React.Component {
                     <img src={magnifier}
                          alt="search"
                          height="35"/></Button>
-
 
 
                 </form>

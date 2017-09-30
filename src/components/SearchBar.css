@@ -4,6 +4,11 @@
     padding-left: 10%;
 }
 
+
+.top--navbar .container {
+    display: block;
+}
+
 .form-control {
     height: 50px;
     font-size: 18px;
