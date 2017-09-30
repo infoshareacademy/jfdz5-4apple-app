@@ -8,7 +8,6 @@ import {CategoriesResults, filterResults} from "../state/searching";
 
 class Categories extends React.Component {
     state = {
-        chooseCategories: '',
         findProductsCategories: this.props.categoriesProducts
     };
 
@@ -18,17 +17,13 @@ class Categories extends React.Component {
 
     handleChange = (e) => {
         e.preventDefault();
-        const name = e.target.value;
-        this.setState({chooseCategories: name})
         this.props.history.push('/results')
-        this.props.addSearchedResults(this.state.findProductsCategories, this.state.chooseCategories)
+        this.props.addSearchedResults(this.state.findProductsCategories, e.target.value)
     };
     handleChoose = (e) => {
         e.preventDefault();
-        const name = e.target.value;
-        this.setState({chooseCategories: name})
         this.props.history.push('/results')
-        this.props.addCategoriesResults(this.state.findProductsCategories, this.state.chooseCategories)
+        this.props.addCategoriesResults(this.state.findProductsCategories, e.target.value)
     }
 
     render() {
