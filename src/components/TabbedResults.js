@@ -14,7 +14,7 @@ import {presentationOfResults} from '../state/presentationOfResults'
 
 import './TabbedResults.css'
 
-const TabbedResults = ({products, chosenView, changeView}) => (
+const TabbedResults = ({products, chosenView, changeView, allProducts}) => (
   <div>
     <DataFetcher
       dataUrl={'http://localhost:3000/data/products.json'}
@@ -35,7 +35,8 @@ const TabbedResults = ({products, chosenView, changeView}) => (
 
 export default connect(
   state => ({
-    chosenView: state.presentationOfResults.chosenView
+    chosenView: state.presentationOfResults.chosenView,
+    allProducts: state.allProducts.data
   }),
   dispatch => ({
     changeView: (key) => dispatch(presentationOfResults(key))
