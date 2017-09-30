@@ -29,34 +29,31 @@ class Filters extends React.Component {
     });
 
     const submitFilters = (event) => {
-      event.preventDefault()
-      console.log(this.props.filteredResults)
-      console.log(this.state)
+      event.preventDefault();
+      console.log(this.props.filteredResults);
+      console.log(this.state);
       this.props.filteredResults.filter((product) => {
-        console.log(product.price >= parseInt(this.state.priceMin,10) && product.price <= parseInt(this.state.priceMax,10) ? product : null)
-        return product.price >= parseInt(this.state.priceMin,10) && product.price <= parseInt(this.state.priceMax,10) ? product : null
+        console.log(product.price >= parseInt(this.state.priceMin, 10) && product.price <= parseInt(this.state.priceMax, 10) ? product : null);
+        return product.price >= parseInt(this.state.priceMin, 10) && product.price <= parseInt(this.state.priceMax, 10) ? product : null
       })
     };
 
     const updateCheckboxState = (key) => {
-      this.state[key] = !this.state[key];
       this.setState({
         ...this.state,
-        key: this.state[key],
+        [key]: !this.state[key],
       });
     };
     const updateColorSelectState = (event) => {
-      this.state.color = event.target.value;
       this.setState({
         ...this.state,
-        color: this.state.color,
+        color: event.target.value,
       });
     };
     const updateSizeSelectState = (event) => {
-      this.state.size = event.target.value;
       this.setState({
         ...this.state,
-        size: this.state.size,
+        size: event.target.value,
       });
     };
 
