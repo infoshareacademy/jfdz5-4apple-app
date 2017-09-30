@@ -5,7 +5,7 @@ import {LinkContainer} from 'react-router-bootstrap'
 import RegistrationForm from "./RegistrationForm";
 import SignIn from './views/SignIn'
 import logo from '../img/logo.svg'
-
+import Auth_styles from './Auth_styles.css'
 
 
 const Auth = ({user, children}) => (
@@ -18,7 +18,7 @@ const Auth = ({user, children}) => (
 
         <div>
           <img src={logo} alt="logo" className="registation-form__logo"/>
-          <div><SignIn /><RegistrationForm/></div>
+          <div className="main_view"><SignIn /><RegistrationForm/></div>
         </div>:
         children
     }

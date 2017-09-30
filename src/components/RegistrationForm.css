@@ -18,8 +18,8 @@
 }
 
 .registation-form__title {
-    text-transform: uppercase;
-    font-family: cursive;
+    /*text-transform: uppercase;*/
+    /*font-family: cursive;*/
 }
 
 @media (min-width: 768px) {

@@ -95,28 +95,24 @@ class SignIn extends React.Component {
         }
 
 
-
-
-
         <Form horizontal onSubmit={this.handleSubmit}>
           <h1>Zaloguj się</h1>
           <FormGroup controlId="formHorizontalEmail">
-            <FormControl onChange={this.handleLoginChange} type="text" placeholder="email"/>
+            <FormControl onChange={this.handleLoginChange} type="text" placeholder="Email"/>
           </FormGroup>
 
           <FormGroup controlId="formHorizontalPassword">
-            <FormControl onChange={this.handlePasswordChange} type="password" placeholder="hasło"/>
+            <FormControl onChange={this.handlePasswordChange} type="password" placeholder="Hasło"/>
           </FormGroup>
-
+          <FormGroup>
+            <Button className="btn btn-block btn-primary btn-loading" bsStyle="success" type="submit">
+              Zaloguj
+            </Button>
+          </FormGroup>
           <FormGroup>
             <Checkbox>Zapamiętaj mnie</Checkbox>
           </FormGroup>
 
-          <FormGroup>
-            <Button className="btn btn-block btn-lg btn-primary btn-loading" bsStyle="success" type="submit">
-              Zaloguj
-            </Button>
-          </FormGroup>
 
           <FormGroup>
 
