@@ -11,7 +11,6 @@ import SignIn_styles from '../views/SignIn_styles.css'
 const providerForGoogle = new firebase.auth.GoogleAuthProvider();
 const providerForFacebook = new firebase.auth.FacebookAuthProvider();
 
-
 class SignIn extends React.Component {
 
 
