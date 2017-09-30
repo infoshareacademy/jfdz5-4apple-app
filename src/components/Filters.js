@@ -8,12 +8,13 @@ import ButtonBlue from "./ButtonBlue";
 
 class Filters extends React.Component {
   state = {
-    priceMin: "",
-    priceMax: "",
+    priceMin: "0",
+    priceMax: "1000000000",
     female: false,
     male: false,
     hardCover: false,
     softCover: false,
+    cover: ["miękka", "twarda"],
     color: "",
     size: ""
   };
@@ -29,11 +30,23 @@ class Filters extends React.Component {
     });
 
     const submitFilters = (event) => {
+      defineCover()
       event.preventDefault();
       console.log(this.props.filteredResults);
       console.log(this.state);
       this.props.filteredResults.filter((product) => {
-        console.log(product.price >= parseInt(this.state.priceMin, 10) && product.price <= parseInt(this.state.priceMax, 10) ? product : null);
+
+        console.log(product.cover)
+        console.log(this.state.cover)
+        console.log(this.state.cover)
+        console.log(product.cover.includes(this.state.cover));
+
+        console.log(product.price >= parseInt(this.state.priceMin, 10) && product.price <= parseInt(this.state.priceMax, 10)
+        && product.female === this.state.female && product.male === this.state.male
+        && product.cover.includes(this.state.cover)
+        && product.size.includes(this.state.size)
+        && product.color.includes(this.state.color)
+          ? product : null);
         return product.price >= parseInt(this.state.priceMin, 10) && product.price <= parseInt(this.state.priceMax, 10) ? product : null
       })
     };
@@ -55,6 +68,21 @@ class Filters extends React.Component {
         ...this.state,
         size: event.target.value,
       });
+    };
+
+    const defineCover = () => {
+      if (this.state.softCover === true && this.state.hardCover === true) {
+        this.state.cover = ["miękka", "twarda"]
+      }
+      else if (this.state.softCover === false && this.state.hardCover === true) {
+        this.state.cover = ["twarda"]
+      }
+      else if (this.state.softCover === true && this.state.hardCover === false) {
+        this.state.cover = ["miękka"]
+      }
+      else {
+        this.state.cover = ["miękka", "twarda"]
+      }
     };
 
     const handleMinChange = event => this.setState({
