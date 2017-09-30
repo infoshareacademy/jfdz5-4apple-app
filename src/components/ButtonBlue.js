@@ -3,9 +3,10 @@ import React from 'react'
 import './ButtonBlue.css'
 import {Button} from "react-bootstrap";
 
-const ButtonBlue = ({textContent}) => {
+const ButtonBlue = ({textContent, type}) => {
   return (
-    <Button bsSize="large"
+    <Button type={type}
+            bsSize="large"
             bsStyle="primary"
             className="button--continue">
       {textContent}
