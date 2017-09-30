@@ -1,26 +1,39 @@
 import React from 'react'
-
 import {withRouter} from 'react-router-dom'
-
+import firebase from 'firebase'
 import {Navbar, FormGroup, FormControl, Button} from 'react-bootstrap'
+import {LinkContainer} from 'react-router-bootstrap'
 import logo from "../img/logo.svg"
 import magnifier from "../img/magnifier.png"
 import '../components/SearchBar.css'
 import Link from "react-router-dom/es/Link"
 import {connect} from 'react-redux'
 import {filterResults} from '../state/searching'
+import {allProductsPass} from "../state/allProducts";
 
 class SearchBar extends React.Component {
 
+  componentDidMount() {
+    this.props.allProductsPass(this.state.allProducts)
+  }
+
   state = {
     searchedName: '',
-    searchedProducts: this.props.searchedProducts
+    searchedProducts: this.props.searchedProducts,
+    allProducts: this.props.searchedProducts
+  }
+
+  signOutUser = () => {
+    firebase.auth().signOut().then(() => {
+
+    }).catch(error => {
+      error(error.message)
+    })
   }
 
   handleChange = (event) => this.setState({
     searchedName: event.target.value
   })
-
 
   handleSubmit = event => {
     event.preventDefault();
@@ -31,15 +44,31 @@ class SearchBar extends React.Component {
     })
   }
 
+
   render() {
     return (
       <div>
+        <Navbar className="top--navbar">
+          <Navbar.Header>
+            <Navbar.Brand className="logo">
+              <Link to={`/`}><img src={logo} alt="logo"/></Link>
+            </Navbar.Brand>
+            <Navbar.Toggle/>
+          </Navbar.Header>
+          <Navbar.Collapse>
+
+            <Navbar.Text pullRight>
+              <LinkContainer to="/">
+                <Button onClick={this.signOutUser}>Wyloguj się</Button>
+              </LinkContainer>
+            </Navbar.Text>
+
+          </Navbar.Collapse>
+        </Navbar>
         <Navbar>
           <div className="navbar--contaiter">
             <Navbar.Header>
-              <Navbar.Brand className="logo">
-                <Link to={`/`}><img src={logo} alt="logo"/></Link>
-              </Navbar.Brand>
+
               <Navbar.Toggle/>
             </Navbar.Header>
             <Navbar.Collapse>
@@ -58,6 +87,8 @@ class SearchBar extends React.Component {
                     <img src={magnifier}
                          alt="search"
                          height="35"/></Button>
+
+
                 </form>
               </Navbar.Form>
             </Navbar.Collapse>
@@ -71,10 +102,12 @@ class SearchBar extends React.Component {
 export default withRouter(
   connect(
     state => ({
-      filteredResults: state.searching.searchedProducts
+      filteredResults: state.searching.searchedProducts,
+      allProducts: state.allProducts.data
     }),
     dispatch => ({
-      addSearchedResults: (searchedProducts, searchedItem) => dispatch(filterResults(searchedProducts, searchedItem))
+      addSearchedResults: (searchedProducts, searchedItem) => dispatch(filterResults(searchedProducts, searchedItem)),
+      allProductsPass: (data) => dispatch(allProductsPass(data))
     })
   )(SearchBar)
 )

@@ -9,7 +9,7 @@ class ShopListDetails extends React.Component {
     render() {
 
         const ProductList = this.props.filteredResults;
-        const item = parseInt(this.props.item);
+        const item = parseInt(this.props.item, 10);
         const Shops = ProductList.filter(product => [product.id]
             .some(id => id === item))
             .map(product => product.shops)
