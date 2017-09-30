@@ -6,3 +6,8 @@
 .registation-form__logo {
     display: flex;
 }
+
+.nav-tabs {
+    display: flex;
+    justify-content: center;
+}
