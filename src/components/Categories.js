@@ -11,10 +11,7 @@ class Categories extends React.Component {
         findProductsCategories: this.props.categoriesProducts
     };
 
-
-
-
-
+    
     handleChange = (e) => {
         e.preventDefault();
         this.props.history.push('/results')
@@ -27,9 +24,6 @@ class Categories extends React.Component {
     }
 
     render() {
-
-        console.log(this.state.findProductsCategories)
-
 
         const productsFromInput = this.props.filteredResults;
         const {initialState} = this.props;
@@ -69,7 +63,7 @@ class Categories extends React.Component {
 
                                     <ListGroupItem key={index} className="categories-list-item"
                                                    value={products.category}
-                                                   onClick={this.handleChange}
+                                                   onClick={this.handleChoose}
                                     >{products.category}
                                     </ListGroupItem>
 
