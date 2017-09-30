@@ -9,18 +9,23 @@ import '../components/SearchBar.css'
 import Link from "react-router-dom/es/Link"
 import {connect} from 'react-redux'
 import {filterResults} from '../state/searching'
+import {allProductsPass} from "../state/allProducts";
 
 class SearchBar extends React.Component {
 
+  componentDidMount() {
+    this.props.allProductsPass(this.state.allProducts)
+  }
+
   state = {
     searchedName: '',
-    searchedProducts: this.props.searchedProducts
+    searchedProducts: this.props.searchedProducts,
+    allProducts: this.props.searchedProducts
   }
 
   handleChange = (event) => this.setState({
     searchedName: event.target.value
   })
-
 
   handleSubmit = event => {
     event.preventDefault();
@@ -71,10 +76,12 @@ class SearchBar extends React.Component {
 export default withRouter(
   connect(
     state => ({
-      filteredResults: state.searching.searchedProducts
+      filteredResults: state.searching.searchedProducts,
+      allProducts: state.allProducts.data
     }),
     dispatch => ({
-      addSearchedResults: (searchedProducts, searchedItem) => dispatch(filterResults(searchedProducts, searchedItem))
+      addSearchedResults: (searchedProducts, searchedItem) => dispatch(filterResults(searchedProducts, searchedItem)),
+      allProductsPass: (data) => dispatch(allProductsPass(data))
     })
   )(SearchBar)
 )
