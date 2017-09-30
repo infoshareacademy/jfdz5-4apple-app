@@ -6,7 +6,7 @@ import firebase from 'firebase'
 
 import facebook from '../../img/facebook.svg'
 import gmail from '../../img/gmail.svg'
-import SignIn_styles from '../views/SignIn_styles.css'
+import '../views/SignIn_styles.css'
 
 const providerForGoogle = new firebase.auth.GoogleAuthProvider();
 const providerForFacebook = new firebase.auth.FacebookAuthProvider();
@@ -97,7 +97,7 @@ class SignIn extends React.Component {
 
         <Form horizontal onSubmit={this.handleSubmit}>
           <h1>Zaloguj się</h1>
-          <FormGroup controlId="formHorizontalEmail">
+          <FormGroup controlId="formHorizontalEmail" className="SignIn-form__form">
             <FormControl onChange={this.handleLoginChange} type="text" placeholder="Email"/>
           </FormGroup>
 

@@ -2,7 +2,6 @@ import React from 'react'
 import firebase from 'firebase'
 import {Button, Form, FormControl, FormGroup, Alert} from "react-bootstrap";
 
-
 import './RegistrationForm.css'
 
 class RegistrationForm extends React.Component {
