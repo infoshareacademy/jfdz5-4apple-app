@@ -34,7 +34,10 @@ export default (state = initialState, action) => {
       case FIND:
           return{
               ...state,
-              filteredResults: ((action.searchedProducts).map(product => product.category))
+              filteredResults: (action.searchedProducts).filter(product => [product.category]
+                  .some(name => name === action.searchedItem))
+                  .map(product => product.items)
+                  .reduce((result, next) => result.concat(next), [])
 
           }
     default:
