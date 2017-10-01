@@ -11,16 +11,28 @@ class Filters extends React.Component {
   state = {
     priceMin: "0",
     priceMax: "1000000000",
-    female: false,
-    male: false,
-    hardCover: false,
-    softCover: false,
-    cover: ["miękka", "twarda"],
-    color: "",
+    female: undefined,
+    male: undefined,
+    hardCover: undefined,
+    softCover: undefined,
+    cover: undefined,
+    color: undefined,
     size: undefined
   };
 
   render() {
+    const initialState = {
+      priceMin: "0",
+      priceMax: "1000000000",
+      female: undefined,
+      male: undefined,
+      hardCover: undefined,
+      softCover: undefined,
+      cover: undefined,
+      color: undefined,
+      size: undefined
+    };
+
     let results;
     this.props !== undefined ? results = this.props.filteredResults : results = [];
 
@@ -33,27 +45,47 @@ class Filters extends React.Component {
     const submitFilters = (event) => {
       event.preventDefault();
       defineCover();
+
       const searchedProducts = this.props.filteredResults.filter((product) => {
         return product.price >= parseInt(this.state.priceMin, 10) && product.price <= parseInt(this.state.priceMax, 10) ? product : null
       }).filter((product) => {
-        return product.female === (this.state.female || undefined ) || product.male === (this.state.male || undefined) ? product : null
+        return product.female === (this.state.female || undefined ) || product.male === (this.state.male || undefined) || (this.state.female === undefined && this.state.male === undefined) ? product : null
       }).filter((product) => {
         product.cover = product.cover || [];
-        return product.cover.includes(this.state.cover[0] || this.state.cover[1] || (this.state.cover[0] && this.state.cover[1])) || product.cover.toString() === "" ? product : null
+        return product.cover.includes(this.state.cover[0] || this.state.cover[1]) || product.cover.toString() === "" ? product : null
       }).filter((product) => {
         product.size = product.size || [];
-        return product.size.includes(parseInt(this.state.size, 10)) || product.size.includes(this.state.size) || product.size.toString() === "" ? product : null
+        return product.size.includes(parseInt(this.state.size, 10)) || product.size.includes(this.state.size) || product.size.toString() === "" || this.state.size === undefined ? product : null
       }).filter((product) => {
         product.color = product.color || [];
-        return product.color.includes(this.state.color) || product.size.toString() === "" ? product : null
-      })
-      this.props.addSearchedResults(searchedProducts,)
+        return product.color.includes(this.state.color) || product.size.toString() === "" || this.state.color === undefined ? product : null
+      }).map((product) => {
+        const setDetailsToUndefined = (detail) => {
+          product[detail] = undefined;
+          return product
+        };
+        return product.size.toString() === "" ? setDetailsToUndefined("size") : product
+      }).map((product) => {
+        const setDetailsToUndefined = (detail) => {
+          product[detail] = undefined;
+          return product
+        };
+        return product.cover.toString() === "" ? setDetailsToUndefined("cover") : product
+      }).map((product) => {
+        const setDetailsToUndefined = (detail) => {
+          product[detail] = undefined;
+          return product
+        };
+        return product.color.toString() === "" ? setDetailsToUndefined("color") : product
+      });
+      this.state = initialState;
+      this.props.addSearchedResults(searchedProducts)
     };
 
     const updateCheckboxState = (key) => {
       this.setState({
         ...this.state,
-        [key]: !this.state[key],
+        [key]: !this.state[key] || false,
       });
     };
     const updateColorSelectState = (event) => {

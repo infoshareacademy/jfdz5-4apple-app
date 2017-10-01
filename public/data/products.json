@@ -27,7 +27,7 @@
           {
             "name": "BUTYJANA",
             "localPrice": 555,
-            "image":"http://www.galeria-nowyswiat.pl/images/sklepy//butyjana/butyjana.pl_logo.jpg",
+            "image": "http://www.galeria-nowyswiat.pl/images/sklepy//butyjana/butyjana.pl_logo.jpg",
             "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html",
             "size": [
               36,
@@ -183,7 +183,10 @@
         "brand": "Philips",
         "model": "49PUS6561/12",
         "price": 2949,
-        "color": "black",
+        "color": "czarny",
+        "size": [
+          "49''"
+        ],
         "available": true,
         "image": "https://f01.esfr.pl/foto/3/12616115619/6bf616e6538ac1d93f874d6fc2b61fe/philips-49pus6561-12,12616115619_7.jpg",
         "description": "Pięknie wykonane telewizory Philips z serii 6500 są już dostępne. Ciesz się niesamowitą jakością obrazu 4K Ultra HD i otwórz drzwi do świata rozrywki dzięki systemowi Android TV. Wąska obudowa i wyjątkowa podstawa Arc dopełniają wygląd telewizora i stanowią eleganckie, stylowe wykończenie.",
@@ -385,7 +388,7 @@
         "description": "Od pierwszego modelu iMac miał być zawsze najbardziej wyrafinowanym komputerem stacjonarnym. Z niemożliwie smukłą, bezszczelinową obudową, najlepszym wyświetlaczem, hiperwydajnymi procesorami, grafiką i pamięcią masową. Zupełnie nowy, 21,5-calowy iMac z wyświetlaczem Retina 4K jest wierny tej koncepcji. Podobnie jak rewolucyjny 27-calowy model 5K, jakością wyświetlanego obrazu gasi wszystko wokół. Dostarcza takich wrażeń, że kompletnie pochłania odbiorcę. I tym sposobem robi kolejny, spektakularny krok naprzód.",
         "shops": [
           {
-            "name": "MORELE.NET",
+            "name": "MORELE NET",
             "localPrice": 7970.59,
             "image": "https://www.morele.net/static/img/shop/img-morele-logo.png",
             "url": "https://www.morele.net/komputer-apple-imac-27-mk462pl-a-799651/"
@@ -432,7 +435,7 @@
             ]
           },
           {
-            "name": "MORELE.NET",
+            "name": "MORELE NET",
             "localPrice": 2984,
             "image": "https://www.morele.net/static/img/shop/img-morele-logo.png",
             "url": "https://www.morele.net/tablet-apple-ipad-pro-10-5-wifi-64gb-space-grey-mqdt2fd-a-2017-1342435/",
@@ -660,7 +663,7 @@
           {
             "name": "EMPIK",
             "localPrice": 9.34,
-            "image":"http://www.empik.com/b/mp/img/logo-for-fb.jpg",
+            "image": "http://www.empik.com/b/mp/img/logo-for-fb.jpg",
             "url": "http://www.empik.com/jezus-jest-z-nami-3-zeszyt-cwiczen-szkola-podstawowa-cd-kondrak-elzbieta-czerkawski-jaroslaw,p1080875478,ksiazka-p?utm_source=ceneo.pl&utm_medium=oferty_cpc&utm_content=p1080875478",
             "cover": [
               "miękka"
