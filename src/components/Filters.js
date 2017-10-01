@@ -46,6 +46,11 @@ class Filters extends React.Component {
       event.preventDefault();
       defineCover();
 
+      const setDetailsToUndefined = (product, detail) => {
+        product[detail] = undefined;
+        return product
+      };
+
       const searchedProducts = this.props.filteredResults.filter((product) => {
         return product.price >= parseInt(this.state.priceMin, 10) && product.price <= parseInt(this.state.priceMax, 10) ? product : null
       }).filter((product) => {
@@ -60,23 +65,11 @@ class Filters extends React.Component {
         product.color = product.color || [];
         return product.color.includes(this.state.color) || product.size.toString() === "" || this.state.color === undefined ? product : null
       }).map((product) => {
-        const setDetailsToUndefined = (detail) => {
-          product[detail] = undefined;
-          return product
-        };
-        return product.size.toString() === "" ? setDetailsToUndefined("size") : product
+        return product.size.toString() === "" ? setDetailsToUndefined(product, "size") : product
       }).map((product) => {
-        const setDetailsToUndefined = (detail) => {
-          product[detail] = undefined;
-          return product
-        };
-        return product.cover.toString() === "" ? setDetailsToUndefined("cover") : product
+        return product.cover.toString() === "" ? setDetailsToUndefined(product, "cover") : product
       }).map((product) => {
-        const setDetailsToUndefined = (detail) => {
-          product[detail] = undefined;
-          return product
-        };
-        return product.color.toString() === "" ? setDetailsToUndefined("color") : product
+        return product.color.toString() === "" ? setDetailsToUndefined(product, "color") : product
       });
       this.state = initialState;
       this.props.addSearchedResults(searchedProducts)
