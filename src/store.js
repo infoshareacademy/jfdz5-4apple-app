@@ -5,6 +5,7 @@ import auth, {addNewUser} from './state/auth'
 import searching from './state/searching'
 import presentationOfResults from './state/presentationOfResults'
 import allProducts from "./state/allProducts";
+import searchingCategories from "./state/searchingCategories";
 
 const config = {
   apiKey: "AIzaSyBfMc_ewDjLN4mtSbeufm9IiKtIxg9peHM",
@@ -21,7 +22,8 @@ const reducer = combineReducers({
   auth,
   searching,
   presentationOfResults,
-  allProducts
+  allProducts,
+  searchingCategories
 })
 
 
