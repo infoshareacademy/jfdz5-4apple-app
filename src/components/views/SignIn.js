@@ -89,10 +89,7 @@ class SignIn extends React.Component {
 
 
       <div className="container page">
-        {
-          this.state.error === null ? null : <Alert bsStyle="danger">{this.state.error}</Alert>
 
-        }
 
 
         <Form horizontal onSubmit={this.handleSubmit}>
@@ -109,11 +106,15 @@ class SignIn extends React.Component {
               Zaloguj się
             </Button>
           </FormGroup>
+
           <FormGroup>
             <Checkbox>Zapamiętaj mnie</Checkbox>
           </FormGroup>
 
+          {
+            this.state.error === null ? null : <Alert bsStyle="danger">{this.state.error}</Alert>
 
+          }
           <FormGroup>
 
             <Button onClick={this.handlerGoogleLogIn} bsStyle="default"><img src={gmail}
