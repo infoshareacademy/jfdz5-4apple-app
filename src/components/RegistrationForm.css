@@ -5,41 +5,38 @@
 .registration--container {
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
 }
+
 .registation-form__content {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
 }
+
 .registation-form__logo {
     width: 90%;
     margin: 0 auto;
-}
-
-.registation-form__title {
-    /*text-transform: uppercase;*/
-    /*font-family: cursive;*/
 }
 
 @media (min-width: 768px) {
     .registation-form__logo {
         max-width: 500px;
     }
+
     .registation-form__form {
         min-width: 500px;
     }
 }
+
 @media (max-width: 767px) {
-    h2{
+    h1 {
         font-size: 24px;
     }
-    .registation-form__content {
-        align-items: center;
-    }
+
 }
+
 @media (max-width: 767px) {
-    registation-form__title{
+
+    .registation-form__title {
         font-size: 22px;
     }
 }
