@@ -16,7 +16,7 @@ class Filters extends React.Component {
     softCover: false,
     cover: ["miękka", "twarda"],
     color: "",
-    size: ""
+    size: undefined
   };
 
   render() {
@@ -39,8 +39,12 @@ class Filters extends React.Component {
       }).filter((product) => {
         product.cover = product.cover || [];
         return product.cover.includes(this.state.cover[0] || this.state.cover[1] || (this.state.cover[0] && this.state.cover[1])) || product.cover.toString() === "" ? product : null
+      }).filter((product) => {
+        product.size = product.size || [];
+        return product.size.includes(parseInt(this.state.size)) || product.size.includes(this.state.size) || product.size.toString() === "" ? product : null
       }))
     };
+
 
     const updateCheckboxState = (key) => {
       this.setState({
