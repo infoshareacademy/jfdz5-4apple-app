@@ -64,6 +64,13 @@
     font-size: 18px;
 }
 
+
+.btn-default.active {
+    display: inline-block;
+    float: right;
+    margin: -30px 30px;
+}
+
 @media (min-width: 768px) {
 
     .logo img {
@@ -94,6 +101,29 @@
     .navbar-default .navbar-collapse, .navbar-default .navbar-form {
         width: 100%;
         justify-content: flex-end;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .btn-default.active {
+
+        display: inline-block;
+        float: right;
+        margin: -30px 30px;
+    }
+
+    .collapsed {
+        display: none;
+    }
+
+    .collapsedbar {
+        display: block;
+    }
+
+    .navbar-form {
+        margin: 0 15px;
     }
 
 }

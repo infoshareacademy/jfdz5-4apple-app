@@ -48,22 +48,26 @@ class SearchBar extends React.Component {
   render() {
     return (
       <div>
+
         <Navbar className="top--navbar">
           <Navbar.Header>
+
             <Navbar.Brand className="logo">
               <Link to={`/`}><img src={logo} alt="logo"/></Link>
             </Navbar.Brand>
+
             <Navbar.Toggle/>
           </Navbar.Header>
           <Navbar.Collapse>
 
             <Navbar.Text pullRight>
-              <LinkContainer to="/">
-                <Button onClick={this.signOutUser}>Wyloguj się</Button>
-              </LinkContainer>
+
             </Navbar.Text>
 
           </Navbar.Collapse>
+          <LinkContainer to="/">
+            <Button onClick={this.signOutUser}>Wyloguj się</Button>
+          </LinkContainer>
         </Navbar>
         <Navbar>
           <div className="navbar--contaiter">
@@ -71,7 +75,7 @@ class SearchBar extends React.Component {
 
               <Navbar.Toggle/>
             </Navbar.Header>
-            <Navbar.Collapse>
+            <Navbar.Collapse className="collapsedbar">
               <Navbar.Form pullLeft>
                 <form className="search--form" onSubmit={this.handleSubmit}>
                   <FormGroup>
