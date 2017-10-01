@@ -43,16 +43,23 @@ const SearchResultsListItem = ({searchResults, allProducts}) => {
 
                           onClick={
                             () => {
-                              let productWithBrand = `${product.brand} ${product.model}`;
-                              let productWithAuthor = `${product.author} ${product.title}`;
+                              let productWithAuthor;
+                              let productWithBrand;
 
-                              console.log(allProducts)
+                              if(product.brand || product.model ){
+                                 productWithBrand = `${product.brand} ${product.model}`;
+                              } else if (product.author || product.title) {
+
+                                 productWithAuthor = `${product.author} ${product.title}`;
+                              }
+
+
                               const userId = firebase.auth().currentUser.uid;
                               firebase.database().ref(
                                 '/FavsProducts/' + userId + '/' + product.id
                               )
                                 .set(productWithBrand || productWithAuthor)
-                            }}> <i className="fa fa-star-o"/>
+                            }}> Dodaj do ulubionych
                   </Button>
                   <Link to={`/results/details/${product.id}`}><ButtonBlue textContent={"Porównaj"}/>
                   </Link>

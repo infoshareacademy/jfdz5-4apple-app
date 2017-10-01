@@ -16,29 +16,14 @@ const FavsProducts = (props) => {
           ((snapshot.val())) !== null ?
             document.getElementById('Favs').innerHTML = (Object.values(snapshot.val())) :
             document.getElementById('Favs').innerHTML = 'Nie masz jeszcze ulubionych'
-          // console.log('snapshot', snapshot)
-          // console.log('snapshot.val()', snapshot.val())
-          // console.log('snapshot.val()[1]', snapshot.val()[1])
-          // console.log('allProducts', props.allProducts)
-         console.log( props.allProducts.map((product) => {
-            // console.log('product', product)
-            // console.log('product.items', product.items)
-            return product.items.filter((details) => {
-              console.log(snapshot.val()[1].includes(details.model))
-              return snapshot.val()[1].includes(details.model)
-            }) ? product : null
-          }))
         })
 
   }
-  // Results.find((item) => {
-  //   item === `${products.items.shops.name}:${products.items.shops.productId}`
-  //   console.log(item)
-  // })
+
 
   return (
     <div>
-      <Button onClick={getFavs}>Zobacz ulubione</Button>
+      {getFavs()}
       <p id="Favs"></p>
     </div>
   )

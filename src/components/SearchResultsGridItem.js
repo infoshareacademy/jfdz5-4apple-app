@@ -2,6 +2,8 @@ import React from 'react'
 
 import {Link} from 'react-router-dom'
 import {Thumbnail} from "react-bootstrap";
+import firebase from 'firebase'
+import {Button} from "react-bootstrap";
 
 import ButtonBlue from "./ButtonBlue";
 import './SearchResultsGrid.css'
@@ -22,6 +24,30 @@ const SearchResultsGridItem = ({searchResults}) => {
                                 <div className="thumbnail--price-item">
                                     <h3 className="thumbnail--price">od:<span
                                         className="thumbnail--price">{(product.price).toFixed(2)}</span> zł</h3>
+                                    <Button bsSize="large"
+                                            bsStyle="primary"
+                                            className="button--continue"
+
+                                            onClick={
+                                              () => {
+                                                let productWithAuthor;
+                                                let productWithBrand;
+
+                                                if(product.brand || product.model ){
+                                                  productWithBrand = `${product.brand} ${product.model}`;
+                                                } else if (product.author || product.title) {
+
+                                                  productWithAuthor = `${product.author} ${product.title}`;
+                                                }
+
+
+                                                const userId = firebase.auth().currentUser.uid;
+                                                firebase.database().ref(
+                                                  '/FavsProducts/' + userId + '/' + product.id
+                                                )
+                                                  .set(productWithBrand || productWithAuthor)
+                                              }}> Dodaj do ulubionych
+                                    </Button>
                                     <Link to={`/results/details/${product.id}`}><ButtonBlue textContent={"Porównaj"}/>
                                     </Link>
                                     <h6>w {product.shops.length} sklepach</h6>
