@@ -2,8 +2,7 @@
     margin-right: 0;
     margin-left: 0;
 }
-
-.container {
+.registration--container {
     min-height: 100vh;
     display: flex;
     justify-content: center;

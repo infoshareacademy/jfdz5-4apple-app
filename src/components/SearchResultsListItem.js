@@ -24,13 +24,15 @@ const SearchResultsListItem = ({searchResults}) => {
                     <div>
                       <h4>{product.color ? ("Kolor: " + product.color) : null} </h4>
                       <h4>{product.size ? ("Rozmiar: " + product.size) : null} {}</h4>
+                      <h4>{product.pages ? ("Liczba stron: " + product.pages) : null} </h4>
+                      <h4>{product.cover ? ("Okładka: " + product.cover) : null} {}</h4>
                     </div>
                   </div>
                 </div>
                 <div className="product--price">
                   <h3 className="price">od: <span className="price--currency"><span
                     className="price">{(product.price).toFixed(2)}</span> zł</span></h3>
-                  <Link to={`/results/details/${index}`}><ButtonBlue textContent={"Porównaj"}/>
+                  <Link to={`/results/details/${product.id}`}><ButtonBlue textContent={"Porównaj"}/>
                   </Link>
                   <h6>w {product.shops.length} sklepach</h6>
                 </div>

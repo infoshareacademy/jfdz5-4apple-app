@@ -12,10 +12,9 @@ import SearchResultsListItem from "./SearchResultsListItem";
 class SearchResultsList extends React.Component {
 
   render() {
-    const searchResults = this.props.filteredResults
+    const searchResults = this.props.filteredResults;
 
     return (
-
       <div className="container products--container">
         <ListGroup>{
           searchResults && searchResults.toString() === "" ?

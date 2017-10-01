@@ -13,14 +13,17 @@ import DataFetcher from "./DataFetcher/DataFetcher";
 import {presentationOfResults} from '../state/presentationOfResults'
 
 import './TabbedResults.css'
+import SearchBarFilters from "./SearchBarFilters";
 
-const TabbedResults = ({products, chosenView, changeView}) => (
+
+const TabbedResults = ({products, chosenView, changeView, allProducts}) => (
   <div>
     <DataFetcher
       dataUrl={'http://localhost:3000/data/products.json'}
       component={SearchBar}
       propName="searchedProducts"
     />
+    <SearchBarFilters/>
     <Tabs defaultActiveKey={chosenView} id="tabbed-results" onSelect={changeView} className="container">
       <Tab eventKey={1} title="List">
         <SearchResultsList products={products}/>
@@ -35,7 +38,8 @@ const TabbedResults = ({products, chosenView, changeView}) => (
 
 export default connect(
   state => ({
-    chosenView: state.presentationOfResults.chosenView
+    chosenView: state.presentationOfResults.chosenView,
+    allProducts: state.allProducts.data
   }),
   dispatch => ({
     changeView: (key) => dispatch(presentationOfResults(key))

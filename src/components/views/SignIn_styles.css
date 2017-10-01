@@ -8,15 +8,37 @@
 }
 
 .container {
+
     min-height: 100vh;
     display: flex;
     justify-content: center;
 }
 
-@media (max-width: 767px) {
-    .alert-danger {
-        position: absolute;
-        top: 65%;
+.registation-form__content {
+    display: flex;
+
+}
+
+@media (min-width: 768px) {
+    .registation-form__logo {
+        max-width: 500px;
+    }
+
+    .SignIn-form__form {
+        min-width: 500px;
     }
 }
 
+@media (max-width: 767px) {
+    h1 {
+        font-size: 24px;
+    }
+
+
+}
+
+@media (max-width: 767px) {
+    registation-form__title {
+        font-size: 22px;
+    }
+}
