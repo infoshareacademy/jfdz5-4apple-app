@@ -4,15 +4,16 @@
     justify-content: center;
     align-items: center;
     border: 1px #ddd solid;
+    text-align: center;
 }
 
 .categories-list {
+    text-align: center;
     display: flex;
     align-items: center;
 }
 
 .categories-list-item {
-    width: 200px;
-    heigth: 200px;
     text-align: center;
+    min-height: 70px;
 }
