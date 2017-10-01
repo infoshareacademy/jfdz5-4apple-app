@@ -32,8 +32,8 @@ class DataFetcher extends React.Component {
 
   render() {
     const {data, fetching, error} = this.state
-    const {component, propName} = this.props
-
+    const {component, propName,propCategories,propInitialName} = this.props
+   //   console.log(propInitialName)
     return (
       <div>
         {
@@ -51,7 +51,8 @@ class DataFetcher extends React.Component {
                 React.createElement(
                   component,
                   {
-                    [propName]: data
+                    [propName]: data,
+                    [propInitialName]: propCategories
                   }
                 )
             )

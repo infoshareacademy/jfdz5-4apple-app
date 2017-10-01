@@ -5,6 +5,7 @@ import auth, {addNewUser} from './state/auth'
 import searching from './state/searching'
 import presentationOfResults from './state/presentationOfResults'
 import allProducts from "./state/allProducts";
+import searchingCategories from "./state/searchingCategories";
 
 import favs, {setFavs} from './state/favs'
 const config = {
@@ -19,11 +20,11 @@ firebase.initializeApp(config);
 
 
 const reducer = combineReducers({
-    auth,
-    searching,
-    presentationOfResults,
-    favs,
-  allProducts
+  auth,
+  searching,
+  presentationOfResults,
+  allProducts,
+  searchingCategories
 })
 
 

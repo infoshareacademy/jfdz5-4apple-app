@@ -52,7 +52,7 @@ const SearchResultsListItem = ({searchResults, allProducts}) => {
                                                         .set(productWithBrand)
                                                 }}> <i className="fa fa-star-o"/>
                                     </Button>
-                                    <Link to={`/results/details/${product.id}`}><a   onClick={
+                                    <Link to={`/results/details/${product.id}`}><a onClick={
                                         () => {
                                             let productWithBrand = product.image;
                                             const userId = firebase.auth().currentUser.uid;
