@@ -34,7 +34,7 @@ class Viewed extends React.Component {
         }
 
         return (
-            <div className="da">{
+            <div >{
                 <Carousel>
                     {
                     this.state.elements.map((products => {

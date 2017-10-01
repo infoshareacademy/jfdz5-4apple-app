@@ -1,16 +1,32 @@
-.da{
+.da {
     display: flex;
     height: 200px;
     width: 300px;
     justify-content: center;
     align-content: center;
+
 }
+
+.carousel-caption {
+    color: #000;
+}
+
+.carousel-inner > .active {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner > .active img {
+    height: 300px;
+}
+
 .price {
     font-size: 20px;
     font-weight: 600;
     color: #0A5894;
 }
-.blabla{
+
+.blabla {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -22,12 +38,14 @@
     display: flex;
     margin: auto;
 }
+
 .shop--img {
     height: 80px;
     width: 120px;
     display: flex;
     margin: auto;
 }
+
 .product--name {
     text-align: center;
 }
