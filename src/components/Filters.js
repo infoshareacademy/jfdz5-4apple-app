@@ -4,6 +4,7 @@ import {Panel, PanelGroup, Checkbox, ControlLabel, FormControl, FormGroup} from 
 
 import {createDetailsList} from "./_utils/filtersDetails"
 import ButtonBlue from "./ButtonBlue";
+import {searchResults} from "../state/searching";
 
 
 class Filters extends React.Component {
@@ -30,9 +31,9 @@ class Filters extends React.Component {
     });
 
     const submitFilters = (event) => {
-      defineCover();
       event.preventDefault();
-      console.log(this.props.filteredResults.filter((product) => {
+      defineCover();
+      const searchedProducts = this.props.filteredResults.filter((product) => {
         return product.price >= parseInt(this.state.priceMin, 10) && product.price <= parseInt(this.state.priceMax, 10) ? product : null
       }).filter((product) => {
         return product.female === (this.state.female || undefined ) || product.male === (this.state.male || undefined) ? product : null
@@ -41,11 +42,12 @@ class Filters extends React.Component {
         return product.cover.includes(this.state.cover[0] || this.state.cover[1] || (this.state.cover[0] && this.state.cover[1])) || product.cover.toString() === "" ? product : null
       }).filter((product) => {
         product.size = product.size || [];
-        return product.size.includes(parseInt(this.state.size)) || product.size.includes(this.state.size) || product.size.toString() === "" ? product : null
+        return product.size.includes(parseInt(this.state.size, 10)) || product.size.includes(this.state.size) || product.size.toString() === "" ? product : null
       }).filter((product) => {
         product.color = product.color || [];
         return product.color.includes(this.state.color) || product.size.toString() === "" ? product : null
-      }))
+      })
+      this.props.addSearchedResults(searchedProducts,)
     };
 
     const updateCheckboxState = (key) => {
@@ -165,5 +167,8 @@ class Filters extends React.Component {
 export default connect(
   state => ({
     filteredResults: state.searching.filteredResults
+  }),
+  dispatch => ({
+    addSearchedResults: (searchedProducts) => dispatch(searchResults(searchedProducts)),
   })
 )(Filters)

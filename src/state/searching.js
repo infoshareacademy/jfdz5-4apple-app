@@ -1,9 +1,15 @@
 const FILTER = 'searching/FILTER'
+const SEARCH = 'searching/SEARCH'
 
 export const filterResults = (searchedProducts, searchedItem) => ({
   type: FILTER,
   searchedProducts,
   searchedItem
+})
+
+export const searchResults = (searchedProducts) => ({
+  type: SEARCH,
+  searchedProducts
 })
 
 const initialState = {
@@ -23,6 +29,11 @@ export default (state = initialState, action) => {
             .some(name => name && name.includes(action.searchedItem)
             )
           )
+      }
+    case SEARCH:
+      return {
+        ...state,
+        filteredResults: action.searchedProducts
       }
     default:
       return state
