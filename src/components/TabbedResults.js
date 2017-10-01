@@ -14,6 +14,8 @@ import Categories from './Categories.js'
 import {presentationOfResults} from '../state/presentationOfResults'
 
 import './TabbedResults.css'
+import SearchBarFilters from "./SearchBarFilters";
+
 
 const TabbedResults = ({products, chosenView, changeView, allProducts}) => (
   <div>
@@ -22,22 +24,23 @@ const TabbedResults = ({products, chosenView, changeView, allProducts}) => (
       component={SearchBar}
       propName="searchedProducts"
     />
-    <div>
-      <DataFetcher
-        dataUrl={'http://localhost:3000/data/products.json'}
-        component={Categories}
-        propName="categoriesProducts"
-      />
-      <Tabs defaultActiveKey={chosenView} id="tabbed-results" onSelect={changeView} className="container">
-        <Tab eventKey={1} title="List">
-          <SearchResultsList products={products}/>
-        </Tab>
+      <div>
+          <DataFetcher
+              dataUrl={'http://localhost:3000/data/products.json'}
+              component={Categories}
+              propName="categoriesProducts"
+          />
+    <SearchBarFilters/>
+    <Tabs defaultActiveKey={chosenView} id="tabbed-results" onSelect={changeView} className="container">
+      <Tab eventKey={1} title="List">
+        <SearchResultsList products={products}/>
+      </Tab>
 
-        <Tab eventKey={2} title="Grid">
-          <SearchResultsGrid products={products}/>
-        </Tab>
-      </Tabs>
-    </div>
+      <Tab eventKey={2} title="Grid">
+        <SearchResultsGrid products={products}/>
+      </Tab>
+    </Tabs>
+      </div>
   </div>
 )
 
