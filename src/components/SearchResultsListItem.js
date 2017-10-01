@@ -24,6 +24,8 @@ const SearchResultsListItem = ({searchResults}) => {
                     <div>
                       <h4>{product.color ? ("Kolor: " + product.color) : null} </h4>
                       <h4>{product.size ? ("Rozmiar: " + product.size) : null} {}</h4>
+                      <h4>{product.pages ? ("Liczba stron: " + product.pages) : null} </h4>
+                      <h4>{product.cover ? ("Okładka: " + product.cover) : null} {}</h4>
                     </div>
                   </div>
                 </div>
