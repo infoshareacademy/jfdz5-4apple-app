@@ -1,7 +1,3 @@
-.categories {
-    display: flex;
-    width: 200px;
-}
 
 .categories--container {
     display: flex;
@@ -13,8 +9,6 @@
 .categories-list {
     display: flex;
     align-items: center;
-    width: 200px;
-    heigth: 200px;
 }
 
 .categories-list-item {
