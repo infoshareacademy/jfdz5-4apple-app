@@ -563,7 +563,7 @@
             "name": "CZYTAM PL",
             "productId": 36,
             "localPrice": 39.90,
-            "image": "hhttp://czytam.pl/img/logo.png",
+            "image": "http://czytam.pl/img/logo.png",
             "url": "http://czytam.pl/k,ks_675499,Macierewicz-i-jego-tajemnice-Piatek-Tomasz.html?ceneo_spo=true",
             "cover": [
               "twarda"

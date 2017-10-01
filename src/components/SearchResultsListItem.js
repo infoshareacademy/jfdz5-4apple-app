@@ -1,12 +1,17 @@
 import React from 'react'
-
+import firebase from 'firebase'
 import {Link} from 'react-router-dom'
-import {ListGroupItem} from "react-bootstrap";
+import {ListGroupItem, Button} from "react-bootstrap";
+import {connect} from 'react-redux'
+
 
 import ButtonBlue from "./ButtonBlue";
 import './SearchResultsList.css'
 
-const SearchResultsListItem = ({searchResults}) => {
+const SearchResultsListItem = ({searchResults, allProducts}) => {
+
+
+
   return (
     <div>
       {searchResults.map((product, index) => {
@@ -30,8 +35,23 @@ const SearchResultsListItem = ({searchResults}) => {
                 <div className="product--price">
                   <h3 className="price">od: <span className="price--currency"><span
                     className="price">{(product.price).toFixed(2)}</span> zł</span></h3>
+                  <Button bsSize="large"
+                          bsStyle="primary"
+                          className="button--continue"
+                          onClick={
+                            () => {
+                              const userId = firebase.auth().currentUser.uid;
+                              firebase.database().ref(
+                                '/FavsProducts/' + userId + '/' + product.id
+                              )
+                                .set({
+                                  brand: product.brand,
+                                  model:  product.model
+                                })
+                            }}>Dodaj do listy życzeń </Button>
                   <Link to={`/results/details/${product.id}`}><ButtonBlue textContent={"Porównaj"}/>
                   </Link>
+
                   <h6>w {product.shops.length} sklepach</h6>
                 </div>
               </div>
@@ -42,4 +62,4 @@ const SearchResultsListItem = ({searchResults}) => {
       }) }</div>
   )
 }
-export default SearchResultsListItem
+export default connect()(SearchResultsListItem)

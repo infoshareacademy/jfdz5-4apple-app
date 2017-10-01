@@ -8,20 +8,16 @@ class FavsProducts extends React.Component {
   render() {
 
     const userId = firebase.auth().currentUser.uid;
-    const Results = [];
     const getFavs = () => {
       firebase.database()
         .ref('/FavsProducts/' + userId)
         .once('value')
         .then(
           snapshot => {
-             return Results.push(Object.keys(snapshot.val()))
+            ((snapshot.val())) !== null ?
+              document.getElementById('Favs').innerHTML = (Object.values(Object.entries(snapshot.val()))) :
+              document.getElementById('Favs').innerHTML = 'Nie masz jeszcze ulubionych'
           })
-        .then( results =>
-        results !== null ?
-          document.getElementById('Favs').innerHTML = Results :
-          document.getElementById('Favs').innerHTML = 'Nie masz ulbionych'
-        )
 
     }
     // Results.find((item) => {
