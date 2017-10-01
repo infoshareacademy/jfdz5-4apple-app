@@ -1,7 +1,19 @@
+.da{
+    display: flex;
+    height: 200px;
+    width: 300px;
+    justify-content: center;
+    align-content: center;
+}
 .price {
     font-size: 20px;
     font-weight: 600;
     color: #0A5894;
+}
+.blabla{
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 .product--img {

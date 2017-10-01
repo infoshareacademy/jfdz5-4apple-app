@@ -54,16 +54,12 @@ const SearchResultsListItem = ({searchResults, allProducts}) => {
                                     </Button>
                                     <Link to={`/results/details/${product.id}`}><a   onClick={
                                         () => {
-                                            let productWithBrand = `${product.model}`;
-                                            let productWithAuthor = `${product.title}`;
+                                            let productWithBrand = product.image;
                                             const userId = firebase.auth().currentUser.uid;
-                                            console.log(allProducts)
-
-
                                             firebase.database().ref(
                                                 '/viewed/' + userId + '/' + product.id
                                             )
-                                                .set(productWithBrand || productWithAuthor)
+                                                .set(productWithBrand)
                                         }}><ButtonBlue textContent={"Porównaj"}/></a>
                                     </Link>
 
