@@ -14,7 +14,7 @@ class FavsProducts extends React.Component {
         .then(
           snapshot => {
             ((snapshot.val())) !== null ?
-              document.getElementById('Favs').innerHTML = (Object.values(Object.entries(snapshot.val()))) :
+              document.getElementById('Favs').innerHTML = (Object.values(snapshot.val())) :
               document.getElementById('Favs').innerHTML = 'Nie masz jeszcze ulubionych'
           })
 

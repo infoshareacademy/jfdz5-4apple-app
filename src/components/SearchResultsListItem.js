@@ -8,8 +8,7 @@ import {connect} from 'react-redux'
 import ButtonBlue from "./ButtonBlue";
 import './SearchResultsList.css'
 
-const SearchResultsListItem = ({searchResults, allProducts}) => {
-
+const SearchResultsListItem = ({searchResults}) => {
 
 
   return (
@@ -17,6 +16,7 @@ const SearchResultsListItem = ({searchResults, allProducts}) => {
       {searchResults.map((product, index) => {
         return (
           <ListGroupItem key={index}>
+            {/*<Button onClick={handleSaveFavseClick}/>*/}
             <div className="product--container">
               <img className="product--img" alt="product" src={product.image}/>
               <div className="product--info">
@@ -38,17 +38,19 @@ const SearchResultsListItem = ({searchResults, allProducts}) => {
                   <Button bsSize="large"
                           bsStyle="primary"
                           className="button--continue"
+
                           onClick={
                             () => {
+                              let productWithBrand = `${product.brand} ${product.model}`;
+                              let productWithAuthor = `${product.author} ${product.title}`;
+
                               const userId = firebase.auth().currentUser.uid;
                               firebase.database().ref(
                                 '/FavsProducts/' + userId + '/' + product.id
                               )
-                                .set({
-                                  brand: product.brand,
-                                  model:  product.model
-                                })
-                            }}>Dodaj do listy życzeń </Button>
+                                .set(productWithBrand || productWithAuthor )
+                            }}> <i className="fa fa-star-o"/>
+                  </Button>
                   <Link to={`/results/details/${product.id}`}><ButtonBlue textContent={"Porównaj"}/>
                   </Link>
 
@@ -59,7 +61,8 @@ const SearchResultsListItem = ({searchResults, allProducts}) => {
           </ListGroupItem >
         )
 
-      }) }</div>
+      }) } )</div>
   )
 }
-export default connect()(SearchResultsListItem)
+export default connect(
+)(SearchResultsListItem)
