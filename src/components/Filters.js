@@ -32,17 +32,13 @@ class Filters extends React.Component {
     const submitFilters = (event) => {
       defineCover();
       event.preventDefault();
-      console.log(this.props.filteredResults);
-      console.log(this.state);
       console.log(this.props.filteredResults.filter((product) => {
         return product.price >= parseInt(this.state.priceMin, 10) && product.price <= parseInt(this.state.priceMax, 10) ? product : null
       }).filter((product) => {
         return product.female === (this.state.female || undefined ) || product.male === (this.state.male || undefined) ? product : null
       }).filter((product) => {
         product.cover = product.cover || [];
-        return this.state.cover.map((coverItem)=>{
-        return product.cover.includes(coverItem)
-        }) || product.cover === undefined ? product : null
+        return product.cover.includes(this.state.cover[0] || this.state.cover[1] || (this.state.cover[0] && this.state.cover[1])) || product.cover.toString() === "" ? product : null
       }))
     };
 
