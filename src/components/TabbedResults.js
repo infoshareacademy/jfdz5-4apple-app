@@ -33,15 +33,15 @@ const TabbedResults = ({products, chosenView, changeView, allProducts}) => (
             />
         </div>
         <Tabs defaultActiveKey={chosenView} id="tabbed-results" onSelect={changeView} className="container">
-            <Tab eventKey={1} title="List">
+            <Tab eventKey={1} title="Lista">
                 <SearchResultsList products={products}/>
             </Tab>
 
-            <Tab eventKey={2} title="Grid">
-                <SearchResultsGrid products={products}/>
-            </Tab>
-        </Tabs>
-    </div>
+      <Tab eventKey={2} title="Siatka">
+        <SearchResultsGrid products={products}/>
+      </Tab>
+    </Tabs>
+  </div>
 )
 
 export default connect(

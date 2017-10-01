@@ -7,6 +7,7 @@ import presentationOfResults from './state/presentationOfResults'
 import allProducts from "./state/allProducts";
 import searchingCategories from "./state/searchingCategories";
 
+import favs, {setFavs} from './state/favs'
 const config = {
   apiKey: "AIzaSyBfMc_ewDjLN4mtSbeufm9IiKtIxg9peHM",
   authDomain: "react-app-e2827.firebaseapp.com",
@@ -33,7 +34,15 @@ const store = createStore(
 )
 
 firebase.auth().onAuthStateChanged(user => {
-  store.dispatch(addNewUser(user))
+    store.dispatch(addNewUser(user))
+    if(user !==null) {
+        const userId = firebase.auth().currentUser.uid
+        firebase.database().ref('/listOfFavs/' + userId).on('value', snapshot => {
+            store.dispatch(setFavs(snapshot.val()))
+        })
+    }
 })
+
+
 
 export default store

@@ -58,6 +58,9 @@ class SearchBar extends React.Component {
           <Navbar.Collapse>
 
             <Navbar.Text pullRight>
+              <LinkContainer to="/favs">
+                <Button>Ulubione </Button>
+              </LinkContainer>
               <LinkContainer to="/">
                 <Button onClick={this.signOutUser}>Wyloguj się</Button>
               </LinkContainer>
