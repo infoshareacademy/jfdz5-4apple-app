@@ -1,12 +1,24 @@
 .categories {
     display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
     width: 200px;
 }
-.categories-list{
-    width: 200px;
+
+.categories--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px #ddd solid;
 }
-.categories-list-item{
+
+.categories-list {
+    display: flex;
+    align-items: center;
     width: 200px;
+    heigth: 200px;
+}
+
+.categories-list-item {
+    width: 200px;
+    heigth: 200px;
+    text-align: center;
 }

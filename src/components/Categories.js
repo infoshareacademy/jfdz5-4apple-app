@@ -11,7 +11,7 @@ class Categories extends React.Component {
         findProductsCategories: this.props.categoriesProducts
     };
 
-    
+
     handleChange = (e) => {
         e.preventDefault();
         this.props.history.push('/results')
@@ -48,7 +48,7 @@ class Categories extends React.Component {
                     {
                         initialState === undefined && productsFromInput.toString() !== "" ?
 
-                            productsCategories.map((products,index) => {
+                            productsCategories.map((products, index) => {
                                 return (
                                     <ListGroupItem key={index} className="categories-list-item"
                                                    value={products}
@@ -76,7 +76,6 @@ class Categories extends React.Component {
         )
     }
 }
-
 
 
 export default withRouter(
