@@ -2,11 +2,14 @@ import React from 'react'
 
 import {Link} from 'react-router-dom'
 import {ListGroupItem} from "react-bootstrap";
+import firebase from 'firebase'
 
 import ButtonBlue from "./ButtonBlue";
 import './SearchResultsList.css'
 
 const SearchResultsListItem = ({searchResults}) => {
+    const userId = firebase.auth().currentUser.uid;
+    console.log(userId)
     return (
         <div>
             {searchResults.map((product, index) => {
@@ -30,7 +33,12 @@ const SearchResultsListItem = ({searchResults}) => {
                                     <div className="product--price">
                                         <h3 className="price">od: <span className="price--currency"><span
                                             className="price">{(product.price).toFixed(2)}</span> zł</span></h3>
-                                        <Link to={`/results/details/${product.id}`}><ButtonBlue textContent={"Porównaj"}/>
+                                        <Link to={`/results/details/${product.id}`}>
+                                            <ButtonBlue textContent={"Porównaj"}
+                                                        onClick={() => firebase.database().ref(
+                                                                '/viewed/' + userId + '/' + product.id+ ':' + product.image
+                                                            ).set(true)}
+                                            />
                                         </Link>
                                         <h6>w {product.shops.length} sklepach</h6>
                                     </div>
