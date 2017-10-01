@@ -3,6 +3,7 @@ import React from 'react'
 import SearchBar from '../SearchBar'
 import DataFetcher from "../DataFetcher/DataFetcher";
 import Categories from "../Categories";
+import viewedProducts from '../viewedProducts'
 
 const HomeView = () => {
     const initialState = [];
@@ -22,6 +23,7 @@ const HomeView = () => {
                          propCategories={initialState}
                          propInitialName="initialState"
             />
+            <viewedProducts/>
         </div>
     )
 }
