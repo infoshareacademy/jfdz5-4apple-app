@@ -35,9 +35,12 @@ const SearchResultsListItem = ({searchResults}) => {
                                             className="price">{(product.price).toFixed(2)}</span> zł</span></h3>
                                         <Link to={`/results/details/${product.id}`}>
                                             <ButtonBlue textContent={"Porównaj"}
-                                                        onClick={() => firebase.database().ref(
-                                                                '/viewed/' + userId + '/' + product.id+ ':' + product.image
-                                                            ).set(true)}
+                                                       //onClick={
+
+                                                        //   () => firebase.database().ref(
+                                                        //       '/FavsProducts/' + userId + '/' + "buty" + ':' +"blabla"
+                                                        //   )
+                                                        //       .set(true)}
                                             />
                                         </Link>
                                         <h6>w {product.shops.length} sklepach</h6>
