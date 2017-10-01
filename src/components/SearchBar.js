@@ -78,7 +78,8 @@ class SearchBar extends React.Component {
               <Navbar.Form pullLeft>
                 <form className="search--form" onSubmit={this.handleSubmit}>
                   <FormGroup>
-                    <FormControl type="text"
+                    <FormControl className="search--input"
+                                 type="text"
                                  value={this.state.searchedName}
                                  onChange={this.handleChange}
                                  required

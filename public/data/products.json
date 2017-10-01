@@ -6,7 +6,8 @@
         "id": 1,
         "brand": "Nike",
         "model": "Air Force 1",
-        "price": 419.00,
+        "category": "Obuwie",
+        "price": 299.99,
         "shops": [
           {
             "name": "NIKE",
@@ -27,7 +28,7 @@
           {
             "name": "BUTYJANA",
             "productId": 2,
-            "localPrice": 555,
+            "localPrice": 299.99,
             "image": "http://www.galeria-nowyswiat.pl/images/sklepy//butyjana/butyjana.pl_logo.jpg",
             "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html",
             "size": [
@@ -62,12 +63,13 @@
         "id":2,
         "brand": "Nike",
         "model": "Flex Adapt TR",
-        "price": 419.00,
+        "category": "Obuwie",
+        "price": 205.00,
         "shops": [
           {
             "name": "NIKE",
             "productId": 3,
-            "localPrice": 419,
+            "localPrice": 205.00,
             "image": "http://s1.thingpic.com/images/d3/nASUUAGs2WgUawiKL4bdrYxH.jpeg",
             "url": "https://store.nike.com/pl/pl_pl/pd/buty-treningowe-flex-adapt-tr/pid-10945118/pgid-12107970?cp=euns_kw_pla%21pl%21goo%21c%21%21213773252829&gclid=EAIaIQobChMI5t6vgIiB1gIVEM-yCh2_jAvBEAQYASABEgK_ivD_BwE&gclsrc=aw.ds",
             "size": [
@@ -111,9 +113,14 @@
         "id": 3,
         "brand": "Samsung",
         "model": "UE49M5672AU",
+        "category": "RTV",
         "price": 2389,
-        "color": "srebrny",
-        "size": "49''",
+        "color": [
+          "srebrny"
+        ],
+        "size": [
+          "49''"
+        ],
         "available": true,
         "image": "https://stat-s4.ms-online.pl/media/cache/gallery/rc/vbghdzeg/images/20/20397716/samsung-m5672-1.jpg",
         "description": "Telewizor z podświetleniem LED. Posiada rozdzielczość Full HD 1920 x 1080 oraz funkcję Smart TV.Korzyści: Full High Definition: większa czystość i szczegółowość obrazu. Wbudowany tuner do odbioru programów satelitarnych (DVB-S2). Technologia PurColour: wiernie odwzorowuje szerszy zakres barw co sprawia, że obraz staje się znacznie bardziej naturalny. Smart TV: aplikacje, przeglądarka internetowa PVR: możliwość nagrywania programów na podłączony nośnik USB",
@@ -145,9 +152,14 @@
         "id": 4,
         "brand": "Samsung",
         "model": "UE49MU6442U",
+        "category": "RTV",
         "price": 3098,
-        "color": "ciemny tytan",
-        "size": "49''",
+        "color": [
+          "ciemny tytan"
+        ],
+        "size": [
+          "49''"
+        ],
         "available": true,
         "image": "https://stat-m4.ms-online.pl/media/cache/gallery/rc/4fijq8pt/images/20/20397744/mu6442u.jpg",
         "description": "Technologia Active Crystal Colour sprawia, że kolory są dokładniej odwzorowane i zauważalnie naturalniejsze. To zasługa ulepszonego podświetlenia ekranu, dzięki któremu zwiększyła się nie tylko jakość obrazu, ale zmniejszyło też zużycie energii.",
@@ -180,17 +192,19 @@
         "brand": "Philips",
         "model": "49PUS6561/12",
         "price": 2999,
-        "color": "srebrny ",
-        "size": "49''",
+        "color": ["srebrny"],
+        "size": [
+          "49''"
+        ],
         "available": true,
         "image": "https://f01.esfr.pl/foto/3/12616115619/6bf616e6538ac1d93f874d6fc2b61fe/philips-49pus6561-12,12616115619_7.jpg",
         "description": "Pięknie wykonane telewizory Philips z serii 6500 są już dostępne. Ciesz się niesamowitą jakością obrazu 4K Ultra HD i otwórz drzwi do świata rozrywki dzięki systemowi Android TV. Wąska obudowa i wyjątkowa podstawa Arc dopełniają wygląd telewizora i stanowią eleganckie, stylowe wykończenie.",
         "shops": [
           {
-            "name": "MEDIA EXPERT",
+            "name": "EURO",
             "productId": 10,
             "localPrice": 2999,
-            "image": "http://www.nowy-rynek.com/media/1280/mediaexpert-logo.png",
+            "image": "https://f00.esfr.pl/img/desktop/euro/logo.png",
             "url": "https://www.euro.com.pl/telewizory-led-lcd-plazmowe/philips-49pus6561-12.bhtml?from=ceneo&p=2999.00&cr=0&t=20170923-0926"
           }
         ]
@@ -199,9 +213,14 @@
         "id": 6,
         "brand": "Panasonic",
         "model": "TX-55EX633E",
+        "category": "RTV",
         "price": 3749,
-        "color": "czarny ",
-        "size": "49''",
+        "color": [
+          "czarny"
+        ],
+        "size": [
+          "49''"
+        ],
         "available": true,
         "image": "https://stat-m6.ms-online.pl/media/cache/gallery/rc/ghlqqhid/images/20/20390786/TX_55EX_633E_2.jpg",
         "description": "Zaawansowansowane przetwarzaniu obrazu zapewnia precyzyjne odwzorowanie realistycznych barw. Aby zapewnić piękny, realistyczny i wierny obraz technologia 4K HDR firmy Panasonic korzysta z całości naszej wiedzy fachowej.",
@@ -240,9 +259,14 @@
         "id": 7,
         "brand": "Panasonic",
         "model": "TX-65EX600E",
+        "category": "RTV",
         "price": 5349,
-        "color": "czarny",
-        "size": "65''",
+        "color": [
+          "czarny"
+        ],
+        "size": [
+          "65''"
+        ],
         "available": true,
         "image": "https://images.morele.net/full/1371318_0_f.jpg",
         "description": "Seria EX600 zapewnia żywy obraz 4K HDR i funkcje inteligentne, zaś umożliwiająca konfigurowanie konstrukcja Switch Design pozwala dopasować telewizor do każdego wnętrza.",
@@ -288,13 +312,16 @@
         "id": 8,
         "brand": "Apple",
         "model": "iPhone 7",
+        "category": "RTV",
         "price": 2689,
         "color": [
-          " srebrny",
-          " złoty",
-          " biały"
+          "srebrny",
+          "złoty",
+          "biały"
         ],
-        "size": "4.7''",
+        "size": [
+          "4.7''"
+        ],
         "image": "http://www.avans.pl/temp/thumbs-new/3/products/597/739597_1923859_500x500w50.jpg",
         "description": "iPhone 7 radykalnie udoskonala kluczowe elementy iPhone’a. Przynosi nowe, zaawansowane aparaty do zdjęć i wideo. Największą moc i najwydajniejszą baterię w historii tego urządzenia. Głośniki stereo hipnotyzujące fantastycznym dźwiękiem. Najjaśniejszy i wyświetlający najszerszą gamę kolorów ekran. Odporność na wodę i zachlapania.1 Oraz imponujący wygląd, na który zasługuje coś tak potężnego. Oto on. iPhone 7.",
         "shops": [
@@ -337,14 +364,17 @@
         "id": 9,
         "brand": "Apple",
         "model": "iPhone 7 plus",
+        "category": "RTV",
         "price": 3319,
         "color": [
-          " różowy",
-          " biały",
-          " srebrny",
-          " czarny"
+          "różowy",
+          "biały",
+          "srebrny",
+          "czarny"
         ],
-        "size": "5.5''",
+        "size": [
+          "5.5''"
+        ],
         "available": true,
         "image": "https://image.ceneo.pl/data/products/47045340/89424e37-6218-4b38-a752-303eabb5dec6_i-apple-iphone-7-plus-32gb-czarny.jpg?=f65a8",
         "description": "Smartfon Apple iPhone 7, to arcydzieło sztuki użytkowej, wyposażone w nowy, potężny procesor A10 Fusion, który poradzi sobie z każdym, nawet najbardziej wymagającym zadaniem. Doskonały wyświetlacz Retina HD wyświetli, niezwykle żywe i bardziej naturalne kolory, a stereofoniczne głośniki o szerokim zakresie dynamiki, bezbłędnie trafią w gusta miłośników dobrego brzmienia. Bezkonkurencyjny aparat 12Mpix, został uzbrojony w jasny f/1.8 obiektyw, który wraz z diodowym flashem True Tone rozproszy nawet największe ciemności.",
@@ -368,9 +398,14 @@
         "id": 10,
         "brand": "Apple",
         "model": "iMac 27",
+        "category": "RTV",
         "price": 7099,
-        "size": "27''",
-        "color": "srebrny",
+        "size": [
+          "27''"
+        ],
+        "color": [
+          "srebrny"
+        ],
         "available": true,
         "image": "https://images.morele.net/full/799651_3_f.jpeg",
         "description": "Od pierwszego modelu iMac miał być zawsze najbardziej wyrafinowanym komputerem stacjonarnym. Z niemożliwie smukłą, bezszczelinową obudową, najlepszym wyświetlaczem, hiperwydajnymi procesorami, grafiką i pamięcią masową. Zupełnie nowy, 21,5-calowy iMac z wyświetlaczem Retina 4K jest wierny tej koncepcji. Podobnie jak rewolucyjny 27-calowy model 5K, jakością wyświetlanego obrazu gasi wszystko wokół. Dostarcza takich wrażeń, że kompletnie pochłania odbiorcę. I tym sposobem robi kolejny, spektakularny krok naprzód.",
@@ -402,12 +437,15 @@
         "id": 11,
         "brand": "Apple",
         "model": "iPad PRO",
+        "category": "RTV",
         "price": 2984,
         "color": [
-          " biały",
-          " srebrny"
+          "biały",
+          "srebrny"
         ],
-        "size": "10.5''",
+        "size": [
+          "10.5''"
+        ],
         "available": true,
         "image": "https://image.ceneo.pl/data/products/52404806/f-apple-ipad-pro-10-5-64gb-wi-fi-gwiezdna-szarosc-mqdt2fda.jpg",
         "description": "Cokolwiek zechcesz na nim zrobić – zrobisz. I to lepiej niż myślisz. Oferuje znacznie więcej mocy niż większość laptopów PC, a jest przy tym rozkosznie prosty w obsłudze. Wyświetlacz Retina został przeprojektowany i nie sposób oderwać od niego wzroku. Podobnie jak rąk. A wszystkim steruje iOS, najbardziej zaawansowany mobilny system operacyjny na świecie. iPad Pro ma wszystko, czego oczekujesz od nowoczesnego komputera. Tylko lepsze.",
@@ -444,6 +482,7 @@
         "id": 12,
         "brand": "Biotherm",
         "model": "Aquapower",
+        "category": "Uroda",
         "price": 149,
         "female": false,
         "male": true,
@@ -471,6 +510,7 @@
         "id": 13,
         "brand": "Lancome",
         "model": "3d lifting",
+        "category": "Uroda",
         "price": 228,
         "female": false,
         "male": true,
@@ -498,6 +538,7 @@
         "id": 14,
         "brand": "Calvin Klein",
         "model": "Euphoria",
+        "category": "Uroda",
         "price": 147,
         "female": true,
         "male": false,
@@ -518,6 +559,7 @@
         "id": 15,
         "brand": "Christian Dior",
         "model": "Sauvage",
+        "category": "Uroda",
         "price": 331,
         "gender": "meski",
         "available": true,
@@ -543,17 +585,18 @@
     ]
   },
   {
-    "category": "Ksiazki",
+    "category": "Książki",
     "items": [
       {
         "id": 16,
         "title": "Macierewicz i jego tajemnice",
         "author": "Tomasz Piatek",
+        "category": "Książki",
         "price": 27.10,
         "pages": 216,
         "cover": [
-          " miękka",
-          " twarda"
+          "miękka",
+          "twarda"
         ],
         "available": true,
         "image": "https://www.swiatksiazki.pl/media/catalog/product/cache/image/e9c3970ab036de70892d86c6d221abfe/9/9/99906355604.jpg",
@@ -585,10 +628,11 @@
         "id": 17,
         "title": "Zioła z polskich łąk",
         "author": "Bob Marley",
+        "category": "Książki",
         "price": 27.10,
         "pages": 328,
         "cover": [
-          " twarda"
+          "twarda"
         ],
         "available": true,
         "image": "https://www.booksfera.pl/foto/warianty/250/0/ziola-z-polskich-lak.jpg",
@@ -610,10 +654,11 @@
         "id": 18,
         "title": "Gra o tron",
         "author": "George Martin",
+        "category": "Książki",
         "price": 43.60,
         "pages": 773,
         "cover": [
-          " miękka"
+          "miękka"
         ],
         "available": true,
         "image": "https://image.ceneo.pl/data/products/1219238/f-gra-o-tron.jpg",
@@ -635,10 +680,11 @@
         "id": 19,
         "title": "Religia szkoła podstawowa klasa 3",
         "author": "Elżbieta Kondrak",
+        "category": "Książki",
         "price": 7.75,
         "pages": 128,
         "cover": [
-          " miękka"
+          "miękka"
         ],
         "available": true,
         "image": "http://www.korob.pl/pol_pm_Religia-SP-3-Jezus-jest-z-nami-cw-JEDNOSC-10258_1.jpg",
@@ -658,7 +704,7 @@
             "name": "EMPIK",
             "productId": 41,
             "localPrice": 9.34,
-            "image":"http://www.empik.com/b/mp/img/logo-for-fb.jpg",
+            "image": "http://www.empik.com/b/mp/img/logo-for-fb.jpg",
             "url": "http://www.empik.com/jezus-jest-z-nami-3-zeszyt-cwiczen-szkola-podstawowa-cd-kondrak-elzbieta-czerkawski-jaroslaw,p1080875478,ksiazka-p?utm_source=ceneo.pl&utm_medium=oferty_cpc&utm_content=p1080875478",
             "cover": [
               "miękka"
