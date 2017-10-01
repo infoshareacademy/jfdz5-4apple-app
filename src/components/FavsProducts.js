@@ -1,7 +1,6 @@
 import React from 'react'
 import firebase from 'firebase'
 import {Button} from 'react-bootstrap'
-import products from '../data/products.json'
 
 
 class FavsProducts extends React.Component {
