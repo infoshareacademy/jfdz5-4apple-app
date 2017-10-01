@@ -30,25 +30,20 @@ class Filters extends React.Component {
     });
 
     const submitFilters = (event) => {
-      defineCover()
+      defineCover();
       event.preventDefault();
       console.log(this.props.filteredResults);
       console.log(this.state);
-      this.props.filteredResults.filter((product) => {
-
-        console.log(product.cover)
-        console.log(this.state.cover)
-        console.log(this.state.cover)
-        console.log(product.cover.includes(this.state.cover));
-
-        console.log(product.price >= parseInt(this.state.priceMin, 10) && product.price <= parseInt(this.state.priceMax, 10)
-        && product.female === this.state.female && product.male === this.state.male
-        && product.cover.includes(this.state.cover)
-        && product.size.includes(this.state.size)
-        && product.color.includes(this.state.color)
-          ? product : null);
+      console.log(this.props.filteredResults.filter((product) => {
         return product.price >= parseInt(this.state.priceMin, 10) && product.price <= parseInt(this.state.priceMax, 10) ? product : null
-      })
+      }).filter((product) => {
+        return product.female === (this.state.female || undefined ) || product.male === (this.state.male || undefined) ? product : null
+      }).filter((product) => {
+        product.cover = product.cover || [];
+        return this.state.cover.map((coverItem)=>{
+        return product.cover.includes(coverItem)
+        }) || product.cover === undefined ? product : null
+      }))
     };
 
     const updateCheckboxState = (key) => {
