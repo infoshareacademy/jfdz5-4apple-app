@@ -8,7 +8,7 @@ import {connect} from 'react-redux'
 import ButtonBlue from "./ButtonBlue";
 import './SearchResultsList.css'
 
-const SearchResultsListItem = ({searchResults}) => {
+const SearchResultsListItem = ({searchResults, allProducts}) => {
 
 
   return (
@@ -46,11 +46,12 @@ const SearchResultsListItem = ({searchResults}) => {
                               let productWithBrand = `${product.brand} ${product.model}`;
                               let productWithAuthor = `${product.author} ${product.title}`;
 
+                              console.log(allProducts)
                               const userId = firebase.auth().currentUser.uid;
                               firebase.database().ref(
                                 '/FavsProducts/' + userId + '/' + product.id
                               )
-                                .set(productWithBrand || productWithAuthor )
+                                .set(productWithBrand || productWithAuthor)
                             }}> <i className="fa fa-star-o"/>
                   </Button>
                   <Link to={`/results/details/${product.id}`}><ButtonBlue textContent={"Porównaj"}/>
@@ -60,11 +61,16 @@ const SearchResultsListItem = ({searchResults}) => {
                 </div>
               </div>
             </div>
-          </ListGroupItem >
+          </ListGroupItem>
         )
 
-      }) } )</div>
+      })} )</div>
   )
 }
+
 export default connect(
+  state => ({
+    allProducts: state.allProducts.data
+  }),
+  dispatch => ({})
 )(SearchResultsListItem)

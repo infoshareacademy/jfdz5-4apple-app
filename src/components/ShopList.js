@@ -1,7 +1,6 @@
 import React from 'react'
 import {ListGroupItem, Button} from "react-bootstrap";
 import firebase from 'firebase'
-import products from '../data/products.json'
 
 const ShopList = (props) => {
 
