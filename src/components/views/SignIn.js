@@ -88,8 +88,7 @@ class SignIn extends React.Component {
 
 
 
-      <div className="container page">
-
+      <div className="container-page">
 
 
         <Form horizontal onSubmit={this.handleSubmit}>
