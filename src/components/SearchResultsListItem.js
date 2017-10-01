@@ -10,6 +10,7 @@ import './SearchResultsList.css'
 const SearchResultsListItem = ({searchResults}) => {
     const userId = firebase.auth().currentUser.uid;
     console.log(userId)
+
     return (
         <div>
             {searchResults.map((product, index) => {
@@ -35,12 +36,12 @@ const SearchResultsListItem = ({searchResults}) => {
                                             className="price">{(product.price).toFixed(2)}</span> zł</span></h3>
                                         <Link to={`/results/details/${product.id}`}>
                                             <ButtonBlue textContent={"Porównaj"}
-                                                       //onClick={
+                                                       onClick={
 
-                                                        //   () => firebase.database().ref(
-                                                        //       '/FavsProducts/' + userId + '/' + "buty" + ':' +"blabla"
-                                                        //   )
-                                                        //       .set(true)}
+                                                          () => firebase.database().ref(
+                                                               '/FavsProducts/' + userId + '/' + product.id + ':'
+                                                           )
+                                                               .set(true)}
                                             />
                                         </Link>
                                         <h6>w {product.shops.length} sklepach</h6>
