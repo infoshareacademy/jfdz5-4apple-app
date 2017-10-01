@@ -6,6 +6,7 @@ import firebase from 'firebase'
 
 import facebook from '../../img/facebook.svg'
 import gmail from '../../img/gmail.svg'
+import '../views/SignIn_styles.css'
 
 const providerForGoogle = new firebase.auth.GoogleAuthProvider();
 const providerForFacebook = new firebase.auth.FacebookAuthProvider();
@@ -87,16 +88,12 @@ class SignIn extends React.Component {
 
 
 
-      <div className="container page">
-        {
-          this.state.error === null ? null : <Alert bsStyle="danger">{this.state.error}</Alert>
-
-        }
+      <div className="container-page">
 
 
         <Form horizontal onSubmit={this.handleSubmit}>
           <h1>Zaloguj się</h1>
-          <FormGroup controlId="formHorizontalEmail">
+          <FormGroup controlId="formHorizontalEmail" className="SignIn-form__form">
             <FormControl onChange={this.handleLoginChange} type="text" placeholder="Email"/>
           </FormGroup>
 
@@ -108,11 +105,15 @@ class SignIn extends React.Component {
               Zaloguj się
             </Button>
           </FormGroup>
+
           <FormGroup>
             <Checkbox>Zapamiętaj mnie</Checkbox>
           </FormGroup>
 
+          {
+            this.state.error === null ? null : <Alert bsStyle="danger">{this.state.error}</Alert>
 
+          }
           <FormGroup>
 
             <Button onClick={this.handlerGoogleLogIn} bsStyle="default"><img src={gmail}

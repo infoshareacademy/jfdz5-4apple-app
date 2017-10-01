@@ -5,7 +5,7 @@
 }
 
 
-.top--navbar .container {
+.top--navbar .navbar--contaiter{
     display: block;
 }
 
@@ -81,6 +81,7 @@
 
     .navbar--contaiter {
         display: flex;
+        width: 100%;
         justify-content: center;
     }
 
