@@ -42,9 +42,11 @@ class Filters extends React.Component {
       }).filter((product) => {
         product.size = product.size || [];
         return product.size.includes(parseInt(this.state.size)) || product.size.includes(this.state.size) || product.size.toString() === "" ? product : null
+      }).filter((product) => {
+        product.color = product.color || [];
+        return product.color.includes(this.state.color) || product.size.toString() === "" ? product : null
       }))
     };
-
 
     const updateCheckboxState = (key) => {
       this.setState({
