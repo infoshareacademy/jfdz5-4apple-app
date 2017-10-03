@@ -5,12 +5,11 @@ import DataFetcher from "../DataFetcher/DataFetcher";
 import SearchBar from "../SearchBar";
 
 
-
 const FavsProductsView = () => {
   return (
     <div>
       <DataFetcher
-        dataUrl={'http://localhost:3000/data/products.json'}
+        dataUrl={'../../../public/data/products.json'}
         component={SearchBar}
         propName="searchedProducts"
       />

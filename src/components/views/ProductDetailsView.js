@@ -9,13 +9,13 @@ const ProductDetailsView = (props) => {
     return (
         <div className="">
             <DataFetcher
-                dataUrl={'http://localhost:3000/data/products.json'}
+              dataUrl={'../../../public/data/products.json'}
                 component={SearchBar}
                 propName="searchedProducts"
             />
             <ShopListDetails item={productId}/>
             <DataFetcher
-                dataUrl={'http://localhost:3000/data/products.json'}
+              dataUrl={'../../../public/data/products.json'}
                 component={Categories}
                 propName="categoriesProducts"
             />

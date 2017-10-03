@@ -9,7 +9,7 @@ import SearchBarFilters from "../SearchBarFilters";
 const SearchResultsListView = () => (
   <div>
     <DataFetcher
-      dataUrl={'http://localhost:3000/data/products.json'}
+      dataUrl={'../../../public/data/products.json'}
       component={SearchBar}
       propName="searchedProducts"
     />
