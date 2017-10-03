@@ -2,8 +2,8 @@ import React from 'react'
 import {connect} from "react-redux";
 
 import {
-    Tab,
-    Tabs
+  Tab,
+  Tabs
 } from 'react-bootstrap'
 
 import SearchBar from './SearchBar'
@@ -18,24 +18,24 @@ import SearchBarFilters from "./SearchBarFilters";
 
 
 const TabbedResults = ({products, chosenView, changeView, allProducts}) => (
-    <div>
-        <DataFetcher
-            dataUrl={'http://localhost:3000/data/products.json'}
-            component={SearchBar}
-            propName="searchedProducts"
-        />
-        <SearchBarFilters/>
-        <div className="categories--container">
-            <DataFetcher
-                dataUrl={'http://localhost:3000/data/products.json'}
-                component={Categories}
-                propName="categoriesProducts"
-            />
-        </div>
-        <Tabs defaultActiveKey={chosenView} id="tabbed-results" onSelect={changeView} className="container">
-            <Tab eventKey={1} title="Lista">
-                <SearchResultsList products={products}/>
-            </Tab>
+  <div>
+    <DataFetcher
+      dataUrl={'../../../public/data/products.json'}
+      component={SearchBar}
+      propName="searchedProducts"
+    />
+    <SearchBarFilters/>
+    <div className="categories--container">
+      <DataFetcher
+        dataUrl={'../../../public/data/products.json'}
+        component={Categories}
+        propName="categoriesProducts"
+      />
+    </div>
+    <Tabs defaultActiveKey={chosenView} id="tabbed-results" onSelect={changeView} className="container">
+      <Tab eventKey={1} title="Lista">
+        <SearchResultsList products={products}/>
+      </Tab>
 
       <Tab eventKey={2} title="Siatka">
         <SearchResultsGrid products={products}/>
@@ -45,11 +45,11 @@ const TabbedResults = ({products, chosenView, changeView, allProducts}) => (
 )
 
 export default connect(
-    state => ({
-        chosenView: state.presentationOfResults.chosenView,
-        allProducts: state.allProducts.data
-    }),
-    dispatch => ({
-        changeView: (key) => dispatch(presentationOfResults(key))
-    })
+  state => ({
+    chosenView: state.presentationOfResults.chosenView,
+    allProducts: state.allProducts.data
+  }),
+  dispatch => ({
+    changeView: (key) => dispatch(presentationOfResults(key))
+  })
 )(TabbedResults)
