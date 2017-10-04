@@ -20,14 +20,14 @@ import SearchBarFilters from "./SearchBarFilters";
 const TabbedResults = ({products, chosenView, changeView, allProducts}) => (
   <div>
     <DataFetcher
-      dataUrl={'../../../public/data/products.json'}
+      dataUrl={'/data/products.json'}
       component={SearchBar}
       propName="searchedProducts"
     />
     <SearchBarFilters/>
     <div className="categories--container">
       <DataFetcher
-        dataUrl={'../../../public/data/products.json'}
+        dataUrl={'/data/products.json'}
         component={Categories}
         propName="categoriesProducts"
       />

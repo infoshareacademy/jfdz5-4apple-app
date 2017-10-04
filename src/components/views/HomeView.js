@@ -10,19 +10,19 @@ const HomeView = () => {
   return (
     <div>
       <DataFetcher
-        dataUrl={'../../../public/data/products.json'}
+        dataUrl={'/data/products.json'}
         component={SearchBar}
         propName="searchedProducts"
       />
       <DataFetcher
-        dataUrl={'../../../public/data/products.json'}
+        dataUrl={'/data/products.json'}
         component={Categories}
         propName="categoriesProducts"
         propCategories={initialState}
         propInitialName="initialState"
       />
       <DataFetcher
-        dataUrl={'../../../public/data/products.json'}
+        dataUrl={'/data/products.json'}
         component={Viewed}
         propName="searchedProducts"
       />

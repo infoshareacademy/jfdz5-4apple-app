@@ -9,7 +9,7 @@ const FavsProductsView = () => {
   return (
     <div>
       <DataFetcher
-        dataUrl={'../../../public/data/products.json'}
+        dataUrl={'/data/products.json'}
         component={SearchBar}
         propName="searchedProducts"
       />
