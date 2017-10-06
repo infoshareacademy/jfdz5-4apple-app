@@ -5,21 +5,21 @@ import ShopListDetails from "../ShopListDetails";
 import Categories from '../Categories'
 
 const ProductDetailsView = (props) => {
-    const {productId} = props.match.params;
-    return (
-        <div className="">
-            <DataFetcher
-                dataUrl={'http://localhost:3000/data/products.json'}
-                component={SearchBar}
-                propName="searchedProducts"
-            />
-            <ShopListDetails item={productId}/>
-            <DataFetcher
-                dataUrl={'http://localhost:3000/data/products.json'}
-                component={Categories}
-                propName="categoriesProducts"
-            />
-        </div>)
+  const {productId} = props.match.params;
+  return (
+    <div className="">
+      <DataFetcher
+        dataUrl={'/data/products.json'}
+        component={SearchBar}
+        propName="searchedProducts"
+      />
+      <DataFetcher
+        dataUrl={'/data/products.json'}
+        component={Categories}
+        propName="categoriesProducts"
+      />
+      <ShopListDetails item={productId}/>
+    </div>)
 
 }
 
