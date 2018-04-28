@@ -33,7 +33,6 @@ class DataFetcher extends React.Component {
   render() {
     const {data, fetching, error} = this.state
     const {component, propName,propCategories,propInitialName} = this.props
-   //   console.log(propInitialName)
     return (
       <div>
         {

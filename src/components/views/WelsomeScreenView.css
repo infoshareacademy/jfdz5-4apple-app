@@ -1,0 +1,36 @@
+.container {
+    width: 1260px;
+}
+
+.welcome-screen {
+    display: flex;
+    height: 100vh;
+}
+
+.welcome-screen__logo {
+    margin: -50px 0 0;
+}
+
+.welcome-screen__image {
+    width: 50%;
+    color: #002936;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+.welcome-screen__forms {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+

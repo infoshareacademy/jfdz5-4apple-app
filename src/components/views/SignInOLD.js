@@ -1,17 +1,19 @@
 import React from 'react'
-import {Button, Form, FormControl, FormGroup, Checkbox, Alert} from 'react-bootstrap'
+import {Button, Form, FormControl, FormGroup, Checkbox, Alert, Tabs, Tab} from 'react-bootstrap'
 import {connect} from 'react-redux'
 import {set} from '../../state/auth'
 import firebase from 'firebase'
 
+import logo from '../../img/logo.svg'
 import facebook from '../../img/facebook.svg'
 import gmail from '../../img/gmail.svg'
 import '../views/SignIn_styles.css'
+import RegistrationForm from "../RegistrationForm";
 
 const providerForGoogle = new firebase.auth.GoogleAuthProvider();
 const providerForFacebook = new firebase.auth.FacebookAuthProvider();
 
-class SignIn extends React.Component {
+class SignInOLD extends React.Component {
 
 
   state = {
@@ -85,12 +87,14 @@ class SignIn extends React.Component {
 
   render() {
     return (
-
-
-
       <div className="container-page">
-
-
+        <div>
+          <Tabs defaultActiveKey={1} animation={true} id="noanim-tab-example">
+            <img src={logo} alt="logo" className="registation-form__logo"/>
+            <Tab eventKey={1} title="Zaloguj"><SignInOLD/></Tab>
+            <Tab eventKey={2} title="Zarejestruj"><RegistrationForm/></Tab>
+          </Tabs>
+        </div>
         <Form horizontal onSubmit={this.handleSubmit}>
           <h1>Zaloguj się</h1>
           <FormGroup controlId="formHorizontalEmail" className="SignIn-form__form">
@@ -109,7 +113,6 @@ class SignIn extends React.Component {
           <FormGroup>
             <Checkbox>Zapamiętaj mnie</Checkbox>
           </FormGroup>
-
           {
             this.state.error === null ? null : <Alert bsStyle="danger">{this.state.error}</Alert>
 
@@ -140,4 +143,4 @@ const mapDispatchToProps = dispatch => ({
   setUser: user => dispatch(set(user))
 });
 
-export default connect(null, mapDispatchToProps)(SignIn)
+export default connect(null, mapDispatchToProps)(SignInOLD)
