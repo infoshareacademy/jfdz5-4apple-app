@@ -59,7 +59,7 @@ class RegistrationForm extends React.Component {
     return (
       <div className="registation-form__content">
         <Form horizontal onSubmit={this.handleSubmit} className="registation-form">
-          <FormGroup controlId="formHorizontalEmail" onChange={this.handleChange} bsSize="large">
+          <FormGroup onChange={this.handleChange} bsSize="large">
             <InputGroup>
               <InputGroup.Addon>
                 <Glyphicon glyph="user"/>
@@ -72,7 +72,6 @@ class RegistrationForm extends React.Component {
             </InputGroup>
           </FormGroup>
           <FormGroup bsSize="large"
-                     controlId="formHorizontalPassword"
                      onChange={this.handleChange}>
             <InputGroup>
               <InputGroup.Addon>

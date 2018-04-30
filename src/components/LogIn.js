@@ -4,20 +4,75 @@ import ButtonBlue from "./ButtonBlue";
 
 import facebookIcon from '../img/icon_facebook.svg'
 import googleIcon from '../img/icon_google.svg'
+import firebase from "firebase/index";
+import {set} from "../state/auth";
+import {connect} from "react-redux";
+
+const providerForGoogle = new firebase.auth.GoogleAuthProvider();
+const providerForFacebook = new firebase.auth.FacebookAuthProvider();
 
 class LogIn extends React.Component {
   state = {
     email: '',
     password: '',
-    confirmPassword: '',
     error: null,
+  };
+
+  handleLoginChange = (event) => {
+    this.setState({
+      email: event.currentTarget.value
+    })
+  };
+
+  handlePasswordChange = (event) => {
+    this.setState({
+      password: event.currentTarget.value
+    })
+  };
+
+  handleSubmit = (event) => {
+    event.preventDefault();
+    firebase.auth().signInWithEmailAndPassword(this.state.email, this.state.password).then(
+      user => {
+        this.props.setUser(user);
+        firebase.database().ref('favorites/' + user.uid).on('value', snapshot => {
+        });
+        firebase.database().ref('favorites/' + user.uid).set({email: 1})
+      }
+    ).catch(
+      err => this.setState({error: "Nieprawidłowe dane logowania. Spróbuj ponownie"})
+    )
+  };
+
+  handlerGoogleLogIn = () => {
+    firebase.auth().signInWithPopup(providerForGoogle).then(
+      result => {
+        this.props.setUser(result);
+        firebase.database().ref('favorites/' + result.user.uid).on('value', snapshot => {
+        });
+        firebase.database().ref('favorites/' + result.user.uid).set({google: 1})
+      }
+    ).catch(function (error) {
+    });
+  };
+
+  handlerFacebookLogIn = () => {
+    firebase.auth().signInWithPopup(providerForFacebook).then(
+      result => {
+        this.props.setUser(result);
+        firebase.database().ref('favorites/' + result.user.uid).on('value', snapshot => {
+        });
+        firebase.database().ref('favorites/' + result.user.uid).set({fb: 1})
+      }
+    ).catch(function (error) {
+    });
   };
 
   render() {
     return (
       <div className="registation-form__content">
         <Form horizontal onSubmit={this.handleSubmit} className="registation-form">
-          <FormGroup controlId="formHorizontalEmail" onChange={this.handleChange} bsSize="large">
+          <FormGroup bsSize="large">
             <InputGroup>
               <InputGroup.Addon>
                 <Glyphicon glyph="user"/>
@@ -25,13 +80,12 @@ class LogIn extends React.Component {
               <FormControl type="email"
                            placeholder="Wprowadź email"
                            name="email"
-                           value={this.state.email}
+                           onChange={this.handleLoginChange}
                            required/>
             </InputGroup>
           </FormGroup>
           <FormGroup bsSize="large"
-                     controlId="formHorizontalPassword"
-                     onChange={this.handleChange}>
+                  >
             <InputGroup>
               <InputGroup.Addon>
                 <Glyphicon glyph="lock"/>
@@ -40,7 +94,7 @@ class LogIn extends React.Component {
                 type="password"
                 placeholder={"Wprowadź hasło"}
                 name="password"
-                value={this.state.password}
+                onChange={this.handlePasswordChange}
                 required/>
             </InputGroup>
           </FormGroup>
@@ -60,12 +114,20 @@ class LogIn extends React.Component {
                         }/>
           </FormGroup>
           <a className={'form__link'}>Nie pamiętasz hasła?</a>
-          <button className={'form__icon-btn btn-facebook'}><img height={'30px'} src={facebookIcon}/>Zaloguj przez Facebooka</button>
-          <button className={'form__icon-btn btn-google'}><img height={'30px'} src={googleIcon}/>Zaloguj przez Google</button>
+          <button onClick={this.handlerFacebookLogIn} className={'form__icon-btn btn-facebook'}>
+            <img height={'30px'} src={facebookIcon}/>Zaloguj przez Facebooka
+          </button>
+          <button onClick={this.handlerGoogleLogIn} className={'form__icon-btn btn-google'}>
+            <img height={'30px'} src={googleIcon}/>Zaloguj przez Google
+          </button>
         </Form>
       </div>
     )
   }
 }
 
-export default LogIn
+const mapDispatchToProps = dispatch => ({
+  setUser: user => dispatch(set(user))
+});
+
+export default connect(null, mapDispatchToProps)(LogIn)
