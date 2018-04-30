@@ -1,6 +1,6 @@
 import React from 'react'
 
-import './WelsomeScreenView.css'
+import './WelcomeScreenView.css'
 import RegistrationForm from "../RegistrationForm";
 import {Glyphicon, Tab, Tabs} from "react-bootstrap";
 import LogIn from "../LogIn";
@@ -11,7 +11,7 @@ import logo from '../../img/logo.svg'
 const WelcomeScreenView = () => {
   return (
     <div className={'container welcome-screen'}>
-      <div className={'welcome-screen__image'}>
+      <div className={'welcome-screen__text'}>
         <a href="#"><img src={logo} alt={'logo'} className={'welcome-screen__logo'}/></a>
         <div>
           <h1>Ponad 2 000 000 produktów w najniższych cenach!</h1>
