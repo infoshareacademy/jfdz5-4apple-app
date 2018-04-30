@@ -10,6 +10,12 @@
     width: 80%;
 }
 
+.welcome-screen__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .welcome-screen__text {
     color: #002936;
     justify-content: center;
@@ -20,13 +26,8 @@
     font-size: 16px;
     font-weight: 500;
     line-height: 30px;
-    padding: 0 10px;
+    padding: 0 15px;
     margin-bottom: 70px;
-}
-
-.welcome-screen__text h1 {
-    font-size: 26px;
-    margin-bottom: 20px;
 }
 
 .welcome-screen__forms {
@@ -35,6 +36,12 @@
     align-items: center;
     justify-content: center;
     padding: 10px;
+}
+
+@media screen and (min-width: 425px) {
+    .welcome-screen__text {
+        padding: 0 50px;
+    }
 }
 
 @media screen and (min-width: 1024px) {

@@ -1,0 +1,31 @@
+.logo-text--normal {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 3px 1px #000;
+    color: #0a5894;
+    font-weight: 800;
+}
+
+.logo-text--small {
+    font-size: 1.4em;
+    font-weight: 800;
+    text-shadow: 2px 0 #000;
+    color: #0a5894;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.logo-link:hover, .logo-link:visited, .logo-link:focus {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .logo-text--normal {
+        font-size: 4em;
+    }
+
+    .logo-text--small {
+        font-size: 2em;
+        padding-top: 0;
+    }
+}
