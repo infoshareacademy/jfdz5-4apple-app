@@ -13,11 +13,7 @@ const ProductDetailsView = (props) => {
         component={SearchBar}
         propName="searchedProducts"
       />
-      <DataFetcher
-        dataUrl={'/data/products.json'}
-        component={Categories}
-        propName="categoriesProducts"
-      />
+      <Categories/>
       <ShopListDetails item={productId}/>
     </div>)
 

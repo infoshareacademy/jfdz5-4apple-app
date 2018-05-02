@@ -6,7 +6,28 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-image: url('img/background.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100%;
+    min-height: 100vh;
+}
 
+.app-container{
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .container-narrow {
+        width: 550px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-narrow {
+        width: 770px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-narrow {
+        width: 970px;
+    }
 }

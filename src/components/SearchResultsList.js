@@ -15,7 +15,7 @@ class SearchResultsList extends React.Component {
     const searchResults = this.props.filteredResults;
 
     return (
-      <div className="container products--container">
+      <div className="container-narrow products--container">
         <ListGroup>{
           searchResults && searchResults.toString() === "" ?
             <NoItemFound/>

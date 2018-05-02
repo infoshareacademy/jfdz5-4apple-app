@@ -1,19 +1,28 @@
-
-.categories--container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 1px #ddd solid;
-    text-align: center;
+.categories {
+    width: 250px;
+    position: absolute;
+    left:0;
+    padding: 50px 0 0 0;
+    box-shadow: none;
 }
 
-.categories-list {
-    text-align: center;
-    display: flex;
-    align-items: center;
+.categories__item {
+    padding-left: 30px;
+    font-weight: 800;
+    border: 1px solid #cbd6da;
+    background-color: #dce7eb;
 }
 
-.categories-list-item {
-    text-align: center;
-    min-height: 70px;
+.categories__item:hover {
+    cursor: pointer;
+}
+
+.categories__brand {
+    display: none;
+    font-weight: 500;
+    padding-left: 15px;
+}
+
+.categories__item:hover li {
+    display: block;
 }
