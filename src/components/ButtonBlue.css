@@ -25,3 +25,9 @@
     border: solid 2px #002936;
 }
 
+.search-button {
+    width: 46px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}

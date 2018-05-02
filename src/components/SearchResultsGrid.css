@@ -5,6 +5,7 @@
 .thumbnail {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    background-color: #dce7eb;
 }
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     border-bottom-color: #ddd;

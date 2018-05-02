@@ -1,8 +1,13 @@
+.navbar{
+    margin-bottom: 0;
+}
+
 .nav-bar {
     background-color: #dce7eb;
     background-image: none;
     border-radius: 0 0 4px 4px;
     padding: 0 10% 0;
+    min-height: 60px;
 }
 
 .navbar-default .nav-bar__right > li > a {
@@ -13,11 +18,45 @@
     color: #002936;
 }
 
+.nav-bar__content {
+    padding-top: 20px;
+}
+
+.nav-bar__form {
+    min-width: 50%;
+    display: flex;
+}
+
+.nav-bar__input {
+    height: 40px;
+}
+
+.navbar-toggle {
+    background-color: #0A5894;
+    height: 40px;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #0A5894;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #cbd6da;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    color: #0A5894;
+}
+
 @media screen and (min-width: 768px) {
     .nav-bar {
         padding: 0 50px 0;
         display: flex;
         align-items: center;
+        height: 70px;
     }
 
     .nav-bar__logo {
@@ -31,5 +70,14 @@
         margin-right: 30px;
         display: flex;
         align-items: center;
+    }
+
+    .nav-bar__content {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        height: 70px;
+        padding: 0;
     }
 }

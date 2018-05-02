@@ -1,17 +1,18 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
 import firebase from 'firebase'
-import { Navbar, FormGroup, FormControl, Button, NavItem } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
-import magnifier from "../img/magnifier.png"
+import LogoText from "./LogoText";
+import { Navbar, FormGroup, FormControl, Button, NavItem, Nav } from 'react-bootstrap'
 import '../components/SearchBar.css'
 import Link from "react-router-dom/es/Link"
 import { connect } from 'react-redux'
 import { filterResults } from '../state/searching'
 import { allProductsPass } from "../state/allProducts";
-import LogoText from "./LogoText";
+import './NavBar.css'
+import ButtonBlue from "./ButtonBlue";
 
-class SearchBar extends React.Component {
+class SearchNavBar extends React.Component {
 
   componentDidMount() {
     this.props.allProductsPass(this.state.allProducts)
@@ -43,38 +44,45 @@ class SearchBar extends React.Component {
       searchedName: '',
     })
   }
+
   render() {
     return (
-      <div>
-        <Navbar className="top__nav-bar">
-          <Navbar.Header>
-            <Navbar.Brand className="logo">
-              <Link to={`/`}><LogoText size={'small'}/></Link>
-            </Navbar.Brand>
-            <Navbar.Toggle/>
-          </Navbar.Header>
-          <Navbar.Collapse>
-            <form className="search-form" onSubmit={this.handleSubmit}>
-              <FormGroup>
-                <FormControl className="search--input"
+      <Navbar fixedTop collapseOnSelect className={'nav-bar'}>
+        <Navbar.Header>
+          <Navbar.Brand className={'nav-bar__logo logo'}>
+            <a href="#"><LogoText size={'small'}/></a>
+          </Navbar.Brand>
+          <Navbar.Toggle/>
+        </Navbar.Header>
+        <Navbar.Collapse>
+          <form className="search-form" onSubmit={this.handleSubmit}>
+            <FormGroup bsClass={'nav-bar__content'}>
+              <div className={'nav-bar__form'}>
+                <FormControl className="nav-bar__input"
                              type="text"
                              value={this.state.searchedName}
                              onChange={this.handleChange}
                              required
                              placeholder="Znajdź produkt"/>
-              </FormGroup>
-              {' '}
-              <Button className="search-button" type="submit">
-                <i className={'glyphicon glyphicon-search'} />
-              </Button>
-            </form>
-            <LinkContainer to="/favs">
-              <a>Ulubione</a>
-            </LinkContainer>
-            <a onClick={this.signOutUser}>Wyloguj się</a>
-          </Navbar.Collapse>
-        </Navbar>
-      </div>
+                <ButtonBlue type="submit"
+                            textContent={<i className={'glyphicon glyphicon-search'}/>}
+                            helperClass={'search-button'}>
+                </ButtonBlue>
+              </div>
+              <Nav pullRight className={'nav-bar__right'}>
+                <LinkContainer to={'/favs'}>
+                  <NavItem eventKey={1}>
+                    Ulubione
+                  </NavItem>
+                </LinkContainer>
+                <NavItem onClick={this.signOutUser} eventKey={2}>
+                  Wyloguj<span style={{color: 'transparent'}}>_</span>się
+                </NavItem>
+              </Nav>
+            </FormGroup>
+          </form>
+        </Navbar.Collapse>
+      </Navbar>
     )
   }
 }
@@ -89,5 +97,5 @@ export default withRouter(
       addSearchedResults: (searchedProducts, searchedItem) => dispatch(filterResults(searchedProducts, searchedItem)),
       allProductsPass: (data) => dispatch(allProductsPass(data))
     })
-  )(SearchBar)
+  )(SearchNavBar)
 )

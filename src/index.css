@@ -10,13 +10,21 @@ body {
 }
 
 .app-container{
+    position: relative;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
 }
 
 @media (min-width: 768px) {
     .container-narrow {
         width: 550px;
+    }
+    .app-container{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        padding-left: 200px;
+        min-height: 70px;
     }
 }
 

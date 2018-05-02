@@ -1,8 +1,6 @@
 .categories {
-    width: 250px;
-    position: absolute;
-    left:0;
-    padding: 50px 0 0 0;
+    /*position: absolute;*/
+    margin-top: 70px;
     box-shadow: none;
 }
 
@@ -25,4 +23,14 @@
 
 .categories__item:hover li {
     display: block;
+}
+
+@media screen and (min-width: 768px) {
+    .categories {
+        width: 200px;
+        position: absolute;
+        left:0;
+        top: 50px;
+        box-shadow: none;
+    }
 }

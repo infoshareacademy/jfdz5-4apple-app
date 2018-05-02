@@ -6,17 +6,26 @@
     font-weight: 800;
 }
 
+.logo {
+    height: 50px;
+}
+
 .logo-text--small {
     font-size: 1.4em;
     font-weight: 800;
     text-shadow: 2px 0 #000;
     color: #0a5894;
     margin: 0;
-    padding-top: 5px;
 }
 
 .logo-link:hover, .logo-link:visited, .logo-link:focus {
     text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        height: 70px;
+    }
 }
 
 @media screen and (min-width: 1024px) {

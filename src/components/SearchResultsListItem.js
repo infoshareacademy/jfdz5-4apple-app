@@ -15,8 +15,7 @@ const SearchResultsListItem = ({searchResults, allProducts}) => {
     <div>
       {searchResults.map((product, index) => {
         return (
-          <ListGroupItem key={index}>
-            {/*<Button onClick={handleSaveFavseClick}/>*/}
+          <ListGroupItem className={'list-group-item'} key={index}>
             <div className="product--container">
               <img className="product--img" alt="product" src={product.image}/>
               <div className="product--info">

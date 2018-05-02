@@ -6,20 +6,20 @@ import {
   Tabs
 } from 'react-bootstrap'
 
-import SearchBar from './SearchBar'
-import SearchResultsList from './SearchResultsList'
-import SearchResultsGrid from './SearchResultsGrid'
-import DataFetcher from "./DataFetcher/DataFetcher";
-import Categories from './Categories.js'
-import { presentationOfResults } from '../state/presentationOfResults'
-import SearchBarFilters from "./SearchBarFilters";
+import SearchNavBar from '../SearchNavBar'
+import SearchResultsList from '../SearchResultsList'
+import SearchResultsGrid from '../SearchResultsGrid'
+import DataFetcher from "../DataFetcher/DataFetcher";
+import Categories from '../Categories.js'
+import { presentationOfResults } from '../../state/presentationOfResults'
+import SearchBarFilters from "../SearchBarFilters";
 
 
-const TabbedResults = ({products, chosenView, changeView, allProducts}) => (
+const TabbedResultsView = ({products, chosenView, changeView, allProducts}) => (
   <div>
     <DataFetcher
       dataUrl={'/data/products.json'}
-      component={SearchBar}
+      component={SearchNavBar}
       propName="searchedProducts"
     />
     <SearchBarFilters/>
@@ -46,4 +46,4 @@ export default connect(
   dispatch => ({
     changeView: (key) => dispatch(presentationOfResults(key))
   })
-)(TabbedResults)
+)(TabbedResultsView)

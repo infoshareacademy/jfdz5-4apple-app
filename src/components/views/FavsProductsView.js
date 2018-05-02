@@ -2,7 +2,7 @@ import React from 'react'
 
 import FavsProducts from '../FavsProducts'
 import DataFetcher from "../DataFetcher/DataFetcher";
-import SearchBar from "../SearchBar";
+import SearchNavBar from "../SearchNavBar";
 
 
 const FavsProductsView = () => {
@@ -10,7 +10,7 @@ const FavsProductsView = () => {
     <div>
       <DataFetcher
         dataUrl={'/data/products.json'}
-        component={SearchBar}
+        component={SearchNavBar}
         propName="searchedProducts"
       />
       <FavsProducts/>

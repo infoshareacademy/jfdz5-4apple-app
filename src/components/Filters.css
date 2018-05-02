@@ -1,5 +1,17 @@
+.panel-group{
+    margin-top: 60px;
+}
+
 .panel {
     text-align: center;
+    border: none;
+    background-color: #dce7eb;
+}
+
+.panel-default > .panel-heading{
+    background-image: none;
+    background-color: #0A5894;
+    color: #dce7eb;
 }
 
 .filters--container {
@@ -7,7 +19,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px #ebebeb solid;
+    border: 1px #0A5894 solid;
     margin-bottom: 10px;
 }
 
@@ -70,5 +82,9 @@
         justify-content: space-around;
         align-items: center;
         flex-direction: row;
+    }
+
+    .panel-group{
+        margin-top: 70px;
     }
 }
