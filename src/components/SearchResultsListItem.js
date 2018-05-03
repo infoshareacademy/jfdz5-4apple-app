@@ -7,8 +7,7 @@ import { connect } from 'react-redux'
 import ButtonBlue from "./ButtonBlue";
 import './SearchResultsList.css'
 
-const SearchResultsListItem = ({searchResults, allProducts}) => {
-
+const SearchResultsListItem = ({searchResults}) => {
 
   return (
     <div>
@@ -50,5 +49,4 @@ export default connect(
   state => ({
     allProducts: state.allProducts.data
   }),
-  dispatch => ({})
 )(SearchResultsListItem)

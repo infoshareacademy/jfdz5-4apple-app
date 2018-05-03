@@ -4,6 +4,7 @@ import { withRouter } from "react-router-dom";
 
 import { createDetailsList } from "./_utils/filtersDetails";
 import { filterResults } from "../state/searching";
+import { findCategories } from "../state/searching";
 
 class CategoriesItem extends React.Component {
   constructor(props) {
@@ -19,9 +20,9 @@ class CategoriesItem extends React.Component {
 
   applyCategoryFilter = (event, category) => {
     event.preventDefault();
-    this.toggleCollapse(event.currentTarget.parentElement)
+    this.props.addCategoriesResults(this.props.allProducts, category)
+    this.toggleCollapse(event.currentTarget.parentElement);
     this.props.history.push('/results')
-    this.props.addSearchedResults(this.props.allProducts, category)
   };
 
   applyBrandFilter = (event, brand) => {
@@ -63,6 +64,7 @@ export default withRouter(
     }),
     dispatch => ({
       addSearchedResults: (searchedProducts, searchedItem) => dispatch(filterResults(searchedProducts, searchedItem)),
+      addCategoriesResults: (searchedProducts, searchedItem) => dispatch(findCategories(searchedProducts, searchedItem))
     })
   )(CategoriesItem)
 )

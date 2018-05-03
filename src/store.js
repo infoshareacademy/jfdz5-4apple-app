@@ -5,7 +5,6 @@ import auth, {addNewUser} from './state/auth'
 import searching from './state/searching'
 import presentationOfResults from './state/presentationOfResults'
 import allProducts from "./state/allProducts";
-import searchingCategories from "./state/searchingCategories";
 
 import {setFavs} from './state/favs'
 const config = {
@@ -24,7 +23,6 @@ const reducer = combineReducers({
   searching,
   presentationOfResults,
   allProducts,
-  searchingCategories
 })
 
 
