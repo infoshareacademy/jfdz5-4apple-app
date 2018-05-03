@@ -1,5 +1,5 @@
 .panel-group{
-    margin-top: 60px;
+    margin-bottom: 0;
 }
 
 .panel {
@@ -82,9 +82,5 @@
         justify-content: space-around;
         align-items: center;
         flex-direction: row;
-    }
-
-    .panel-group{
-        margin-top: 70px;
     }
 }

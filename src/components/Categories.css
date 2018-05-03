@@ -1,13 +1,17 @@
 .categories {
-    /*position: absolute;*/
-    margin-top: 70px;
     box-shadow: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+    width: 100%;
+    border: 1px solid #d0dade;
 }
 
 .categories__item {
-    padding-left: 30px;
     font-weight: 800;
-    border: 1px solid #cbd6da;
+    border: none;
     background-color: #dce7eb;
 }
 
@@ -18,7 +22,12 @@
 .categories__brand {
     display: none;
     font-weight: 500;
-    padding-left: 15px;
+    padding: 5px;
+
+}
+
+.categories__brand a {
+    border-bottom: 1px solid #cbd6da;
 }
 
 .categories__item:hover li {
@@ -26,11 +35,32 @@
 }
 
 @media screen and (min-width: 768px) {
+
     .categories {
-        width: 200px;
-        position: absolute;
-        left:0;
-        top: 50px;
+        width: 250px;
+        position: sticky;
+        top: 70px;
         box-shadow: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-self: flex-start;
+        background-color: #dce7eb;
+        height: calc(100vh - 70px);
+        margin: 0;
+        border-radius: 0;
     }
+
+    .categories__item {
+        padding: 20px 0 20px 30px;
+        border-bottom: 1px solid #d0dade;
+        margin: 1px;
+
+    }
+
+    .categories__brand {
+        padding-left: 15px;
+    }
+
 }

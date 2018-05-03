@@ -1,5 +1,6 @@
 import React from 'react'
-import {Nav, Navbar, NavItem} from "react-bootstrap";
+import { Nav, Navbar, NavItem } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 import LogoText from "./LogoText";
 import './NavBar.css'
@@ -10,7 +11,7 @@ class NavBar extends React.Component {
       <Navbar fixedTop collapseOnSelect className={'nav-bar'}>
         <Navbar.Header>
           <Navbar.Brand className={'nav-bar__logo'}>
-            <a href="#"><LogoText size={'small'}/></a>
+            <Link to={'/'}><LogoText size={'small'}/></Link>
           </Navbar.Brand>
           <Navbar.Toggle/>
         </Navbar.Header>
@@ -19,7 +20,7 @@ class NavBar extends React.Component {
             <NavItem eventKey={1} href="#">
               Home
             </NavItem>
-            <NavItem eventKey={2} href="#">
+            <NavItem eventKey={2} href="http://www.4apple.jfdz5.is-academy.pl">
               Landing Page
             </NavItem>
           </Nav>

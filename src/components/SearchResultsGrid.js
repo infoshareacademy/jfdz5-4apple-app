@@ -1,39 +1,34 @@
 import React from 'react'
+import { connect } from "react-redux";
 
-import {Thumbnail} from 'react-bootstrap'
-import {connect} from "react-redux";
-
-
-import {filterResults} from "../state/searching";
+import { filterResults } from "../state/searching";
 import NoItemFound from "./NoItemFound";
 import SearchResultsGridItem from "./SearchResultsGridItem";
 
 class SearchResultsGrid extends React.Component {
+  render() {
+    const searchResults = this.props.filteredResults
 
-    render() {
-        const searchResults = this.props.filteredResults
+    return (
 
-        return (
-
-            <div>
-                <Thumbnail>{
-                    searchResults && searchResults.toString() === "" ?
-                        <NoItemFound/>
-                        :
-                        <SearchResultsGridItem searchResults={searchResults}/>
-                }
-                </Thumbnail>
-            </div>
-        )
-    }
+      <div>
+        <div>{
+          searchResults && searchResults.toString() === "" ?
+            <NoItemFound/>
+            :
+            <SearchResultsGridItem searchResults={searchResults}/>
+        }
+        </div>
+      </div>
+    )
+  }
 }
 
-
 export default connect(
-    state => ({
-        filteredResults: state.searching.filteredResults
-    }),
-    dispatch => ({
-        addSearchedResults: (searchedProducts, searchedItem) => dispatch(filterResults(searchedProducts, searchedItem))
-    })
+  state => ({
+    filteredResults: state.searching.filteredResults
+  }),
+  dispatch => ({
+    addSearchedResults: (searchedProducts, searchedItem) => dispatch(filterResults(searchedProducts, searchedItem))
+  })
 )(SearchResultsGrid)

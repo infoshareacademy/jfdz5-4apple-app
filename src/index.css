@@ -9,22 +9,39 @@ body {
     min-height: 100vh;
 }
 
-.app-container{
+.app-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.content-container {
     position: relative;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 15px;
+}
+
+.helper-container {
+    height: 60px;
 }
 
 @media (min-width: 768px) {
     .container-narrow {
         width: 550px;
     }
-    .app-container{
+
+    .content-container {
         display: flex;
         justify-content: center;
         position: relative;
-        padding-left: 200px;
         min-height: 70px;
+    }
+
+    .helper-container {
+        height: 70px;
     }
 }
 

@@ -14,7 +14,8 @@ const FavsProductsView = () => {
         propName="searchedProducts"
       />
       <FavsProducts/>
-    </div>)
+    </div>
+  )
 }
 
 export default FavsProductsView

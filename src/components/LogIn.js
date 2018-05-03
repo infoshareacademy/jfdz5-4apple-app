@@ -1,12 +1,13 @@
 import React from 'react'
-import {Form, FormControl, FormGroup, Alert, Glyphicon, InputGroup, Checkbox} from "react-bootstrap";
-import ButtonBlue from "./ButtonBlue";
+import { Form, FormControl, FormGroup, Alert, Glyphicon, InputGroup, Checkbox } from "react-bootstrap";
+import { connect } from "react-redux";
+import firebase from "firebase/index";
 
 import facebookIcon from '../img/icon_facebook.svg'
 import googleIcon from '../img/icon_google.svg'
-import firebase from "firebase/index";
-import {set} from "../state/auth";
-import {connect} from "react-redux";
+import { set } from "../state/auth";
+import ButtonBlue from "./ButtonBlue";
+
 
 const providerForGoogle = new firebase.auth.GoogleAuthProvider();
 const providerForFacebook = new firebase.auth.FacebookAuthProvider();
@@ -85,7 +86,7 @@ class LogIn extends React.Component {
             </InputGroup>
           </FormGroup>
           <FormGroup bsSize="large"
-                  >
+          >
             <InputGroup>
               <InputGroup.Addon>
                 <Glyphicon glyph="lock"/>
@@ -106,6 +107,7 @@ class LogIn extends React.Component {
           }
           <FormGroup>
             <ButtonBlue type={'submit'}
+                        helperClass={'button--primary__with-icon'}
                         textContent={
                           <span>
                             Dalej

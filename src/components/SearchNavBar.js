@@ -1,16 +1,16 @@
 import React from 'react'
-import { withRouter } from 'react-router-dom'
-import firebase from 'firebase'
+import { withRouter, Link } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap'
-import LogoText from "./LogoText";
-import { Navbar, FormGroup, FormControl, Button, NavItem, Nav } from 'react-bootstrap'
-import '../components/SearchBar.css'
-import Link from "react-router-dom/es/Link"
+import { Navbar, FormGroup, FormControl, NavItem, Nav } from 'react-bootstrap'
 import { connect } from 'react-redux'
+import firebase from 'firebase'
+
+import './NavBar.css'
 import { filterResults } from '../state/searching'
 import { allProductsPass } from "../state/allProducts";
-import './NavBar.css'
 import ButtonBlue from "./ButtonBlue";
+import LogoText from "./LogoText";
+
 
 class SearchNavBar extends React.Component {
 
@@ -50,7 +50,7 @@ class SearchNavBar extends React.Component {
       <Navbar fixedTop collapseOnSelect className={'nav-bar'}>
         <Navbar.Header>
           <Navbar.Brand className={'nav-bar__logo logo'}>
-            <a href="#"><LogoText size={'small'}/></a>
+            <Link to={'/'}><LogoText size={'small'}/></Link>
           </Navbar.Brand>
           <Navbar.Toggle/>
         </Navbar.Header>

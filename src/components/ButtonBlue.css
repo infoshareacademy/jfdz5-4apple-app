@@ -16,13 +16,17 @@
     border: solid 2px #0a5894;
     width: 100%;
     color: #dce7eb;
-    padding: 10px 10px 10px 30px;
+    padding: 10px;
     font-size: 16px;
 }
 
 .button--primary:hover {
     background-color: #002936;
     border: solid 2px #002936;
+}
+
+.button--primary__with-icon {
+    padding: 10px 10px 10px 30px;
 }
 
 .search-button {

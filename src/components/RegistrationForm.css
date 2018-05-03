@@ -7,11 +7,12 @@
     align-items: center;
     justify-content: center;
     background-color: #dce7eb;
-    border-radius: 0 0 10px 10px;
+    border-radius: 0 0 4px 4px;
     box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.3);
     border: none;
-    max-width: 500px;
-    min-height: 500px;
+    width: 300px;
+    padding: 30px 0;
+    min-height: 400px;
     transition: all 300ms ease-in;
 }
 
@@ -25,9 +26,16 @@
     padding: 0;
 }
 
+.welcome-screen__forms > .nav-tabs {
+    width: 300px;
+    border: none;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 500;
+}
+
 .nav-tabs {
     width: 100%;
-    max-width: 500px;
     border: none;
     text-align: center;
     font-size: 20px;
@@ -85,7 +93,7 @@
 }
 
 .tab-content > .active {
-    border-radius: 10px;
+    border-radius: 4px;
 }
 
 .nav-tabs > li {
@@ -103,7 +111,7 @@
     background-color: #0a5894;
     color: #dce7eb;
     padding: 15px 5px;
-    border-radius: 10px 10px 0 0;
+    border-radius: 4px 4px 0 0;
     transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease;
 }
 
@@ -117,7 +125,7 @@
 
 .active {
     background-color: #dce7eb;
-    border-radius: 10px 10px 0 0;
+    border-radius: 4px 4px 0 0;
 }
 
 .nav-tabs > li.active > a {
@@ -140,14 +148,37 @@
 }
 
 @media screen and (min-width: 768px) {
-
-    .registation-form {
-        width: 60%;
-    }
-
     .nav-tabs > li {
         min-width: 50%;
         font-size: 18px;
     }
-
 }
+
+@media screen and (min-width: 550px) {
+    .registation-form {
+        width: 60%;
+    }
+
+    .registation-form__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #dce7eb;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.3);
+        border: none;
+        width: 500px;
+        min-height: 500px;
+        transition: all 300ms ease-in;
+    }
+
+    .welcome-screen__forms > .nav-tabs {
+        width: 500px;
+        max-width: 500px;
+        border: none;
+        text-align: center;
+        font-size: 100px;
+        font-weight: 500;
+    }
+}
+

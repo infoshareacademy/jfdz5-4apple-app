@@ -1,6 +1,7 @@
 import React from 'react'
 import firebase from 'firebase'
-import {Form, FormControl, FormGroup, Alert, Glyphicon, InputGroup, Checkbox} from "react-bootstrap";
+import { Form, FormControl, FormGroup, Alert, Glyphicon, InputGroup, Checkbox } from "react-bootstrap";
+
 import './RegistrationForm.css'
 import ButtonBlue from "./ButtonBlue";
 
@@ -108,6 +109,7 @@ class RegistrationForm extends React.Component {
           }
           <FormGroup>
             <ButtonBlue type={'submit'}
+                        helperClass={'button--primary__with-icon'}
                         textContent={
                           <span>
                             Dalej

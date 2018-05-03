@@ -1,5 +1,7 @@
 import React from 'react'
 
+import Loader from '../../components/Loader'
+
 class DataFetcher extends React.Component {
   state = {
     data: null,
@@ -32,11 +34,11 @@ class DataFetcher extends React.Component {
 
   render() {
     const {data, fetching, error} = this.state
-    const {component, propName,propCategories,propInitialName} = this.props
+    const {component, propName, propCategories, propInitialName} = this.props
     return (
       <div>
         {
-          fetching === false ? null : <span className="loader"> </span>
+          fetching === false ? null : <Loader/>
 
         }
         {

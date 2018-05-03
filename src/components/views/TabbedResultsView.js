@@ -17,23 +17,29 @@ import SearchBarFilters from "../SearchBarFilters";
 
 const TabbedResultsView = ({products, chosenView, changeView, allProducts}) => (
   <div>
+    <div className={'helper-container'}> </div>
     <DataFetcher
       dataUrl={'/data/products.json'}
       component={SearchNavBar}
       propName="searchedProducts"
     />
+    <div className={'cos'}>
     <SearchBarFilters/>
     <div className="app-container">
       <Categories/>
-      <Tabs defaultActiveKey={chosenView} id="tabbed-results" onSelect={changeView} className="container-narrow">
-        <Tab eventKey={1} title="Lista">
-          <SearchResultsList products={products}/>
-        </Tab>
+      <div className="content-container">
+        <Tabs defaultActiveKey={chosenView} id="tabbed-results" onSelect={changeView} className="container-narrow">
+          <Tab eventKey={1} title="Lista">
+            <SearchResultsList products={products}/>
+          </Tab>
 
-        <Tab eventKey={2} title="Siatka">
-          <SearchResultsGrid products={products}/>
-        </Tab>
-      </Tabs>
+          <Tab eventKey={2} title="Siatka">
+            <SearchResultsGrid products={products}/>
+          </Tab>
+        </Tabs>
+      </div>
+      <div></div>
+    </div>
     </div>
   </div>
 )
