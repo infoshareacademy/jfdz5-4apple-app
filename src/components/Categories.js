@@ -4,6 +4,7 @@ import { connect } from "react-redux";
 import './Categories.css'
 import { ListGroup } from "react-bootstrap";
 import CategoriesItem from "./CategoriesItem";
+import { withRouter } from "react-router-dom";
 
 
 class Categories extends React.Component {
@@ -20,8 +21,9 @@ class Categories extends React.Component {
   }
 }
 
-export default connect(
+export default withRouter(
+  connect(
   state => ({
     allProducts: state.allProducts.data
   }),
-)(Categories)
+)(Categories))

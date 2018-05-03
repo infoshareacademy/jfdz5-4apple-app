@@ -9,6 +9,9 @@
     border: 1px solid #d0dade;
 }
 
+.category-collapsed > .categories__brand{
+    display: block;
+}
 .categories__item {
     font-weight: 800;
     border: none;
@@ -26,13 +29,13 @@
 
 }
 
-.categories__brand a {
-    border-bottom: 1px solid #cbd6da;
-}
+/*.categories__brand a {*/
+    /*border-bottom: 1px solid #cbd6da;*/
+/*}*/
 
-.categories__item:hover li {
-    display: block;
-}
+/*.categories__item:hover li {*/
+    /*display: block;*/
+/*}*/
 
 @media screen and (min-width: 768px) {
 

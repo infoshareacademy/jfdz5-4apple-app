@@ -44,7 +44,7 @@ class Filters extends React.Component {
 
     const submitFilters = (event) => {
       event.preventDefault();
-      // defineCover();
+      defineCover();
 
       const setDetailsToUndefined = (product, detail) => {
         product[detail] = undefined;
@@ -94,20 +94,20 @@ class Filters extends React.Component {
       });
     };
 
-    // const defineCover = () => {
-    //   if (this.state.softCover === true && this.state.hardCover === true) {
-    //     this.state.cover = ["miękka", "twarda"]
-    //   }
-    //   else if (this.state.softCover === false && this.state.hardCover === true) {
-    //     this.state.cover = ["twarda"]
-    //   }
-    //   else if (this.state.softCover === true && this.state.hardCover === false) {
-    //     this.state.cover = ["miękka"]
-    //   }
-    //   else {
-    //     this.state.cover = ["miękka", "twarda"]
-    //   }
-    // };
+    const defineCover = () => {
+      if (this.state.softCover === true && this.state.hardCover === true) {
+        this.state.cover = ["miękka", "twarda"]
+      }
+      else if (this.state.softCover === false && this.state.hardCover === true) {
+        this.state.cover = ["twarda"]
+      }
+      else if (this.state.softCover === true && this.state.hardCover === false) {
+        this.state.cover = ["miękka"]
+      }
+      else {
+        this.state.cover = ["miękka", "twarda"]
+      }
+    };
 
     const handleMinChange = event => this.setState({
       priceMin: event.currentTarget.value
