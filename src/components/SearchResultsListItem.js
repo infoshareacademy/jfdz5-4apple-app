@@ -1,7 +1,6 @@
 import React from 'react'
-import firebase from 'firebase'
 import { Link } from 'react-router-dom'
-import { ListGroupItem, Button } from "react-bootstrap";
+import { ListGroupItem } from "react-bootstrap";
 import { connect } from 'react-redux'
 
 

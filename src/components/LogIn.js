@@ -117,10 +117,10 @@ class LogIn extends React.Component {
           </FormGroup>
           <a className={'form__link'}>Nie pamiętasz hasła?</a>
           <button onClick={this.handlerFacebookLogIn} className={'form__icon-btn btn-facebook'}>
-            <img height={'30px'} src={facebookIcon}/>Zaloguj przez Facebooka
+            <img height={'30px'} src={facebookIcon} alt={'facebook-icon'}/>Zaloguj przez Facebooka
           </button>
           <button onClick={this.handlerGoogleLogIn} className={'form__icon-btn btn-google'}>
-            <img height={'30px'} src={googleIcon}/>Zaloguj przez Google
+            <img height={'30px'} src={googleIcon} alt={'google-icon'}/>Zaloguj przez Google
           </button>
         </Form>
       </div>

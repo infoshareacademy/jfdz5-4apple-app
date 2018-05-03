@@ -1,8 +1,7 @@
 import React from 'react'
 import firebase from 'firebase'
-import {Button} from 'react-bootstrap'
-import allProducts from "../state/allProducts";
-import {connect} from "react-redux";
+import { Button } from 'react-bootstrap'
+import { connect } from "react-redux";
 
 const FavsProducts = (props) => {
 
@@ -20,7 +19,7 @@ const FavsProducts = (props) => {
           // console.log('snapshot.val()', snapshot.val())
           // console.log('snapshot.val()[1]', snapshot.val()[1])
           // console.log('allProducts', props.allProducts)
-         console.log( props.allProducts.map((product) => {
+          console.log(props.allProducts.map((product) => {
             // console.log('product', product)
             // console.log('product.items', product.items)
             return product.items.filter((details) => {

@@ -1,10 +1,10 @@
 import React from 'react'
-import {connect} from "react-redux";
-import {Panel, PanelGroup, Checkbox, ControlLabel, FormControl, FormGroup} from "react-bootstrap";
+import { connect } from "react-redux";
+import { Panel, PanelGroup, Checkbox, ControlLabel, FormControl, FormGroup } from "react-bootstrap";
 
-import {createDetailsList} from "./_utils/filtersDetails"
+import { createDetailsList } from "./_utils/filtersDetails"
 import ButtonBlue from "./ButtonBlue";
-import {searchResults} from "../state/searching";
+import { searchResults } from "../state/searching";
 
 
 class Filters extends React.Component {
@@ -44,7 +44,7 @@ class Filters extends React.Component {
 
     const submitFilters = (event) => {
       event.preventDefault();
-      defineCover();
+      // defineCover();
 
       const setDetailsToUndefined = (product, detail) => {
         product[detail] = undefined;
@@ -54,7 +54,7 @@ class Filters extends React.Component {
       const searchedProducts = this.props.filteredResults.filter((product) => {
         return product.price >= parseInt(this.state.priceMin, 10) && product.price <= parseInt(this.state.priceMax, 10) ? product : null
       }).filter((product) => {
-        return product.female === (this.state.female || undefined ) || product.male === (this.state.male || undefined) || (this.state.female === undefined && this.state.male === undefined) ? product : null
+        return product.female === (this.state.female || undefined) || product.male === (this.state.male || undefined) || (this.state.female === undefined && this.state.male === undefined) ? product : null
       }).filter((product) => {
         product.cover = product.cover || [];
         return product.cover.includes(this.state.cover[0] || this.state.cover[1]) || product.cover.toString() === "" ? product : null
@@ -94,20 +94,20 @@ class Filters extends React.Component {
       });
     };
 
-    const defineCover = () => {
-      if (this.state.softCover === true && this.state.hardCover === true) {
-        this.state.cover = ["miękka", "twarda"]
-      }
-      else if (this.state.softCover === false && this.state.hardCover === true) {
-        this.state.cover = ["twarda"]
-      }
-      else if (this.state.softCover === true && this.state.hardCover === false) {
-        this.state.cover = ["miękka"]
-      }
-      else {
-        this.state.cover = ["miękka", "twarda"]
-      }
-    };
+    // const defineCover = () => {
+    //   if (this.state.softCover === true && this.state.hardCover === true) {
+    //     this.state.cover = ["miękka", "twarda"]
+    //   }
+    //   else if (this.state.softCover === false && this.state.hardCover === true) {
+    //     this.state.cover = ["twarda"]
+    //   }
+    //   else if (this.state.softCover === true && this.state.hardCover === false) {
+    //     this.state.cover = ["miękka"]
+    //   }
+    //   else {
+    //     this.state.cover = ["miękka", "twarda"]
+    //   }
+    // };
 
     const handleMinChange = event => this.setState({
       priceMin: event.currentTarget.value

@@ -1,6 +1,5 @@
 import React from 'react'
-import { ListGroupItem, Button } from "react-bootstrap";
-import firebase from 'firebase'
+import { ListGroupItem } from "react-bootstrap";
 
 const ShopList = (props) => {
 
