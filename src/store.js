@@ -41,6 +41,4 @@ firebase.auth().onAuthStateChanged(user => {
     }
 })
 
-
-
 export default store

@@ -33,7 +33,7 @@ export default (state = initialState, action) => {
         filteredResults: (action.searchedProducts).map(product => product.items)
           .reduce((result, next) => result.concat(next), [])
           .filter(product => [product.brand, product.model, product.title, product.author]
-            .some(name => name && name.includes(action.searchedItem)
+            .some(name => name && name.toUpperCase().includes(action.searchedItem.toUpperCase())
             )
           )
       };
