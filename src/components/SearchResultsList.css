@@ -49,6 +49,7 @@
         text-align: justify;
         margin: 0 15px;
     }
+
 }
 
 @media (min-width: 1024px) {
@@ -63,6 +64,16 @@
         justify-content: space-around;
         align-items: center;
         flex: 1;
+    }
+
+    .shops {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .shop__img {
+        margin: unset;
     }
 
 }

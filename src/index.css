@@ -12,7 +12,7 @@ body {
 .app-container {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
 }
 
@@ -47,6 +47,7 @@ body {
 
     .app-container {
         flex-direction: row;
+        align-items: flex-start;
     }
 
     .helper-container {

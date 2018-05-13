@@ -25,6 +25,20 @@
     border: solid 2px #002936;
 }
 
+.button--small {
+    width: auto;
+}
+
+.button-link {
+    text-decoration: none;
+    color: #dce7eb;
+}
+
+.button-link:hover, .button-link:active, .button-link:focus {
+    text-decoration: none;
+    color: #dce7eb;
+}
+
 .button--primary__with-icon {
     padding: 10px 10px 10px 30px;
 }
