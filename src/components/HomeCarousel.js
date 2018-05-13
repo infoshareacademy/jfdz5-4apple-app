@@ -1,11 +1,12 @@
 import React from 'react'
 import { Carousel, Thumbnail } from "react-bootstrap";
 import { connect } from "react-redux";
-import { Link, withRouter } from "react-router-dom";
+import { withRouter } from "react-router-dom";
 
 import ButtonBlue from "./ButtonBlue";
 import './HomeCarousel.css'
 import { removeDuplicates } from "./_utils/removeDuplicates";
+import { filterResults } from "../state/searching";
 
 const HomeCarousel = (props) => {
 
@@ -16,6 +17,12 @@ const HomeCarousel = (props) => {
   for (let i = 1; i <= 4; i++) {
     randomSuggestions.push(suggestions[Math.floor(Math.random() * suggestions.length)])
   }
+
+  const showProduct = event => {
+    event.preventDefault();
+    props.history.push('/results');
+    props.addSearchedResults(props.allProducts, event.target.parentNode.dataset.name);
+  };
 
   return (
     <div className='carousel-container'>
@@ -34,11 +41,12 @@ const HomeCarousel = (props) => {
                           className="thumbnail--name-details">{product.brand} {product.model} {product.author} {product.title} </h3>
                       </div>
                     </div>
-                    <div className="thumbnail--price-item">
+                    <div data-name={product.model || product.author} className="thumbnail--price-item">
                       <h3 className="thumbnail--price">już od: <span
                         className="thumbnail--price">{(product.price).toFixed(2)}</span> zł</h3>
-                      <Link to={`/results/details/${product.id}`}><ButtonBlue textContent={"Sprawdź"}/>
-                      </Link>
+                      <ButtonBlue helperClass={'button--small'}
+                                  func={showProduct}
+                                  textContent={"Sprawdź"}/>
                     </div>
                   </div>
                 </Thumbnail>
@@ -55,6 +63,10 @@ const HomeCarousel = (props) => {
 export default withRouter(
   connect(
     state => ({
+      filteredResults: state.searching.searchedProducts,
       allProducts: state.allProducts.data
     }),
+    dispatch => ({
+      addSearchedResults: (searchedProducts, searchedItem) => dispatch(filterResults(searchedProducts, searchedItem)),
+    })
   )(HomeCarousel))

@@ -2,9 +2,9 @@ import React from 'react'
 
 import './ButtonBlue.css'
 
-const ButtonBlue = ({textContent, type, helperClass}) => {
+const ButtonBlue = ({textContent, type, helperClass, func}) => {
   return (
-    <button type={type}
+    <button onClick={func} type={type}
             className={`button--primary ${helperClass}`}>
       {textContent}
     </button>
