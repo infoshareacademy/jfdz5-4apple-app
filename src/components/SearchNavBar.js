@@ -10,18 +10,30 @@ import { filterResults } from '../state/searching'
 import { allProductsPass } from "../state/allProducts";
 import ButtonBlue from "./ButtonBlue";
 import LogoText from "./LogoText";
-
+import { autocompleteInput } from "./_utils/autocompleteInput"
+import { removeDuplicates } from "./_utils/clearDuplicates";
 
 class SearchNavBar extends React.Component {
-
-  componentDidMount() {
-    this.props.allProductsPass(this.state.allProducts)
+  constructor(props) {
+    super(props);
+    this.state = {
+      searchedName: '',
+      searchedProducts: this.props.searchedProducts,
+      allProducts: this.props.searchedProducts,
+      inputSuggestions: []
+    };
   }
 
-  state = {
-    searchedName: '',
-    searchedProducts: this.props.searchedProducts,
-    allProducts: this.props.searchedProducts
+  componentDidMount() {
+    this.props.allProductsPass(this.state.allProducts);
+    this.state.allProducts.map(category => category.items)
+      .reduce((prevItem, currItem) => prevItem.concat(currItem), []).map(item => {
+      return item.brand ?
+        this.state.inputSuggestions.push(item.brand, item.model)
+        :
+        this.state.inputSuggestions.push(item.author, item.title)
+    });
+    autocompleteInput(document.querySelector('#nav-bar__input'), removeDuplicates(this.state.inputSuggestions))
   }
 
   signOutUser = () => {
@@ -30,20 +42,20 @@ class SearchNavBar extends React.Component {
     }).catch(error => {
       error(error.message)
     })
-  }
+  };
 
   handleChange = (event) => this.setState({
     searchedName: event.target.value
-  })
+  });
 
   handleSubmit = event => {
     event.preventDefault();
-    this.props.history.push('/results')
-    this.props.addSearchedResults(this.state.searchedProducts, this.state.searchedName)
+    this.props.history.push('/results');
+    this.props.addSearchedResults(this.state.searchedProducts, this.state.searchedName);
     this.setState({
       searchedName: '',
     })
-  }
+  };
 
   render() {
     return (
@@ -59,7 +71,9 @@ class SearchNavBar extends React.Component {
             <FormGroup bsClass={'nav-bar__content'}>
               <div className={'nav-bar__form'}>
                 <FormControl className="nav-bar__input"
+                             id='nav-bar__input'
                              type="text"
+                             autoComplete='off'
                              value={this.state.searchedName}
                              onChange={this.handleChange}
                              required
@@ -86,6 +100,7 @@ class SearchNavBar extends React.Component {
     )
   }
 }
+
 
 export default withRouter(
   connect(
