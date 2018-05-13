@@ -35,6 +35,10 @@
     margin: 2px;
 }
 
+.carousel__cell {
+    width: 100%;
+}
+
 .caption {
     padding: 0;
 }
@@ -93,6 +97,10 @@
     .thumbnail--cell {
         width: calc(100% / 3);
     }
+
+    .carousel__cell {
+        width: 100%;
+    }
 }
 
 @media (min-width: 993px) {
@@ -104,6 +112,10 @@
 @media (max-width: 992px) {
     .thumbnail--cell {
         width: calc(100% / 2);
+    }
+
+    .carousel__cell {
+        width: 100%;
     }
 
     .thumbnail--price {

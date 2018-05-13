@@ -14,6 +14,7 @@ body {
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 50px;
 }
 
 .content-container {
@@ -48,6 +49,7 @@ body {
     .app-container {
         flex-direction: row;
         align-items: flex-start;
+        padding-bottom: 0;
     }
 
     .helper-container {

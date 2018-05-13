@@ -3,6 +3,7 @@ import React from 'react'
 import DataFetcher from "../DataFetcher/DataFetcher";
 import Categories from "../Categories";
 import SearchNavBar from "../SearchNavBar";
+import HomeCarousel from '../HomeCarousel'
 
 const HomeView = () => {
   return (
@@ -13,8 +14,10 @@ const HomeView = () => {
         component={SearchNavBar}
         propName="searchedProducts"
       />
-      <Categories/>
       <div className={'app-container'}>
+        <Categories/>
+        <HomeCarousel/>
+        <div> </div>
       </div>
     </div>
   )

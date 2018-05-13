@@ -11,7 +11,7 @@ import { allProductsPass } from "../state/allProducts";
 import ButtonBlue from "./ButtonBlue";
 import LogoText from "./LogoText";
 import { autocompleteInput } from "./_utils/autocompleteInput"
-import { removeDuplicates } from "./_utils/clearDuplicates";
+import { removeDuplicates } from "./_utils/removeDuplicates";
 
 class SearchNavBar extends React.Component {
   constructor(props) {
