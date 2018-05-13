@@ -10,8 +10,8 @@ class Categories extends React.Component {
 
   render() {
     return (
-      <div>
-        <ListGroup className={'categories'}>
+      <div className='categories'>
+        <ListGroup  className='categories-desktop'>
           {this.props.allProducts.map((product, index) => {
             return <CategoriesItem key={index} category={product.category} items={product.items}/>
           })}

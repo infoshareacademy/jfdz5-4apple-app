@@ -102,32 +102,6 @@ class Filters extends React.Component {
         cover: event.target.value,
       });
     };
-    // const defineCover = () => {
-    //   if (this.state.softCover === true && this.state.hardCover === true) {
-    //     this.setState({
-    //       ...this.state,
-    //       cover: ["miękka", "twarda"]
-    //     });
-    //   }
-    //   else if (this.state.softCover === false && this.state.hardCover === true) {
-    //     this.setState({
-    //       ...this.state,
-    //       cover: ["twarda"]
-    //     });
-    //   }
-    //   else if (this.state.softCover === true && this.state.hardCover === false) {
-    //     this.setState({
-    //       ...this.state,
-    //       cover: ["miękka"]
-    //     });
-    //   }
-    //   else {
-    //     this.setState({
-    //       ...this.state,
-    //       cover: ["miękka", "twarda"]
-    //     });
-    //   }
-    // };
 
     const handleMinChange = event => this.setState({
       priceMin: event.currentTarget.value
@@ -164,19 +138,19 @@ class Filters extends React.Component {
                     </div>
                     : null
                   }
-                  {categories.includes("Książki") ?
-                    <div>
-                      <ControlLabel>Okładka</ControlLabel>
-                      <FormControl onChange={updateCoverSelectState} componentClass="select">
-                        {}
-                        <option value="select">Wybierz okładkę</option>
-                        {createDetailsList(results, "cover").map((value, index) => {
-                          return <option key={index} value={value}>{value}</option>
-                        })}
-                      </FormControl>
-                    </div>
-                    : null}
                 </div>
+                {categories.includes("Książki") ?
+                  <div>
+                    <ControlLabel>Okładka</ControlLabel>
+                    <FormControl onChange={updateCoverSelectState} componentClass="select">
+                      {}
+                      <option value="select">Wybierz okładkę</option>
+                      {createDetailsList(results, "cover").map((value, index) => {
+                        return <option key={index} value={value}>{value}</option>
+                      })}
+                    </FormControl>
+                  </div>
+                  : null}
                 {categories.includes("RTV") || categories.includes("Obuwie") ?
                   <FormGroup controlId="formControlsSelect">
                     <ControlLabel>Rozmiar</ControlLabel>
