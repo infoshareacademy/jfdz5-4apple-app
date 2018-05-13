@@ -8,17 +8,20 @@ import { searchResults } from "../state/searching";
 
 
 class Filters extends React.Component {
-  state = {
-    priceMin: "0",
-    priceMax: "1000000000",
-    female: undefined,
-    male: undefined,
-    hardCover: undefined,
-    softCover: undefined,
-    cover: undefined,
-    color: undefined,
-    size: undefined
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      priceMin: "0",
+      priceMax: "1000000000",
+      female: undefined,
+      male: undefined,
+      hardCover: undefined,
+      softCover: undefined,
+      cover: undefined,
+      color: undefined,
+      size: undefined
+    }
+  }
 
   render() {
     const initialState = {
@@ -44,7 +47,6 @@ class Filters extends React.Component {
 
     const submitFilters = (event) => {
       event.preventDefault();
-      defineCover();
 
       const setDetailsToUndefined = (product, detail) => {
         product[detail] = undefined;
@@ -57,13 +59,13 @@ class Filters extends React.Component {
         return product.female === (this.state.female || undefined) || product.male === (this.state.male || undefined) || (this.state.female === undefined && this.state.male === undefined) ? product : null
       }).filter((product) => {
         product.cover = product.cover || [];
-        return product.cover.includes(this.state.cover[0] || this.state.cover[1]) || product.cover.toString() === "" ? product : null
+        return product.cover.includes(this.state.cover) || product.cover.toString() === "" || this.state.cover === undefined ? product : null
       }).filter((product) => {
         product.size = product.size || [];
         return product.size.includes(parseInt(this.state.size, 10)) || product.size.includes(this.state.size) || product.size.toString() === "" || this.state.size === undefined ? product : null
       }).filter((product) => {
         product.color = product.color || [];
-        return product.color.includes(this.state.color) || product.size.toString() === "" || this.state.color === undefined ? product : null
+        return product.color.includes(this.state.color) || product.color.toString() === "" || this.state.color === undefined ? product : null
       }).map((product) => {
         return product.size.toString() === "" ? setDetailsToUndefined(product, "size") : product
       }).map((product) => {
@@ -94,20 +96,38 @@ class Filters extends React.Component {
       });
     };
 
-    const defineCover = () => {
-      if (this.state.softCover === true && this.state.hardCover === true) {
-        this.state.cover = ["miękka", "twarda"]
-      }
-      else if (this.state.softCover === false && this.state.hardCover === true) {
-        this.state.cover = ["twarda"]
-      }
-      else if (this.state.softCover === true && this.state.hardCover === false) {
-        this.state.cover = ["miękka"]
-      }
-      else {
-        this.state.cover = ["miękka", "twarda"]
-      }
+    const updateCoverSelectState = (event) => {
+      this.setState({
+        ...this.state,
+        cover: event.target.value,
+      });
     };
+    // const defineCover = () => {
+    //   if (this.state.softCover === true && this.state.hardCover === true) {
+    //     this.setState({
+    //       ...this.state,
+    //       cover: ["miękka", "twarda"]
+    //     });
+    //   }
+    //   else if (this.state.softCover === false && this.state.hardCover === true) {
+    //     this.setState({
+    //       ...this.state,
+    //       cover: ["twarda"]
+    //     });
+    //   }
+    //   else if (this.state.softCover === true && this.state.hardCover === false) {
+    //     this.setState({
+    //       ...this.state,
+    //       cover: ["miękka"]
+    //     });
+    //   }
+    //   else {
+    //     this.setState({
+    //       ...this.state,
+    //       cover: ["miękka", "twarda"]
+    //     });
+    //   }
+    // };
 
     const handleMinChange = event => this.setState({
       priceMin: event.currentTarget.value
@@ -146,17 +166,14 @@ class Filters extends React.Component {
                   }
                   {categories.includes("Książki") ?
                     <div>
-                      <ControlLabel> Okładka </ControlLabel>
-                      <Checkbox onClick={() => {
-                        updateCheckboxState('hardCover')
-                      }}>
-                        Twarda
-                      </Checkbox>
-                      <Checkbox onClick={() => {
-                        updateCheckboxState('softCover')
-                      }}>
-                        Miękka
-                      </Checkbox>
+                      <ControlLabel>Okładka</ControlLabel>
+                      <FormControl onChange={updateCoverSelectState} componentClass="select">
+                        {}
+                        <option value="select">Wybierz okładkę</option>
+                        {createDetailsList(results, "cover").map((value, index) => {
+                          return <option key={index} value={value}>{value}</option>
+                        })}
+                      </FormControl>
                     </div>
                     : null}
                 </div>
@@ -181,7 +198,7 @@ class Filters extends React.Component {
                   </FormGroup>
                   : null}
               </div>
-              <ButtonBlue type={"submit"} textContent="Filtruj"/>
+              <ButtonBlue type={"submit"} textContent="Filtruj" helperClass={'button--small'}/>
             </form>
           </Panel>
         </PanelGroup>

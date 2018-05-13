@@ -77,7 +77,6 @@
 }
 
 .autocomplete-items div:hover {
-    /*when hovering an item:*/
     background-color: #dce7eb;
 }
 

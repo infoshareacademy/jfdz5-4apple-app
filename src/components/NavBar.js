@@ -20,7 +20,7 @@ class NavBar extends React.Component {
             <NavItem eventKey={1} href="#">
               Home
             </NavItem>
-            <NavItem eventKey={2} href="http://www.4apple.jfdz5.is-academy.pl">
+            <NavItem href="http://www.4apple.jfdz5.is-academy.pl" className="nav-bar__link">
               Landing Page
             </NavItem>
           </Nav>

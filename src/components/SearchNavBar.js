@@ -85,7 +85,7 @@ class SearchNavBar extends React.Component {
               </div>
               <Nav pullRight className={'nav-bar__right'}>
                 <LinkContainer to={'/favs'}>
-                  <NavItem eventKey={1}>
+                  <NavItem disabled={true} eventKey={1}>
                     Ulubione
                   </NavItem>
                 </LinkContainer>
