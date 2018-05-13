@@ -13,6 +13,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    flex-direction: column;
 }
 
 .content-container {
@@ -21,11 +22,15 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
-    padding: 0 15px;
+    padding: 0 10px;
 }
 
 .helper-container {
     height: 60px;
+}
+
+.container-narrow {
+    padding: 0;
 }
 
 @media (min-width: 768px) {
@@ -38,6 +43,10 @@ body {
         justify-content: center;
         position: relative;
         min-height: 70px;
+    }
+
+    .app-container {
+        flex-direction: row;
     }
 
     .helper-container {
@@ -55,39 +64,4 @@ body {
     .container-narrow {
         width: 970px;
     }
-}
-
-
-
-
-
-
-
-
-
-
-.autocomplete {
-    position: relative;
-    display: inline-block;
-}
-
-.autocomplete-items {
-    position: absolute;
-    border: 1px solid #d4d4d4;
-    border-bottom: none;
-    border-top: none;
-    z-index: 99;
-    top: 100%;
-    left: 0;
-    right: 0;
-}
-.autocomplete-items div {
-    padding: 10px;
-    cursor: pointer;
-    background-color: #fff;
-    border-bottom: 1px solid #d4d4d4;
-}
-.autocomplete-items div:hover {
-    /*when hovering an item:*/
-    background-color: #dce7eb;
 }

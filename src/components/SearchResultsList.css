@@ -19,7 +19,7 @@
 }
 
 .product__container {
-    margin: 2px;
+    padding: 10px;
 }
 
 .product--name {
@@ -31,7 +31,7 @@
     flex: 0.75;
     justify-content: space-around;
     flex-direction: column;
-    margin: 0 2%;
+    margin: 0 5px;
     text-align: center;
 }
 
@@ -47,8 +47,8 @@
 
     .product__details {
         text-align: justify;
+        margin: 0 15px;
     }
-
 }
 
 @media (min-width: 1024px) {
