@@ -22,7 +22,7 @@
     padding: 10px;
 }
 
-.product--name {
+.product__name {
     text-align: center;
 }
 
@@ -48,6 +48,10 @@
     .product__details {
         text-align: justify;
         margin: 0 15px;
+    }
+
+    .product__name {
+        text-align: center;
     }
 
 }

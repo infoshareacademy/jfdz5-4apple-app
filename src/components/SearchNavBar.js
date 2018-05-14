@@ -1,7 +1,7 @@
 import React from 'react'
 import { withRouter, Link } from 'react-router-dom'
 import { LinkContainer } from 'react-router-bootstrap'
-import { Navbar, FormGroup, FormControl, NavItem, Nav } from 'react-bootstrap'
+import { Navbar, FormGroup, NavItem, Nav } from 'react-bootstrap'
 import { connect } from 'react-redux'
 import firebase from 'firebase'
 
@@ -10,8 +10,8 @@ import { filterResults } from '../state/searching'
 import { allProductsPass } from "../state/allProducts";
 import ButtonBlue from "./ButtonBlue";
 import LogoText from "./LogoText";
-import { autocompleteInput } from "./_utils/autocompleteInput"
 import { removeDuplicates } from "./_utils/removeDuplicates";
+import ReactAutocomplete from 'react-autocomplete'
 
 class SearchNavBar extends React.Component {
   constructor(props) {
@@ -20,7 +20,8 @@ class SearchNavBar extends React.Component {
       searchedName: '',
       searchedProducts: this.props.searchedProducts,
       allProducts: this.props.searchedProducts,
-      inputSuggestions: []
+      inputSuggestions: [],
+      inputSuggestionsFiltered: []
     };
   }
 
@@ -33,7 +34,8 @@ class SearchNavBar extends React.Component {
         :
         this.state.inputSuggestions.push(item.author, item.title)
     });
-    autocompleteInput(document.querySelector('#nav-bar__input'), removeDuplicates(this.state.inputSuggestions))
+    this.parseItemsToObj(this.state.inputSuggestions);
+
   }
 
   signOutUser = () => {
@@ -44,10 +46,6 @@ class SearchNavBar extends React.Component {
     })
   };
 
-  handleChange = (event) => this.setState({
-    searchedName: event.target.value
-  });
-
   handleSubmit = event => {
     event.preventDefault();
     this.props.history.push('/results');
@@ -56,6 +54,15 @@ class SearchNavBar extends React.Component {
       searchedName: '',
     })
   };
+
+  parseItemsToObj = arr => {
+    this.setState({
+      inputSuggestionsFiltered: removeDuplicates(arr).map((item, index) => {
+        return {id: index, label: item}
+      })
+    })
+  };
+
 
   render() {
     return (
@@ -70,14 +77,39 @@ class SearchNavBar extends React.Component {
           <form className="search-form" onSubmit={this.handleSubmit}>
             <FormGroup bsClass={'nav-bar__content'}>
               <div className={'nav-bar__form'}>
-                <FormControl className="nav-bar__input"
-                             id='nav-bar__input'
-                             type="text"
-                             autoComplete='off'
-                             value={this.state.searchedName}
-                             onChange={this.handleChange}
-                             required
-                             placeholder="Znajdź produkt"/>
+                <ReactAutocomplete
+                  inputProps={{
+                    className: 'nav-bar__input form-control',
+                    placeholder: "Znajdź produkt",
+                    required: true
+                  }}
+                  wrapperStyle={{width: '100%'}}
+                  menuStyle={{
+                    borderRadius: '3px',
+                    boxShadow: '0 2px 12px rgba(0, 0, 0, 0.1)',
+                    background: '#fff',
+                    padding: '5px 10px',
+                    fontSize: '90%',
+                    position: 'fixed',
+                    overflow: 'auto',
+                    maxHeight: '20%',
+                    zIndex: '1'
+                  }}
+                  items={this.state.inputSuggestionsFiltered}
+                  shouldItemRender={(item, value) => item.label.toLowerCase().indexOf(value.toLowerCase()) > -1}
+                  getItemValue={item => item.label}
+                  renderItem={(item, highlighted) =>
+                    <div
+                      key={item.id}
+                      style={{backgroundColor: highlighted ? '#dce7eb' : 'transparent'}}
+                    >
+                      {item.label}
+                    </div>
+                  }
+                  value={this.state.searchedName}
+                  onChange={e => this.setState({searchedName: e.target.value})}
+                  onSelect={searchedName => this.setState({searchedName})}
+                />
                 <ButtonBlue type="submit"
                             textContent={<i className={'glyphicon glyphicon-search'}/>}
                             helperClass={'search-button'}>
@@ -90,7 +122,7 @@ class SearchNavBar extends React.Component {
                   </NavItem>
                 </LinkContainer>
                 <NavItem onClick={this.signOutUser} eventKey={2}>
-                  Wyloguj<span style={{color: 'transparent'}}>_</span>się
+                  <span style={{whiteSpace: 'nowrap'}}> Wyloguj się</span>
                 </NavItem>
               </Nav>
             </FormGroup>
@@ -100,7 +132,6 @@ class SearchNavBar extends React.Component {
     )
   }
 }
-
 
 export default withRouter(
   connect(

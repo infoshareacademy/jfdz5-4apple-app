@@ -13,7 +13,7 @@ const ShopList = (props) => {
             <div className="product__container shops">
               <img className="shop__img" alt="product" src={product.image}/>
                 <div className="product__description">
-                  <div className="product--name">
+                  <div className="product__name">
                     <h2>{product.name}{product.author} {product.title} </h2>
                   </div>
                 </div>
