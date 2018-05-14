@@ -11,7 +11,7 @@ const ShopList = (props) => {
         return (
           <ListGroupItem key={index}>
             <div className="product__container shops">
-              <img className="shop__img" alt="product" src={product.image}/>
+              <img className="shop__img" alt={product.name} src={product.image}/>
                 <div className="product__description">
                   <div className="product__name">
                     <h2>{product.name}{product.author} {product.title} </h2>
