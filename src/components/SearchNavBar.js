@@ -35,7 +35,6 @@ class SearchNavBar extends React.Component {
         this.state.inputSuggestions.push(item.author, item.title)
     });
     this.parseItemsToObj(this.state.inputSuggestions);
-
   }
 
   signOutUser = () => {
@@ -57,7 +56,7 @@ class SearchNavBar extends React.Component {
 
   parseItemsToObj = arr => {
     this.setState({
-      inputSuggestionsFiltered: removeDuplicates(arr).map((item, index) => {
+      inputSuggestionsFiltered: removeDuplicates(arr.sort()).map((item, index) => {
         return {id: index, label: item}
       })
     })
