@@ -5,9 +5,8 @@ import auth, {addNewUser} from './state/auth'
 import searching from './state/searching'
 import presentationOfResults from './state/presentationOfResults'
 import allProducts from "./state/allProducts";
-import searchingCategories from "./state/searchingCategories";
 
-import favs, {setFavs} from './state/favs'
+import {setFavs} from './state/favs'
 const config = {
   apiKey: "AIzaSyBfMc_ewDjLN4mtSbeufm9IiKtIxg9peHM",
   authDomain: "react-app-e2827.firebaseapp.com",
@@ -24,7 +23,6 @@ const reducer = combineReducers({
   searching,
   presentationOfResults,
   allProducts,
-  searchingCategories
 })
 
 
@@ -42,7 +40,5 @@ firebase.auth().onAuthStateChanged(user => {
         })
     }
 })
-
-
 
 export default store

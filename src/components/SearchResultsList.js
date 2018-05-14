@@ -1,6 +1,6 @@
 import React from 'react'
 
-import {ListGroup} from "react-bootstrap";
+import { ListGroup, Thumbnail } from "react-bootstrap";
 import '../components/SearchResultsList.css'
 import {connect} from "react-redux";
 
@@ -15,7 +15,7 @@ class SearchResultsList extends React.Component {
     const searchResults = this.props.filteredResults;
 
     return (
-      <div className="container products--container">
+      <Thumbnail className="container-narrow products--container">
         <ListGroup>{
           searchResults && searchResults.toString() === "" ?
             <NoItemFound/>
@@ -23,7 +23,7 @@ class SearchResultsList extends React.Component {
             <SearchResultsListItem searchResults={searchResults}/>
         }
         </ListGroup>
-      </div>
+      </Thumbnail>
     )
   }
 }

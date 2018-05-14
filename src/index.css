@@ -1,5 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700,800');
+
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('img/background.jpg');
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.app-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.content-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    padding: 0 10px;
+}
+
+.helper-container {
+    height: 60px;
+}
+
+.container-narrow {
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .container-narrow {
+        width: 550px;
+    }
+
+    .content-container {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        min-height: 70px;
+    }
+
+    .app-container {
+        flex-direction: row;
+        align-items: flex-start;
+        padding-bottom: 0;
+    }
+
+    .helper-container {
+        height: 70px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-narrow {
+        width: 770px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-narrow {
+        width: 970px;
+    }
 }

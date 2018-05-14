@@ -1,5 +1,19 @@
+.panel-group{
+    margin-bottom: 0;
+    box-shadow: rgba(0, 0, 0, 0.20) 0 2px 20px;
+
+}
+
 .panel {
     text-align: center;
+    border: none;
+    background-color: #dce7eb;
+}
+
+.panel-default > .panel-heading{
+    background-image: none;
+    background-color: #0A5894;
+    color: #dce7eb;
 }
 
 .filters--container {
@@ -7,8 +21,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px #ebebeb solid;
+    border: 1px #0A5894 solid;
     margin-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .price-filter {

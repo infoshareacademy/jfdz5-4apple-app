@@ -1,0 +1,85 @@
+.navbar {
+    margin-bottom: 0;
+}
+
+.nav-bar {
+    background-color: #dce7eb;
+    background-image: none;
+    border-radius: 0;
+    padding: 0 10% 0;
+    min-height: 60px;
+    box-shadow: rgba(0, 0, 0, 0.20) 0 2px 20px;
+}
+
+.navbar-default .nav-bar__right > li > a {
+    color: #0A5894;
+}
+
+.navbar-default .nav-bar__right > li > a:hover {
+    color: #002936;
+}
+
+.nav-bar__content {
+    padding-top: 20px;
+}
+
+.nav-bar__form {
+    min-width: 50%;
+    display: flex;
+    position: relative;
+}
+
+.nav-bar__input {
+    height: 40px;
+}
+
+.navbar-toggle {
+    background-color: #0A5894;
+    height: 40px;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #0A5894;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #cbd6da;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    background-image: none;
+    box-shadow: none;
+    color: #0A5894;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-bar {
+        padding: 0 50px 0;
+        display: flex;
+        align-items: center;
+        height: 70px;
+    }
+
+    .nav-bar__logo {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 30px !important;
+    }
+
+    .nav-bar__right {
+        margin-right: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .nav-bar__content {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        height: 70px;
+        padding: 0;
+    }
+}

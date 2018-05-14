@@ -1,17 +1,14 @@
 import React from 'react'
 
 import './ButtonBlue.css'
-import {Button} from "react-bootstrap";
 
-const ButtonBlue = ({textContent, type}) => {
+const ButtonBlue = ({textContent, type, helperClass, func}) => {
   return (
-    <Button type={type}
-            bsSize="large"
-            bsStyle="primary"
-            className="button--continue">
+    <button onClick={func} type={type}
+            className={`button--primary ${helperClass}`}>
       {textContent}
-    </Button>
+    </button>
   )
-}
+};
 
 export default ButtonBlue

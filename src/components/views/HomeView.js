@@ -1,36 +1,27 @@
 import React from 'react'
 
-import SearchBar from '../SearchBar'
 import DataFetcher from "../DataFetcher/DataFetcher";
-import Viewed from "../Viewed";
 import Categories from "../Categories";
+import SearchNavBar from "../SearchNavBar";
+import HomeCarousel from '../HomeCarousel'
 
 const HomeView = () => {
-  const initialState = [];
   return (
     <div>
+      <div className={'helper-container'}> </div>
       <DataFetcher
         dataUrl={'/data/products.json'}
-        component={SearchBar}
+        component={SearchNavBar}
         propName="searchedProducts"
       />
-      <DataFetcher
-        dataUrl={'/data/products.json'}
-        component={Categories}
-        propName="categoriesProducts"
-        propCategories={initialState}
-        propInitialName="initialState"
-      />
-      <DataFetcher
-        dataUrl={'/data/products.json'}
-        component={Viewed}
-        propName="searchedProducts"
-      />
-
+      <div className={'app-container'}>
+        <Categories/>
+        <HomeCarousel/>
+        <div> </div>
+      </div>
     </div>
   )
 }
-
 
 export default HomeView
 

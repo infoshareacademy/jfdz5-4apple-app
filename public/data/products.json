@@ -13,7 +13,7 @@
             "name": "NIKE",
             "productId": 1,
             "localPrice": 419,
-            "image": "http://s1.thingpic.com/images/d3/nASUUAGs2WgUawiKL4bdrYxH.jpeg",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/6346a043dc5f9f9bfb4fb540c90a6905-full.jpg",
             "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287",
             "size": [
               41,
@@ -29,7 +29,7 @@
             "name": "BUTYJANA",
             "productId": 2,
             "localPrice": 299.99,
-            "image": "http://www.galeria-nowyswiat.pl/images/sklepy//butyjana/butyjana.pl_logo.jpg",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/41803953b27249a6dec2210a8e778856-full.jpg",
             "url": "https://www.butyjana.pl/obuwie_damskie/obuwie_sportowe/nike_air_force_1_gs_314192-117.html",
             "size": [
               36,
@@ -56,11 +56,11 @@
         "female": true,
         "male": true,
         "available": true,
-        "image": "https://images.nike.com/is/image/DotCom/PDP_HERO/315122_111_A_PREM/buty-meskie-air-force-1-07.jpg",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/7cc4d6d1e5c798bfedef470241370737-full.jpg",
         "description": "Buty męskie Nike Air Force 1 '07 to nowoczesna odsłona legendarnego modelu, stanowiąca mieszankę klasyki i nowości."
       },
       {
-        "id":2,
+        "id": 2,
         "brand": "Nike",
         "model": "Flex Adapt TR",
         "category": "Obuwie",
@@ -70,7 +70,7 @@
             "name": "NIKE",
             "productId": 3,
             "localPrice": 205.00,
-            "image": "http://s1.thingpic.com/images/d3/nASUUAGs2WgUawiKL4bdrYxH.jpeg",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/6346a043dc5f9f9bfb4fb540c90a6905-full.jpg",
             "url": "https://store.nike.com/pl/pl_pl/pd/buty-treningowe-flex-adapt-tr/pid-10945118/pgid-12107970?cp=euns_kw_pla%21pl%21goo%21c%21%21213773252829&gclid=EAIaIQobChMI5t6vgIiB1gIVEM-yCh2_jAvBEAQYASABEgK_ivD_BwE&gclsrc=aw.ds",
             "size": [
               35,
@@ -101,7 +101,7 @@
         "female": true,
         "male": false,
         "available": true,
-        "image": "https://images.nike.com/is/image/DotCom/PDP_HERO/831579_001_A_PREM/buty-treningowe-flex-adapt-tr.jpg",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/b8eac3715161b1cea56f5e85913541e2-full.jpg",
         "description": "Damskie buty treningowe Nike Flex Adapt TR mają lekką cholewkę z siateczki i system linek obejmujących śródstopie, dzięki czemu są przewiewne oraz zapewniają wsparcie i idealnie dopasowują się do stopy."
       }
     ]
@@ -122,28 +122,28 @@
           "49''"
         ],
         "available": true,
-        "image": "https://stat-s4.ms-online.pl/media/cache/gallery/rc/vbghdzeg/images/20/20397716/samsung-m5672-1.jpg",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/4d6da0ec434270b93cd3287bcc9105bc-full.jpg",
         "description": "Telewizor z podświetleniem LED. Posiada rozdzielczość Full HD 1920 x 1080 oraz funkcję Smart TV.Korzyści: Full High Definition: większa czystość i szczegółowość obrazu. Wbudowany tuner do odbioru programów satelitarnych (DVB-S2). Technologia PurColour: wiernie odwzorowuje szerszy zakres barw co sprawia, że obraz staje się znacznie bardziej naturalny. Smart TV: aplikacje, przeglądarka internetowa PVR: możliwość nagrywania programów na podłączony nośnik USB",
         "shops": [
           {
             "name": "SATURN",
             "productId": 4,
             "localPrice": 2389,
-            "image": "http://zaglebie.lubin.pl/wp-content/uploads/2016/04/saturn_logo_1a.jpg",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/1ec2ad34e5de1503627edfce985cd3af-full.jpg",
             "url": "https://saturn.pl/rtv-i-telewizory/telewizor-samsung-ue49m5672au?querystring=UE49M5672AU"
           },
           {
             "name": "MEDIA MARKT",
             "productId": 5,
             "localPrice": 2399,
-            "image": "http://3.bp.blogspot.com/-MCckJgb3-iw/VK1y2X7ZVBI/AAAAAAAAIMc/jP-rCi12Ogg/w1200-h630-p-k-no-nu/Logo%2BMediaMarkt.png",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/61742213fc080ff0869770d24a825302-full.jpg",
             "url": "https://mediamarkt.pl/rtv-i-telewizory/telewizor-samsung-ue49m5672au?gclid=CjwKCAjwjJjOBRBVEiwAfvnvBFFGAlwwRbuGcdNZnRmA2dReo1AlqjzcJ8dCZfyPhjDXhu54sAeD3BoC7xgQAvD_BwE"
           },
           {
             "name": "REDCOON",
             "productId": 6,
             "localPrice": 2398,
-            "image": "https://i.tanio.co/sd/2017/06/redcoon-promocje.jpg",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/38c47c43cd04417131ec11b1f8bc3240-full.jpg",
             "url": "https://redcoon.pl/telewizory/telewizor-samsung-ue49m5672au?utm_source=ceneo.pl&utm_medium=cpc"
           }
         ]
@@ -161,28 +161,28 @@
           "49''"
         ],
         "available": true,
-        "image": "https://stat-m4.ms-online.pl/media/cache/gallery/rc/4fijq8pt/images/20/20397744/mu6442u.jpg",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/a551af2af29a7de099433bb0e478a6d6-full.jpg",
         "description": "Technologia Active Crystal Colour sprawia, że kolory są dokładniej odwzorowane i zauważalnie naturalniejsze. To zasługa ulepszonego podświetlenia ekranu, dzięki któremu zwiększyła się nie tylko jakość obrazu, ale zmniejszyło też zużycie energii.",
         "shops": [
           {
             "name": "SATURN",
             "productId": 7,
             "localPrice": 3099,
-            "image": "http://zaglebie.lubin.pl/wp-content/uploads/2016/04/saturn_logo_1a.jpg",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/1ec2ad34e5de1503627edfce985cd3af-full.jpg",
             "url": "https://saturn.pl/rtv-i-telewizory/telewizor-samsung-ue49mu6442u?utm_source=ceneo&utm_medium=cpc&utm_term=ceneo&utm_campaign=xml"
           },
           {
             "name": "MEDIA MARKT",
             "productId": 8,
             "localPrice": 3099,
-            "image": "http://3.bp.blogspot.com/-MCckJgb3-iw/VK1y2X7ZVBI/AAAAAAAAIMc/jP-rCi12Ogg/w1200-h630-p-k-no-nu/Logo%2BMediaMarkt.png",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/61742213fc080ff0869770d24a825302-full.jpg",
             "url": "https://mediamarkt.pl/rtv-i-telewizory/telewizor-samsung-ue49mu6442u?utm_source=ceneo&utm_medium=cpc&utm_term=ceneo&utm_campaign=xml"
           },
           {
             "name": "REDCOON",
             "productId": 9,
             "localPrice": 3098,
-            "image": "https://i.tanio.co/sd/2017/06/redcoon-promocje.jpg",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/38c47c43cd04417131ec11b1f8bc3240-full.jpg",
             "url": "https://redcoon.pl/telewizory/telewizor-samsung-ue49mu6442u?utm_source=ceneo.pl&utm_medium=cpc"
           }
         ]
@@ -192,19 +192,21 @@
         "brand": "Philips",
         "model": "49PUS6561/12",
         "price": 2999,
-        "color": ["srebrny"],
+        "color": [
+          "srebrny"
+        ],
         "size": [
           "49''"
         ],
         "available": true,
-        "image": "https://f01.esfr.pl/foto/3/12616115619/6bf616e6538ac1d93f874d6fc2b61fe/philips-49pus6561-12,12616115619_7.jpg",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/e3b9b034ad210ab6feec950dd91ee436-full.jpg",
         "description": "Pięknie wykonane telewizory Philips z serii 6500 są już dostępne. Ciesz się niesamowitą jakością obrazu 4K Ultra HD i otwórz drzwi do świata rozrywki dzięki systemowi Android TV. Wąska obudowa i wyjątkowa podstawa Arc dopełniają wygląd telewizora i stanowią eleganckie, stylowe wykończenie.",
         "shops": [
           {
             "name": "EURO",
             "productId": 10,
             "localPrice": 2999,
-            "image": "https://f00.esfr.pl/img/desktop/euro/logo.png",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/1ec2ad34e5de1503627edfce985cd3af-full.jpg",
             "url": "https://www.euro.com.pl/telewizory-led-lcd-plazmowe/philips-49pus6561-12.bhtml?from=ceneo&p=2999.00&cr=0&t=20170923-0926"
           }
         ]
@@ -222,35 +224,35 @@
           "49''"
         ],
         "available": true,
-        "image": "https://stat-m6.ms-online.pl/media/cache/gallery/rc/ghlqqhid/images/20/20390786/TX_55EX_633E_2.jpg",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/79c4badfcfcb26755cb6dc4e472b829b-full.jpg",
         "description": "Zaawansowansowane przetwarzaniu obrazu zapewnia precyzyjne odwzorowanie realistycznych barw. Aby zapewnić piękny, realistyczny i wierny obraz technologia 4K HDR firmy Panasonic korzysta z całości naszej wiedzy fachowej.",
         "shops": [
           {
             "name": "MATRIX MEDIA",
             "productId": 11,
             "localPrice": 3749,
-            "image": "https://matrixmedia.pl/skin/frontend/matrixmedia/default/gfx/naglowek/logo.png",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/c857a88feb6c2d164fa0d0cd42930543-full.jpg",
             "url": "https://matrixmedia.pl/telewizor-panasonic-tx-55ex633e.html?ceneo_spo=true"
           },
           {
             "name": "SATURN",
             "productId": 12,
             "localPrice": 3798,
-            "image": "http://zaglebie.lubin.pl/wp-content/uploads/2016/04/saturn_logo_1a.jpg",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/1ec2ad34e5de1503627edfce985cd3af-full.jpg",
             "url": "https://saturn.pl/rtv-i-telewizory/telewizor-samsung-ue49m5672au?querystring=UE49M5672AU"
           },
           {
             "name": "MEDIA MARKT",
             "productId": 13,
             "localPrice": 3799,
-            "image": "http://3.bp.blogspot.com/-MCckJgb3-iw/VK1y2X7ZVBI/AAAAAAAAIMc/jP-rCi12Ogg/w1200-h630-p-k-no-nu/Logo%2BMediaMarkt.png",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/61742213fc080ff0869770d24a825302-full.jpg",
             "url": "https://mediamarkt.pl/rtv-i-telewizory/telewizor-samsung-ue49m5672au?gclid=CjwKCAjwjJjOBRBVEiwAfvnvBFFGAlwwRbuGcdNZnRmA2dReo1AlqjzcJ8dCZfyPhjDXhu54sAeD3BoC7xgQAvD_BwE"
           },
           {
             "name": "REDCOON",
             "productId": 14,
             "localPrice": 3748,
-            "image": "https://i.tanio.co/sd/2017/06/redcoon-promocje.jpg",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/38c47c43cd04417131ec11b1f8bc3240-full.jpg",
             "url": "https://redcoon.pl/telewizory/telewizor-samsung-ue49m5672au?utm_source=ceneo.pl&utm_medium=cpc"
           }
         ]
@@ -268,42 +270,42 @@
           "65''"
         ],
         "available": true,
-        "image": "https://images.morele.net/full/1371318_0_f.jpg",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/addd01668474548ffda695d5b1090ba4-full.jpg",
         "description": "Seria EX600 zapewnia żywy obraz 4K HDR i funkcje inteligentne, zaś umożliwiająca konfigurowanie konstrukcja Switch Design pozwala dopasować telewizor do każdego wnętrza.",
         "shops": [
           {
             "name": "MORELE NET",
             "productId": 15,
             "localPrice": 5334.54,
-            "image": "https://www.morele.net/static/img/shop/img-morele-logo.png",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/a3e605bc06aefa011df3bd4ffd2c2d45-full.jpg",
             "url": "https://www.morele.net/telewizor-panasonic-tx-65ex600e-1371318/"
           },
           {
             "name": "SATURN",
             "productId": 16,
             "localPrice": 5978,
-            "image": "http://zaglebie.lubin.pl/wp-content/uploads/2016/04/saturn_logo_1a.jpg",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/1ec2ad34e5de1503627edfce985cd3af-full.jpg",
             "url": "https://saturn.pl/rtv-i-telewizory/telewizor-panasonic-tx-65ex600e?utm_source=ceneo&utm_medium=cpc&utm_term=ceneo&utm_campaign=xml"
           },
           {
             "name": "MEDIA MARKT",
             "productId": 17,
             "localPrice": 5978,
-            "image": "http://3.bp.blogspot.com/-MCckJgb3-iw/VK1y2X7ZVBI/AAAAAAAAIMc/jP-rCi12Ogg/w1200-h630-p-k-no-nu/Logo%2BMediaMarkt.png",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/61742213fc080ff0869770d24a825302-full.jpg",
             "url": "https://mediamarkt.pl/rtv-i-telewizory/telewizor-panasonic-tx-65ex600e?utm_source=ceneo&utm_medium=cpc&utm_term=ceneo&utm_campaign=xml"
           },
           {
             "name": "REDCOON",
             "productId": 18,
             "localPrice": 5349,
-            "image": "https://i.tanio.co/sd/2017/06/redcoon-promocje.jpg",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/38c47c43cd04417131ec11b1f8bc3240-full.jpg",
             "url": "https://redcoon.pl/telewizory/telewizor-panasonic-tx-65ex600e?utm_source=ceneo.pl&utm_medium=cpc"
           },
           {
             "name": "SFERIS",
             "productId": 19,
             "localPrice": 5227.50,
-            "image": "https://www.sferis.pl/img/logo.svg?v=4",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/b2cf453523dc396c6fba63cd1b880665-full.jpg",
             "url": "https://www.sferis.pl/telewizor-65-panasonic-tx-65ex600e-4k-3840x2160-smarttv-p508645"
           }
         ]
@@ -322,14 +324,14 @@
         "size": [
           "4.7''"
         ],
-        "image": "http://www.avans.pl/temp/thumbs-new/3/products/597/739597_1923859_500x500w50.jpg",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/81de90cb947928521564337957f269f3-full.jpg",
         "description": "iPhone 7 radykalnie udoskonala kluczowe elementy iPhone’a. Przynosi nowe, zaawansowane aparaty do zdjęć i wideo. Największą moc i najwydajniejszą baterię w historii tego urządzenia. Głośniki stereo hipnotyzujące fantastycznym dźwiękiem. Najjaśniejszy i wyświetlający najszerszą gamę kolorów ekran. Odporność na wodę i zachlapania.1 Oraz imponujący wygląd, na który zasługuje coś tak potężnego. Oto on. iPhone 7.",
         "shops": [
           {
             "name": "EMAG",
             "productId": 20,
             "localPrice": 2696.90,
-            "image": "https://s5emagst.akamaized.net/assets/pl/css/icons/logo.svg",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/4fdb5ab48727f3faaef1ef389f0a509d-full.jpg",
             "url": "https://www.emag.pl/telefon-apple-iphone-7-32gb-czarny-apple-iphone-7-32gb-black/pd/D9GKV2BBM/?cmpid=60049&utm_campaign=wszystkie&utm_content=14820134&utm_medium=Feed&utm_source=Ceneo.pl",
             "color": [
               "srebrny",
@@ -341,7 +343,7 @@
             "name": "ELEKTRO",
             "productId": 21,
             "localPrice": 2689,
-            "image": "http://www.electro.pl/common/images/electro.jpg",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/fe6d816cf5361d05361dccac540ce1ef-full.jpg",
             "url": "http://www.electro.pl/smartfony/smartfon-apple-iphone-7-32gb-czarny,id-739597?utm_source=ceneo&utm_medium=cpc&utm_content=861322&utm_campaign=2017-09&utm_term=SMARTFONY&ceneo_spo=true",
             "color": [
               "biały"
@@ -351,7 +353,7 @@
             "name": "AVANS",
             "productId": 22,
             "localPrice": 2689,
-            "image": "http://www.avans.pl/common4/images/logos/logo.png",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/1c9856a53cc4475572e45a0b61168d16-full.jpg",
             "url": "http://www.avans.pl/smartfony/smartfon-apple-iphone-7-32gb-czarny,id-739597?utm_source=Ceneo&utm_medium=cpc&utm_content=861322&utm_campaign=2017-09&utm_term=SMARTFONY&ceneo_spo=true&gclid=CJC4htTCvNYCFQLBGQodUM0Jxg&gclsrc=ds&dclid=CI2_jtTCvNYCFVIcGAodMToDsw",
             "color": [
               "złoty",
@@ -376,14 +378,14 @@
           "5.5''"
         ],
         "available": true,
-        "image": "https://image.ceneo.pl/data/products/47045340/89424e37-6218-4b38-a752-303eabb5dec6_i-apple-iphone-7-plus-32gb-czarny.jpg?=f65a8",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/86f56c20646090934bc70c315c07a17e-full.jpg",
         "description": "Smartfon Apple iPhone 7, to arcydzieło sztuki użytkowej, wyposażone w nowy, potężny procesor A10 Fusion, który poradzi sobie z każdym, nawet najbardziej wymagającym zadaniem. Doskonały wyświetlacz Retina HD wyświetli, niezwykle żywe i bardziej naturalne kolory, a stereofoniczne głośniki o szerokim zakresie dynamiki, bezbłędnie trafią w gusta miłośników dobrego brzmienia. Bezkonkurencyjny aparat 12Mpix, został uzbrojony w jasny f/1.8 obiektyw, który wraz z diodowym flashem True Tone rozproszy nawet największe ciemności.",
         "shops": [
           {
             "name": "IDREAM",
             "productId": 23,
             "localPrice": 3319,
-            "image": "https://idream.pl/images/logo-idream.png",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/daea53ab3599e7bea15237accf284d15-full.jpg",
             "url": "https://idream.pl/iphone/iphone-7-plus/apple-iphone-7-plus-32gb-czarny.html",
             "color": [
               "różowy",
@@ -407,28 +409,28 @@
           "srebrny"
         ],
         "available": true,
-        "image": "https://images.morele.net/full/799651_3_f.jpeg",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/b5ccdc0d1fb45d4607025ce96b291958-full.jpg",
         "description": "Od pierwszego modelu iMac miał być zawsze najbardziej wyrafinowanym komputerem stacjonarnym. Z niemożliwie smukłą, bezszczelinową obudową, najlepszym wyświetlaczem, hiperwydajnymi procesorami, grafiką i pamięcią masową. Zupełnie nowy, 21,5-calowy iMac z wyświetlaczem Retina 4K jest wierny tej koncepcji. Podobnie jak rewolucyjny 27-calowy model 5K, jakością wyświetlanego obrazu gasi wszystko wokół. Dostarcza takich wrażeń, że kompletnie pochłania odbiorcę. I tym sposobem robi kolejny, spektakularny krok naprzód.",
         "shops": [
           {
             "name": "MORELE NET",
             "productId": 24,
             "localPrice": 7970.59,
-            "image": "https://www.morele.net/static/img/shop/img-morele-logo.png",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/a3e605bc06aefa011df3bd4ffd2c2d45-full.jpg",
             "url": "https://www.morele.net/komputer-apple-imac-27-mk462pl-a-799651/"
           },
           {
             "name": "MEDIA MARKT",
             "productId": 25,
             "localPrice": 7099,
-            "image": "http://3.bp.blogspot.com/-MCckJgb3-iw/VK1y2X7ZVBI/AAAAAAAAIMc/jP-rCi12Ogg/w1200-h630-p-k-no-nu/Logo%2BMediaMarkt.png",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/61742213fc080ff0869770d24a825302-full.jpg",
             "url": "https://mediamarkt.pl/komputery-i-tablety/komputer-apple-imac-27-z-wyswietlaczem-retina-5k-mk462pl-a?utm_source=ceneo&utm_medium=cpc&utm_term=ceneo&utm_campaign=xml"
           },
           {
             "name": "KOMPUTRONIK",
             "productId": 26,
             "localPrice": 7399,
-            "image": "http://www.komputronik.pl/informacje/wp-content/uploads/2017/01/logo-kt-800px-wide.png",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/8064d834ea40a77400bee85e3c3ab228-full.jpg",
             "url": "https://www.komputronik.pl/product/293615/apple-imac-27-mk462pl-a-.html?utm_source=Ceneo&utm_medium=link&utm_campaign=Promo"
           }
         ]
@@ -447,14 +449,14 @@
           "10.5''"
         ],
         "available": true,
-        "image": "https://image.ceneo.pl/data/products/52404806/f-apple-ipad-pro-10-5-64gb-wi-fi-gwiezdna-szarosc-mqdt2fda.jpg",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/cafa1685bc6f3d4818896ee624fd7164-full.jpg",
         "description": "Cokolwiek zechcesz na nim zrobić – zrobisz. I to lepiej niż myślisz. Oferuje znacznie więcej mocy niż większość laptopów PC, a jest przy tym rozkosznie prosty w obsłudze. Wyświetlacz Retina został przeprojektowany i nie sposób oderwać od niego wzroku. Podobnie jak rąk. A wszystkim steruje iOS, najbardziej zaawansowany mobilny system operacyjny na świecie. iPad Pro ma wszystko, czego oczekujesz od nowoczesnego komputera. Tylko lepsze.",
         "shops": [
           {
             "name": "EMAG",
             "productId": 27,
             "localPrice": 3149,
-            "image": "https://s5emagst.akamaized.net/assets/pl/css/icons/logo.svg",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/4fdb5ab48727f3faaef1ef389f0a509d-full.jpg",
             "url": "https://www.emag.pl/tablet-apple-ipad-pro-10-5-wifi-64gb-space-grey-mqdt2fd-a/pd/DVDB6KBBM/?cmpid=60049&utm_campaign=wszystkie&utm_content=15215212&utm_medium=Feed&utm_source=Ceneo.pl",
             "color": [
               "srebrny",
@@ -465,7 +467,7 @@
             "name": "MORELE NET",
             "productId": 28,
             "localPrice": 2984,
-            "image": "https://www.morele.net/static/img/shop/img-morele-logo.png",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/a3e605bc06aefa011df3bd4ffd2c2d45-full.jpg",
             "url": "https://www.morele.net/tablet-apple-ipad-pro-10-5-wifi-64gb-space-grey-mqdt2fd-a-2017-1342435/",
             "color": [
               "biały"
@@ -487,21 +489,21 @@
         "female": false,
         "male": true,
         "available": true,
-        "image": "https://image.ceneo.pl/data/products/8579942/f-biotherm-nawilzajacy-zel-do-twarzy-homme-aquapower-75ml.jpg",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/2630b0409a99fff59d50fd8d19f2bad7-full.jpg",
         "description": "Homme Aquapower Oligo-Thermal Comfort Care to silnie nawliżający krem-żel do pięlegnacji skóry suchej dla mężczyzn. To natychmistowe nawilżenie i ukojenie w nawet najbardziej podrażnionych miejscach. Nowoczesna formuła krem-żelu wzbogacona silnie nawilżająmy kompleksem na bazie czystego ekstraktu z Planktonu Termalnego, kompozycji witamin i oligominerałów.Innowacyjny krem-żel Homme Aquapower Oligo-Thermal Comfort Care głęboko wnika w wewnętrzne warstwy skóry zapobiega wysuszaniu oraz pozostawia ją idealnie nawilżoną, elastyczną i miękką w dotyku.",
         "shops": [
           {
             "name": "TAGOMAGO",
             "productId": 29,
             "localPrice": 149,
-            "image": "https://cdn.shopify.com/s/files/1/2096/6099/t/1/assets/logo.png?1859604075280416780",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/424e9344f334932cfcfca46ac212091d-full.jpg",
             "url": "https://store.nike.com/pl/pl_pl/pd/buty-meskie-air-force-1-07/pid-10005902/pgid-12174287"
           },
           {
             "name": "MAKEUP",
             "productId": 30,
             "localPrice": 156,
-            "image": "https://s3-eu-west-1.amazonaws.com/tpd/logos/586284900000ff000599c4a3/0x0.png",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/92deee81302750b45a5faefe938d91d3-full.jpg",
             "url": "https://makeup.pl/product/292339/?utm_source=ceneo&utm_campaign=recommended&utm_medium=cpc#/option/326101/"
           }
         ]
@@ -515,21 +517,21 @@
         "female": false,
         "male": true,
         "available": true,
-        "image": "http://www.luxe24.pl/components/com_virtuemart/shop_image/product/resized/Lancome_Men_Rene_4e16eeef0d990_150x150.jpg",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/87b8e8a8c8f9cb1db4c643a4cd8a058f-full.jpg",
         "description": "Połączenie koloidalnych mikrocząsteczek i protein sojowych generuje mikronapreżeniarównowazne 25000 mikroliftingów.Skóra staje się jędrna ,napięta jak po liftingu.Odpowiedni do każdego rodzaju skóry ,również wrażliwej.Polecany mążczyznom po 40roku życia.Może być stosowany po goleniu.",
         "shops": [
           {
             "name": "TAGOMAGO",
             "productId": 31,
             "localPrice": 239,
-            "image": "https://cdn.shopify.com/s/files/1/2096/6099/t/1/assets/logo.png?1859604075280416780",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/424e9344f334932cfcfca46ac212091d-full.jpg",
             "url": "https://tagomago.pl/products/lancome-renergy-3d-lifting-anti-wrinkle-firming-cream-men-liftinujaco-przeciwzmarszczkowo-ujedrniajacy-krem-do-twarzy-50ml/?utm_campaign=Ceneo_ST&utm_medium=CPC&utm_source=Ceneo_"
           },
           {
             "name": "LUXE24",
             "productId": 32,
             "localPrice": 228,
-            "image": "http://www.luxe24.pl/images/stories/luxe24.gif",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/4acdcf27fb5cdacc61576a1f274b75f9-full.jpg",
             "url": "http://www.luxe24.pl/index.php?page=shop.product_details&option=com_virtuemart&product_id=7775"
           }
         ]
@@ -543,14 +545,14 @@
         "female": true,
         "male": false,
         "available": true,
-        "image": "http://superperfumeria.pl/pol_pl_Calvin-Klein-Euphoria-100ml-woda-perfumowana-W-16906_1.png",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/d9c178a15a816a5343a8ca480e716661-full.jpg",
         "description": "Daj się zabrać w ekscytującą podróż z zapachem Euphoria! Ta kultowa woda perfumowana marki Calvin Klein pachnie nieskończoną radością i zapewnia mocne wrażenia. Na pewno spodoba się kobietom, które lubią dreszczyk adrenaliny i na co dzień nie podążają utartymi ścieżkami. Kobieta, której skóra pachnie tą kompozycją, ponad wszystko ceni wolność – jest jak egzotyczny, piękny ptak. A same perfumy Euphoria są jak historia dalekiej podróży. Już od pierwszych akordów wprowadzają Cię w sensualny, pobudzający świat orientu. Ich brzmienie opiera się na kontrastujących ze sobą zielonych i owocowych nutach. Granatowe jabłko skusi Cię wyjątkowym, sensualnym i świeżym aromatem. Po kilku chwilach serce perfum zabije euforycznymi nutami czarnej orchidei i lotosu – tak pachną egzotyczne wakacje. Bazą dla zapachu jest mieszanka drzewno-kwiatowo-żywiczna, nadająca całości trwałość. Ten zapach uzależnia!",
         "shops": [
           {
             "name": "TAGOMAGO",
             "productId": 33,
             "localPrice": 147,
-            "image": "https://cdn.shopify.com/s/files/1/2096/6099/t/1/assets/logo.png?1859604075280416780",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/424e9344f334932cfcfca46ac212091d-full.jpg",
             "url": "https://tagomago.pl/products/calvin-klein-euphoria-woda-perfumowana-spray-100ml/?utm_campaign=Ceneo_ST&utm_medium=CPC&utm_source=Ceneo_"
           }
         ]
@@ -563,21 +565,21 @@
         "price": 331,
         "gender": "meski",
         "available": true,
-        "image": "http://static5.perfumesco.pl/img/388/48651.jpg",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/18c40026fcad429f74fa69655a3f2a81-full.jpg",
         "description": "Niespotykanie świeża kompozycja, której nazwa już sama w sobie jest manifestem. I taki właśnie był cel twórcy zapachów Dior, François Demachy: stworzyć zapach szlachetny i surowy zarazem. Naturalne składniki, wybrane z najwyższą starannością, dostarczone w skrajnie skoncentrowanych dawkach. Promienne nuty nasycone są soczystą świeżością bergamotki z Kalabrii. Ambroksan, będący pochodną cennej ambry uwalnia potężny drzewny akord. Sauvage został zainspirowany przez otwarte przestrzenie. Intensywnie niebieskie niebo, rozpostarte nad kamienistym krajobrazem skąpanej w gorącym słońcu pustyni. Twarzą zapachu jest Johnny Depp.",
         "shops": [
           {
             "name": "TAGOMAGO",
             "productId": 34,
             "localPrice": 331,
-            "image": "https://cdn.shopify.com/s/files/1/2096/6099/t/1/assets/logo.png?1859604075280416780",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/424e9344f334932cfcfca46ac212091d-full.jpg",
             "url": "https://tagomago.pl/products/dior-sauvage-woda-toaletowa-spray-100ml/?utm_campaign=Ceneo_ST&utm_medium=CPC&utm_source=Ceneo_"
           },
           {
             "name": "PERFUMESCO",
             "productId": 35,
             "localPrice": 336.10,
-            "image": "http://static5.perfumesco.pl/img/27964.png",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/a6ae75cc219961c40d80f4ee61f5a787-full.jpg",
             "url": "http://www.perfumesco.pl/dior-sauvage-(m)-edt-100ml?utm_source=ceneo&utm_medium=cpc&utm_campaign=ceneo_spo&offer_id=17&aff_id=237"
           }
         ]
@@ -589,35 +591,36 @@
     "items": [
       {
         "id": 16,
-        "title": "Macierewicz i jego tajemnice",
-        "author": "Tomasz Piatek",
+        "title": "Mali bogowie. Tom 2. Jak umierają Polacy",
+        "author": "Reszka Paweł",
         "category": "Książki",
-        "price": 27.10,
-        "pages": 216,
+        "price": 19.99,
+        "pagesAmount": 288,
         "cover": [
           "miękka",
           "twarda"
         ],
         "available": true,
-        "image": "https://www.swiatksiazki.pl/media/catalog/product/cache/image/e9c3970ab036de70892d86c6d221abfe/9/9/99906355604.jpg",
-        "description": "Książka Macierewicz i jego tajemnice zawiera fakty na temat niepokojących koneksji obecnego ministra obrony Antoniego Macierewicza.",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/de490264546a42a9428db453c9f10a43-full.jpg",
+        "description": "W poprzedniej, głośnej książce 'Mali bogowie' (nominacja do nagrody Bestseller Empiku) autor zatrudnił się w szpitalu jako sanitariusz. Tym razem jeździł z pogotowiem do dramatycznych przypadków i brał udział w dyżurze na SOR. Po rozmowach z dziesiątkami lekarzy i ratowników medycznych nie można mieć wątpliwości: polski system opieki medycznej to katastrofa.",
         "shops": [
           {
-            "name": "CZYTAM PL",
+            "name": "EMPIK",
             "productId": 36,
-            "localPrice": 39.90,
-            "image": "http://czytam.pl/img/logo.png",
-            "url": "http://czytam.pl/k,ks_675499,Macierewicz-i-jego-tajemnice-Piatek-Tomasz.html?ceneo_spo=true",
+            "localPrice": 19.99,
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/b1a1934d693155005e58b7cc409bfafd-full.jpg",
+            "url": "http://www.empik.com/mali-bogowie-tom-2-jak-umieraja-polacy-reszka-pawel,p1191847344,ksiazka-p",
             "cover": [
+              "miękka",
               "twarda"
             ]
           },
           {
             "name": "ŚWIAT KSIĄŻKI",
             "productId": 37,
-            "localPrice": 27.10,
-            "image": "https://www.swiatksiazki.pl/static/version1505884371/frontend/Olesiejuk/default/pl_PL/images/logo.svg",
-            "url": "https://www.swiatksiazki.pl/macierewicz-i-jego-tajemnice-6355604-ksiazka.html?oferta_nr",
+            "localPrice": 27.93,
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/71131945b1075db9d834fa25eae17bb9-full.jpg",
+            "url": "https://www.swiatksiazki.pl/Ksiazki/literatura-faktu-564/mali-bogowie-2-jak-umieraja-polacy-6377938-ksiazka.html",
             "cover": [
               "miękka"
             ]
@@ -627,22 +630,22 @@
       {
         "id": 17,
         "title": "Zioła z polskich łąk",
-        "author": "Bob Marley",
+        "author": "Nowak Zbigniew T.",
         "category": "Książki",
         "price": 27.10,
-        "pages": 328,
+        "pagesAmount": 328,
         "cover": [
           "twarda"
         ],
         "available": true,
-        "image": "https://www.booksfera.pl/foto/warianty/250/0/ziola-z-polskich-lak.jpg",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/299790313ec5940b713aeaed14b8d7d9-full.jpg",
         "description": "Polskie łąki, pastwiska, miedze to jedna wielka apteka, z której, przy zachowaniu odpowiedniej wiedzy, można pozyskiwać zupełnie za darmo mnóstwo leków cenionych przez współczesną medycynę. Do zupełnie wyjątkowych roślin leczniczych rosnących na naszych łąkach zaliczamy m.in.: babkę lancetowatą, bluszczyk kurdybanek, krwawnik, mniszek lekarski, pokrzywę, podbiał, skrzyp polny, stokrotkę, tasznik, oman łąkowy, pięciornik gęsi, szczaw, świetlik łąkowy, żywokost lekarski i wiele innych.",
         "shops": [
           {
             "name": "BOOKSFERA",
             "productId": 38,
             "localPrice": 27.10,
-            "image": "https://www.booksfera.pl/obrazki/booksfera.png",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/ce4924ba121f26722ac1293c955474cb-full.jpg",
             "url": "https://www.booksfera.pl/ziola-z-polskich-lak.html",
             "cover": [
               "twarda"
@@ -656,65 +659,20 @@
         "author": "George Martin",
         "category": "Książki",
         "price": 43.60,
-        "pages": 773,
+        "pagesAmount": 773,
         "cover": [
           "miękka"
         ],
         "available": true,
-        "image": "https://image.ceneo.pl/data/products/1219238/f-gra-o-tron.jpg",
+        "image": "https://cdn1.imggmi.com/uploads/2018/5/14/41e2e7eeceef5f22ca0ffcde5403985e-full.jpg",
         "description": "W Zachodnich Krainach o ośmiu tysiącach lat zapisanej historii widmo wojen i katastrofy nieustannie wisi nad ludźmi. Zbliża się zima, lodowate wichry wieją z północy, gdzie schroniły się wyparte przez ludzi pradawne rasy oraz starzy bogowie. Zbuntowani władcy na szczęście pokonali szalonego Smoczego Króla, Aerysa Targaryena, zasiadającego na Żelaznym Tronie Zachodnich Krain, ale tyranowi udało się zbiec, śmierć dosięgła go z ręki gwardzisty. Niestety, obalony władca pozostawił potomstwo, równie nieobliczalne jak ON sam... Opuszczony tron objął Robert - najznamienitszy z buntowników. Minęły już lata pokoju i oto możnowładcy zaczynają grę o tron.",
         "shops": [
           {
             "name": "AVALON",
             "productId": 39,
             "localPrice": 43.60,
-            "image": "https://image.ceneo.pl/data/shops/14555/logo.jpg",
+            "image": "https://cdn1.imggmi.com/uploads/2018/5/14/b025205957cd8c38d74c3b24243ff860-full.jpg",
             "url": "http://www.avalon.pl/gra-o-tron-p1319583.html",
-            "cover": [
-              "miękka"
-            ]
-          }
-        ]
-      },
-      {
-        "id": 19,
-        "title": "Religia szkoła podstawowa klasa 3",
-        "author": "Elżbieta Kondrak",
-        "category": "Książki",
-        "price": 7.75,
-        "pages": 128,
-        "cover": [
-          "miękka"
-        ],
-        "available": true,
-        "image": "http://www.korob.pl/pol_pm_Religia-SP-3-Jezus-jest-z-nami-cw-JEDNOSC-10258_1.jpg",
-        "description": "Zawarte w zeszycie zadania:– ściśle wiążą się z treścią podręcznika– stanowią istotną pomoc w realizacji celów katechetycznych i wymagań szczegółowych– przez swą różnorodność (uzupełnianie tekstu, rysowanie, kolorowanie, rebusy, krzyżówki i inne łamigłówki oraz wycinanki i naklejki) wszechstronnie aktywizują ucznia i pobudzają do samodzielnej twórczej pracy– posiadają zróżnicowany stopień trudności– ich miejsce w toku lekcji oraz dodatkowe wskazówki opisane są w przewodniku metodycznym– ułatwiają katechecie bieżącą ocenę pracy ucznia.",
-        "shops": [
-          {
-            "name": "MEGA KSIĄŻKI",
-            "productId": 40,
-            "localPrice": 8.11,
-            "image": "https://www.megaksiazki.pl/themes/template/img/logo.png?21434484523",
-            "url": "https://www.megaksiazki.pl/szkola-podstawowa/1016993-jezus-jest-z-nami-klasa-3-szkola-podstawowa-religia-cwiczenia-plyta-cd.html?utm_campaign=normal",
-            "cover": [
-              "miękka"
-            ]
-          },
-          {
-            "name": "EMPIK",
-            "productId": 41,
-            "localPrice": 9.34,
-            "image": "http://www.empik.com/b/mp/img/logo-for-fb.jpg",
-            "url": "http://www.empik.com/jezus-jest-z-nami-3-zeszyt-cwiczen-szkola-podstawowa-cd-kondrak-elzbieta-czerkawski-jaroslaw,p1080875478,ksiazka-p?utm_source=ceneo.pl&utm_medium=oferty_cpc&utm_content=p1080875478",
-            "cover": [
-              "miękka"
-            ]
-          },
-          {
-            "name": "KOROB",
-            "localPrice": 7.75,
-            "image": "http://www.korob.pl/data/include/cms/site/korob_logo.png",
-            "url": "http://www.korob.pl/product-pol-10258-Religia-SP-3-Jezus-jest-z-nami-cw-JEDNOSC.html",
             "cover": [
               "miękka"
             ]

@@ -2,17 +2,22 @@
 .container {
     padding: 0;
 }
+
 .thumbnail {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
+    background-color: #dce7eb;
 }
+
 .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
     border-bottom-color: #ddd;
 }
+
 .list-group-item:first-child {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 }
+
 /*end of bootstrap elements*/
 
 .thumbnail--container {
@@ -20,11 +25,18 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
+    padding: 10px;
 }
 
 .thumbnail--cell {
     width: calc(100% / 4);
     text-align: center;
+    background-color: #fff;
+    margin: 2px;
+}
+
+.carousel__cell {
+    width: 100%;
 }
 
 .caption {
@@ -85,16 +97,27 @@
     .thumbnail--cell {
         width: calc(100% / 3);
     }
+
+    .carousel__cell {
+        width: 100%;
+    }
 }
-@media (min-width:  993px) {
-        .thumbnail--name-details {
+
+@media (min-width: 993px) {
+    .thumbnail--name-details {
         min-height: 52px;
     }
 }
+
 @media (max-width: 992px) {
     .thumbnail--cell {
         width: calc(100% / 2);
     }
+
+    .carousel__cell {
+        width: 100%;
+    }
+
     .thumbnail--price {
         font-size: 16px;
     }
@@ -106,16 +129,18 @@
     }
 
 }
-@media (max-width: 450px){
+
+@media (max-width: 450px) {
     .thumbnail--name {
         margin: 0 auto;
     }
+
     .thumbnail--name-details {
         margin: 0 auto;
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 320px) {
     .thumbnail--name-details {
         font-size: 20px;
     }

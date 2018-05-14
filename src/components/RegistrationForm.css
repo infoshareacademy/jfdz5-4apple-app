@@ -1,42 +1,184 @@
-.form-horizontal .form-group {
-    margin-right: 0;
-    margin-left: 0;
-}
-.registration--container {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
+.registation-form {
+    width: 80%;
 }
 
 .registation-form__content {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dce7eb;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.3);
+    border: none;
+    width: 300px;
+    padding: 30px 0;
+    min-height: 400px;
+    transition: all 300ms ease-in;
 }
 
-.registation-form__logo {
-    width: 90%;
-    margin: 0 auto;
+.input-group-addon {
+    padding: 0;
+    background-color: #0A5894;
+    color: #fff;
 }
 
-@media (min-width: 768px) {
-    .registation-form__logo {
+.form-horizontal .radio, .form-horizontal .checkbox {
+    padding: 0;
+}
+
+.welcome-screen__forms > .nav-tabs {
+    width: 300px;
+    border: none;
+    text-align: center;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.nav-tabs {
+    width: 100%;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.glyphicon {
+    margin: 0 15px;
+}
+
+.form__icon-btn {
+    background: none;
+    border: none;
+    width: 250px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 0 auto 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+}
+
+.form__icon-btn img {
+    margin-right: 20px;
+}
+
+.btn-facebook {
+    background-color: #475993;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.btn-facebook:hover {
+    background-color: #364882;
+}
+
+.btn-google {
+    background-color: #fff;
+    color: #757575;
+    border-radius: 4px;
+}
+
+.btn-google:hover {
+    background-color: #f6f6f6;
+}
+
+.alert-danger {
+    background-color: transparent;
+    background-image: none;
+    border: none;
+    font-size: 16px;
+    box-shadow: none;
+    padding: 0;
+}
+
+.tab-content > .active {
+    border-radius: 4px;
+}
+
+.nav-tabs > li {
+    min-width: 50%;
+    font-size: 16px;
+}
+
+.nav-tabs .glyphicon {
+    margin: 0 15px 0 0;
+}
+
+.nav-tabs > li > a {
+    margin: 0;
+    border: none;
+    background-color: #0a5894;
+    color: #dce7eb;
+    padding: 15px 5px;
+    border-radius: 4px 4px 0 0;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-tabs > li > a:hover {
+    background-color: #002936;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    color: #0a5894;
+}
+
+.active {
+    background-color: #dce7eb;
+    border-radius: 4px 4px 0 0;
+}
+
+.nav-tabs > li.active > a {
+    border: none;
+    background-color: #dce7eb;
+    color: #0a5894;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    border: none;
+    background-color: #dce7eb;
+}
+
+.form__link {
+    color: #0a5894;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    .nav-tabs > li {
+        min-width: 50%;
+        font-size: 18px;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    .registation-form {
+        width: 60%;
+    }
+
+    .registation-form__content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #dce7eb;
+        border-radius: 0 0 4px 4px;
+        box-shadow: 0 15px 10px -10px rgba(0, 0, 0, 0.3);
+        border: none;
+        width: 500px;
+        min-height: 500px;
+        transition: all 300ms ease-in;
+    }
+
+    .welcome-screen__forms > .nav-tabs {
+        width: 500px;
         max-width: 500px;
-    }
-
-    .registation-form__form {
-        min-width: 500px;
-    }
-}
-
-@media (max-width: 767px) {
-    h1 {
-        font-size: 24px;
-    }
-
-}
-
-@media (max-width: 767px) {
-
-    .registation-form__title {
-        font-size: 22px;
+        border: none;
+        text-align: center;
+        font-size: 100px;
+        font-weight: 500;
     }
 }
+

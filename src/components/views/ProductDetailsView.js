@@ -1,27 +1,29 @@
 import React from 'react'
 import DataFetcher from "../DataFetcher/DataFetcher";
-import SearchBar from "../SearchBar";
+import SearchNavBar from "../SearchNavBar";
 import ShopListDetails from "../ShopListDetails";
 import Categories from '../Categories'
 
 const ProductDetailsView = (props) => {
   const {productId} = props.match.params;
   return (
-    <div className="">
+    <div>
+      <div className={'helper-container'}> </div>
       <DataFetcher
         dataUrl={'/data/products.json'}
-        component={SearchBar}
+        component={SearchNavBar}
         propName="searchedProducts"
       />
-      <DataFetcher
-        dataUrl={'/data/products.json'}
-        component={Categories}
-        propName="categoriesProducts"
-      />
-      <ShopListDetails item={productId}/>
-    </div>)
-
-}
+      <div className={'app-container'}>
+        <Categories/>
+        <div className={'content-container'}>
+          <ShopListDetails item={productId}/>
+        </div>
+        <div> </div>
+      </div>
+    </div>
+  )
+};
 
 
 export default ProductDetailsView

@@ -1,3 +1,51 @@
-.button--continue {
-    margin-top: 10px;
+.button--primary {
+    user-select: none;
+    transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease, width 0.3s ease, opacity 0.3s ease;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    position: relative;
+    margin: 0;
+    outline: none;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: baseline;
+    white-space: nowrap;
+    background-color: #0a5894;
+    border: solid 2px #0a5894;
+    width: 100%;
+    color: #dce7eb;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.button--primary:hover {
+    background-color: #002936;
+    border: solid 2px #002936;
+}
+
+.button--small {
+    width: auto;
+}
+
+.button-link {
+    text-decoration: none;
+    color: #dce7eb;
+}
+
+.button-link:hover, .button-link:active, .button-link:focus {
+    text-decoration: none;
+    color: #dce7eb;
+}
+
+.button--primary__with-icon {
+    padding: 10px 10px 10px 30px;
+}
+
+.search-button {
+    width: 46px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
 }
